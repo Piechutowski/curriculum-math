@@ -232,7 +232,7 @@ func logPage(entries []logEntry, byID map[string]*module) string {
 			if m, ok := byID[e.module]; ok {
 				short = m.short
 			}
-			fmt.Fprintf(&b, "- %s · **%s** — %s\n", e.ts.Format("15:04 UTC"), short, e.label)
+			fmt.Fprintf(&b, "- **%s** — %s\n", short, e.label)
 		}
 	}
 	return b.String()
