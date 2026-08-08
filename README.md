@@ -61,14 +61,14 @@ you *why* you are learning something, never *whether*.
 
 ## The library
 
-| Book / course | Module | Notes |
+| Book / course | Module | Alternative |
 |---|---|---|
-| Mr. Greene — *College Math* (course) | `01` | Algebra + trigonometry. You are working through this now. |
-| Rosen & Krithivasan — *Discrete Mathematics and Its Applications* (McGraw-Hill India) | `02` | Discrete math. You own this. |
-| *Thomas' Calculus* (Pearson India edition) | `03` | Calculus. Alternative: Shanti Narayan's *Differential/Integral Calculus* (S. Chand). |
-| S. Kumaresan — *Linear Algebra: A Geometric Approach* (PHI) | `04` | Linear algebra. Alternative: Strang, *Introduction to Linear Algebra* + free MIT OCW lectures. |
-| T. Veerarajan — *Probability, Statistics and Random Processes* (McGraw-Hill India) | `05` | Probability. Alternative: Sheldon Ross, *A First Course in Probability* (Pearson India). |
-| S.S. Sastry — *Introductory Methods of Numerical Analysis* (PHI) | `06` | Numerical methods (short bridging module). |
+| Mr. Greene — *College Math* (course) | `01` | — |
+| Rosen & Krithivasan — *Discrete Mathematics and Its Applications* (McGraw-Hill India) | `02` | — |
+| *Thomas' Calculus* (Pearson India edition) | `03` | Shanti Narayan, *Differential/Integral Calculus* (S. Chand) |
+| S. Kumaresan — *Linear Algebra: A Geometric Approach* (PHI) | `04` | Strang, *Introduction to Linear Algebra* + free MIT OCW lectures |
+| T. Veerarajan — *Probability, Statistics and Random Processes* (McGraw-Hill India) | `05` | Sheldon Ross, *A First Course in Probability* (Pearson India) |
+| S.S. Sastry — *Introductory Methods of Numerical Analysis* (PHI) | `06` | — |
 
 Reference shelf (not required, useful for life): B.S. Grewal, *Higher Engineering Mathematics*
 (all subjects in one volume); Kishor Trivedi, *Probability and Statistics with Reliability,
