@@ -3,7 +3,7 @@
 <!-- progress:05-probability -->
 ![05 · Probability — Veerarajan progress](progress/05-probability.svg)
 
-**0 / 46 lessons complete · 0%**
+**0 / 46 lessons complete · 0%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Book:** T. Veerarajan, *Probability, Statistics and Random Processes* (McGraw-Hill India).

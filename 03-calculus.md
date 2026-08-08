@@ -3,7 +3,7 @@
 <!-- progress:03-calculus -->
 ![03 · Calculus — Thomas progress](progress/03-calculus.svg)
 
-**0 / 89 lessons complete · 0%**
+**0 / 89 lessons complete · 0%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Book:** *Thomas' Calculus* (Pearson India edition). Section references are approximate across

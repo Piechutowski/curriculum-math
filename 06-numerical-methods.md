@@ -3,7 +3,7 @@
 <!-- progress:06-numerical-methods -->
 ![06 · Numerical Methods — Sastry progress](progress/06-numerical-methods.svg)
 
-**0 / 18 lessons complete · 0%**
+**0 / 18 lessons complete · 0%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Book:** S.S. Sastry, *Introductory Methods of Numerical Analysis* (PHI).

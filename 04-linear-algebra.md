@@ -3,7 +3,7 @@
 <!-- progress:04-linear-algebra -->
 ![04 · Linear Algebra — Kumaresan progress](progress/04-linear-algebra.svg)
 
-**0 / 52 lessons complete · 0%**
+**0 / 52 lessons complete · 0%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Book:** S. Kumaresan, *Linear Algebra: A Geometric Approach* (PHI). Alternative that pairs

@@ -1,0 +1,34 @@
+# This workflow makes the repo self-updating, so ticking a checkbox in the
+# GitHub web editor is enough: it reruns the progress tool, which stamps the
+# completion log and redraws the SVG bars, then commits the result back to
+# the same branch.
+name: Update progress
+
+on:
+  push:
+    paths:
+      - "*.md"
+      - "tools/**"
+
+jobs:
+  progress:
+    # Skip runs triggered by this workflow's own commit.
+    if: ${{ !contains(github.event.head_commit.message, '[progress-bot]') }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+      - run: go run ./tools/progress
+      - name: Commit and push if anything changed
+        run: |
+          git config user.name "progress-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || {
+            git commit -m "Update progress bars and completion log [progress-bot]"
+            git push
+          }

@@ -3,7 +3,7 @@
 <!-- progress:01-algebra-trigonometry -->
 ![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg)
 
-**27 / 220 lessons complete · 12%**
+**27 / 220 lessons complete · 12%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).

@@ -3,7 +3,9 @@
 //
 //   - renders an SVG progress-bar card per module plus an overall card into progress/
 //   - refreshes the "N / M complete" block in each module file and the README dashboard
-//   - writes the raw numbers to progress/progress.csv
+//   - maintains a completion log: progress/log.csv records when each lesson was first
+//     ticked, and LOG.md presents it newest-day-first (unticking a lesson removes it)
+//   - writes the raw counts to progress/progress.csv
 //
 // Run it from the repository root after ticking checkboxes:
 //
@@ -11,47 +13,69 @@
 package main
 
 import (
+	"encoding/csv"
+	"errors"
 	"fmt"
+	"io/fs"
 	"os"
 	"path/filepath"
 	"regexp"
+	"sort"
 	"strings"
+	"time"
 )
 
 type module struct {
-	id    string // also the SVG file basename and the progress-marker id
-	file  string
-	title string
-	c1,c2 string // gradient start/end
-	done  int
-	total int
+	id      string // also the SVG file basename and the progress-marker id
+	file    string
+	title   string
+	short   string // compact name used in the log
+	c1, c2  string // gradient start/end
+	done    int
+	total   int
+	checked []string // labels of ticked lessons, in file order
 }
 
 var modules = []*module{
-	{id: "01-algebra-trigonometry", file: "01-algebra-trigonometry-map.md", title: "01 · Algebra & Trigonometry — Greene", c1: "#58a6ff", c2: "#1f6feb"},
-	{id: "02-discrete-mathematics", file: "02-discrete-mathematics-map.md", title: "02 · Discrete Mathematics — Rosen", c1: "#bc8cff", c2: "#8957e5"},
-	{id: "03-calculus", file: "03-calculus.md", title: "03 · Calculus — Thomas", c1: "#ffa657", c2: "#f0883e"},
-	{id: "04-linear-algebra", file: "04-linear-algebra.md", title: "04 · Linear Algebra — Kumaresan", c1: "#56d364", c2: "#2ea043"},
-	{id: "05-probability", file: "05-probability.md", title: "05 · Probability — Veerarajan", c1: "#f778ba", c2: "#db61a2"},
-	{id: "06-numerical-methods", file: "06-numerical-methods.md", title: "06 · Numerical Methods — Sastry", c1: "#76e3ea", c2: "#39c5cf"},
+	{id: "01-algebra-trigonometry", file: "01-algebra-trigonometry-map.md", title: "01 · Algebra & Trigonometry — Greene", short: "Greene", c1: "#58a6ff", c2: "#1f6feb"},
+	{id: "02-discrete-mathematics", file: "02-discrete-mathematics-map.md", title: "02 · Discrete Mathematics — Rosen", short: "Rosen", c1: "#bc8cff", c2: "#8957e5"},
+	{id: "03-calculus", file: "03-calculus.md", title: "03 · Calculus — Thomas", short: "Calculus", c1: "#ffa657", c2: "#f0883e"},
+	{id: "04-linear-algebra", file: "04-linear-algebra.md", title: "04 · Linear Algebra — Kumaresan", short: "Linear Algebra", c1: "#56d364", c2: "#2ea043"},
+	{id: "05-probability", file: "05-probability.md", title: "05 · Probability — Veerarajan", short: "Probability", c1: "#f778ba", c2: "#db61a2"},
+	{id: "06-numerical-methods", file: "06-numerical-methods.md", title: "06 · Numerical Methods — Sastry", short: "Numerical", c1: "#76e3ea", c2: "#39c5cf"},
 }
 
-var checkboxRe = regexp.MustCompile(`(?m)^\s*[-*] \[([ xX])\] `)
+const logCSV = "progress/log.csv"
+
+type logEntry struct {
+	ts     time.Time
+	module string // module id
+	label  string
+}
+
+var checkboxLine = regexp.MustCompile(`^\s*[-*] \[([ xX])\] (.+)$`)
 
 func main() {
 	if _, err := os.Stat("README.md"); err != nil {
 		fatal("run this from the repository root (README.md not found)")
 	}
 
+	byID := map[string]*module{}
 	for _, m := range modules {
+		byID[m.id] = m
 		src, err := os.ReadFile(m.file)
 		if err != nil {
 			fatal("reading %s: %v", m.file, err)
 		}
-		for _, hit := range checkboxRe.FindAllStringSubmatch(string(src), -1) {
+		for _, line := range strings.Split(string(src), "\n") {
+			hit := checkboxLine.FindStringSubmatch(line)
+			if hit == nil {
+				continue
+			}
 			m.total++
 			if hit[1] != " " {
 				m.done++
+				m.checked = append(m.checked, label(hit[2]))
 			}
 		}
 	}
@@ -66,11 +90,13 @@ func main() {
 		fatal("creating progress dir: %v", err)
 	}
 
+	added, removed := updateLog(byID)
+
 	for _, m := range modules {
 		writeFile(filepath.Join("progress", m.id+".svg"), card(m.title, m.done, m.total, m.c1, m.c2))
 	}
 	writeFile(filepath.Join("progress", "overall.svg"), card("Overall — all modules", done, total, "#e3b341", "#d29922"))
-	writeFile(filepath.Join("progress", "progress.csv"), csv(done, total))
+	writeFile(filepath.Join("progress", "progress.csv"), countsCSV(done, total))
 
 	for _, m := range modules {
 		updateBlock(m.file, "progress:"+m.id, moduleBlock(m))
@@ -82,6 +108,134 @@ func main() {
 		fmt.Printf("%-40s %4d /%4d %5d%%\n", m.title, m.done, m.total, pct(m.done, m.total))
 	}
 	fmt.Printf("%-40s %4d /%4d %5d%%\n", "overall", done, total, pct(done, total))
+	if added > 0 || removed > 0 {
+		fmt.Printf("log: %d completion(s) added, %d removed\n", added, removed)
+	}
+}
+
+// label extracts a compact lesson name from a checkbox line's content: the bold
+// span when the lesson has a long description (modules 03-06), the whole line
+// otherwise (Greene and Rosen entries).
+func label(s string) string {
+	s = strings.TrimSpace(s)
+	if strings.HasPrefix(s, "**") {
+		if end := strings.Index(s[2:], "**"); end >= 0 {
+			return strings.TrimSpace(s[2 : 2+end])
+		}
+	}
+	return s
+}
+
+// updateLog reconciles progress/log.csv with the currently ticked lessons:
+// newly ticked lessons are stamped with the current time, unticked ones are
+// dropped. It then regenerates LOG.md. Returns (added, removed).
+func updateLog(byID map[string]*module) (int, int) {
+	prev := readLog()
+	prevKey := map[string]logEntry{}
+	for _, e := range prev {
+		prevKey[e.module+"|"+e.label] = e
+	}
+
+	now := time.Now().UTC().Truncate(time.Minute)
+	var next []logEntry
+	added := 0
+	for _, m := range modules {
+		for _, l := range m.checked {
+			if e, ok := prevKey[m.id+"|"+l]; ok {
+				next = append(next, e)
+			} else {
+				next = append(next, logEntry{ts: now, module: m.id, label: l})
+				added++
+			}
+		}
+	}
+	removed := len(prev) + added - len(next)
+
+	sort.SliceStable(next, func(i, j int) bool { return next[i].ts.Before(next[j].ts) })
+
+	var b strings.Builder
+	w := csv.NewWriter(&b)
+	w.Write([]string{"completed_at_utc", "module", "lesson"})
+	for _, e := range next {
+		w.Write([]string{e.ts.Format(time.RFC3339), e.module, e.label})
+	}
+	w.Flush()
+	writeFile(logCSV, b.String())
+
+	writeFile("LOG.md", logPage(next, byID))
+	return added, removed
+}
+
+func readLog() []logEntry {
+	f, err := os.Open(logCSV)
+	if errors.Is(err, fs.ErrNotExist) {
+		return nil
+	}
+	if err != nil {
+		fatal("reading %s: %v", logCSV, err)
+	}
+	defer f.Close()
+	rows, err := csv.NewReader(f).ReadAll()
+	if err != nil {
+		fatal("parsing %s: %v", logCSV, err)
+	}
+	var out []logEntry
+	for i, r := range rows {
+		if i == 0 || len(r) != 3 { // header
+			continue
+		}
+		ts, err := time.Parse(time.RFC3339, r[0])
+		if err != nil {
+			fatal("%s row %d: bad timestamp %q", logCSV, i+1, r[0])
+		}
+		out = append(out, logEntry{ts: ts, module: r[1], label: r[2]})
+	}
+	return out
+}
+
+// logPage renders LOG.md: days newest-first, lessons within a day in the order
+// they were logged.
+func logPage(entries []logEntry, byID map[string]*module) string {
+	var b strings.Builder
+	b.WriteString("# Completion Log\n\n")
+	b.WriteString("When each lesson was completed — newest day first. Maintained by\n")
+	b.WriteString("`go run ./tools/progress`; the raw data lives in [progress/log.csv](progress/log.csv).\n")
+	b.WriteString("Do not edit this file by hand.\n\n")
+
+	if len(entries) == 0 {
+		b.WriteString("*Nothing logged yet — tick your first checkbox and rerun the tool.*\n")
+		return b.String()
+	}
+	fmt.Fprintf(&b, "**%d lessons completed so far.**\n", len(entries))
+
+	// Group by UTC date, preserving chronological order within each day.
+	var days []string
+	byDay := map[string][]logEntry{}
+	for _, e := range entries {
+		d := e.ts.Format("2006-01-02")
+		if _, ok := byDay[d]; !ok {
+			days = append(days, d)
+		}
+		byDay[d] = append(byDay[d], e)
+	}
+	sort.Sort(sort.Reverse(sort.StringSlice(days)))
+
+	for _, d := range days {
+		es := byDay[d]
+		noun := "lessons"
+		if len(es) == 1 {
+			noun = "lesson"
+		}
+		fmt.Fprintf(&b, "\n## %s — %d %s\n\n", d, len(es), noun)
+		for _, e := range es {
+			short := e.module
+			if m, ok := byID[e.module]; ok {
+				short = m.short
+			}
+			fmt.Fprintf(&b, "- %s · **%s** — %s\n", e.ts.Format("15:04 UTC"), short, e.label)
+		}
+	}
+	return b.String()
 }
 
 func pct(done, total int) int {
@@ -121,7 +275,7 @@ func card(title string, done, total int, c1, c2 string) string {
 }
 
 func moduleBlock(m *module) string {
-	return fmt.Sprintf("![%s progress](progress/%s.svg)\n\n**%d / %d lessons complete · %d%%**",
+	return fmt.Sprintf("![%s progress](progress/%s.svg)\n\n**%d / %d lessons complete · %d%%** — [completion log](LOG.md)",
 		esc(m.title), m.id, m.done, m.total, pct(m.done, m.total))
 }
 
@@ -131,11 +285,11 @@ func readmeBlock(done, total int) string {
 	for _, m := range modules {
 		fmt.Fprintf(&b, "[![%s](progress/%s.svg)](%s)\n", esc(m.title), m.id, m.file)
 	}
-	fmt.Fprintf(&b, "\n**Total: %d / %d lessons complete · %d%%** — raw numbers in [progress/progress.csv](progress/progress.csv)", done, total, pct(done, total))
+	fmt.Fprintf(&b, "\n**Total: %d / %d lessons complete · %d%%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)", done, total, pct(done, total))
 	return b.String()
 }
 
-func csv(done, total int) string {
+func countsCSV(done, total int) string {
 	var b strings.Builder
 	b.WriteString("module,title,done,total,percent\n")
 	for _, m := range modules {

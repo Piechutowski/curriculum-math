@@ -37,7 +37,7 @@ The tool re-counts every checklist, redraws the SVG progress bars below, refresh
 [![05 · Probability — Veerarajan](progress/05-probability.svg)](05-probability.md)
 [![06 · Numerical Methods — Sastry](progress/06-numerical-methods.svg)](06-numerical-methods.md)
 
-**Total: 27 / 516 lessons complete · 5%** — raw numbers in [progress/progress.csv](progress/progress.csv)
+**Total: 27 / 516 lessons complete · 5%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)
 <!-- endprogress -->
 
 ## The rhythm (from Mr. Greene's course)

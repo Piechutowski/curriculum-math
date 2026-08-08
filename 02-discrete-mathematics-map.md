@@ -3,7 +3,7 @@
 <!-- progress:02-discrete-mathematics -->
 ![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg)
 
-**0 / 91 lessons complete · 0%**
+**0 / 91 lessons complete · 0%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** the book you own.
