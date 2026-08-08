@@ -14,6 +14,32 @@ competent in five areas of programming:
 The curriculum is modeled on Mr. Greene's college math course: every skill is one atomic lesson,
 and every lesson follows the same rhythm.
 
+## Progress
+
+Every lesson in the six module files is a markdown checkbox. Tick boxes as you complete
+lessons, then run:
+
+```sh
+go run ./tools/progress
+```
+
+The tool re-counts every checklist, redraws the SVG progress bars below, refreshes the
+`N / M complete` lines in each module file, and writes the raw numbers to
+`progress/progress.csv`.
+
+<!-- progress:overall -->
+![Overall progress](progress/overall.svg)
+
+[![01 · Algebra &amp; Trigonometry — Greene](progress/01-algebra-trigonometry.svg)](01-algebra-trigonometry-map.md)
+[![02 · Discrete Mathematics — Rosen](progress/02-discrete-mathematics.svg)](02-discrete-mathematics-map.md)
+[![03 · Calculus — Thomas](progress/03-calculus.svg)](03-calculus.md)
+[![04 · Linear Algebra — Kumaresan](progress/04-linear-algebra.svg)](04-linear-algebra.md)
+[![05 · Probability — Veerarajan](progress/05-probability.svg)](05-probability.md)
+[![06 · Numerical Methods — Sastry](progress/06-numerical-methods.svg)](06-numerical-methods.md)
+
+**Total: 0 / 516 lessons complete · 0%** — raw numbers in [progress/progress.csv](progress/progress.csv)
+<!-- endprogress -->
+
 ## The rhythm (from Mr. Greene's course)
 
 Every numbered lesson in this curriculum means **three things**, exactly as in the Greene course:
