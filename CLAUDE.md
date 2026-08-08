@@ -81,19 +81,71 @@ Batching is fine — tick any number of boxes in one edit; they all get logged i
 - When the owner reports completed lessons in chat, tick exactly those, no more. Lesson
   numbers in module 01 are Mr. Greene's own course numbers (1–550 with gaps), not sequential.
 - Don't untick or rename ticked lessons unless explicitly asked (it rewrites log history).
-- If a new module or lesson list is added, register it in the `modules` table at the top of
-  `tools/progress/main.go` (id, file, title, short name, gradient colors) and add the marker
-  block near the top of the new file:
-
-  ```markdown
-  <!-- progress:NEW-ID -->
-  <!-- endprogress -->
-  ```
-
+- To add a new book/course, follow "How to add a new module" below — both steps, always.
 - Curriculum content conventions: atomic lessons; one checkbox per skill; goal tags
   `[GFX] [CMP] [NET] [DB] [CRY]` only where the payoff is direct (no tag = load-bearing
   foundation); every module ends with exit criteria; full standard course coverage — tags say
   *why*, never *whether*.
+
+## How to add a new module (book or course)
+
+Two edits, then run the tool. Works the same whether Claude does it or the owner does it by
+hand.
+
+**Step 1 — create the checklist file** `NN-short-name.md` (next free number). Skeleton:
+
+```markdown
+# Module NN — Author, *Book Title*
+
+<!-- progress:NN-short-name -->
+<!-- endprogress -->
+
+**Book:** Author, *Title* (publisher). Alternative: ...
+**Prerequisites:** which modules/sections must come first.
+**Why this module exists:** one or two sentences tying it to the five goals.
+
+**The rhythm applies to every lesson:** Lesson → Study Notes → Practice Test.
+
+Tags: `[GFX]` graphics/simulation · `[CMP]` compilers · `[NET]` networking · `[DB]` databases ·
+`[CRY]` cryptography. No tag = foundation later lessons stand on.
+
+---
+
+## Section 1: Title
+One or two sentences: what this section is for, which goals it feeds.
+
+- [ ] **1. Lesson name** `[TAG]` — one-line description. *(Book §x.y)*
+- [ ] **2. Next lesson** — ...
+
+## Exit criteria
+
+You are done with this module when you can, cold:
+
+- ...
+```
+
+The marker id (`NN-short-name`) must exactly match the id used in Step 2. Lesson label rule:
+the tool logs the bold span (`**1. Lesson name**`) if present, otherwise the whole line — so
+keep one of those stable per lesson.
+
+**Step 2 — register it in the tool.** Add one line to the `modules` table at the top of
+`tools/progress/main.go`, following the existing pattern:
+
+```go
+{id: "NN-short-name", file: "NN-short-name.md", title: "NN · Display Name — Author", short: "ShortName", c1: "#a5d6ff", c2: "#388bfd"},
+```
+
+Field meaning: `id` = marker id and SVG filename; `file` = the checklist file; `title` = text
+on the progress card; `short` = compact name shown in LOG.md entries; `c1`/`c2` = gradient
+start/end for the bar (pick any two hex colors not already used).
+
+**Step 3 — regenerate.** Run `go run ./tools/progress` locally, or just commit and push and
+let the GitHub Action run it. Totals, the new SVG card, the README dashboard row, and log
+coverage all follow automatically — the tool derives everything from the table and the
+checkboxes; no other wiring exists.
+
+**Optional (hand-maintained, tool never touches them):** add the book to the README library
+table, the modules table, and — if it changes study order — the Roadmap and gates sections.
 
 ## Gotchas
 
