@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="56" viewBox="0 0 640 56" role="img" aria-label="01 · Algebra &amp; Trigonometry — Greene: 0%">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="56" viewBox="0 0 640 56" role="img" aria-label="01 · Algebra &amp; Trigonometry — Greene: 12%">
   <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#1f6feb"/></linearGradient></defs>
   <rect width="640" height="56" rx="12" fill="#0d1117" stroke="#30363d"/>
   <text x="20" y="24" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">01 · Algebra &amp; Trigonometry — Greene</text>
-  <text x="620" y="24" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">0 / 220 · 0%</text>
+  <text x="620" y="24" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">27 / 220 · 12%</text>
   <rect x="20" y="36" width="600" height="8" rx="4" fill="#21262d"/>
+  <rect x="20" y="36" width="73" height="8" rx="4" fill="url(#g)"/>
 </svg>

@@ -3,7 +3,7 @@
 <!-- progress:01-algebra-trigonometry -->
 ![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg)
 
-**0 / 220 lessons complete · 0%**
+**27 / 220 lessons complete · 12%**
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).
@@ -22,40 +22,40 @@ Goal is *automaticity*. Two ideas quietly return later: interval notation (calcu
 continuity) and absolute value as *distance* (becomes ε–δ limits and every numerical error
 bound).
 
-- [ ] 1. Welcome to the Course
-- [ ] 2. Classifying Real Numbers
-- [ ] 7. Exponents and the Order of Operations (PEMDAS)
-- [ ] 12. Ratios, Rates, and Proportions
-- [ ] 17. Properties of Real Numbers
-- [ ] 23. Inequalities, the Number Line, and Interval Notation
-- [ ] 28. Absolute Value and the Distance Between Two Points on a Number Line
+- [x] 1. Welcome to the Course
+- [x] 2. Classifying Real Numbers
+- [x] 7. Exponents and the Order of Operations (PEMDAS)
+- [x] 12. Ratios, Rates, and Proportions
+- [x] 17. Properties of Real Numbers
+- [x] 23. Inequalities, the Number Line, and Interval Notation
+- [x] 28. Absolute Value and the Distance Between Two Points on a Number Line
 
 ## Section 2: Review of Polynomials `[CMP]` `[CRY]` `[NET]`
 Polynomial arithmetic returns in heavy disguise: polynomial rings over finite fields are how CRC
 checksums `[NET]` and error-correcting codes work (Rosen 12.8). Special attention: **synthetic
 division (55)** — it is Horner's method, the standard way programs evaluate polynomials.
 
-- [ ] 33. The Product and Power Rules for Exponents
-- [ ] 37. What is a Polynomial?
-- [ ] 41. Adding and Subtracting Polynomials
-- [ ] 45. Multiplying Polynomials
-- [ ] 49. Special Polynomial Products
-- [ ] 52. Dividing Polynomials
-- [ ] 55. Synthetic Division
-- [ ] 59. Factoring Out the Greatest Common Factor (GCF)
-- [ ] 62. Factoring by Grouping
-- [ ] 65. Factoring Trinomials when the Leading Coefficient is 1
-- [ ] 68. Factoring Trinomials using the AC Method
-- [ ] 71. Factoring Trinomials using Reverse FOIL (Trial and Error)
-- [ ] 74. Special Factoring
-- [ ] 77. Factoring by Substitution
+- [x] 33. The Product and Power Rules for Exponents
+- [x] 37. What is a Polynomial?
+- [x] 41. Adding and Subtracting Polynomials
+- [x] 45. Multiplying Polynomials
+- [x] 49. Special Polynomial Products
+- [x] 52. Dividing Polynomials
+- [x] 55. Synthetic Division
+- [x] 59. Factoring Out the Greatest Common Factor (GCF)
+- [x] 62. Factoring by Grouping
+- [x] 65. Factoring Trinomials when the Leading Coefficient is 1
+- [x] 68. Factoring Trinomials using the AC Method
+- [x] 71. Factoring Trinomials using Reverse FOIL (Trial and Error)
+- [x] 74. Special Factoring
+- [x] 77. Factoring by Substitution
 
 ## Section 3: Review of Rational Expressions
 Feeds rational functions (§11) and the algebra of calculus limits. Restricted values are your
 first taste of domain reasoning.
 
-- [ ] 81. Finding the Restricted Values for a Rational Expression
-- [ ] 84. Simplifying Rational Expressions
+- [x] 81. Finding the Restricted Values for a Rational Expression
+- [x] 84. Simplifying Rational Expressions
 - [ ] 87. Multiplying and Dividing Rational Expressions
 - [ ] 90. Finding the LCD for Rational Expressions
 - [ ] 93. Adding and Subtracting Rational Expressions
@@ -75,10 +75,10 @@ Rational exponents are used constantly in calculus differentiation. Fluency, not
 Foundation. Compound inequalities and interval reasoning return in convergence arguments and
 error bounds.
 
-- [ ] 119. The Addition Property of Equality
-- [ ] 122. The Multiplication Property of Equality
-- [ ] 125. Solving Linear Equations in One Variable
-- [ ] 128. Solving Linear Equations with Fractions or Decimals
+- [x] 119. The Addition Property of Equality
+- [x] 122. The Multiplication Property of Equality
+- [x] 125. Solving Linear Equations in One Variable
+- [x] 128. Solving Linear Equations with Fractions or Decimals
 - [ ] 131. Repeating Decimal to Fraction
 - [ ] 134. Identifying Types of Equations
 - [ ] 137. Solving Proportion Equations
