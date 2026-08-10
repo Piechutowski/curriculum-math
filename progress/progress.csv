@@ -1,8 +1,8 @@
 module,title,done,total,percent
-01-algebra-trigonometry,"01 · Algebra & Trigonometry — Greene",27,220,12
+01-algebra-trigonometry,"01 · Algebra & Trigonometry — Greene",29,220,13
 02-discrete-mathematics,"02 · Discrete Mathematics — Rosen",0,91,0
 03-calculus,"03 · Calculus — Thomas",0,89,0
 04-linear-algebra,"04 · Linear Algebra — Kumaresan",0,52,0
 05-probability,"05 · Probability — Veerarajan",0,46,0
 06-numerical-methods,"06 · Numerical Methods — Sastry",0,18,0
-overall,"All modules",27,516,5
+overall,"All modules",29,516,6

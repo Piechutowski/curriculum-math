@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="56" viewBox="0 0 640 56" role="img" aria-label="Overall — all modules: 5%">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="56" viewBox="0 0 640 56" role="img" aria-label="Overall — all modules: 6%">
   <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e3b341"/><stop offset="1" stop-color="#d29922"/></linearGradient></defs>
   <rect width="640" height="56" rx="12" fill="#0d1117" stroke="#30363d"/>
   <text x="20" y="24" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Overall — all modules</text>
-  <text x="620" y="24" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">27 / 516 · 5%</text>
+  <text x="620" y="24" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">29 / 516 · 6%</text>
   <rect x="20" y="36" width="600" height="8" rx="4" fill="#21262d"/>
-  <rect x="20" y="36" width="31" height="8" rx="4" fill="url(#g)"/>
+  <rect x="20" y="36" width="33" height="8" rx="4" fill="url(#g)"/>
 </svg>

@@ -3,7 +3,7 @@
 <!-- progress:01-algebra-trigonometry -->
 ![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg)
 
-**27 / 220 lessons complete · 12%** — [completion log](LOG.md)
+**29 / 220 lessons complete · 13%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).
@@ -57,8 +57,8 @@ first taste of domain reasoning.
 - [x] 81. Finding the Restricted Values for a Rational Expression
 - [x] 84. Simplifying Rational Expressions
 - [ ] 87. Multiplying and Dividing Rational Expressions
-- [ ] 90. Finding the LCD for Rational Expressions
-- [ ] 93. Adding and Subtracting Rational Expressions
+- [x] 90. Finding the LCD for Rational Expressions
+- [x] 93. Adding and Subtracting Rational Expressions
 - [ ] 96. Complex Rational Expressions
 
 ## Section 4: Review of Radical Expressions
