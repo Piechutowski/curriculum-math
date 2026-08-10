@@ -1,7 +1,7 @@
 # Module 02 — Rosen & Krithivasan, *Discrete Mathematics* · Checklist & Map
 
 <!-- progress:02-discrete-mathematics -->
-![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg)
+![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg?v=0-91)
 
 **0 / 91 lessons complete · 0%** — [completion log](LOG.md)
 <!-- endprogress -->

@@ -1,7 +1,7 @@
 # Module 06 — Numerical Methods (Bridging Module)
 
 <!-- progress:06-numerical-methods -->
-![06 · Numerical Methods — Sastry progress](progress/06-numerical-methods.svg)
+![06 · Numerical Methods — Sastry progress](progress/06-numerical-methods.svg?v=0-18)
 
 **0 / 18 lessons complete · 0%** — [completion log](LOG.md)
 <!-- endprogress -->

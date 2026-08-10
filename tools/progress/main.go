@@ -274,16 +274,19 @@ func card(title string, done, total int, c1, c2 string) string {
 	return b.String()
 }
 
+// Image URLs carry a ?v=done-total query that changes whenever the counts
+// change, so GitHub's image cache (camo) fetches a fresh SVG instead of
+// serving a stale bar.
 func moduleBlock(m *module) string {
-	return fmt.Sprintf("![%s progress](progress/%s.svg)\n\n**%d / %d lessons complete · %d%%** — [completion log](LOG.md)",
-		esc(m.title), m.id, m.done, m.total, pct(m.done, m.total))
+	return fmt.Sprintf("![%s progress](progress/%s.svg?v=%d-%d)\n\n**%d / %d lessons complete · %d%%** — [completion log](LOG.md)",
+		esc(m.title), m.id, m.done, m.total, m.done, m.total, pct(m.done, m.total))
 }
 
 func readmeBlock(done, total int) string {
 	var b strings.Builder
-	fmt.Fprintf(&b, "![Overall progress](progress/overall.svg)\n\n")
+	fmt.Fprintf(&b, "![Overall progress](progress/overall.svg?v=%d-%d)\n\n", done, total)
 	for _, m := range modules {
-		fmt.Fprintf(&b, "[![%s](progress/%s.svg)](%s)\n", esc(m.title), m.id, m.file)
+		fmt.Fprintf(&b, "[![%s](progress/%s.svg?v=%d-%d)](%s)\n", esc(m.title), m.id, m.done, m.total, m.file)
 	}
 	fmt.Fprintf(&b, "\n**Total: %d / %d lessons complete · %d%%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)", done, total, pct(done, total))
 	return b.String()
