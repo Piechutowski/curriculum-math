@@ -28,16 +28,16 @@ The tool re-counts every checklist, redraws the SVG progress bars below, refresh
 `progress/progress.csv`.
 
 <!-- progress:overall -->
-![Overall progress](progress/overall.svg?v=29-516)
+![Overall progress](progress/overall.svg?v=34-516)
 
-[![01 · Algebra &amp; Trigonometry — Greene](progress/01-algebra-trigonometry.svg?v=29-220)](01-algebra-trigonometry-map.md)
+[![01 · Algebra &amp; Trigonometry — Greene](progress/01-algebra-trigonometry.svg?v=34-220)](01-algebra-trigonometry-map.md)
 [![02 · Discrete Mathematics — Rosen](progress/02-discrete-mathematics.svg?v=0-91)](02-discrete-mathematics-map.md)
 [![03 · Calculus — Thomas](progress/03-calculus.svg?v=0-89)](03-calculus.md)
 [![04 · Linear Algebra — Kumaresan](progress/04-linear-algebra.svg?v=0-52)](04-linear-algebra.md)
 [![05 · Probability — Veerarajan](progress/05-probability.svg?v=0-46)](05-probability.md)
 [![06 · Numerical Methods — Sastry](progress/06-numerical-methods.svg?v=0-18)](06-numerical-methods.md)
 
-**Total: 29 / 516 lessons complete · 6%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)
+**Total: 34 / 516 lessons complete · 7%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)
 <!-- endprogress -->
 
 ## The rhythm (from Mr. Greene's course)

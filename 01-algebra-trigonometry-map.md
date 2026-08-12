@@ -1,9 +1,9 @@
 # Module 01 — Mr. Greene's College Math Course · Checklist & Map
 
 <!-- progress:01-algebra-trigonometry -->
-![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=29-220)
+![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=34-220)
 
-**29 / 220 lessons complete · 13%** — [completion log](LOG.md)
+**34 / 220 lessons complete · 15%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).
@@ -56,17 +56,17 @@ first taste of domain reasoning.
 
 - [x] 81. Finding the Restricted Values for a Rational Expression
 - [x] 84. Simplifying Rational Expressions
-- [ ] 87. Multiplying and Dividing Rational Expressions
+- [x] 87. Multiplying and Dividing Rational Expressions
 - [x] 90. Finding the LCD for Rational Expressions
 - [x] 93. Adding and Subtracting Rational Expressions
-- [ ] 96. Complex Rational Expressions
+- [x] 96. Complex Rational Expressions
 
 ## Section 4: Review of Radical Expressions
 Rational exponents are used constantly in calculus differentiation. Fluency, not depth.
 
-- [ ] 100. Negative Exponents and the Quotient Rule
-- [ ] 103. Rational Exponents (Fractional Exponents)
-- [ ] 106. Radical Expressions
+- [x] 100. Negative Exponents and the Quotient Rule
+- [x] 103. Rational Exponents (Fractional Exponents)
+- [x] 106. Radical Expressions
 - [ ] 109. Simplifying Radical Expressions
 - [ ] 112. Operations with Radical Expressions
 - [ ] 115. Rationalizing Denominators
