@@ -1,9 +1,9 @@
 # Module 01 — Mr. Greene's College Math Course · Checklist & Map
 
 <!-- progress:01-algebra-trigonometry -->
-![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=34-220)
+![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=37-220)
 
-**34 / 220 lessons complete · 15%** — [completion log](LOG.md)
+**37 / 220 lessons complete · 17%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).
@@ -67,9 +67,9 @@ Rational exponents are used constantly in calculus differentiation. Fluency, not
 - [x] 100. Negative Exponents and the Quotient Rule
 - [x] 103. Rational Exponents (Fractional Exponents)
 - [x] 106. Radical Expressions
-- [ ] 109. Simplifying Radical Expressions
-- [ ] 112. Operations with Radical Expressions
-- [ ] 115. Rationalizing Denominators
+- [x] 109. Simplifying Radical Expressions
+- [x] 112. Operations with Radical Expressions
+- [x] 115. Rationalizing Denominators
 
 ## Section 5: Solving Linear Equations and Inequalities
 Foundation. Compound inequalities and interval reasoning return in convergence arguments and
