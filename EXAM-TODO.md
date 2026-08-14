@@ -8,7 +8,7 @@ crossing each one off. Tick freely.
 
 ---
 
-## Phase 0 — Head start (Aug 17 – Sep 10)
+## Phase 0 — Head start (Aug 17 – Oct 9)
 
 ### Week Aug 17–23
 
@@ -56,7 +56,7 @@ crossing each one off. Tick freely.
 - [ ] Rosen 1.7 — Introduction to Proofs *(the deep week — work many exercises)*
 - [ ] Rosen 1.8 — Proof Methods and Strategy *(likewise)*
 
-### Week Sep 7–10
+### Week Sep 7–13
 
 - [ ] Greene 439 — The Binomial Theorem
 - [ ] Greene 441 — Counting Theory
@@ -67,104 +67,120 @@ crossing each one off. Tick freely.
 - [ ] *(optional)* Rosen 1.9 — Normal Forms
 - [ ] *(optional)* Rosen Ch. 1 wrap-up exercises
 
-## Block 1 · Sep 11–24 — sets, functions
+### Week Sep 14–20
+
+- [ ] Greene 184 — The Imaginary Unit i
+- [ ] Greene 187 — Operations with Complex Numbers
+- [ ] Greene 190 — Simplifying Powers of i
+- [ ] Greene 193 — Solving Quadratic Equations by Factoring
+- [ ] Greene 196 — The Square Root Property
+- [ ] Greene 199 — Completing the Square
+- [ ] Greene 202 — The Quadratic Formula
+- [ ] Greene 205 — Quadratic in Form
+
+### Week Sep 21–27
+
+- [ ] Greene 310 — The Remainder Theorem
+- [ ] Greene 312 — The Factor Theorem
+- [ ] Greene 314 — The Rational Zeros Theorem
+- [ ] Greene 316 — Fundamental Theorem of Algebra
+- [ ] Greene 318 — Conjugate Zeros Theorem
+- [ ] Greene 324 — Finding the Zeros of a Polynomial Function
+- [ ] Greene 369 — Solving Linear Systems in Two Variables
+- [ ] Greene 371 — Solving Linear Systems in Three Variables
+
+### Week Sep 28 – Oct 4
+
+- [ ] Greene 449 — Angles in Trigonometry
+- [ ] Greene 457 — Trigonometric Function Values of an Angle
+- [ ] Greene 464 — Trig Functions of Acute Angles
+- [ ] Greene 466 — Trig Functions of Non-Acute Angles
+- [ ] Greene 473 — Radian Measure
+- [ ] Greene 477 — The Unit Circle
+- [ ] Greene 533 — Review of Complex Numbers
+- [ ] Greene 535 — Polar Form of Complex Numbers
+- [ ] Greene 537 — Product and Quotient Theorems
+- [ ] Greene 539 — De Moivre's Theorem
+
+### Week Oct 5–9
+
+- [ ] Greene 377 — Partial Fractions, Linear Factors *(non-negotiable)*
+- [ ] Greene 379 — Partial Fractions, Quadratic Factors *(non-negotiable)*
+- [ ] Rosen 5.1 — Mathematical Induction
+- [ ] Rosen 5.2 — Strong Induction and Well-Ordering
+- [ ] Review week: **every Greene prerequisite done before the first class**
+
+## Session 1 · Oct 10–11 — sets, functions
 
 - [ ] Lecture 1 — Sets, reviewed against my Phase-0 pass
 - [ ] Lecture 2 — Functions, reviewed
 - [ ] **GATE: Exercises 1 closed-book**
-- [ ] Rosen 5.1 — Mathematical Induction *(prep for block 2)*
-- [ ] Rosen 5.2 — Strong Induction and Well-Ordering *(prep)*
+- [ ] Rosen 6.1 — The Basics of Counting *(prep)*
+- [ ] Rosen 6.2 — The Pigeonhole Principle *(prep)*
+- [ ] Rosen 6.3 — Permutations and Combinations *(prep)*
+- [ ] Rosen 6.5 — Generalized Permutations and Combinations *(prep)*
 
-## Block 2 · Sep 25 – Oct 8 — induction, combinatorics
+## Session 2 · Oct 24–25 — induction, combinatorics
 
 - [ ] Lecture 3 — Mathematical Induction, reviewed
 - [ ] Lecture 4A — Combinatorics, reviewed
 - [ ] **GATE: Exercises 2 closed-book**
-- [ ] Rosen 6.1 — The Basics of Counting *(prep for block 3)*
-- [ ] Rosen 6.2 — The Pigeonhole Principle *(prep)*
-- [ ] Rosen 6.3 — Permutations and Combinations *(prep)*
-- [ ] Rosen 6.5 — Generalized Permutations and Combinations *(prep)*
-- [ ] Greene 184 — The Imaginary Unit i *(prep)*
-- [ ] Greene 187 — Operations with Complex Numbers *(prep)*
-- [ ] Greene 190 — Simplifying Powers of i *(prep)*
-- [ ] Greene 193 — Solving Quadratic Equations by Factoring *(prep)*
-- [ ] Greene 196 — The Square Root Property *(prep)*
-- [ ] Greene 199 — Completing the Square *(prep)*
-- [ ] Greene 202 — The Quadratic Formula *(prep)*
-- [ ] Greene 205 — Quadratic in Form *(prep)*
+- [ ] Rosen 7.5 — Inclusion–Exclusion *(prep)*
+- [ ] Rosen 7.6 — Applications of Inclusion–Exclusion *(prep)*
 
-## Block 3 · Oct 9–22 — counting, pigeonhole
+## Session 3 · Nov 7–8 — counting, pigeonhole
 
 - [ ] Lecture 4B — Sum/Product Rules, Inclusion–Exclusion, reviewed
 - [ ] Lecture 5 — Pigeonhole Principle, reviewed
 - [ ] **GATE: Exercises 3 closed-book**
-- [ ] Rosen 3.2 — The Growth of Functions *(prep for block 4)*
+- [ ] Rosen 3.2 — The Growth of Functions *(prep)*
 - [ ] Rosen 3.3 — Complexity of Algorithms *(prep)*
-- [ ] Greene 310 — The Remainder Theorem *(prep)*
-- [ ] Greene 312 — The Factor Theorem *(prep)*
-- [ ] Greene 314 — The Rational Zeros Theorem *(prep)*
-- [ ] Greene 316 — Fundamental Theorem of Algebra *(prep)*
-- [ ] Greene 318 — Conjugate Zeros Theorem *(prep)*
-- [ ] Greene 324 — Finding the Zeros of a Polynomial Function *(prep)*
-- [ ] Greene 449 — Angles in Trigonometry *(prep, De Moivre path)*
-- [ ] Greene 457 — Trigonometric Function Values of an Angle *(prep)*
-- [ ] Greene 464 — Trig Functions of Acute Angles *(prep)*
-- [ ] Greene 466 — Trig Functions of Non-Acute Angles *(prep)*
-- [ ] Greene 473 — Radian Measure *(prep)*
-- [ ] Greene 477 — The Unit Circle *(prep)*
 
-## Block 4 · Oct 23 – Nov 5 — asymptotics (lectures = main text)
+## Session 4 · Nov 21–22 — asymptotics (lectures = main text)
 
 - [ ] Lecture 6 — Asymptotics, studied as main text
 - [ ] Lecture 7A — Asymptotics of Sequences, studied
 - [ ] Lecture 7B — Asymptotics Part B, studied
 - [ ] **GATE: Exercises 4 closed-book**
-- [ ] Rosen 7.1 — Applications of Recurrence Relations *(prep for block 5)*
+- [ ] Rosen 7.1 — Applications of Recurrence Relations *(prep)*
 - [ ] Rosen 7.2 — Solving Linear Recurrence Relations *(prep)*
-- [ ] Greene 369 — Solving Linear Systems in Two Variables *(prep)*
-- [ ] Greene 371 — Solving Linear Systems in Three Variables *(prep)*
-- [ ] Greene 533 — Review of Complex Numbers *(prep, De Moivre path)*
-- [ ] Greene 535 — Polar Form of Complex Numbers *(prep)*
-- [ ] Greene 537 — Product and Quotient Theorems *(prep)*
-- [ ] Greene 539 — De Moivre's Theorem *(prep)*
-- [ ] Greene 377 — Partial Fractions, Linear Factors *(prep — non-negotiable)*
-- [ ] Greene 379 — Partial Fractions, Quadratic Factors *(prep — non-negotiable)*
 
-## Block 5 · Nov 6–19 — recurrences (lectures = main text)
+## Session 5 · Dec 5–6 — recurrences (lectures = main text)
 
 - [ ] Lecture 8 — Recurrences, studied as main text
 - [ ] Lecture 9 — Recurrences continued, studied as main text
 - [ ] Complex-root recurrence solved end-to-end with De Moivre, by hand
 - [ ] **GATE: first half of Exercises 5 closed-book**
-- [ ] Rosen 7.3 — Divide-and-Conquer Recurrences *(prep for block 6)*
+- [ ] Rosen 7.3 — Divide-and-Conquer Recurrences *(prep)*
 - [ ] Rosen 7.4 — Generating Functions *(prep)*
 
-## Block 6 · Nov 20 – Dec 3 — generating functions, D&C (lectures = main text)
+## Session 6 · Dec 19–20 — generating functions, D&C (lectures = main text)
 
 - [ ] Lectures 10–11 — Generating Functions & Divide-and-Conquer, studied as main text
-- [ ] **GATE: Exercises 5 complete, closed-book**
-- [ ] Rosen 9.1 — Graphs and Graph Models *(prep for block 7)*
+- [ ] **GATE: Exercises 5 complete, closed-book** *(holiday gap: consolidate here)*
+- [ ] Holiday redo: every recurrence & generating-function problem, cold
+- [ ] Rosen 9.1 — Graphs and Graph Models *(prep)*
 - [ ] Rosen 9.2 — Graph Terminology *(prep)*
 - [ ] Rosen 9.4 — Connectivity *(prep)*
 - [ ] Rosen 9.5 — Euler and Hamilton Paths *(prep)*
 
-## Block 7 · Dec 4–17 — graphs
+## Session 7 · Jan 9–10 — graphs
 
 - [ ] Lecture 12 — Graphs and Trees Introduction, reviewed
 - [ ] Lecture 13a — Euler Graphs, reviewed
 - [ ] Lecture 13b — Hamiltonian Graphs and Trees, reviewed
 - [ ] **GATE: Exercises 6 closed-book**
-- [ ] Rosen 10.1 — Introduction to Trees *(prep for block 8)*
+- [ ] Rosen 10.1 — Introduction to Trees *(prep)*
 - [ ] Rosen 10.2 — Applications of Trees *(prep)*
 - [ ] Rosen 10.3 — Tree Traversal *(prep)*
 
-## Block 8 · Dec 18 – Jan 7 — trees (holidays)
+## Session 8 · Jan 23–24 — trees, review
 
 - [ ] Lecture 14 — Trees Introduction, reviewed
 - [ ] Lecture 14b — Binary Trees, reviewed
 - [ ] **GATE: tree problems from Exercises 6 + Rosen 10.1–10.3 exercises**
 
-## Exam run-up · January
+## Exam run-up · from Jan 25
 
 - [ ] Mock #1: Lecture 15 closed-book, graded
 - [ ] Weak topics from mock #1 redone (`__ex__` sets + lecture examples)
