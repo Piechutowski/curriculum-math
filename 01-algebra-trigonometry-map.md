@@ -15,8 +15,9 @@ lesson's box.) After editing checkboxes, run `go run ./tools/progress` to refres
 Tags: `[GFX]` graphics/simulation · `[CMP]` compilers · `[NET]` networking · `[DB]` databases ·
 `[CRY]` cryptography. No tag = foundation that later lessons stand on.
 
-**Studying for the discrete-math exam?** Only ~50 of these 220 lessons feed module 03, and none
-of the trigonometry does — see
+**Studying for the discrete-math exam?** Only ~60 of these 220 lessons feed module 03 — from
+the trigonometry half, just the thin path to De Moivre's theorem (§25), which recurrences with
+complex roots require — see
 [which Greene lessons that module needs](03-discrete-math-lectures.md#which-greene-lessons-this-module-actually-needs)
 for the list and the order to do them in.
 

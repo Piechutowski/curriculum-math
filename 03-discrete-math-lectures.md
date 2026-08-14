@@ -186,10 +186,13 @@ only get from one source.
 
 ## Which Greene lessons this module actually needs
 
-Module 01 is 220 lessons, but **only about 50 of them are load-bearing for this course** — and
-none of the 85 trigonometry lessons are among them. If you are working to an exam date, this is
-the list. Lessons already completed in Greene §§1–5 (basic algebra, polynomials, rational and
-radical expressions) are assumed and not repeated here.
+Module 01 is 220 lessons, but **only about 60 of them are load-bearing for this course**. From
+the trigonometry half, exactly one thin path is needed: enough of the unit circle to reach
+**polar form and De Moivre's theorem (§25)** — because when a recurrence's characteristic
+equation has complex roots, the real solution is written as rⁿ(cos nθ + i sin nθ), and that is
+examinable. If you are working to an exam date, this is the list. Lessons already completed in
+Greene §§1–5 (basic algebra, polynomials, rational and radical expressions) are assumed and not
+repeated here.
 
 | This module's section | Greene lessons required | What it is needed for |
 |---|---|---|
@@ -197,7 +200,7 @@ radical expressions) are assumed and not repeated here.
 | §2 Mathematical Induction | 431, 433, 435, 437 | Sequence and summation notation — you cannot state an induction hypothesis without it |
 | §3 Counting and Combinatorics | 439, 441, 443 | Binomial theorem, counting theory, basic probability |
 | §4 Asymptotics | 344, 346, 352, 354, 356, 358, 360, 362, 364 · 146, 149, 152, 155 | Logarithms and exponentials are the whole vocabulary of growth; inequality manipulation is how you prove *f* = O(*g*) from the definition |
-| §5 Recurrences | 184, 187, 190 · 193, 196, 199, 202, 205 · 310, 312, 314, 316, 318, 324 · 369, 371 | **The heaviest prerequisite.** Characteristic equations are quadratics — with complex roots when the recurrence oscillates. Order-*k* schemes need polynomial root-finding (Remainder, Factor, Rational Zeros theorems). Fitting initial conditions is solving a linear system |
+| §5 Recurrences | 184, 187, 190 · 193, 196, 199, 202, 205 · 310, 312, 314, 316, 318, 324 · 369, 371 · 449, 457, 464, 466, 473, 477 · 533, 535, 537, 539 | **The heaviest prerequisite.** Characteristic equations are quadratics — with complex roots when the recurrence oscillates, and then the real solution needs **polar form and De Moivre (§25)**, which in turn needs the unit circle (449–477 path). Order-*k* schemes need polynomial root-finding. Fitting initial conditions is solving a linear system |
 | §6 Generating Functions and D&C | 377, 379 · 437 | **Partial fraction decomposition is the technique** — it is how a generating function becomes a closed form. Geometric series gives you 1/(1−*x*) |
 | §7 Graphs | — | No algebra prerequisite |
 | §8 Trees | (logarithms, from §4 above) | Tree height and node counts |
@@ -213,7 +216,10 @@ radical expressions) are assumed and not repeated here.
 5. **§12 exponentials and logarithms** (344–364) — unlocks asymptotics.
 6. **§7 quadratics and complex numbers** (184–205) then **§11 polynomial roots** (310–324) and
    **§13 systems** (369, 371) — unlocks recurrences, the hardest part of the exam.
-7. **§13 partial fractions** (377, 379) — unlocks generating functions.
+7. **The De Moivre path**: 449, 457, 464, 466, 473, 477 (angles, trig values, unit circle),
+   then **§25** (533, 535, 537, 539 — polar form, De Moivre) — for recurrences with complex
+   characteristic roots.
+8. **§13 partial fractions** (377, 379) — unlocks generating functions.
 
 **Worth adding if time allows:** 342 (inverses of restricted functions), 211 (quadratic
 inequalities), 320 and 322 (Descartes' rule, Intermediate Value — faster root hunting), 330
@@ -222,9 +228,10 @@ practice).
 
 **Safe to defer past the exam:** all of §6 (word problems), §8 (radical and rational equations),
 §9 (advanced absolute value), §14 (conic sections), the coordinate-geometry and graph-transform
-parts of §10 (247–263, 274–295), matrices and determinants (387–417), and **the entire
-trigonometry half, §§17–26**. That is 128 lessons — over half the course — that this exam does
-not touch.
+parts of §10 (247–263, 274–295), matrices and determinants (387–417), and the trigonometry
+sections **except the De Moivre path above** — graphing trig functions, identities, trig
+equations, laws of sines/cosines, and vectors (§§20–24 and most of §§17–19, 26) stay deferred.
+Roughly 118 lessons — over half the course — that this exam does not touch.
 
 ## Exit criteria
 

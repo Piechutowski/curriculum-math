@@ -50,8 +50,8 @@ every block by passing its exercise set closed-book.
 |---|---|---|---|
 | **1** · Sep 11–24 | Lec 1–2: sets, functions | **Exercises 1** | Rosen 5.1, 5.2 (induction — Greene done in Phase 0) |
 | **2** · Sep 25 – Oct 8 | Lec 3, 4A: induction, combinatorics | **Exercises 2** | Rosen 6.1, 6.2, 6.3, 6.5 · Greene 184, 187, 190, 193, 196, 199, 202, 205 (complex numbers & quadratics — early, they feed recurrences) |
-| **3** · Oct 9–22 | Lec 4B, 5: counting, pigeonhole | **Exercises 3** | Rosen 3.2, 3.3 · Greene 310, 312, 314, 316, 318, 324 (polynomial roots) |
-| **4** · Oct 23 – Nov 5 | Lec 6, 7A/7B: asymptotics *(lectures = main text)* | **Exercises 4** | Rosen 7.1, 7.2 · Greene 369, 371 (systems) · **377, 379 (partial fractions — non-negotiable before generating functions)** |
+| **3** · Oct 9–22 | Lec 4B, 5: counting, pigeonhole | **Exercises 3** | Rosen 3.2, 3.3 · Greene 310, 312, 314, 316, 318, 324 (polynomial roots) · Greene 449, 457, 464, 466, 473, 477 (unit-circle trig — the run-up to De Moivre) |
+| **4** · Oct 23 – Nov 5 | Lec 6, 7A/7B: asymptotics *(lectures = main text)* | **Exercises 4** | Rosen 7.1, 7.2 · Greene 369, 371 (systems) · **Greene 533, 535, 537, 539 (polar form & De Moivre — required for recurrences with complex characteristic roots)** · **377, 379 (partial fractions — non-negotiable before generating functions)** |
 | **5** · Nov 6–19 | Lec 8–9: recurrences *(lectures = main text)* | **first half of Exercises 5** | Rosen 7.3, 7.4 |
 | **6** · Nov 20 – Dec 3 | Lec 10–11: generating functions, D&C *(lectures = main text)* | **Exercises 5 complete** | Rosen 9.1, 9.2, 9.4, 9.5 (graphs) |
 | **7** · Dec 4–17 | Lec 12, 13a/b: graphs | **Exercises 6** | Rosen 10.1, 10.2, 10.3 (trees) |
@@ -69,7 +69,10 @@ every block by passing its exercise set closed-book.
 
 ## What this plan deliberately leaves out
 
-Rosen Ch. 4, 8, 11–13, and the other 128 Greene lessons (all trigonometry included) are **not
-on this exam**. They return to the normal roadmap (README) afterwards — the crypto, database
-and compiler gates still run through them. Rosen Ch. 1 is in the plan by choice: it sharpens
-the proof-writing this exam grades, and it was next on your list anyway.
+Rosen Ch. 4, 8, 11–13, and the ~118 Greene lessons not listed above are **not on this exam**.
+Most of trigonometry stays deferred, with one exception that *is* in the plan: the unit-circle
+path to **polar form and De Moivre's theorem** (Greene 449–477 selection plus §25), because
+recurrences with complex characteristic roots — an exam topic — are written in exactly that
+form. Everything else returns to the normal roadmap (README) afterwards — the crypto, database
+and compiler gates still run through it. Rosen Ch. 1 is in the plan by choice: it sharpens the
+proof-writing this exam grades, and it was next on your list anyway.
