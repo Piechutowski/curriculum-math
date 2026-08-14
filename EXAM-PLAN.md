@@ -1,79 +1,75 @@
-# Discrete-Math Exam — 16-Week Study Plan
+# Discrete-Math Exam — Dated Study Plan
 
-**Goal:** pass the university discrete-mathematics exam (module 03) in 4 months.
+**The course:** classes every 2 weeks starting **September 11**, two lectures per 2-week block —
+15 numbered lectures across the semester. **Assumed exam: late January / early February**
+(winter session) — correct this line when the date is announced, and adjust block boundaries to
+the real syllabus once the course publishes it.
+
 **Strategy, per topic:** Greene lessons first (foundation) → Rosen sections (the advanced,
-rigorous treatment) → uni lecture notes **only to fill gaps** — *except* asymptotics,
-recurrences and generating functions, where the lectures exceed Rosen and are the main text.
-Every topic ends the same way: **solve that topic's class exercises (`__ex__` files)
-closed-book**, then check against `__sol__`. Being able to do the class problems without notes
-*is* the definition of ready.
+rigorous treatment) → uni lecture notes to fill gaps — *except* asymptotics, recurrences and
+generating functions, where the lectures exceed Rosen and are the main text. Every topic ends
+the same way: **solve that topic's class exercises (`__ex__` files) closed-book**, then check
+against `__sol__`. Being able to do the class problems without notes *is* being ready.
 
-**Load:** ≈ 10–14 h/week. Tick lessons in modules 01/02/03 as you complete them — the bars and
-log track the plan automatically. Weeks are relative: week 1 = the week you start. If your exam
-date leaves more than 17 weeks, spend the surplus on Phase D; if less, compress Phase A (it is
-the most compressible).
+**The one rule this calendar adds: stay one block ahead.** Finish a topic's Greene + Rosen
+*before* the uni block that covers it. Then the lecture is a second pass, the class is a third,
+and the exercise session confirms rather than teaches.
 
 **Standing rules**
 
 1. Exercises closed-book, always. Open `__sol__` only after a real attempt.
 2. A topic is done when its `__ex__` problems work without notes — not when the reading is done.
-3. Doubled lectures: study the EN split versions of 8–9 and the combined 10–11 as primary; use
-   the other version only as a source of extra worked examples when a topic feels shaky.
-4. Fall behind? Cut Rosen exercises before cutting class exercises. Never skip the closed-book
-   gates.
+3. Doubled lectures (6 vs 7A/B, 8–9, 10–11): primary = whichever version your semester actually
+   delivers; the other is a source of extra worked examples.
+4. Fall behind? Cut Rosen exercises before class exercises. Never skip the closed-book gates.
 
 ---
 
-## Phase A — Algebra foundation (weeks 1–5, Greene only)
+## Phase 0 — Head start (Aug 17 – Sep 10, before classes begin)
 
-The ~50 Greene lessons the exam actually stands on, in dependency order. Everything else in
-Greene — including all trigonometry — waits until after the exam.
+Four weeks with no lectures competing for attention. Foundation plus the deep logic/proofs pass
+from Rosen Ch. 1 — not on the exam directly, but it is the language every proof this course
+demands is written in, and induction (a certainty on the exam) is a proof method.
 
-| Week | Greene lessons | Topic |
+| Week | Greene | Rosen |
 |---|---|---|
-| 1 | 146, 149, 152, 155 · 431, 433, 435, 437 | Finish inequalities; sequences & series (unlocks induction; geometric series feeds generating functions) |
-| 2 | 266, 268, 270, 272, 297, 301 · 334, 336, 338, 340 · 445, 447 | Functions, composition, inverses; sets |
-| 3 | 344, 346, 352, 354, 356, 358, 360, 362, 364 · 439, 441, 443 | Exponentials & logarithms (the language of asymptotics); binomial theorem, counting, basic probability |
-| 4 | 184, 187, 190 · 193, 196, 199, 202, 205 | Complex numbers; the full quadratic toolkit (characteristic equations to come) |
-| 5 | 310, 312, 314, 316, 318, 324 · 369, 371 · 377, 379 | Polynomial root-finding; linear systems; **partial fractions — the generating-function technique, do not skimp** |
+| Aug 17–23 | 146, 149, 152, 155 · 431, 433, 435, 437 (inequalities; sequences & series) | 1.1, 1.2, 1.3 (propositional logic) |
+| Aug 24–30 | 266, 268, 270, 272, 297, 301 · 334, 336, 338, 340 · 445, 447 (functions, inverses, sets) | 1.4, 1.5, 1.6 (predicates, quantifiers, inference) |
+| Aug 31 – Sep 6 | 344, 346, 352, 354, 356, 358, 360, 362, 364 (exponentials & logarithms) | **1.7, 1.8 — proofs, the in-depth week.** Work many exercises; this is the payoff of the head start |
+| Sep 7–10 | 439, 441, 443 (binomial, counting, probability) | 2.1, 2.2, 2.3 (sets & functions — now you are ahead of Lectures 1–2) |
 
-## Phase B — Discrete topics, first half (weeks 6–10)
+*Optional if time remains: Rosen 1.9 (normal forms) and the Ch. 1 wrap-up exercises.*
 
-Per topic: Rosen → lecture (gap-fill or main text as marked) → class exercises closed-book.
+## Semester — biweekly blocks (from Sep 11)
 
-| Week | Rosen | Lectures | Gate |
+Each block: the uni delivers two lectures; you have already done the Greene + Rosen row *before*
+the block starts (the "prepare" column of the *next* block is that block's homework). Close
+every block by passing its exercise set closed-book.
+
+| Block | Uni delivers | Your gate | Prepare for next block (Greene + Rosen) |
 |---|---|---|---|
-| 6 | 2.1, 2.2, 2.3 | Lec 1–2 (gap-fill) | **Exercises 1** closed-book |
-| 7 | 5.1, 5.2 | Lec 3 (gap-fill) | **Exercises 2** closed-book |
-| 8 | 6.1, 6.2, 6.3, 6.5 | Lec 4A, 4B (gap-fill) | first half of Exercises 3 |
-| 9 | 7.5, 7.6 | Lec 5 (gap-fill) | **Exercises 3** closed-book, complete |
-| 10 | 3.2, 3.3 | **Lec 6, 7A, 7B — main text** | **Exercises 4** closed-book |
+| **1** · Sep 11–24 | Lec 1–2: sets, functions | **Exercises 1** | Rosen 5.1, 5.2 (induction — Greene done in Phase 0) |
+| **2** · Sep 25 – Oct 8 | Lec 3, 4A: induction, combinatorics | **Exercises 2** | Rosen 6.1, 6.2, 6.3, 6.5 · Greene 184, 187, 190, 193, 196, 199, 202, 205 (complex numbers & quadratics — early, they feed recurrences) |
+| **3** · Oct 9–22 | Lec 4B, 5: counting, pigeonhole | **Exercises 3** | Rosen 3.2, 3.3 · Greene 310, 312, 314, 316, 318, 324 (polynomial roots) |
+| **4** · Oct 23 – Nov 5 | Lec 6, 7A/7B: asymptotics *(lectures = main text)* | **Exercises 4** | Rosen 7.1, 7.2 · Greene 369, 371 (systems) · **377, 379 (partial fractions — non-negotiable before generating functions)** |
+| **5** · Nov 6–19 | Lec 8–9: recurrences *(lectures = main text)* | **first half of Exercises 5** | Rosen 7.3, 7.4 |
+| **6** · Nov 20 – Dec 3 | Lec 10–11: generating functions, D&C *(lectures = main text)* | **Exercises 5 complete** | Rosen 9.1, 9.2, 9.4, 9.5 (graphs) |
+| **7** · Dec 4–17 | Lec 12, 13a/b: graphs | **Exercises 6** | Rosen 10.1, 10.2, 10.3 (trees) |
+| **8** · Dec 18 – Jan 7 *(holidays)* | Lec 14, 14b: trees | tree problems from Ex 6 + Rosen 10.1–10.3 exercises | — |
 
-## Phase C — The heavy half (weeks 11–15)
+## Exam run-up (January)
 
-Recurrences and generating functions are the hardest, most exam-loaded material, and the
-lectures are the main text throughout. Two weeks for recurrences is deliberate.
-
-| Week | Rosen | Lectures | Gate |
-|---|---|---|---|
-| 11 | 7.1, 7.2 (warm-up) | **Lec 8, 9 (EN) — main text** | first half of Exercises 5 |
-| 12 | — | redo Lec 8–9 examples cold; combined 08-09 for extra practice | **Exercises 5** closed-book, complete |
-| 13 | 7.3, 7.4 (warm-up) | **Lec 10–11 (combined) — main text** | the generating-function problems from Exercises 5–6 |
-| 14 | 9.1, 9.2, 9.4, 9.5 | Lec 12, 13a, 13b (gap-fill) | **Exercises 6** closed-book |
-| 15 | 10.1, 10.2, 10.3 | Lec 14, 14b (gap-fill) | tree problems from Exercises 6 + Rosen 10.1–10.3 exercises |
-
-## Phase D — Consolidation (weeks 16–17)
-
-- **Week 16:** Lecture 15 (the course's own review) as a **closed-book mock exam**. Grade
-  yourself against the worked solutions. Every miss names a topic: redo that topic's `__ex__`
-  problems and the matching lecture examples.
-- **Week 17 (buffer):** second pass on the two weakest topics; re-sit the Lecture 15 mock. You
-  are ready when it scores above 80% cold — that is this plan's exit criterion, and module 03's.
+- **Early January:** Lecture 15 (the course's own review) as a **closed-book mock exam**. Every
+  miss names a topic — redo that topic's `__ex__` set and lecture examples.
+- **Mid January:** second pass on the two weakest topics; re-sit the mock. Ready = **above 80%
+  cold** on Lecture 15's problems. Recurrences and generating functions get priority in any
+  spare hour — they are the heaviest-weighted, hardest material.
 
 ---
 
 ## What this plan deliberately leaves out
 
-Rosen-only chapters (1, 4, 8, 11–13) and the other 128 Greene lessons are **not on this exam**
-and are excluded on purpose. They return to the normal roadmap (README) after the exam — the
-crypto, database and compiler gates still run through them.
+Rosen Ch. 4, 8, 11–13, and the other 128 Greene lessons (all trigonometry included) are **not
+on this exam**. They return to the normal roadmap (README) afterwards — the crypto, database
+and compiler gates still run through them. Rosen Ch. 1 is in the plan by choice: it sharpens
+the proof-writing this exam grades, and it was next on your list anyway.
