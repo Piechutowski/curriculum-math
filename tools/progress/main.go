@@ -57,7 +57,7 @@ var modules = []*module{
 
 // cardVersion changes whenever the SVG design changes, so the ?v= cache-buster
 // in image URLs also changes and viewers do not keep an old-looking card.
-const cardVersion = 2
+const cardVersion = 3
 
 const logCSV = "progress/log.csv"
 
@@ -283,9 +283,13 @@ func pct(done, total int) int {
 }
 
 // card renders one self-contained progress-bar card (dark, GitHub-friendly).
-// The bar is notched at every group boundary, so each segment is one section
-// of the course (or chapter of the book) and milestones are visible at a
-// glance; a caption reports how many of those groups are finished.
+//
+// The bar is notched at every group boundary, so each segment is one section of
+// the course (or chapter of the book). Each segment fills independently, in its
+// own place along the bar: studying out of order (trigonometry before the
+// algebra sections, say) lights up the segments you actually did rather than
+// filling from the left. Total filled area still equals done/total, so the bar
+// reads as a percentage and as a map at the same time.
 func card(title string, done, total int, c1, c2 string, groups []group, unit string) string {
 	const (
 		w, h    = 640, 64
@@ -293,18 +297,11 @@ func card(title string, done, total int, c1, c2 string, groups []group, unit str
 		barY    = 34
 		barH    = 10
 		notchW  = 2 // background-colored gap drawn at each group boundary
+		minFill = 2 // so a single ticked lesson in a long section still shows
 		bgColor = "#0d1117"
 	)
 	barW := w - 2*pad
 	p := pct(done, total)
-
-	fill := 0
-	if total > 0 {
-		fill = barW * done / total
-	}
-	if done > 0 && fill < barH {
-		fill = barH // keep the rounded cap visible for tiny progress
-	}
 
 	groupsDone := 0
 	for _, g := range groups {
@@ -316,15 +313,41 @@ func card(title string, done, total int, c1, c2 string, groups []group, unit str
 	var b strings.Builder
 	fmt.Fprintf(&b, `<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-label="%s: %d%% (%d of %d %s complete)">`+"\n",
 		w, h, w, h, esc(title), p, groupsDone, len(groups), unit)
-	fmt.Fprintf(&b, `  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient></defs>`+"\n", c1, c2)
+	fmt.Fprintf(&b, `  <defs>`+"\n")
+	// userSpaceOnUse keeps one gradient spanning the whole bar, so every
+	// segment samples the color belonging to its position.
+	fmt.Fprintf(&b, `    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="%d" y1="0" x2="%d" y2="0"><stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient>`+"\n", pad, pad+barW, c1, c2)
+	fmt.Fprintf(&b, `    <clipPath id="c"><rect x="%d" y="%d" width="%d" height="%d" rx="4"/></clipPath>`+"\n", pad, barY, barW, barH)
+	fmt.Fprintf(&b, `  </defs>`+"\n")
 	fmt.Fprintf(&b, `  <rect width="%d" height="%d" rx="12" fill="%s" stroke="#30363d"/>`+"\n", w, h, bgColor)
 	fmt.Fprintf(&b, `  <text x="%d" y="22" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">%s</text>`+"\n", pad, esc(title))
 	fmt.Fprintf(&b, `  <text x="%d" y="22" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">%d / %d · %d%%</text>`+"\n", w-pad, done, total, p)
 	fmt.Fprintf(&b, `  <rect x="%d" y="%d" width="%d" height="%d" rx="4" fill="#21262d"/>`+"\n", pad, barY, barW, barH)
-	if fill > 0 {
-		fmt.Fprintf(&b, `  <rect x="%d" y="%d" width="%d" height="%d" rx="4" fill="url(#g)"/>`+"\n", pad, barY, fill, barH)
+
+	// Per-segment fills, clipped to the rounded track so the ends stay clean.
+	if total > 0 && done > 0 {
+		fmt.Fprintf(&b, `  <g clip-path="url(#c)">`+"\n")
+		if len(groups) == 0 { // no headings: one plain fill
+			fmt.Fprintf(&b, `    <rect x="%d" y="%d" width="%d" height="%d" fill="url(#g)"/>`+"\n", pad, barY, barW*done/total, barH)
+		}
+		cum := 0
+		for _, g := range groups {
+			x0 := pad + barW*cum/total
+			cum += g.total
+			x1 := pad + barW*cum/total
+			if g.done == 0 {
+				continue
+			}
+			segW := (x1 - x0) * g.done / g.total
+			if segW < minFill {
+				segW = minFill
+			}
+			fmt.Fprintf(&b, `    <rect x="%d" y="%d" width="%d" height="%d" fill="url(#g)"/>`+"\n", x0, barY, segW, barH)
+		}
+		fmt.Fprintf(&b, `  </g>`+"\n")
 	}
-	// Notches cut through both track and fill, segmenting the bar by group.
+
+	// Notches cut through both track and fill, separating the segments.
 	cum := 0
 	for i, g := range groups {
 		cum += g.total

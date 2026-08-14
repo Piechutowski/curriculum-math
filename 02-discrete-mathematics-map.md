@@ -1,7 +1,7 @@
 # Module 02 — Rosen & Krithivasan, *Discrete Mathematics* · Checklist & Map
 
 <!-- progress:02-discrete-mathematics -->
-![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg?v=2-0-91)
+![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg?v=3-0-91)
 
 **0 / 91 lessons complete · 0%** — 0 of 13 chapters finished · [completion log](LOG.md)
 <!-- endprogress -->
@@ -14,6 +14,12 @@ Project** (they are the bridge to your programming goals; no other book you own 
 After editing checkboxes, run `go run ./tools/progress` to refresh the bars.
 
 Do the chapters in order for the full pass; per-goal sprint paths are at the bottom.
+
+**Running alongside module 03 (the lecture course):** the two overlap on about half this book —
+see [the overlap table](03-discrete-math-lectures.md#how-this-course-and-rosen-overlap) for which
+chapters have a lecture counterpart, which are Rosen-only, and which topic to trust to which
+source. Short version: Ch. 1, 4, 8, 11, 12 and 13 exist **only** here, and your crypto,
+database and compiler goals rest on them.
 
 Tags: `[GFX]` graphics/simulation · `[CMP]` compilers · `[NET]` networking · `[DB]` databases ·
 `[CRY]` cryptography.

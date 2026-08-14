@@ -1,7 +1,7 @@
 # Module 03 — Discrete Mathematics · University Lecture Course
 
 <!-- progress:03-discrete-math-lectures -->
-![03 · Discrete Math — Lecture Course progress](progress/03-discrete-math-lectures.svg?v=2-0-27)
+![03 · Discrete Math — Lecture Course progress](progress/03-discrete-math-lectures.svg?v=3-0-27)
 
 **0 / 27 lessons complete · 0%** — 0 of 9 sections finished · [completion log](LOG.md)
 <!-- endprogress -->
@@ -130,6 +130,59 @@ The course's own consolidation pass — treat it as a mock exam, closed-book, be
   counting and graphs. *(`15__lec__review.md`)*
 
 ---
+
+## How this course and Rosen overlap
+
+Roughly **half of Rosen has a lecture counterpart, and the whole lecture course lives inside
+Rosen's scope.** Nothing here is outside the book — but large, goal-critical parts of the book
+are outside the course. Read this table before deciding what to study twice and what you can
+only get from one source.
+
+### Shared ground — where each section has a Rosen counterpart
+
+| Lecture course | Rosen sections | Which is deeper |
+|---|---|---|
+| §1 Sets and Functions | 2.1, 2.2, 2.3 | About equal |
+| §2 Mathematical Induction | 5.1, 5.2 | About equal (Rosen adds structural induction — see below) |
+| §3 Counting and Combinatorics | 6.1–6.3, 6.5, 7.5–7.6 | Rosen — more techniques, more exercises |
+| §4 Asymptotics | 3.2, 3.3 | **Lectures** — three lectures with proofs vs. two sections |
+| §5 Recurrences | 7.1, 7.2 | **Lectures**, substantially — difference equations as a vector space, the linear isomorphism, order-*k* schemes, a systematic four-step method |
+| §6 Generating Functions and D&C | 7.3, 7.4 | **Lectures** — variable-coefficient recurrences get real treatment |
+| §7 Graphs | 9.1, 9.2, 9.4, 9.5 | Comparable; the lectures give Euler graphs a full historical treatment |
+| §8 Trees | 10.1, 10.2, 10.3 | Rosen — B-trees and Huffman coding are in 10.2 and have no lecture |
+| §9 Exam Review | — | Lectures only |
+
+### Rosen-only — no lecture covers these, and several are load-bearing for your goals
+
+| Rosen | Topic | Why it matters |
+|---|---|---|
+| **Ch. 1** (all) | Logic, quantifiers, proof methods, normal forms, program correctness | `[DB]` predicate logic *is* SQL; the proof skill everything else assumes |
+| 2.4–2.7 | Recursive functions, summations, cardinality, matrices | Cardinality is the route to "some problems are uncomputable" |
+| 3.1 | Algorithms as objects | Vocabulary for the rest of the book |
+| **Ch. 4** (all) | Number theory, modular arithmetic, RSA | `[CRY]` **your entire cryptography foundation** — the lectures contain none of it |
+| 5.3–5.4 | Structural induction, recursive algorithms | `[CMP]` how you reason about grammars and syntax trees |
+| 6.4, 6.6 | Binomial coefficients, generating permutations | Feeds probability (module 06) |
+| **Ch. 8** (all) | Relations, closures, equivalences, partial orders | `[DB]` the mathematical definition of a table; `[CMP]` dataflow lattices |
+| 9.3, 9.6–9.8 | Graph representation, shortest paths, planarity, coloring | `[NET]` Dijkstra is routing; `[CMP]` graph coloring is register allocation |
+| 10.4–10.5 | Spanning trees, minimum spanning trees | `[NET]` Spanning Tree Protocol, network design |
+| **Ch. 11** | Boolean algebra and circuit minimization | `[CMP]` `[DB]` condition simplification |
+| **Ch. 12** | Groups, rings, fields, coding theory | `[CRY]` the language modern crypto is written in; `[NET]` CRC |
+| **Ch. 13** | Grammars, finite-state machines, Turing machines | `[CMP]` **the compiler chapter** — parsing, lexers, the limits of computation |
+
+### How to run them together
+
+- **On shared topics, lecture first, Rosen second.** The lectures have worked examples and
+  graded exercise sessions with full solutions; Rosen has the exercise volume and the precise
+  statements. Two passes over the same idea from two angles is the cheapest real learning
+  available in this whole curriculum — take it where it is offered.
+- **Recurrences, asymptotics and generating functions: trust the lectures.** They go past the
+  book. Read Rosen 7.1–7.4 afterwards as a summary, not as the main text.
+- **Everything in the Rosen-only table has to come from Rosen.** Four of your five programming
+  goals depend on chapters the lecture course never touches — cryptography most starkly, since
+  Ch. 4 and Ch. 12 are its entire mathematical basis and the lectures offer no substitute.
+- **Do not wait to finish one before starting the other.** The bars fill per section, so
+  running both in parallel is legible: ticking Rosen Ch. 9 and lecture §7 in the same week
+  lights up the corresponding segment on each of the two bars.
 
 ## Exit criteria
 
