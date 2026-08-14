@@ -1,9 +1,9 @@
 # Module 01 — Mr. Greene's College Math Course · Checklist & Map
 
 <!-- progress:01-algebra-trigonometry -->
-![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=39-220)
+![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=42-220)
 
-**39 / 220 lessons complete · 18%** — [completion log](LOG.md)
+**42 / 220 lessons complete · 19%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).
