@@ -184,6 +184,48 @@ only get from one source.
   running both in parallel is legible: ticking Rosen Ch. 9 and lecture §7 in the same week
   lights up the corresponding segment on each of the two bars.
 
+## Which Greene lessons this module actually needs
+
+Module 01 is 220 lessons, but **only about 50 of them are load-bearing for this course** — and
+none of the 85 trigonometry lessons are among them. If you are working to an exam date, this is
+the list. Lessons already completed in Greene §§1–5 (basic algebra, polynomials, rational and
+radical expressions) are assumed and not repeated here.
+
+| This module's section | Greene lessons required | What it is needed for |
+|---|---|---|
+| §1 Sets and Functions | 266, 268, 270, 272, 297, 301 · 334, 336, 338, 340 · 445, 447 | Function notation, domain/range, composition; one-to-one and inverse functions; set algebra |
+| §2 Mathematical Induction | 431, 433, 435, 437 | Sequence and summation notation — you cannot state an induction hypothesis without it |
+| §3 Counting and Combinatorics | 439, 441, 443 | Binomial theorem, counting theory, basic probability |
+| §4 Asymptotics | 344, 346, 352, 354, 356, 358, 360, 362, 364 · 146, 149, 152, 155 | Logarithms and exponentials are the whole vocabulary of growth; inequality manipulation is how you prove *f* = O(*g*) from the definition |
+| §5 Recurrences | 184, 187, 190 · 193, 196, 199, 202, 205 · 310, 312, 314, 316, 318, 324 · 369, 371 | **The heaviest prerequisite.** Characteristic equations are quadratics — with complex roots when the recurrence oscillates. Order-*k* schemes need polynomial root-finding (Remainder, Factor, Rational Zeros theorems). Fitting initial conditions is solving a linear system |
+| §6 Generating Functions and D&C | 377, 379 · 437 | **Partial fraction decomposition is the technique** — it is how a generating function becomes a closed form. Geometric series gives you 1/(1−*x*) |
+| §7 Graphs | — | No algebra prerequisite |
+| §8 Trees | (logarithms, from §4 above) | Tree height and node counts |
+| §9 Exam Review | all of the above | — |
+
+**Study order.** Do them in the order the lectures need them, not in Greene's numbering:
+
+1. **Finish §5** (146, 149, 152, 155) — inequalities, needed early for asymptotics.
+2. **§15 sequences** (431–437) — unlocks induction and gives you geometric series.
+3. **§10 functions** (266–272, 297, 301) and **§12 inverse functions** (334–340) — unlocks
+   lectures 1–2.
+4. **§16** (439, 441, 443, 445, 447) — unlocks the counting lectures.
+5. **§12 exponentials and logarithms** (344–364) — unlocks asymptotics.
+6. **§7 quadratics and complex numbers** (184–205) then **§11 polynomial roots** (310–324) and
+   **§13 systems** (369, 371) — unlocks recurrences, the hardest part of the exam.
+7. **§13 partial fractions** (377, 379) — unlocks generating functions.
+
+**Worth adding if time allows:** 342 (inverses of restricted functions), 211 (quadratic
+inequalities), 320 and 322 (Descartes' rule, Intermediate Value — faster root hunting), 330
+(rational function asymptotes — good intuition for growth), 373 and 381–385 (more systems
+practice).
+
+**Safe to defer past the exam:** all of §6 (word problems), §8 (radical and rational equations),
+§9 (advanced absolute value), §14 (conic sections), the coordinate-geometry and graph-transform
+parts of §10 (247–263, 274–295), matrices and determinants (387–417), and **the entire
+trigonometry half, §§17–26**. That is 128 lessons — over half the course — that this exam does
+not touch.
+
 ## Exit criteria
 
 You are done with this module when you can, cold:
