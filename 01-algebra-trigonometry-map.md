@@ -1,9 +1,9 @@
 # Module 01 — Mr. Greene's College Math Course · Checklist & Map
 
 <!-- progress:01-algebra-trigonometry -->
-![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=37-220)
+![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=39-220)
 
-**37 / 220 lessons complete · 17%** — [completion log](LOG.md)
+**39 / 220 lessons complete · 18%** — [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).
@@ -79,8 +79,8 @@ error bounds.
 - [x] 122. The Multiplication Property of Equality
 - [x] 125. Solving Linear Equations in One Variable
 - [x] 128. Solving Linear Equations with Fractions or Decimals
-- [ ] 131. Repeating Decimal to Fraction
-- [ ] 134. Identifying Types of Equations
+- [x] 131. Repeating Decimal to Fraction
+- [x] 134. Identifying Types of Equations
 - [ ] 137. Solving Proportion Equations
 - [ ] 140. Solving Literal Equations
 - [ ] 143. Solving Linear Inequalities in One Variable
