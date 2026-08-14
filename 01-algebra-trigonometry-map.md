@@ -81,9 +81,9 @@ error bounds.
 - [x] 128. Solving Linear Equations with Fractions or Decimals
 - [x] 131. Repeating Decimal to Fraction
 - [x] 134. Identifying Types of Equations
-- [ ] 137. Solving Proportion Equations
-- [ ] 140. Solving Literal Equations
-- [ ] 143. Solving Linear Inequalities in One Variable
+- [x] 137. Solving Proportion Equations
+- [x] 140. Solving Literal Equations
+- [x] 143. Solving Linear Inequalities in One Variable
 - [ ] 146. Solving a Three-Part Inequality in One Variable
 - [ ] 149. Solving Compound Inequalities with "and" or "or"
 - [ ] 152. Solving Absolute Value Equations I
