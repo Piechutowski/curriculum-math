@@ -25,25 +25,38 @@ import (
 	"time"
 )
 
+// group is one "## " heading in a module file — a course section or book
+// chapter. Its boundaries become milestone notches on the progress bar.
+type group struct {
+	done  int
+	total int
+}
+
 type module struct {
 	id      string // also the SVG file basename and the progress-marker id
 	file    string
 	title   string
 	short   string // compact name used in the log
+	unit    string // what a "## " heading is called in this module
 	c1, c2  string // gradient start/end
 	done    int
 	total   int
 	checked []string // labels of ticked lessons, in file order
+	groups  []group  // one per "## " heading that contains checkboxes
 }
 
 var modules = []*module{
-	{id: "01-algebra-trigonometry", file: "01-algebra-trigonometry-map.md", title: "01 · Algebra & Trigonometry — Greene", short: "Greene", c1: "#58a6ff", c2: "#1f6feb"},
-	{id: "02-discrete-mathematics", file: "02-discrete-mathematics-map.md", title: "02 · Discrete Mathematics — Rosen", short: "Rosen", c1: "#bc8cff", c2: "#8957e5"},
-	{id: "03-calculus", file: "03-calculus.md", title: "03 · Calculus — Thomas", short: "Calculus", c1: "#ffa657", c2: "#f0883e"},
-	{id: "04-linear-algebra", file: "04-linear-algebra.md", title: "04 · Linear Algebra — Kumaresan", short: "Linear Algebra", c1: "#56d364", c2: "#2ea043"},
-	{id: "05-probability", file: "05-probability.md", title: "05 · Probability — Veerarajan", short: "Probability", c1: "#f778ba", c2: "#db61a2"},
-	{id: "06-numerical-methods", file: "06-numerical-methods.md", title: "06 · Numerical Methods — Sastry", short: "Numerical", c1: "#76e3ea", c2: "#39c5cf"},
+	{id: "01-algebra-trigonometry", file: "01-algebra-trigonometry-map.md", title: "01 · Algebra & Trigonometry — Greene", short: "Greene", unit: "sections", c1: "#58a6ff", c2: "#1f6feb"},
+	{id: "02-discrete-mathematics", file: "02-discrete-mathematics-map.md", title: "02 · Discrete Mathematics — Rosen", short: "Rosen", unit: "chapters", c1: "#bc8cff", c2: "#8957e5"},
+	{id: "03-calculus", file: "03-calculus.md", title: "03 · Calculus — Thomas", short: "Calculus", unit: "sections", c1: "#ffa657", c2: "#f0883e"},
+	{id: "04-linear-algebra", file: "04-linear-algebra.md", title: "04 · Linear Algebra — Kumaresan", short: "Linear Algebra", unit: "sections", c1: "#56d364", c2: "#2ea043"},
+	{id: "05-probability", file: "05-probability.md", title: "05 · Probability — Veerarajan", short: "Probability", unit: "sections", c1: "#f778ba", c2: "#db61a2"},
+	{id: "06-numerical-methods", file: "06-numerical-methods.md", title: "06 · Numerical Methods — Sastry", short: "Numerical", unit: "sections", c1: "#76e3ea", c2: "#39c5cf"},
 }
+
+// cardVersion changes whenever the SVG design changes, so the ?v= cache-buster
+// in image URLs also changes and viewers do not keep an old-looking card.
+const cardVersion = 2
 
 const logCSV = "progress/log.csv"
 
@@ -68,16 +81,34 @@ func main() {
 			fatal("reading %s: %v", m.file, err)
 		}
 		for _, line := range strings.Split(string(src), "\n") {
+			if strings.HasPrefix(line, "## ") {
+				m.groups = append(m.groups, group{})
+				continue
+			}
 			hit := checkboxLine.FindStringSubmatch(line)
 			if hit == nil {
 				continue
 			}
+			if len(m.groups) == 0 { // checkbox before any heading
+				m.groups = append(m.groups, group{})
+			}
+			g := &m.groups[len(m.groups)-1]
 			m.total++
+			g.total++
 			if hit[1] != " " {
 				m.done++
+				g.done++
 				m.checked = append(m.checked, label(hit[2]))
 			}
 		}
+		// Headings with no checkboxes (exit criteria, tables) are not milestones.
+		kept := m.groups[:0]
+		for _, g := range m.groups {
+			if g.total > 0 {
+				kept = append(kept, g)
+			}
+		}
+		m.groups = kept
 	}
 
 	var done, total int
@@ -93,9 +124,14 @@ func main() {
 	added, removed := updateLog(byID)
 
 	for _, m := range modules {
-		writeFile(filepath.Join("progress", m.id+".svg"), card(m.title, m.done, m.total, m.c1, m.c2))
+		writeFile(filepath.Join("progress", m.id+".svg"), card(m.title, m.done, m.total, m.c1, m.c2, m.groups, m.unit))
 	}
-	writeFile(filepath.Join("progress", "overall.svg"), card("Overall — all modules", done, total, "#e3b341", "#d29922"))
+	// The overall bar's segments are the modules themselves.
+	overallGroups := make([]group, len(modules))
+	for i, m := range modules {
+		overallGroups[i] = group{done: m.done, total: m.total}
+	}
+	writeFile(filepath.Join("progress", "overall.svg"), card("Overall — all modules", done, total, "#e3b341", "#d29922", overallGroups, "modules"))
 	writeFile(filepath.Join("progress", "progress.csv"), countsCSV(done, total))
 
 	for _, m := range modules {
@@ -246,29 +282,60 @@ func pct(done, total int) int {
 }
 
 // card renders one self-contained progress-bar card (dark, GitHub-friendly).
-func card(title string, done, total int, c1, c2 string) string {
-	const w, h, pad, barH = 640, 56, 20, 8
+// The bar is notched at every group boundary, so each segment is one section
+// of the course (or chapter of the book) and milestones are visible at a
+// glance; a caption reports how many of those groups are finished.
+func card(title string, done, total int, c1, c2 string, groups []group, unit string) string {
+	const (
+		w, h    = 640, 64
+		pad     = 20
+		barY    = 34
+		barH    = 10
+		notchW  = 2 // background-colored gap drawn at each group boundary
+		bgColor = "#0d1117"
+	)
 	barW := w - 2*pad
 	p := pct(done, total)
-	fill := barW * done
+
+	fill := 0
 	if total > 0 {
-		fill /= total
-	} else {
-		fill = 0
+		fill = barW * done / total
 	}
 	if done > 0 && fill < barH {
 		fill = barH // keep the rounded cap visible for tiny progress
 	}
 
+	groupsDone := 0
+	for _, g := range groups {
+		if g.done == g.total {
+			groupsDone++
+		}
+	}
+
 	var b strings.Builder
-	fmt.Fprintf(&b, `<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-label="%s: %d%%">`+"\n", w, h, w, h, esc(title), p)
+	fmt.Fprintf(&b, `<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-label="%s: %d%% (%d of %d %s complete)">`+"\n",
+		w, h, w, h, esc(title), p, groupsDone, len(groups), unit)
 	fmt.Fprintf(&b, `  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient></defs>`+"\n", c1, c2)
-	fmt.Fprintf(&b, `  <rect width="%d" height="%d" rx="12" fill="#0d1117" stroke="#30363d"/>`+"\n", w, h)
-	fmt.Fprintf(&b, `  <text x="%d" y="24" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">%s</text>`+"\n", pad, esc(title))
-	fmt.Fprintf(&b, `  <text x="%d" y="24" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">%d / %d · %d%%</text>`+"\n", w-pad, done, total, p)
-	fmt.Fprintf(&b, `  <rect x="%d" y="36" width="%d" height="%d" rx="4" fill="#21262d"/>`+"\n", pad, barW, barH)
+	fmt.Fprintf(&b, `  <rect width="%d" height="%d" rx="12" fill="%s" stroke="#30363d"/>`+"\n", w, h, bgColor)
+	fmt.Fprintf(&b, `  <text x="%d" y="22" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">%s</text>`+"\n", pad, esc(title))
+	fmt.Fprintf(&b, `  <text x="%d" y="22" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">%d / %d · %d%%</text>`+"\n", w-pad, done, total, p)
+	fmt.Fprintf(&b, `  <rect x="%d" y="%d" width="%d" height="%d" rx="4" fill="#21262d"/>`+"\n", pad, barY, barW, barH)
 	if fill > 0 {
-		fmt.Fprintf(&b, `  <rect x="%d" y="36" width="%d" height="%d" rx="4" fill="url(#g)"/>`+"\n", pad, fill, barH)
+		fmt.Fprintf(&b, `  <rect x="%d" y="%d" width="%d" height="%d" rx="4" fill="url(#g)"/>`+"\n", pad, barY, fill, barH)
+	}
+	// Notches cut through both track and fill, segmenting the bar by group.
+	cum := 0
+	for i, g := range groups {
+		cum += g.total
+		if i == len(groups)-1 || total == 0 {
+			break // no notch at the far right edge
+		}
+		x := pad + barW*cum/total
+		fmt.Fprintf(&b, `  <rect x="%d" y="%d" width="%d" height="%d" fill="%s"/>`+"\n", x-notchW/2, barY, notchW, barH, bgColor)
+	}
+	if len(groups) > 0 {
+		fmt.Fprintf(&b, `  <text x="%d" y="55" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="10.5" fill="#7d8590">%d of %d %s complete</text>`+"\n",
+			pad, groupsDone, len(groups), unit)
 	}
 	b.WriteString("</svg>\n")
 	return b.String()
@@ -278,15 +345,22 @@ func card(title string, done, total int, c1, c2 string) string {
 // change, so GitHub's image cache (camo) fetches a fresh SVG instead of
 // serving a stale bar.
 func moduleBlock(m *module) string {
-	return fmt.Sprintf("![%s progress](progress/%s.svg?v=%d-%d)\n\n**%d / %d lessons complete · %d%%** — [completion log](LOG.md)",
-		esc(m.title), m.id, m.done, m.total, m.done, m.total, pct(m.done, m.total))
+	groupsDone := 0
+	for _, g := range m.groups {
+		if g.done == g.total {
+			groupsDone++
+		}
+	}
+	return fmt.Sprintf("![%s progress](progress/%s.svg?v=%d-%d-%d)\n\n**%d / %d lessons complete · %d%%** — %d of %d %s finished · [completion log](LOG.md)",
+		esc(m.title), m.id, cardVersion, m.done, m.total,
+		m.done, m.total, pct(m.done, m.total), groupsDone, len(m.groups), m.unit)
 }
 
 func readmeBlock(done, total int) string {
 	var b strings.Builder
-	fmt.Fprintf(&b, "![Overall progress](progress/overall.svg?v=%d-%d)\n\n", done, total)
+	fmt.Fprintf(&b, "![Overall progress](progress/overall.svg?v=%d-%d-%d)\n\n", cardVersion, done, total)
 	for _, m := range modules {
-		fmt.Fprintf(&b, "[![%s](progress/%s.svg?v=%d-%d)](%s)\n", esc(m.title), m.id, m.done, m.total, m.file)
+		fmt.Fprintf(&b, "[![%s](progress/%s.svg?v=%d-%d-%d)](%s)\n", esc(m.title), m.id, cardVersion, m.done, m.total, m.file)
 	}
 	fmt.Fprintf(&b, "\n**Total: %d / %d lessons complete · %d%%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)", done, total, pct(done, total))
 	return b.String()

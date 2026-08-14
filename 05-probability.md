@@ -1,9 +1,9 @@
 # Module 05 — Probability
 
 <!-- progress:05-probability -->
-![05 · Probability — Veerarajan progress](progress/05-probability.svg?v=0-46)
+![05 · Probability — Veerarajan progress](progress/05-probability.svg?v=2-0-46)
 
-**0 / 46 lessons complete · 0%** — [completion log](LOG.md)
+**0 / 46 lessons complete · 0%** — 0 of 9 sections finished · [completion log](LOG.md)
 <!-- endprogress -->
 
 **Book:** T. Veerarajan, *Probability, Statistics and Random Processes* (McGraw-Hill India).

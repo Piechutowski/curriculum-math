@@ -1,9 +1,9 @@
 # Module 02 — Rosen & Krithivasan, *Discrete Mathematics* · Checklist & Map
 
 <!-- progress:02-discrete-mathematics -->
-![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg?v=0-91)
+![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg?v=2-0-91)
 
-**0 / 91 lessons complete · 0%** — [completion log](LOG.md)
+**0 / 91 lessons complete · 0%** — 0 of 13 chapters finished · [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** the book you own.

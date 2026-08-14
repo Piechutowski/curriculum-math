@@ -35,7 +35,7 @@ Every lesson is a markdown checkbox (`- [ ]` → `- [x]`). The Go tool
 (`go run ./tools/progress`, run from the repo root, needs Go ≥ 1.21, stdlib only) does four
 things on each run:
 
-1. Counts checkboxes in the six module files.
+1. Counts checkboxes in the six module files, grouped by `## ` heading.
 2. Redraws the SVG progress cards in `progress/` and rewrites `progress/progress.csv`.
 3. Rewrites the content between `<!-- progress:... -->` and `<!-- endprogress -->` markers in
    each module file and in `README.md` (the "N / M lessons complete" lines and the dashboard).
@@ -44,6 +44,19 @@ things on each run:
 **Never edit generated files or the text between the marker comments by hand** — the next run
 overwrites it. Never remove the marker comments themselves; the tool fails loudly if a marker
 is missing.
+
+### Milestones on the bars
+
+Each `## ` heading that contains checkboxes is a milestone group — a course section (Greene,
+modules 03–06) or a book chapter (Rosen). The progress bar is notched at every group boundary,
+so each segment is one section and you can see which sections are finished; the card's caption
+reads "N of M sections complete". Headings without checkboxes (exit criteria, tables) are
+ignored. On `overall.svg` the segments are the six modules. Consequences worth knowing:
+
+- Adding or removing a `## ` heading in a module file changes its milestone count.
+- The `?v=` query on image URLs starts with `cardVersion` (a constant in the tool). **Bump it
+  whenever the SVG design changes**, or viewers keep seeing cached old-style cards for modules
+  whose counts did not change.
 
 ## How the log works
 

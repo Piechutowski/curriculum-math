@@ -1,9 +1,9 @@
 # Module 04 — Linear Algebra (Geometric)
 
 <!-- progress:04-linear-algebra -->
-![04 · Linear Algebra — Kumaresan progress](progress/04-linear-algebra.svg?v=0-52)
+![04 · Linear Algebra — Kumaresan progress](progress/04-linear-algebra.svg?v=2-0-52)
 
-**0 / 52 lessons complete · 0%** — [completion log](LOG.md)
+**0 / 52 lessons complete · 0%** — 0 of 10 sections finished · [completion log](LOG.md)
 <!-- endprogress -->
 
 **Book:** S. Kumaresan, *Linear Algebra: A Geometric Approach* (PHI). Alternative that pairs

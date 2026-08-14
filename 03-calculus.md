@@ -1,9 +1,9 @@
 # Module 03 — Calculus
 
 <!-- progress:03-calculus -->
-![03 · Calculus — Thomas progress](progress/03-calculus.svg?v=0-89)
+![03 · Calculus — Thomas progress](progress/03-calculus.svg?v=2-0-89)
 
-**0 / 89 lessons complete · 0%** — [completion log](LOG.md)
+**0 / 89 lessons complete · 0%** — 0 of 13 sections finished · [completion log](LOG.md)
 <!-- endprogress -->
 
 **Book:** *Thomas' Calculus* (Pearson India edition). Section references are approximate across
