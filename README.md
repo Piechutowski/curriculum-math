@@ -89,6 +89,14 @@ serious).
 | [`06-probability.md`](06-probability.md) | Complete skill-by-skill probability curriculum | New material (gap) |
 | [`07-numerical-methods.md`](07-numerical-methods.md) | Short module: making the math run on a computer | New material (bridge) |
 
+## Current priority: the discrete-math exam
+
+Four months to pass the university exam (module `03`). The dated plan lives in
+[`EXAM-PLAN.md`](EXAM-PLAN.md): ~50 Greene lessons as foundation, the matching Rosen sections
+as the advanced treatment, lecture notes as gap-filler (main text for recurrences, generating
+functions and asymptotics), and every topic gated by solving the class exercises closed-book.
+The roadmap below resumes after the exam.
+
 ## Roadmap
 
 The modules are sequenced so that two tracks always run in parallel — one continuous
