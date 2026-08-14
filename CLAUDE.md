@@ -98,6 +98,11 @@ Batching is fine — tick any number of boxes in one edit; they all get logged i
   numbers in module 01 are Mr. Greene's own course numbers (1–550 with gaps), not sequential.
 - Don't untick or rename ticked lessons unless explicitly asked (it rewrites log history).
 - To add a new book/course, follow "How to add a new module" below — both steps, always.
+- **Pending (until ~Oct 10, 2026):** the lecture-to-session mapping in `EXAM-PLAN.md` is
+  inferred from lecture numbering. When the owner reports the official syllabus from the first
+  class, redistribute the lectures across the six session rows and move the exercise gates
+  accordingly, in both `EXAM-PLAN.md` and `EXAM-TODO.md`. Phase 0, the run-up weeks, and the
+  exam terms (Jan 9–10 target, Jan 23–24 backup) stay as they are.
 - Curriculum content conventions: atomic lessons; one checkbox per skill; goal tags
   `[GFX] [CMP] [NET] [DB] [CRY]` only where the payoff is direct (no tag = load-bearing
   foundation); every module ends with exit criteria; full standard course coverage — tags say

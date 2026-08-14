@@ -112,6 +112,9 @@ crossing each one off. Tick freely.
 
 ## Session 1 · Oct 10–11 — sets, functions
 
+- [ ] **Get the official syllabus and tell Claude the real lecture-to-session distribution** —
+      the session mapping in EXAM-PLAN.md is inferred and the gates will be adjusted to match;
+      everything else holds regardless
 - [ ] Lecture 1 — Sets, reviewed against my Phase-0 pass
 - [ ] Lecture 2 — Functions, reviewed
 - [ ] **GATE: Exercises 1 closed-book**
