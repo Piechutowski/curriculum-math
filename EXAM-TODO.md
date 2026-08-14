@@ -120,32 +120,29 @@ crossing each one off. Tick freely.
 - [ ] Rosen 6.3 — Permutations and Combinations *(prep)*
 - [ ] Rosen 6.5 — Generalized Permutations and Combinations *(prep)*
 
-## Session 2 · Oct 24–25 — induction, combinatorics
+## Session 2 · Oct 24–25 — induction, combinatorics, counting
 
 - [ ] Lecture 3 — Mathematical Induction, reviewed
 - [ ] Lecture 4A — Combinatorics, reviewed
+- [ ] Lecture 4B — Sum/Product Rules, Inclusion–Exclusion, reviewed
 - [ ] **GATE: Exercises 2 closed-book**
 - [ ] Rosen 7.5 — Inclusion–Exclusion *(prep)*
 - [ ] Rosen 7.6 — Applications of Inclusion–Exclusion *(prep)*
-
-## Session 3 · Nov 7–8 — counting, pigeonhole
-
-- [ ] Lecture 4B — Sum/Product Rules, Inclusion–Exclusion, reviewed
-- [ ] Lecture 5 — Pigeonhole Principle, reviewed
-- [ ] **GATE: Exercises 3 closed-book**
 - [ ] Rosen 3.2 — The Growth of Functions *(prep)*
 - [ ] Rosen 3.3 — Complexity of Algorithms *(prep)*
 
-## Session 4 · Nov 21–22 — asymptotics (lectures = main text)
+## Session 3 · Nov 7–8 — pigeonhole, asymptotics (lectures = main text)
 
+- [ ] Lecture 5 — Pigeonhole Principle, reviewed
 - [ ] Lecture 6 — Asymptotics, studied as main text
 - [ ] Lecture 7A — Asymptotics of Sequences, studied
 - [ ] Lecture 7B — Asymptotics Part B, studied
+- [ ] **GATE: Exercises 3 closed-book**
 - [ ] **GATE: Exercises 4 closed-book**
 - [ ] Rosen 7.1 — Applications of Recurrence Relations *(prep)*
 - [ ] Rosen 7.2 — Solving Linear Recurrence Relations *(prep)*
 
-## Session 5 · Dec 5–6 — recurrences (lectures = main text)
+## Session 4 · Nov 21–22 — recurrences (lectures = main text)
 
 - [ ] Lecture 8 — Recurrences, studied as main text
 - [ ] Lecture 9 — Recurrences continued, studied as main text
@@ -154,36 +151,36 @@ crossing each one off. Tick freely.
 - [ ] Rosen 7.3 — Divide-and-Conquer Recurrences *(prep)*
 - [ ] Rosen 7.4 — Generating Functions *(prep)*
 
-## Session 6 · Dec 19–20 — generating functions, D&C (lectures = main text)
+## Session 5 · Dec 5–6 — generating functions, D&C (lectures = main text)
 
 - [ ] Lectures 10–11 — Generating Functions & Divide-and-Conquer, studied as main text
-- [ ] **GATE: Exercises 5 complete, closed-book** *(holiday gap: consolidate here)*
-- [ ] Holiday redo: every recurrence & generating-function problem, cold
+- [ ] **GATE: Exercises 5 complete, closed-book**
 - [ ] Rosen 9.1 — Graphs and Graph Models *(prep)*
 - [ ] Rosen 9.2 — Graph Terminology *(prep)*
 - [ ] Rosen 9.4 — Connectivity *(prep)*
 - [ ] Rosen 9.5 — Euler and Hamilton Paths *(prep)*
-
-## Session 7 · Jan 9–10 — graphs
-
-- [ ] Lecture 12 — Graphs and Trees Introduction, reviewed
-- [ ] Lecture 13a — Euler Graphs, reviewed
-- [ ] Lecture 13b — Hamiltonian Graphs and Trees, reviewed
-- [ ] **GATE: Exercises 6 closed-book**
 - [ ] Rosen 10.1 — Introduction to Trees *(prep)*
 - [ ] Rosen 10.2 — Applications of Trees *(prep)*
 - [ ] Rosen 10.3 — Tree Traversal *(prep)*
 
-## Session 8 · Jan 23–24 — trees, review
+## Session 6 · Dec 19–20 — graphs, trees, review
 
+- [ ] Lecture 12 — Graphs and Trees Introduction, reviewed
+- [ ] Lecture 13a — Euler Graphs, reviewed
+- [ ] Lecture 13b — Hamiltonian Graphs and Trees, reviewed
 - [ ] Lecture 14 — Trees Introduction, reviewed
 - [ ] Lecture 14b — Binary Trees, reviewed
-- [ ] **GATE: tree problems from Exercises 6 + Rosen 10.1–10.3 exercises**
 
-## Exam run-up · from Jan 25
+## Exam run-up · Dec 21 – Jan 8 (the holiday gap)
 
-- [ ] Mock #1: Lecture 15 closed-book, graded
+- [ ] Week Dec 21–27: **GATE: Exercises 6 closed-book** (graphs & trees)
+- [ ] Week Dec 21–27: every recurrence & generating-function problem redone, cold
+- [ ] Week Dec 28 – Jan 3: **Mock #1** — Lecture 15 closed-book, graded
 - [ ] Weak topics from mock #1 redone (`__ex__` sets + lecture examples)
-- [ ] Mock #2: Lecture 15 re-sat — **above 80% cold**
-- [ ] Exam date confirmed and written into EXAM-PLAN.md
-- [ ] **Exam passed 🎓**
+- [ ] Week Jan 4–8: **Mock #2** — Lecture 15 re-sat, **above 80% cold**
+
+## The exam
+
+- [ ] **Jan 9–10 — first term: sit it to pass it** 🎓
+- [ ] *(only if needed)* Jan 10–22: repeat the mock cycle on what term one exposed
+- [ ] *(only if needed)* Jan 23–24 — second term

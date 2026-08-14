@@ -1,11 +1,11 @@
 # Discrete-Math Exam — Dated Study Plan
 
-**The course:** eight weekend sessions (Sat–Sun), two lectures per session:
-**Oct 10–11 · Oct 24–25 · Nov 7–8 · Nov 21–22 · Dec 5–6 · Dec 19–20 2026 · Jan 9–10 ·
-Jan 23–24 2027.** Three-week holiday gap between sessions 6 and 7. **Assumed exam: February
-2027 winter session** — correct this line when the date is announced. The lecture-to-session
-mapping below is inferred from the lecture numbering; adjust it against the official syllabus
-when published.
+**The course:** six weekend teaching sessions (Sat–Sun):
+**Oct 10–11 · Oct 24–25 · Nov 7–8 · Nov 21–22 · Dec 5–6 · Dec 19–20 2026.**
+**Exam: Jan 9–10 2027 (first term — the target) with Jan 23–24 as the second term** (the
+backup, not the plan). All 15 lectures compress into the six sessions (~2–3 per weekend); the
+mapping below is inferred from the lecture numbering — adjust against the official syllabus
+when published. The three-week holiday gap (Dec 21 – Jan 8) is the exam run-up.
 
 **Strategy, per topic:** Greene lessons first (foundation) → Rosen sections (the advanced,
 rigorous treatment) → uni lecture notes to fill gaps — *except* asymptotics, recurrences and
@@ -50,34 +50,37 @@ months before it is needed.
 
 **By Oct 9 every Greene prerequisite is done.** Nothing below needs module 01 again.
 
-## Semester — eight weekend sessions
+## Semester — six teaching sessions, exam in January
 
 Before each session: the Rosen prep from the previous row is done, so the lectures are a second
 pass. After each session: review the lecture notes against your pass, then close the topic by
-passing its exercise set closed-book before the next session.
+passing its exercise set closed-book before the next session. Denser than the usual semester —
+every gate lands two weeks after its material, and everything must close by Dec 20.
 
-| Session | Dates | Lectures (inferred) | Your gate before next session | Rosen prep for next session |
+| Session | Dates | Lectures (inferred, ~2–3 per weekend) | Your gate before next session | Rosen prep for next session |
 |---|---|---|---|---|
-| **1** | Oct 10–11 | Lec 1–2: sets, functions | **Exercises 1** | 6.1, 6.2, 6.3, 6.5 (counting) |
-| **2** | Oct 24–25 | Lec 3, 4A: induction, combinatorics | **Exercises 2** | 7.5, 7.6 (inclusion–exclusion) |
-| **3** | Nov 7–8 | Lec 4B, 5: counting, pigeonhole | **Exercises 3** | 3.2, 3.3 (growth of functions) |
-| **4** | Nov 21–22 | Lec 6, 7A/7B: asymptotics *(lectures = main text)* | **Exercises 4** | 7.1, 7.2 (recurrences) |
-| **5** | Dec 5–6 | Lec 8–9: recurrences *(lectures = main text)* | **first half of Exercises 5** · complex-root recurrence via De Moivre, by hand | 7.3, 7.4 (generating functions) |
-| **6** | Dec 19–20 | Lec 10–11: generating functions, D&C *(lectures = main text)* | **Exercises 5 complete** | 9.1, 9.2, 9.4, 9.5 (graphs) — holidays |
-| **7** | Jan 9–10 | Lec 12, 13a/b: graphs | **Exercises 6** | 10.1, 10.2, 10.3 (trees) |
-| **8** | Jan 23–24 | Lec 14, 14b, 15: trees + review | tree problems from Ex 6 + Rosen 10.1–10.3 exercises | — |
+| **1** | Oct 10–11 | Lec 1–2: sets, functions | **Exercises 1** | 5.1, 5.2 done in Phase 0 · 6.1, 6.2, 6.3, 6.5 (counting) |
+| **2** | Oct 24–25 | Lec 3, 4A, 4B: induction, combinatorics, counting | **Exercises 2** | 7.5, 7.6 (inclusion–exclusion) · 3.2, 3.3 (growth) |
+| **3** | Nov 7–8 | Lec 5, 6, 7A/7B: pigeonhole, asymptotics *(lectures = main text)* | **Exercises 3 and 4** | 7.1, 7.2 (recurrences) |
+| **4** | Nov 21–22 | Lec 8–9: recurrences *(lectures = main text)* | **first half of Exercises 5** · complex-root recurrence via De Moivre, by hand | 7.3, 7.4 (generating functions) |
+| **5** | Dec 5–6 | Lec 10–11: generating functions, D&C *(lectures = main text)* | **Exercises 5 complete** | 9.1, 9.2, 9.4, 9.5 (graphs) · 10.1, 10.2, 10.3 (trees) |
+| **6** | Dec 19–20 | Lec 12, 13a/b, 14, 14b, 15: graphs, trees, review | **Exercises 6** — within the first run-up week | — |
 
-**The holiday gap (Dec 21 – Jan 8)** is the consolidation window, placed by luck right after
-the hardest material: finish Exercises 5, redo every recurrence and generating-function problem
-cold, read the graphs prep. Treat it as the first half of the exam run-up.
+## Exam run-up — the holiday gap (Dec 21 – Jan 8)
 
-## Exam run-up (from Jan 25)
+Three clear weeks between the last session and the first exam term. This is where the exam is
+actually won:
 
-- **Week of Jan 25:** Lecture 15 (the course's own review) as a **closed-book mock exam**.
-  Every miss names a topic — redo that topic's `__ex__` set and lecture examples.
-- **Following week(s), to the exam:** second pass on the two weakest topics; re-sit the mock.
-  Ready = **above 80% cold**. Recurrences and generating functions get priority in any spare
-  hour — heaviest-weighted, hardest material.
+- **Week 1 (Dec 21–27):** close Exercises 6 (graphs/trees). Redo every recurrence and
+  generating-function problem cold — heaviest-weighted material first.
+- **Week 2 (Dec 28 – Jan 3):** Lecture 15 (the course's own review) as **mock exam #1,
+  closed-book, graded**. Every miss names a topic; redo that topic's `__ex__` set and lecture
+  examples.
+- **Week 3 (Jan 4–8):** second pass on the two weakest topics; **mock #2** — re-sit Lecture
+  15's problems. Ready = **above 80% cold**.
+- **Jan 9–10: first exam term. Sit it to pass it.** Jan 23–24 is the second term — a safety
+  net that exists, not a plan. If term one goes wrong, the two intervening weeks repeat the
+  mock cycle on whatever the exam exposed.
 
 ---
 
