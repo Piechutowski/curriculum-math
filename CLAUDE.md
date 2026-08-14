@@ -23,6 +23,8 @@ checkbox is ticked only when all three are done.
 | `05-linear-algebra.md` | Full geometric linear algebra curriculum, 52 lessons (Kumaresan) | Tick checkboxes |
 | `06-probability.md` | Full probability curriculum, 46 lessons (Veerarajan) | Tick checkboxes |
 | `07-numerical-methods.md` | Bridging module, 18 lessons (Sastry) | Tick checkboxes |
+| `EXAM-PLAN.md` | Dated study plan for the university discrete-math exam | Hand |
+| `EXAM-TODO.md` | Personal tick-list mirroring the exam plan — **deliberately NOT registered in the tool**; its checkboxes must never count toward progress, so do not add it to the modules table | Hand, tick freely |
 | `LOG.md` | Completion log, newest day first | **Generated — never by hand** |
 | `progress/log.csv` | Raw log: timestamp, module, lesson for every completion | **Generated — never by hand** |
 | `progress/*.svg` | Progress-bar cards (one per module + `overall.svg`) | **Generated — never by hand** |

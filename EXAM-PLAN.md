@@ -15,6 +15,9 @@ against `__sol__`. Being able to do the class problems without notes *is* being 
 *before* the uni block that covers it. Then the lecture is a second pass, the class is a third,
 and the exercise session confirms rather than teaches.
 
+**Personal tick-list:** [EXAM-TODO.md](EXAM-TODO.md) mirrors this plan as checkboxes — outside
+the tracking system, for crossing things off; real progress is still ticked in modules 01/02/03.
+
 **Standing rules**
 
 1. Exercises closed-book, always. Open `__sol__` only after a real attempt.
