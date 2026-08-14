@@ -28,15 +28,15 @@ The tool re-counts every checklist, redraws the SVG progress bars below, refresh
 `progress/progress.csv`.
 
 <!-- progress:overall -->
-![Overall progress](progress/overall.svg?v=3-42-543)
+![Overall progress](progress/overall.svg?v=4-42-543)
 
-[![01 · Algebra &amp; Trigonometry — Greene](progress/01-algebra-trigonometry.svg?v=3-42-220)](01-algebra-trigonometry-map.md)
-[![02 · Discrete Mathematics — Rosen](progress/02-discrete-mathematics.svg?v=3-0-91)](02-discrete-mathematics-map.md)
-[![03 · Discrete Math — Lecture Course](progress/03-discrete-math-lectures.svg?v=3-0-27)](03-discrete-math-lectures.md)
-[![04 · Calculus — Thomas](progress/04-calculus.svg?v=3-0-89)](04-calculus.md)
-[![05 · Linear Algebra — Kumaresan](progress/05-linear-algebra.svg?v=3-0-52)](05-linear-algebra.md)
-[![06 · Probability — Veerarajan](progress/06-probability.svg?v=3-0-46)](06-probability.md)
-[![07 · Numerical Methods — Sastry](progress/07-numerical-methods.svg?v=3-0-18)](07-numerical-methods.md)
+[![01 · Algebra &amp; Trigonometry — Greene](progress/01-algebra-trigonometry.svg?v=4-42-220)](01-algebra-trigonometry-map.md)
+[![02 · Discrete Mathematics — Rosen](progress/02-discrete-mathematics.svg?v=4-0-91)](02-discrete-mathematics-map.md)
+[![03 · Discrete Math — Lecture Course](progress/03-discrete-math-lectures.svg?v=4-0-27)](03-discrete-math-lectures.md)
+[![04 · Calculus — Thomas](progress/04-calculus.svg?v=4-0-89)](04-calculus.md)
+[![05 · Linear Algebra — Kumaresan](progress/05-linear-algebra.svg?v=4-0-52)](05-linear-algebra.md)
+[![06 · Probability — Veerarajan](progress/06-probability.svg?v=4-0-46)](06-probability.md)
+[![07 · Numerical Methods — Sastry](progress/07-numerical-methods.svg?v=4-0-18)](07-numerical-methods.md)
 
 **Total: 42 / 543 lessons complete · 8%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)
 <!-- endprogress -->

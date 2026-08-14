@@ -57,7 +57,7 @@ var modules = []*module{
 
 // cardVersion changes whenever the SVG design changes, so the ?v= cache-buster
 // in image URLs also changes and viewers do not keep an old-looking card.
-const cardVersion = 3
+const cardVersion = 4
 
 const logCSV = "progress/log.csv"
 
@@ -314,9 +314,11 @@ func card(title string, done, total int, c1, c2 string, groups []group, unit str
 	fmt.Fprintf(&b, `<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-label="%s: %d%% (%d of %d %s complete)">`+"\n",
 		w, h, w, h, esc(title), p, groupsDone, len(groups), unit)
 	fmt.Fprintf(&b, `  <defs>`+"\n")
-	// userSpaceOnUse keeps one gradient spanning the whole bar, so every
-	// segment samples the color belonging to its position.
-	fmt.Fprintf(&b, `    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="%d" y1="0" x2="%d" y2="0"><stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient>`+"\n", pad, pad+barW, c1, c2)
+	// Object-bounding-box units (the default): the gradient is scoped to each
+	// filled rect, so the full c1→c2 sweep is visible however little is done.
+	// Spanning it across the whole bar instead would wash the color out at low
+	// percentages — at 19% you would only ever see the first fifth of the ramp.
+	fmt.Fprintf(&b, `    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient>`+"\n", c1, c2)
 	fmt.Fprintf(&b, `    <clipPath id="c"><rect x="%d" y="%d" width="%d" height="%d" rx="4"/></clipPath>`+"\n", pad, barY, barW, barH)
 	fmt.Fprintf(&b, `  </defs>`+"\n")
 	fmt.Fprintf(&b, `  <rect width="%d" height="%d" rx="12" fill="%s" stroke="#30363d"/>`+"\n", w, h, bgColor)

@@ -1,7 +1,7 @@
 # Module 06 — Probability
 
 <!-- progress:06-probability -->
-![06 · Probability — Veerarajan progress](progress/06-probability.svg?v=3-0-46)
+![06 · Probability — Veerarajan progress](progress/06-probability.svg?v=4-0-46)
 
 **0 / 46 lessons complete · 0%** — 0 of 9 sections finished · [completion log](LOG.md)
 <!-- endprogress -->

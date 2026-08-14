@@ -1,7 +1,7 @@
 # Module 03 — Discrete Mathematics · University Lecture Course
 
 <!-- progress:03-discrete-math-lectures -->
-![03 · Discrete Math — Lecture Course progress](progress/03-discrete-math-lectures.svg?v=3-0-27)
+![03 · Discrete Math — Lecture Course progress](progress/03-discrete-math-lectures.svg?v=4-0-27)
 
 **0 / 27 lessons complete · 0%** — 0 of 9 sections finished · [completion log](LOG.md)
 <!-- endprogress -->
