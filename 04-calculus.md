@@ -1,7 +1,7 @@
-# Module 03 — Calculus
+# Module 04 — Calculus
 
-<!-- progress:03-calculus -->
-![03 · Calculus — Thomas progress](progress/03-calculus.svg?v=2-0-89)
+<!-- progress:04-calculus -->
+![04 · Calculus — Thomas progress](progress/04-calculus.svg?v=2-0-89)
 
 **0 / 89 lessons complete · 0%** — 0 of 13 sections finished · [completion log](LOG.md)
 <!-- endprogress -->

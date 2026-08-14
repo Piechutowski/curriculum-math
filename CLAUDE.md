@@ -18,10 +18,11 @@ checkbox is ticked only when all three are done.
 | `README.md` | Roadmap, book list, study phases, "when can I start subject X" gates, progress dashboard | Hand, except the marker block |
 | `01-algebra-trigonometry-map.md` | Checklist + study map for Mr. Greene's course (220 lessons, his numbering) | Tick checkboxes |
 | `02-discrete-mathematics-map.md` | Checklist + study map for Rosen & Krithivasan (91 items) | Tick checkboxes |
-| `03-calculus.md` | Full calculus curriculum, 89 lessons (Thomas' Calculus) | Tick checkboxes |
-| `04-linear-algebra.md` | Full geometric linear algebra curriculum, 52 lessons (Kumaresan) | Tick checkboxes |
-| `05-probability.md` | Full probability curriculum, 46 lessons (Veerarajan) | Tick checkboxes |
-| `06-numerical-methods.md` | Bridging module, 18 lessons (Sastry) | Tick checkboxes |
+| `03-discrete-math-lectures.md` | Checklist for the owner's university lecture course (github.com/Piechutowski/discreat-math) | Tick checkboxes |
+| `04-calculus.md` | Full calculus curriculum, 89 lessons (Thomas' Calculus) | Tick checkboxes |
+| `05-linear-algebra.md` | Full geometric linear algebra curriculum, 52 lessons (Kumaresan) | Tick checkboxes |
+| `06-probability.md` | Full probability curriculum, 46 lessons (Veerarajan) | Tick checkboxes |
+| `07-numerical-methods.md` | Bridging module, 18 lessons (Sastry) | Tick checkboxes |
 | `LOG.md` | Completion log, newest day first | **Generated — never by hand** |
 | `progress/log.csv` | Raw log: timestamp, module, lesson for every completion | **Generated — never by hand** |
 | `progress/*.svg` | Progress-bar cards (one per module + `overall.svg`) | **Generated — never by hand** |
@@ -35,7 +36,7 @@ Every lesson is a markdown checkbox (`- [ ]` → `- [x]`). The Go tool
 (`go run ./tools/progress`, run from the repo root, needs Go ≥ 1.21, stdlib only) does four
 things on each run:
 
-1. Counts checkboxes in the six module files, grouped by `## ` heading.
+1. Counts checkboxes in the seven module files, grouped by `## ` heading.
 2. Redraws the SVG progress cards in `progress/` and rewrites `progress/progress.csv`.
 3. Rewrites the content between `<!-- progress:... -->` and `<!-- endprogress -->` markers in
    each module file and in `README.md` (the "N / M lessons complete" lines and the dashboard).
@@ -47,11 +48,11 @@ is missing.
 
 ### Milestones on the bars
 
-Each `## ` heading that contains checkboxes is a milestone group — a course section (Greene,
-modules 03–06) or a book chapter (Rosen). The progress bar is notched at every group boundary,
-so each segment is one section and you can see which sections are finished; the card's caption
-reads "N of M sections complete". Headings without checkboxes (exit criteria, tables) are
-ignored. On `overall.svg` the segments are the six modules. Consequences worth knowing:
+Each `## ` heading that contains checkboxes is a milestone group — a course section or a book
+chapter. The progress bar is notched at every group boundary, so each segment is one section
+and you can see which sections are finished; the card's caption reads "N of M sections
+complete". Headings without checkboxes (exit criteria, tables) are ignored. On `overall.svg`
+the segments are the modules. Consequences worth knowing:
 
 - Adding or removing a `## ` heading in a module file changes its milestone count.
 - The `?v=` query on image URLs starts with `cardVersion` (a constant in the tool). **Bump it
@@ -70,7 +71,7 @@ ignored. On `overall.svg` the segments are the six modules. Consequences worth k
   (full timestamps stay in the CSV).
 
 A lesson is identified by module + label. The label is the checkbox line's bold span when it
-has one (modules 03–06), otherwise the whole line (Greene and Rosen entries). **Renaming a
+has one (modules 03–07), otherwise the whole line (Greene and Rosen entries). **Renaming a
 lesson line therefore drops and re-stamps its log entry** — avoid renaming ticked lessons.
 
 ## How to record completed lessons (three ways)

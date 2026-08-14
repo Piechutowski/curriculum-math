@@ -1,7 +1,7 @@
-# Module 04 — Linear Algebra (Geometric)
+# Module 05 — Linear Algebra (Geometric)
 
-<!-- progress:04-linear-algebra -->
-![04 · Linear Algebra — Kumaresan progress](progress/04-linear-algebra.svg?v=2-0-52)
+<!-- progress:05-linear-algebra -->
+![05 · Linear Algebra — Kumaresan progress](progress/05-linear-algebra.svg?v=2-0-52)
 
 **0 / 52 lessons complete · 0%** — 0 of 10 sections finished · [completion log](LOG.md)
 <!-- endprogress -->

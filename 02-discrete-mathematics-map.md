@@ -87,7 +87,7 @@ grammars, syntax trees, and program transformations.
 ## Ch. 6 — Counting `[CRY]` `[NET]` `[DB]`
 Keyspace sizes and brute-force costs are counting problems; the pigeonhole principle (6.2)
 proves hash collisions are guaranteed, not unlucky. Feeds the Probability module — do this
-chapter before starting module 05.
+chapter before starting module 06.
 
 - [ ] 6.1 The Basics of Counting
 - [ ] 6.2 The Pigeonhole Principle

@@ -214,7 +214,7 @@ the exponent," made deliberately hard. Logarithms are why B-trees and binary sea
 - [ ] 366. Applications of Exponential and Logarithmic Functions
 
 ## Section 13: Systems of Equations and Matrices `[GFX]`
-Gateway to Linear Algebra (module 04), where all of this is redone geometrically. Special
+Gateway to Linear Algebra (module 05), where all of this is redone geometrically. Special
 attention: **determinant as triangle area (413–418)** — here it looks like a trick; in Linear
 Algebra §5 that geometric meaning becomes the *definition*.
 
@@ -374,9 +374,9 @@ Calculus §12 does calculus on these.
 
 | Greene section | Grows into |
 |---|---|
-| §13 Matrices & determinants | Linear Algebra (module 04), done geometrically |
+| §13 Matrices & determinants | Linear Algebra (module 05), done geometrically |
 | §15 Sequences & series | Calculus §11 (infinite series, Taylor) |
-| §16 Counting & probability | Rosen Ch. 6 + Probability (module 05) |
+| §16 Counting & probability | Rosen Ch. 6 + Probability (module 06) |
 | §10 Difference quotient | Calculus §3 (the derivative) |
 | §24 Vectors | Linear Algebra §1, Calculus §13 |
 | §25 Complex numbers | Linear Algebra §10, Calculus §10 (oscillation) |

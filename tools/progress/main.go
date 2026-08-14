@@ -48,10 +48,11 @@ type module struct {
 var modules = []*module{
 	{id: "01-algebra-trigonometry", file: "01-algebra-trigonometry-map.md", title: "01 · Algebra & Trigonometry — Greene", short: "Greene", unit: "sections", c1: "#58a6ff", c2: "#1f6feb"},
 	{id: "02-discrete-mathematics", file: "02-discrete-mathematics-map.md", title: "02 · Discrete Mathematics — Rosen", short: "Rosen", unit: "chapters", c1: "#bc8cff", c2: "#8957e5"},
-	{id: "03-calculus", file: "03-calculus.md", title: "03 · Calculus — Thomas", short: "Calculus", unit: "sections", c1: "#ffa657", c2: "#f0883e"},
-	{id: "04-linear-algebra", file: "04-linear-algebra.md", title: "04 · Linear Algebra — Kumaresan", short: "Linear Algebra", unit: "sections", c1: "#56d364", c2: "#2ea043"},
-	{id: "05-probability", file: "05-probability.md", title: "05 · Probability — Veerarajan", short: "Probability", unit: "sections", c1: "#f778ba", c2: "#db61a2"},
-	{id: "06-numerical-methods", file: "06-numerical-methods.md", title: "06 · Numerical Methods — Sastry", short: "Numerical", unit: "sections", c1: "#76e3ea", c2: "#39c5cf"},
+	{id: "03-discrete-math-lectures", file: "03-discrete-math-lectures.md", title: "03 · Discrete Math — Lecture Course", short: "Lectures", unit: "sections", c1: "#ff7b72", c2: "#da3633"},
+	{id: "04-calculus", file: "04-calculus.md", title: "04 · Calculus — Thomas", short: "Calculus", unit: "sections", c1: "#ffa657", c2: "#f0883e"},
+	{id: "05-linear-algebra", file: "05-linear-algebra.md", title: "05 · Linear Algebra — Kumaresan", short: "Linear Algebra", unit: "sections", c1: "#56d364", c2: "#2ea043"},
+	{id: "06-probability", file: "06-probability.md", title: "06 · Probability — Veerarajan", short: "Probability", unit: "sections", c1: "#f778ba", c2: "#db61a2"},
+	{id: "07-numerical-methods", file: "07-numerical-methods.md", title: "07 · Numerical Methods — Sastry", short: "Numerical", unit: "sections", c1: "#76e3ea", c2: "#39c5cf"},
 }
 
 // cardVersion changes whenever the SVG design changes, so the ?v= cache-buster
