@@ -17,7 +17,9 @@ family instead of just two things**. Learn the pattern once and every one of the
 This note collects every indexed operator you will meet across the curriculum
 (`01-algebra-trigonometry-map.md`, `02-discrete-mathematics-map.md`, `04-calculus.md`,
 `05-linear-algebra.md`, `06-probability.md`, `07-numerical-methods.md`), with its binary
-counterpart, its identity element, and the one gotcha each.
+counterpart, its identity element, and the one gotcha each. The operators that belong to
+programming itself — folds, Kleene star, dataflow lattices, fixpoints, $\Pi$/$\Sigma$ types —
+live in the companion note [[Big operators in programming and PL theory]].
 
 ---
 
