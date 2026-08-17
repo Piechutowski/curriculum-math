@@ -6,4 +6,5 @@ module,title,done,total,percent
 05-linear-algebra,"05 · Linear Algebra — Kumaresan",0,52,0
 06-probability,"06 · Probability — Veerarajan",0,46,0
 07-numerical-methods,"07 · Numerical Methods — Sastry",0,18,0
-overall,"All modules",42,543,8
+08-pl-theory,"08 · PL Theory — Sipser · Pierce · Winskel",0,50,0
+overall,"All modules",42,593,7

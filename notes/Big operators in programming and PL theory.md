@@ -15,7 +15,8 @@ tags:
 Companion to [[Big math operators]]. That note covers the operators of the mathematics curriculum
 (modules 01–07). This one covers the ones that only show up once you are writing compilers, type
 checkers, static analysers and distributed systems — where the *monoid itself* stops being a
-background assumption and becomes the thing you are designing.
+background assumption and becomes the thing you are designing. This material now has a full
+module of its own — `08-pl-theory.md` — and this note is that module's operator cheat-sheet.
 
 The shift in perspective: in mathematics the identity element is a footnote about empty ranges. In
 programming it is **the base case of your recursion, the initial value of your accumulator, the

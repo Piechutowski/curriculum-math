@@ -53,6 +53,7 @@ var modules = []*module{
 	{id: "05-linear-algebra", file: "05-linear-algebra.md", title: "05 · Linear Algebra — Kumaresan", short: "Linear Algebra", unit: "sections", c1: "#56d364", c2: "#2ea043"},
 	{id: "06-probability", file: "06-probability.md", title: "06 · Probability — Veerarajan", short: "Probability", unit: "sections", c1: "#f778ba", c2: "#db61a2"},
 	{id: "07-numerical-methods", file: "07-numerical-methods.md", title: "07 · Numerical Methods — Sastry", short: "Numerical", unit: "sections", c1: "#76e3ea", c2: "#39c5cf"},
+	{id: "08-pl-theory", file: "08-pl-theory.md", title: "08 · PL Theory — Sipser · Pierce · Winskel", short: "PL Theory", unit: "sections", c1: "#e3b341", c2: "#d29922"},
 }
 
 // cardVersion changes whenever the SVG design changes, so the ?v= cache-buster

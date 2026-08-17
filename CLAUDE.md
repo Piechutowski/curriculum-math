@@ -23,6 +23,8 @@ checkbox is ticked only when all three are done.
 | `05-linear-algebra.md` | Full geometric linear algebra curriculum, 52 lessons (Kumaresan) | Tick checkboxes |
 | `06-probability.md` | Full probability curriculum, 46 lessons (Veerarajan) | Tick checkboxes |
 | `07-numerical-methods.md` | Bridging module, 18 lessons (Sastry) | Tick checkboxes |
+| `08-pl-theory.md` | Full PL-theory curriculum, 50 lessons (Sipser · Pierce · Winskel) | Tick checkboxes |
+| `notes/` | Standalone reference notes for the Obsidian vault (no checkboxes — **never register in the tool**) | Hand |
 | `EXAM-PLAN.md` | Dated study plan for the university discrete-math exam | Hand |
 | `EXAM-TODO.md` | Personal tick-list mirroring the exam plan — **deliberately NOT registered in the tool**; its checkboxes must never count toward progress, so do not add it to the modules table | Hand, tick freely |
 | `LOG.md` | Completion log, newest day first | **Generated — never by hand** |
@@ -38,7 +40,7 @@ Every lesson is a markdown checkbox (`- [ ]` → `- [x]`). The Go tool
 (`go run ./tools/progress`, run from the repo root, needs Go ≥ 1.21, stdlib only) does four
 things on each run:
 
-1. Counts checkboxes in the seven module files, grouped by `## ` heading.
+1. Counts checkboxes in the eight module files, grouped by `## ` heading.
 2. Redraws the SVG progress cards in `progress/` and rewrites `progress/progress.csv`.
 3. Rewrites the content between `<!-- progress:... -->` and `<!-- endprogress -->` markers in
    each module file and in `README.md` (the "N / M lessons complete" lines and the dashboard).
