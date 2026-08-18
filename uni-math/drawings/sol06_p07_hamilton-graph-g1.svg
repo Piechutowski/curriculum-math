@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="300" viewBox="0 0 430 300">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- v5 joined to v1..v4 -->
+  <line class="ink" x1="83.5" y1="157.6" x2="141.5" y2="72.4"/>
+  <line class="ink" x1="88.4" y1="163.2" x2="276.6" y2="66.8"/>
+  <line class="ink" x1="87.7" y1="177.9" x2="207.3" y2="252.1"/>
+  <line class="ink" x1="90" y1="170" x2="350" y2="170"/>
+  <!-- 4-cycle v1-v2-v3-v4-v1 -->
+  <line class="ink" x1="232.7" y1="252.1" x2="352.3" y2="177.9"/>
+  <line class="ink" x1="356.5" y1="157.6" x2="298.5" y2="72.4"/>
+  <line class="ink" x1="275" y1="60" x2="165" y2="60"/>
+  <line class="ink" x1="155" y1="74.2" x2="215" y2="245.8"/>
+
+  <!-- vertices -->
+  <circle class="ink" cx="150" cy="60" r="15"/>
+  <circle class="ink" cx="290" cy="60" r="15"/>
+  <circle class="ink" cx="75" cy="170" r="15"/>
+  <circle class="ink" cx="365" cy="170" r="15"/>
+  <circle class="ink" cx="220" cy="260" r="15"/>
+  <text class="txt" x="143" y="65" font-size="17">v</text>
+  <text class="txt" x="152" y="69" font-size="12">4</text>
+  <text class="txt" x="283" y="65" font-size="17">v</text>
+  <text class="txt" x="292" y="69" font-size="12">3</text>
+  <text class="txt" x="68" y="175" font-size="17">v</text>
+  <text class="txt" x="77" y="179" font-size="12">5</text>
+  <text class="txt" x="358" y="175" font-size="17">v</text>
+  <text class="txt" x="367" y="179" font-size="12">2</text>
+  <text class="txt" x="213" y="265" font-size="17">v</text>
+  <text class="txt" x="222" y="269" font-size="12">1</text>
+
+  <text class="txt" x="330" y="248" font-size="22">G</text>
+  <text class="txt" x="346" y="254" font-size="15">1</text>
+</svg>

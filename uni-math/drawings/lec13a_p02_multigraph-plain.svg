@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="340" viewBox="0 0 380 340">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <path class="ink" d="M 92.5 164.5 Q 122 99 184.8 63.0"/>
+  <path class="ink" d="M 95.2 167.0 Q 158 131 187.5 65.5"/>
+  <line class="ink" x1="194.0" y1="64.4" x2="286.0" y2="165.6"/>
+  <line class="ink" x1="96.0" y1="170.0" x2="284.0" y2="170.0"/>
+  <path class="ink" d="M 95.2 173.0 Q 158 209 187.5 274.5"/>
+  <path class="ink" d="M 92.5 175.5 Q 122 241 184.8 277.0"/>
+  <line class="ink" x1="286.0" y1="174.4" x2="194.0" y2="275.6"/>
+  <circle class="fill" cx="190.0" cy="60.0" r="6"/>
+  <circle class="fill" cx="90.0" cy="170.0" r="6"/>
+  <circle class="fill" cx="290.0" cy="170.0" r="6"/>
+  <circle class="fill" cx="190.0" cy="280.0" r="6"/>
+
+</svg>

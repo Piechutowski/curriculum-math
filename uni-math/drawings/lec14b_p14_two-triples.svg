@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="110" viewBox="0 0 470 110">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <rect class="ink" x="20" y="30" width="150" height="48"/>
+  <path class="ink-thin" d="M 70 30 V 78 M 120 30 V 78"/>
+  <rect class="ink" x="260" y="30" width="150" height="48"/>
+  <path class="ink-thin" d="M 310 30 V 78 M 360 30 V 78"/>
+</svg>

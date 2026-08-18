@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="250" viewBox="0 0 720 250">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- Panel A: alpha, beta > 1 -->
+  <g>
+    <path class="ink-thin" d="M 15 185 H 215 M 215 185 l -9 -4.5 M 215 185 l -9 4.5"/>
+    <path class="ink-thin" d="M 55 200 V 20 M 55 20 l -4.5 9 M 55 20 l 4.5 9"/>
+    <path class="ink-thin dashed" d="M 55 105 H 135 M 135 185 V 105"/>
+    <path class="ink" d="M 55 185 C 95 181 122 150 135 105 C 145 70 152 45 158 25"/>
+    <path class="ink" d="M 55 185 C 103 184 127 150 135 105 C 141 68 144 45 146 22"/>
+    <text class="txt" x="128" y="203" font-size="15" text-anchor="middle">1</text>
+    <text class="txt" x="42" y="110" font-size="15" text-anchor="end">1</text>
+    <text class="txt" x="112" y="22" font-size="17">x<tspan dy="-6" font-size="12">&#946;</tspan></text>
+    <text class="txt" x="165" y="42" font-size="17">x<tspan dy="-6" font-size="12">&#945;</tspan></text>
+    <text class="txt" x="70" y="232" font-size="15">&#945;, &#946; &gt; 1,&#160;&#160;&#946; &gt; &#945;</text>
+  </g>
+
+  <!-- Panel B: alpha = 1 -->
+  <g transform="translate(240,0)">
+    <path class="ink-thin" d="M 15 185 H 215 M 215 185 l -9 -4.5 M 215 185 l -9 4.5"/>
+    <path class="ink-thin" d="M 55 200 V 20 M 55 20 l -4.5 9 M 55 20 l 4.5 9"/>
+    <path class="ink" d="M 25 215 L 190 50"/>
+    <circle class="ink" cx="105" cy="135" r="3.5"/>
+    <circle class="ink" cx="130" cy="110" r="3.5"/>
+    <circle class="ink" cx="155" cy="85" r="3.5"/>
+    <text class="txt" x="112" y="52" font-size="17">x<tspan dy="-6" font-size="12">&#945;</tspan></text>
+    <text class="txt" x="70" y="232" font-size="15">&#945; = 1</text>
+  </g>
+
+  <!-- Panel C: 0 < alpha < beta < 1 -->
+  <g transform="translate(470,0)">
+    <path class="ink-thin" d="M 15 185 H 215 M 215 185 l -9 -4.5 M 215 185 l -9 4.5"/>
+    <path class="ink-thin" d="M 55 200 V 20 M 55 20 l -4.5 9 M 55 20 l 4.5 9"/>
+    <path class="ink-thin dashed" d="M 55 105 H 135 M 135 185 V 105"/>
+    <path class="ink" d="M 55 185 C 62 135 90 115 135 105 C 165 99 190 95 210 92"/>
+    <path class="ink" d="M 55 185 C 70 155 100 120 135 105 C 168 92 190 84 210 78"/>
+    <text class="txt" x="128" y="203" font-size="15" text-anchor="middle">1</text>
+    <text class="txt" x="42" y="110" font-size="15" text-anchor="end">1</text>
+    <text class="txt" x="196" y="70" font-size="17">x<tspan dy="-6" font-size="12">&#946;</tspan></text>
+    <text class="txt" x="200" y="115" font-size="17">x<tspan dy="-6" font-size="12">&#945;</tspan></text>
+    <text class="txt" x="65" y="232" font-size="15">0 &lt; &#945; &lt; &#946; &lt; 1</text>
+  </g>
+</svg>

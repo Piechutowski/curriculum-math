@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="345" viewBox="0 0 660 345">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+  <rect x="214" y="214.2" width="72" height="65.8" fill="url(#hatch)"/>
+  <rect class="ink-thin dashed" x="214" y="214.2" width="72" height="65.8"/>
+  <rect x="286" y="175.6" width="72" height="104.4" fill="url(#hatch)"/>
+  <rect class="ink-thin dashed" x="286" y="175.6" width="72" height="104.4"/>
+  <rect x="502" y="109.8" width="72" height="170.2" fill="url(#hatch)"/>
+  <rect class="ink-thin dashed" x="502" y="109.8" width="72" height="170.2"/>
+  <path class="ink-thin" d="M 25 280 H 635 M 635 280 l -10 -5 M 635 280 l -10 5"/>
+  <path class="ink-thin" d="M 70 320 V 30 M 70 30 l -5 10 M 70 30 l 5 10"/>
+  <path class="ink" d="M 127.6 301.2 L 134.8 290.0 L 142.0 280.0 L 149.2 270.9 L 156.4 262.7 L 163.6 255.1 L 170.8 248.0 L 178.0 241.5 L 185.2 235.3 L 192.4 229.6 L 199.6 224.2 L 206.8 219.0 L 214.0 214.2 L 221.2 209.5 L 228.4 205.1 L 235.6 200.9 L 242.8 196.8 L 250.0 193.0 L 257.2 189.2 L 264.4 185.6 L 271.6 182.2 L 278.8 178.9 L 286.0 175.6 L 293.2 172.5 L 300.4 169.5 L 307.6 166.6 L 314.8 163.7 L 322.0 161.0 L 329.2 158.3 L 336.4 155.7 L 343.6 153.2 L 350.8 150.7 L 358.0 148.3 L 365.2 146.0 L 372.4 143.7 L 379.6 141.4 L 386.8 139.2 L 394.0 137.1 L 401.2 135.0 L 408.4 133.0 L 415.6 131.0 L 422.8 129.0 L 430.0 127.1 L 437.2 125.2 L 444.4 123.4 L 451.6 121.6 L 458.8 119.8 L 466.0 118.0 L 473.2 116.3 L 480.4 114.7 L 487.6 113.0 L 494.8 111.4 L 502.0 109.8 L 509.2 108.2 L 516.4 106.7 L 523.6 105.1 L 530.8 103.7 L 538.0 102.2 L 545.2 100.7 L 552.4 99.3 L 559.6 97.9 L 566.8 96.5 L 574.0 95.1 L 581.2 93.8 L 588.4 92.5 L 595.6 91.2 L 602.8 89.9 L 610.0 88.6 L 617.2 87.3"/>
+  <text class="txt" x="500" y="66" font-size="18">y(x) = ln x</text>
+  <text class="txt" x="250" y="244" font-size="17" text-anchor="middle">S&#8321;</text>
+  <text class="txt" x="322" y="204" font-size="17" text-anchor="middle">S&#8322;</text>
+  <text class="txt" x="538" y="136" font-size="17" text-anchor="middle">S&#8345;&#8331;&#8321;</text>
+  <line class="ink-thin" x1="142" y1="276" x2="142" y2="284"/>
+  <line class="ink-thin" x1="214" y1="276" x2="214" y2="284"/>
+  <line class="ink-thin" x1="286" y1="276" x2="286" y2="284"/>
+  <line class="ink-thin" x1="358" y1="276" x2="358" y2="284"/>
+  <line class="ink-thin" x1="502" y1="276" x2="502" y2="284"/>
+  <line class="ink-thin" x1="574" y1="276" x2="574" y2="284"/>
+  <text class="txt" x="142" y="302" font-size="15" text-anchor="middle">1</text>
+  <text class="txt" x="214" y="302" font-size="15" text-anchor="middle">2</text>
+  <text class="txt" x="286" y="302" font-size="15" text-anchor="middle">3</text>
+  <text class="txt" x="358" y="302" font-size="15" text-anchor="middle">4</text>
+  <text class="txt" x="430" y="300" font-size="15" text-anchor="middle">&#183;&#183;&#183;</text>
+  <text class="txt" x="502" y="302" font-size="15" text-anchor="middle">n</text>
+  <text class="txt" x="574" y="302" font-size="15" text-anchor="middle">n+1</text>
+  <text class="txt" x="628" y="308" font-size="16">x</text>
+  <text class="txt" x="48" y="44" font-size="16">y</text>
+</svg>

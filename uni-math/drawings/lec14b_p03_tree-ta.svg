@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="180" viewBox="0 0 330 180">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <!-- edges -->
+  <path class="ink-thin" d="M 113 69 L 72 128 M 127 69 L 168 128"/>
+  <!-- root: dot + ring -->
+  <circle class="fill" cx="120" cy="60" r="5"/>
+  <circle class="ink" cx="120" cy="60" r="11"/>
+  <!-- children -->
+  <circle class="fill" cx="72" cy="132" r="5"/>
+  <circle class="fill" cx="168" cy="132" r="5"/>
+  <!-- labels -->
+  <path class="ink-thin" d="M 172 30 Q 148 36 134 51 M 134 51 l 3 -9 M 134 51 l 9.5 -2.5"/>
+  <text class="txt" x="178" y="30" font-size="16">root of T<tspan dy="4" font-size="11">a</tspan></text>
+  <text class="txt" x="238" y="110" font-size="22">T<tspan dy="5" font-size="15">a</tspan></text>
+</svg>

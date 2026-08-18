@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="215" height="140" viewBox="0 0 215 140">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- triangle + isolated vertex -->
+  <path class="ink" d="M 60 35 L 180 60 L 125 110 Z"/>
+  <circle class="fill" cx="60" cy="35" r="5"/><circle class="fill" cx="180" cy="60" r="5"/><circle class="fill" cx="125" cy="110" r="5"/>
+  <circle class="fill" cx="30" cy="115" r="5"/>
+</svg>

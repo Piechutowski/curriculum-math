@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="410" viewBox="0 0 400 410">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- T_v : root v; children u, s, w, x; x -> y, z -->
+  <text class="txt" x="12" y="62" font-size="21">T<tspan dy="5" font-size="15">v</tspan></text>
+  <path class="ink" d="M 190 30 L 80 105 M 190 30 L 150 105 M 190 30 L 220 105 M 190 30 L 300 105"/>
+  <path class="ink" d="M 300 105 L 265 175 M 300 105 L 340 175"/>
+  <circle class="fill" cx="190" cy="30" r="5"/>
+  <circle class="fill" cx="80" cy="105" r="5"/>
+  <circle class="fill" cx="150" cy="105" r="5"/>
+  <circle class="fill" cx="220" cy="105" r="5"/>
+  <circle class="fill" cx="300" cy="105" r="5"/>
+  <circle class="fill" cx="265" cy="175" r="5"/>
+  <circle class="fill" cx="340" cy="175" r="5"/>
+  <text class="txt" x="198" y="24" font-size="19">v</text>
+  <text class="txt" x="70" y="128" font-size="19">u</text>
+  <text class="txt" x="142" y="128" font-size="19">s</text>
+  <text class="txt" x="212" y="128" font-size="19">w</text>
+  <text class="txt" x="311" y="102" font-size="19">x</text>
+  <text class="txt" x="252" y="197" font-size="19">y</text>
+  <text class="txt" x="336" y="197" font-size="19">z</text>
+  <text class="txt" x="358" y="145" font-size="17">a)</text>
+
+  <!-- T_x : root x; children y, v, z; v -> u, s, w -->
+  <text class="txt" x="12" y="258" font-size="21">T<tspan dy="5" font-size="15">x</tspan></text>
+  <path class="ink" d="M 190 230 L 100 300 M 190 230 L 190 300 M 190 230 L 280 300"/>
+  <path class="ink" d="M 190 300 L 140 370 M 190 300 L 190 370 M 190 300 L 240 370"/>
+  <circle class="fill" cx="190" cy="230" r="5"/>
+  <circle class="fill" cx="100" cy="300" r="5"/>
+  <circle class="fill" cx="190" cy="300" r="5"/>
+  <circle class="fill" cx="280" cy="300" r="5"/>
+  <circle class="fill" cx="140" cy="370" r="5"/>
+  <circle class="fill" cx="190" cy="370" r="5"/>
+  <circle class="fill" cx="240" cy="370" r="5"/>
+  <text class="txt" x="198" y="224" font-size="19">x</text>
+  <text class="txt" x="82" y="306" font-size="19">y</text>
+  <text class="txt" x="158" y="298" font-size="19">v</text>
+  <text class="txt" x="290" y="306" font-size="19">z</text>
+  <text class="txt" x="126" y="392" font-size="19">u</text>
+  <text class="txt" x="182" y="392" font-size="19">s</text>
+  <text class="txt" x="232" y="392" font-size="19">w</text>
+</svg>

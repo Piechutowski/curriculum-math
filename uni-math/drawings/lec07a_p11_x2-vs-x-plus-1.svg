@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="185" height="125" viewBox="0 0 185 125">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink-thin" d="M 12 70 H 172 M 172 70 l -8 -4 M 172 70 l -8 4"/>
+  <path class="ink" d="M 42.0 23.1 L 46.0 36.3 L 50.0 48.4 L 54.0 59.3 L 58.0 69.1 L 62.0 77.8 L 66.0 85.3 L 70.0 91.6 L 74.0 96.8 L 78.0 100.8 L 82.0 103.7 L 86.0 105.4 L 90.0 106.0 L 94.0 105.4 L 98.0 103.7 L 102.0 100.8 L 106.0 96.8 L 110.0 91.6 L 114.0 85.3 L 118.0 77.8 L 122.0 69.1 L 126.0 59.3 L 130.0 48.4 L 134.0 36.3 L 138.0 23.1"/>
+  <circle class="fill" cx="121.6" cy="70" r="3.5"/>
+  <text class="txt" x="132" y="92" font-size="14">x&#8322;</text>
+  <text class="txt" x="46" y="60" font-size="14">x&#8321;</text>
+  <circle class="fill" cx="58.4" cy="70" r="3.5"/>
+</svg>

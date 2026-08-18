@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="160" viewBox="0 0 480 160">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <line class="ink dashed" x1="115" y1="78" x2="222" y2="78"/>
+  <circle class="fill" cx="230.0" cy="78.0" r="5"/>
+  <line class="ink dashed" x1="238" y1="78" x2="345" y2="78"/>
+  <line class="ink" x1="226" y1="85" x2="180" y2="140"/>
+  <path class="ink-thin" d="M 90.0 52.0 L 150.0 72.0 M 150.0 72.0 L 141.1 73.0 M 150.0 72.0 L 143.5 65.8"/>
+  <text class="txt" x="15" y="48" font-size="16">we erase</text>
+  <path class="ink-thin" d="M 385.0 52.0 L 305.0 72.0 M 305.0 72.0 L 312.0 66.3 M 305.0 72.0 L 313.8 73.7"/>
+  <text class="txt" x="390" y="48" font-size="16">we erase</text>
+
+</svg>

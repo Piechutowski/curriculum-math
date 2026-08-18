@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="230" viewBox="0 0 300 230">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+  <path d="M 55 190 C 115 187 170 130 205 60 L 205 190 Z" fill="url(#hatch)"/>
+  <path class="ink-thin" d="M 25 190 H 280 M 280 190 l -9 -4.5 M 280 190 l -9 4.5"/>
+  <path class="ink-thin" d="M 55 215 V 25 M 55 25 l -4.5 9 M 55 25 l 4.5 9"/>
+  <text class="txt" x="10" y="40" font-size="16">f(x)</text>
+  <path class="ink" d="M 55 190 C 115 187 170 130 205 60 C 215 38 221 24 225 16"/>
+  <path class="ink-thin dashed" d="M 205 60 V 190"/>
+  <text class="txt" x="46" y="208" font-size="15" text-anchor="middle">0</text>
+  <text class="txt" x="205" y="208" font-size="15" text-anchor="middle">1</text>
+  <text class="txt" x="80" y="50" font-size="16">f(x) = x<tspan dy="-6" font-size="12">2</tspan></text>
+</svg>

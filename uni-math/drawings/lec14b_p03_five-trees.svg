@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="220" viewBox="0 0 680 220">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- (1) root with two children -->
+  <g>
+    <path class="ink-thin" d="M 62 54 L 38 105 M 74 54 L 98 105"/>
+    <circle class="fill" cx="68" cy="45" r="5"/><circle class="ink" cx="68" cy="45" r="11"/>
+    <circle class="fill" cx="38" cy="110" r="5"/><circle class="fill" cx="98" cy="110" r="5"/>
+    <text class="txt" x="68" y="205" font-size="16" text-anchor="middle">(1)</text>
+  </g>
+
+  <!-- (2) left-left chain -->
+  <g transform="translate(136,0)">
+    <path class="ink-thin" d="M 82 54 L 58 105 M 58 110 L 28 165"/>
+    <circle class="fill" cx="88" cy="45" r="5"/><circle class="ink" cx="88" cy="45" r="11"/>
+    <circle class="fill" cx="58" cy="110" r="5"/><circle class="fill" cx="28" cy="165" r="5"/>
+    <text class="txt" x="68" y="205" font-size="16" text-anchor="middle">(2)</text>
+  </g>
+
+  <!-- (3) left child, then its right child -->
+  <g transform="translate(272,0)">
+    <path class="ink-thin" d="M 72 54 L 48 105 M 48 110 L 78 165"/>
+    <circle class="fill" cx="78" cy="45" r="5"/><circle class="ink" cx="78" cy="45" r="11"/>
+    <circle class="fill" cx="48" cy="110" r="5"/><circle class="fill" cx="78" cy="165" r="5"/>
+    <text class="txt" x="68" y="205" font-size="16" text-anchor="middle">(3)</text>
+  </g>
+
+  <!-- (4) right-right chain -->
+  <g transform="translate(408,0)">
+    <path class="ink-thin" d="M 54 54 L 78 105 M 78 110 L 108 165"/>
+    <circle class="fill" cx="48" cy="45" r="5"/><circle class="ink" cx="48" cy="45" r="11"/>
+    <circle class="fill" cx="78" cy="110" r="5"/><circle class="fill" cx="108" cy="165" r="5"/>
+    <text class="txt" x="68" y="205" font-size="16" text-anchor="middle">(4)</text>
+  </g>
+
+  <!-- (5) right child, then its left child -->
+  <g transform="translate(544,0)">
+    <path class="ink-thin" d="M 64 54 L 88 105 M 88 110 L 58 165"/>
+    <circle class="fill" cx="58" cy="45" r="5"/><circle class="ink" cx="58" cy="45" r="11"/>
+    <circle class="fill" cx="88" cy="110" r="5"/><circle class="fill" cx="58" cy="165" r="5"/>
+    <text class="txt" x="68" y="205" font-size="16" text-anchor="middle">(5)</text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="320" viewBox="0 0 420 320">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+
+  <!-- axes -->
+  <path class="ink-thin" d="M 60 160 H 380 M 380 160 l -10 -5 M 380 160 l -10 5"/>
+  <path class="ink-thin" d="M 240 295 V 30 M 240 30 l -5 10 M 240 30 l 5 10"/>
+  <text class="txt" x="370" y="186" font-size="18">x</text>
+  <text class="txt" x="216" y="40" font-size="18">y</text>
+
+  <!-- left half-disc, diameter excluded -->
+  <path d="M 240 80 A 80 80 0 0 0 240 240 Z" fill="url(#hatch)"/>
+  <path class="ink" d="M 240 80 A 80 80 0 0 0 240 240"/>
+  <path class="ink dashed" d="M 240 88 V 232"/>
+  <circle class="ink" cx="240" cy="80" r="5"/>
+  <circle class="ink" cx="240" cy="240" r="5"/>
+
+  <text class="txt" x="300" y="76" font-size="22">A ∖ B</text>
+</svg>

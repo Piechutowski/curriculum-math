@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <text class="txt" x="270" y="30" font-size="18">n = 10</text>
+
+  <!-- people -->
+  <circle class="fill" cx="160" cy="60" r="4"/>
+  <circle class="fill" cx="221.7" cy="80.1" r="4"/>
+  <circle class="fill" cx="259.9" cy="132.6" r="4"/>
+  <circle class="fill" cx="259.9" cy="197.4" r="4"/>
+  <circle class="fill" cx="221.7" cy="249.9" r="4"/>
+  <circle class="fill" cx="160" cy="270" r="4"/>
+  <circle class="fill" cx="98.3" cy="249.9" r="4"/>
+  <circle class="fill" cx="60.1" cy="197.4" r="4"/>
+  <circle class="fill" cx="60.1" cy="132.6" r="4"/>
+  <circle class="fill" cx="98.3" cy="80.1" r="4"/>
+
+  <!-- numbers -->
+  <text class="txt" x="160" y="43" font-size="17" text-anchor="middle">1</text>
+  <text class="txt" x="234.7" y="67" font-size="17" text-anchor="middle">2</text>
+  <text class="txt" x="280.8" y="131" font-size="17" text-anchor="middle">3</text>
+  <text class="txt" x="280.8" y="209" font-size="17" text-anchor="middle">4</text>
+  <text class="txt" x="234.7" y="273" font-size="17" text-anchor="middle">5</text>
+  <text class="txt" x="160" y="297" font-size="17" text-anchor="middle">6</text>
+  <text class="txt" x="85.3" y="273" font-size="17" text-anchor="middle">7</text>
+  <text class="txt" x="39.2" y="209" font-size="17" text-anchor="middle">8</text>
+  <text class="txt" x="39.2" y="131" font-size="17" text-anchor="middle">9</text>
+  <text class="txt" x="85.3" y="67" font-size="17" text-anchor="middle">10</text>
+
+  <!-- counting direction arrow (clockwise) -->
+  <path class="ink-thin" d="M 172.2 77.9 A 88 88 0 0 1 201.3 87.3 M 201.3 87.3 l -10.5 -1.5 M 201.3 87.3 l -5.5 -9"/>
+
+  <!-- survivor 5 circled -->
+  <circle class="ink" cx="228" cy="259" r="25"/>
+  <text class="txt" x="266" y="252" font-size="22">!</text>
+</svg>

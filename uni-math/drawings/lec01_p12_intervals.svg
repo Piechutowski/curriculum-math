@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="300" viewBox="0 0 470 300">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+    
+  </defs>
+
+  <path class="ink-thin" d="M 30 50 H 430 M 430 50 l -10 -5 M 430 50 l -10 5"/>
+  <path class="ink" d="M 100 40 v 20 M 100 40 h 8"  stroke-width="2.6"/>
+  <path class="ink" d="M 100 50 H 334" stroke-width="4"/>
+  <path class="ink" d="M 340 40 a 14 10 0 0 1 0 20" stroke-width="2.6"/>
+  <text class="txt" x="96" y="84" font-size="20">0</text>
+  <text class="txt" x="332" y="84" font-size="20">1</text>
+  <path class="ink-thin" d="M 30 150 H 430 M 430 150 l -10 -5 M 430 150 l -10 5"/>
+  <path class="ink" d="M 100 140 v 20 M 100 140 h 8"  stroke-width="2.6"/>
+  <path class="ink" d="M 100 150 H 214" stroke-width="4"/>
+  <path class="ink" d="M 220 140 a 14 10 0 0 1 0 20" stroke-width="2.6"/>
+  <text class="txt" x="96" y="184" font-size="20">0</text>
+  <text class="txt" x="212" y="184" font-size="20">½</text>
+  <path class="ink-thin" d="M 30 250 H 430 M 430 250 l -10 -5 M 430 250 l -10 5"/>
+  <path class="ink" d="M 100 240 v 20 M 100 240 h 8"  stroke-width="2.6"/>
+  <path class="ink" d="M 100 250 H 159" stroke-width="4"/>
+  <path class="ink" d="M 165 240 a 14 10 0 0 1 0 20" stroke-width="2.6"/>
+  <text class="txt" x="96" y="284" font-size="20">0</text>
+  <text class="txt" x="157" y="284" font-size="20">1⁄n</text><text class="txt" x="55" y="120" font-size="20">⋮</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="385" viewBox="0 0 400 385">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- T1: path on 7 vertices -->
+  <path class="ink" d="M 20 30 L 320 30"/>
+  <circle class="fill" cx="20" cy="30" r="5"/><circle class="fill" cx="70" cy="30" r="5"/><circle class="fill" cx="120" cy="30" r="5"/><circle class="fill" cx="170" cy="30" r="5"/><circle class="fill" cx="220" cy="30" r="5"/><circle class="fill" cx="270" cy="30" r="5"/><circle class="fill" cx="320" cy="30" r="5"/>
+  <text class="txt" x="352" y="37" font-size="19">T<tspan dy="4" font-size="14">1</tspan></text>
+
+  <!-- T2: path 6 + pendant at 5th -->
+  <path class="ink" d="M 20 85 L 270 85 M 220 85 L 220 125"/>
+  <circle class="fill" cx="20" cy="85" r="5"/><circle class="fill" cx="70" cy="85" r="5"/><circle class="fill" cx="120" cy="85" r="5"/><circle class="fill" cx="170" cy="85" r="5"/><circle class="fill" cx="220" cy="85" r="5"/><circle class="fill" cx="270" cy="85" r="5"/>
+  <circle class="fill" cx="220" cy="125" r="5"/>
+  <text class="txt" x="352" y="92" font-size="19">T<tspan dy="4" font-size="14">2</tspan></text>
+
+  <!-- T3: path 6 + pendant at 4th -->
+  <path class="ink" d="M 20 165 L 270 165 M 170 165 L 170 205"/>
+  <circle class="fill" cx="20" cy="165" r="5"/><circle class="fill" cx="70" cy="165" r="5"/><circle class="fill" cx="120" cy="165" r="5"/><circle class="fill" cx="170" cy="165" r="5"/><circle class="fill" cx="220" cy="165" r="5"/><circle class="fill" cx="270" cy="165" r="5"/>
+  <circle class="fill" cx="170" cy="205" r="5"/>
+  <text class="txt" x="352" y="172" font-size="19">T<tspan dy="4" font-size="14">3</tspan></text>
+
+  <!-- T4: path 5 + pendants at 3rd and 4th -->
+  <path class="ink" d="M 20 245 L 220 245 M 120 245 L 120 285 M 170 245 L 170 285"/>
+  <circle class="fill" cx="20" cy="245" r="5"/><circle class="fill" cx="70" cy="245" r="5"/><circle class="fill" cx="120" cy="245" r="5"/><circle class="fill" cx="170" cy="245" r="5"/><circle class="fill" cx="220" cy="245" r="5"/>
+  <circle class="fill" cx="120" cy="285" r="5"/><circle class="fill" cx="170" cy="285" r="5"/>
+  <text class="txt" x="352" y="252" font-size="19">T<tspan dy="4" font-size="14">4</tspan></text>
+
+  <!-- T5: path 5 + pendants at 2nd and 4th -->
+  <path class="ink" d="M 20 325 L 220 325 M 70 325 L 70 365 M 170 325 L 170 365"/>
+  <circle class="fill" cx="20" cy="325" r="5"/><circle class="fill" cx="70" cy="325" r="5"/><circle class="fill" cx="120" cy="325" r="5"/><circle class="fill" cx="170" cy="325" r="5"/><circle class="fill" cx="220" cy="325" r="5"/>
+  <circle class="fill" cx="70" cy="365" r="5"/><circle class="fill" cx="170" cy="365" r="5"/>
+  <text class="txt" x="352" y="332" font-size="19">T<tspan dy="4" font-size="14">5</tspan></text>
+</svg>

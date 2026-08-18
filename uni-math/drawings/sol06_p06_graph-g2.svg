@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- square with both diagonals, a second (curved) top edge, and a pendant vertex -->
+  <line class="ink" x1="100" y1="90" x2="240" y2="90"/>
+  <line class="ink" x1="100" y1="90" x2="100" y2="210"/>
+  <line class="ink" x1="100" y1="210" x2="240" y2="210"/>
+  <line class="ink" x1="240" y1="90" x2="240" y2="210"/>
+  <line class="ink" x1="100" y1="90" x2="240" y2="210"/>
+  <line class="ink" x1="240" y1="90" x2="100" y2="210"/>
+  <path class="ink" d="M 100 90 Q 170 25 240 90"/>
+  <line class="ink" x1="240" y1="90" x2="340" y2="90"/>
+
+  <!-- vertices -->
+  <circle class="fill" cx="100" cy="90" r="5"/>
+  <circle class="fill" cx="240" cy="90" r="5"/>
+  <circle class="fill" cx="100" cy="210" r="5"/>
+  <circle class="fill" cx="240" cy="210" r="5"/>
+  <circle class="fill" cx="340" cy="90" r="5"/>
+
+  <text class="txt" x="300" y="196" font-size="22">G</text>
+  <text class="txt" x="316" y="202" font-size="15">2</text>
+</svg>

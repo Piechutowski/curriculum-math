@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170" viewBox="0 0 300 170">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <path class="ink" d="M 40 92 C 42 60, 76 42, 112 46 C 152 51, 170 72, 165 94 C 160 120, 122 136, 87 132 C 56 128, 38 116, 40 92 Z"/>
+  <path class="ink" d="M 148 96 C 150 74, 176 60, 205 62 C 236 64, 256 80, 254 100 C 252 120, 228 132, 202 130 C 174 128, 146 118, 148 96 Z"/>
+  <circle class="fill" cx="80.0" cy="74.0" r="4"/>
+  <circle class="fill" cx="110.0" cy="108.0" r="4"/>
+  <circle class="fill" cx="157.0" cy="96.0" r="4"/>
+  <circle class="fill" cx="222.0" cy="90.0" r="4"/>
+  <text class="txt" x="62.0" y="68.0" font-size="19">e<tspan dy="5" font-size="13">1</tspan></text>
+  <text class="txt" x="115.0" y="116.0" font-size="19">e<tspan dy="5" font-size="13">2</tspan></text>
+  <text class="txt" x="228.0" y="84.0" font-size="19">f<tspan dy="5" font-size="13">1</tspan></text>
+  <text class="txt" x="58.0" y="34.0" font-size="21">A</text>
+  <text class="txt" x="240.0" y="44.0" font-size="21">B</text>
+
+</svg>

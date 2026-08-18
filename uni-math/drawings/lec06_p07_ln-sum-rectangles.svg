@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="270" viewBox="0 0 660 270">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+
+  <!-- main plot: rectangles under ln x -->
+  <path class="ink-thin" d="M 20 215 H 420 M 420 215 l -9 -4.5 M 420 215 l -9 4.5"/>
+  <path class="ink-thin" d="M 50 240 V 30 M 50 30 l -4.5 9 M 50 30 l 4.5 9"/>
+  <text class="txt" x="8" y="45" font-size="16">y(x)</text>
+
+  <rect class="ink" style="fill:url(#hatch)" x="130" y="174" width="40" height="41"/>
+  <rect class="ink" style="fill:url(#hatch)" x="170" y="149" width="40" height="66"/>
+  <rect class="ink" style="fill:url(#hatch)" x="210" y="132" width="40" height="83"/>
+  <rect class="ink" style="fill:url(#hatch)" x="290" y="108" width="40" height="107"/>
+
+  <path class="ink" d="M 90 215 C 100 192 113 181 130 174 C 150 165 160 155 170 149 C 184 141 196 136 210 132 C 224 128 238 122 250 118 C 264 113 276 111 290 108 C 304 105 318 101 330 98 C 355 92 380 88 400 85"/>
+  <text class="txt" x="352" y="72" font-size="16">y = ln x</text>
+
+  <text class="txt" x="150" y="202" font-size="13" text-anchor="middle">S<tspan dy="-5" font-size="10">2</tspan></text>
+  <text class="txt" x="190" y="182" font-size="13" text-anchor="middle">S<tspan dy="-5" font-size="10">3</tspan></text>
+  <text class="txt" x="230" y="166" font-size="13" text-anchor="middle">S<tspan dy="-5" font-size="10">4</tspan></text>
+  <text class="txt" x="310" y="146" font-size="13" text-anchor="middle">S<tspan dy="-5" font-size="10">n</tspan></text>
+
+  <text class="txt" x="90" y="233" font-size="14" text-anchor="middle">1</text>
+  <text class="txt" x="130" y="233" font-size="14" text-anchor="middle">2</text>
+  <text class="txt" x="170" y="233" font-size="14" text-anchor="middle">3</text>
+  <text class="txt" x="210" y="233" font-size="14" text-anchor="middle">4</text>
+  <text class="txt" x="268" y="230" font-size="14" text-anchor="middle">&#8230;</text>
+  <text class="txt" x="290" y="233" font-size="14" text-anchor="middle">n</text>
+  <text class="txt" x="332" y="233" font-size="14" text-anchor="middle">n+1</text>
+
+  <!-- side doodle: the integral S1 -->
+  <path class="ink-thin" d="M 475 215 H 650 M 650 215 l -9 -4.5 M 650 215 l -9 4.5"/>
+  <path class="ink-thin" d="M 495 240 V 60 M 495 60 l -4.5 9 M 495 60 l 4.5 9"/>
+  <path d="M 510 215 C 525 165 560 140 620 125 L 620 215 Z" fill="url(#hatch)"/>
+  <path class="ink" d="M 510 215 C 525 165 560 140 620 125"/>
+  <path class="ink-thin" d="M 620 125 V 215"/>
+  <text class="txt" x="510" y="233" font-size="14" text-anchor="middle">1</text>
+  <text class="txt" x="622" y="233" font-size="14" text-anchor="middle">n+1</text>
+  <text class="txt" x="560" y="110" font-size="16">S<tspan dy="5" font-size="12">1</tspan></text>
+</svg>

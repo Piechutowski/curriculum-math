@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- edges: u-v, s-v, v-w, v-x, x-y, x-z -->
+  <path class="ink" d="M 140 30 L 140 160 M 55 95 L 255 95 M 255 30 L 255 160"/>
+  <circle class="fill" cx="140" cy="30" r="5"/>
+  <circle class="fill" cx="255" cy="30" r="5"/>
+  <circle class="fill" cx="55" cy="95" r="5"/>
+  <circle class="fill" cx="140" cy="95" r="5"/>
+  <circle class="fill" cx="255" cy="95" r="5"/>
+  <circle class="fill" cx="140" cy="160" r="5"/>
+  <circle class="fill" cx="255" cy="160" r="5"/>
+  <text class="txt" x="118" y="26" font-size="19">u</text>
+  <text class="txt" x="265" y="26" font-size="19">y</text>
+  <text class="txt" x="36" y="90" font-size="19">s</text>
+  <text class="txt" x="114" y="116" font-size="19">v</text>
+  <text class="txt" x="267" y="101" font-size="19">x</text>
+  <text class="txt" x="152" y="168" font-size="19">w</text>
+  <text class="txt" x="267" y="168" font-size="19">z</text>
+</svg>

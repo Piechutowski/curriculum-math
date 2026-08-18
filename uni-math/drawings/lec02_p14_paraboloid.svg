@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="270" viewBox="0 0 420 270">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .dotted { stroke-dasharray:2 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path class="fill" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <path class="ink-thin" d="M 170 225 V 38" marker-end="url(#ah)"/>
+  <text class="txt" x="180" y="52" font-size="15">R</text>
+  <path class="ink-thin" d="M 170 225 L 320 192" marker-end="url(#ah)"/>
+  <text class="txt" x="328" y="192" font-size="15">R</text>
+  <path class="ink-thin" d="M 170 225 L 70 252" marker-end="url(#ah)"/>
+  <text class="txt" x="48" y="264" font-size="15">R</text>
+  <ellipse class="ink" cx="170" cy="95" rx="72" ry="20"/>
+  <path class="ink" d="M 98 95 Q 112 172 170 178"/>
+  <path class="ink" d="M 242 95 Q 228 172 170 178"/>
+  <circle class="fill" cx="140" cy="120" r="1.8"/>
+  <circle class="fill" cx="175" cy="135" r="1.8"/>
+  <circle class="fill" cx="205" cy="118" r="1.8"/>
+  <circle class="fill" cx="158" cy="155" r="1.8"/>
+  <circle class="fill" cx="192" cy="152" r="1.8"/>
+  <circle class="fill" cx="170" cy="110" r="1.8"/>
+  <text class="txt" x="305" y="84" font-size="15">paraboloid</text>
+  <path class="ink-thin" d="M 300 84 L 250 92" marker-end="url(#ah)"/>
+</svg>

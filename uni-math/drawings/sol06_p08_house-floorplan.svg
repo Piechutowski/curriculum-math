@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="305" viewBox="0 0 440 305">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- outer walls (gaps = doors d1 in the top wall, d6 in the bottom wall) -->
+  <path class="ink" d="M 110 50 H 60 V 250 H 300 M 336 250 H 400 V 50 H 146"/>
+  <!-- inner vertical wall (gaps = d2 top, d5 bottom) -->
+  <path class="ink" d="M 230 50 V 78 M 230 114 V 185 M 230 221 V 250"/>
+  <!-- inner horizontal wall (gaps = d3 left, d4 right) -->
+  <path class="ink" d="M 60 150 H 130 M 166 150 H 290 M 326 150 H 400"/>
+
+  <!-- door leaves -->
+  <line class="ink-thin" x1="146" y1="50" x2="128" y2="28"/>
+  <line class="ink-thin" x1="230" y1="114" x2="210" y2="100"/>
+  <line class="ink-thin" x1="166" y1="150" x2="150" y2="130"/>
+  <line class="ink-thin" x1="326" y1="150" x2="308" y2="130"/>
+  <line class="ink-thin" x1="230" y1="221" x2="212" y2="205"/>
+  <line class="ink-thin" x1="336" y1="250" x2="318" y2="272"/>
+  <!-- arrow pointing at the outside door d6 -->
+  <path class="ink-thin" d="M 300 296 L 315 266 M 315 266 l -8.5 4.5 M 315 266 l -1 10"/>
+
+  <!-- door labels (with macrons and subscripts) -->
+  <text class="txt" x="106" y="34" font-size="18">d</text>
+  <line class="ink-thin" x1="105" y1="19" x2="116" y2="19"/>
+  <text class="txt" x="116" y="38" font-size="12">1</text>
+  <text class="txt" x="246" y="102" font-size="18">d</text>
+  <line class="ink-thin" x1="245" y1="87" x2="256" y2="87"/>
+  <text class="txt" x="256" y="106" font-size="12">2</text>
+  <text class="txt" x="176" y="134" font-size="18">d</text>
+  <line class="ink-thin" x1="175" y1="119" x2="186" y2="119"/>
+  <text class="txt" x="186" y="138" font-size="12">3</text>
+  <text class="txt" x="336" y="134" font-size="18">d</text>
+  <line class="ink-thin" x1="335" y1="119" x2="346" y2="119"/>
+  <text class="txt" x="346" y="138" font-size="12">4</text>
+  <text class="txt" x="246" y="210" font-size="18">d</text>
+  <line class="ink-thin" x1="245" y1="195" x2="256" y2="195"/>
+  <text class="txt" x="256" y="214" font-size="12">5</text>
+  <text class="txt" x="348" y="284" font-size="18">d</text>
+  <line class="ink-thin" x1="347" y1="269" x2="358" y2="269"/>
+  <text class="txt" x="358" y="288" font-size="12">6</text>
+
+  <!-- room labels -->
+  <text class="txt" x="130" y="110" font-size="19">P</text>
+  <text class="txt" x="142" y="115" font-size="13">1</text>
+  <text class="txt" x="300" y="110" font-size="19">P</text>
+  <text class="txt" x="312" y="115" font-size="13">2</text>
+  <text class="txt" x="130" y="210" font-size="19">P</text>
+  <text class="txt" x="142" y="215" font-size="13">3</text>
+  <text class="txt" x="300" y="210" font-size="19">P</text>
+  <text class="txt" x="312" y="215" font-size="13">4</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="280" viewBox="0 0 680 280">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <circle class="ink" cx="150" cy="140" r="85"/>
+  <line class="ink-thin" x1="150.0" y1="55.0" x2="76.4" y2="182.5"/>
+  <line class="ink-thin" x1="76.4" y1="182.5" x2="223.6" y2="182.5"/>
+  <line class="ink-thin" x1="223.6" y1="182.5" x2="150.0" y2="55.0"/>
+  <circle class="fill" cx="150.0" cy="55.0" r="3.8"/>
+  <circle class="fill" cx="76.4" cy="182.5" r="3.8"/>
+  <circle class="fill" cx="223.6" cy="182.5" r="3.8"/>
+  <circle class="fill" cx="223.6" cy="97.5" r="3.8"/>
+  <circle class="fill" cx="76.4" cy="97.5" r="3.8"/>
+  <path class="ink-thin" d="M 268.0 140.0 L 398.0 140.0 M 398.0 140.0 L 389.8 143.7 M 398.0 140.0 L 389.8 136.3"/>
+  <text class="txt" x="333.0" y="118.0" font-size="16" text-anchor="middle">2 chords</text>
+  <text class="txt" x="333.0" y="172.0" font-size="16" text-anchor="middle">added</text>
+  <circle class="ink" cx="520" cy="140" r="85"/>
+  <line class="ink-thin" x1="520.0" y1="55.0" x2="446.4" y2="182.5"/>
+  <line class="ink-thin" x1="446.4" y1="182.5" x2="593.6" y2="182.5"/>
+  <line class="ink-thin" x1="593.6" y1="182.5" x2="520.0" y2="55.0"/>
+  <line class="ink" x1="593.6" y1="97.5" x2="446.4" y2="97.5"/>
+  <line class="ink" x1="593.6" y1="97.5" x2="593.6" y2="182.5"/>
+  <circle class="fill" cx="520.0" cy="55.0" r="3.8"/>
+  <circle class="fill" cx="446.4" cy="182.5" r="3.8"/>
+  <circle class="fill" cx="593.6" cy="182.5" r="3.8"/>
+  <circle class="fill" cx="593.6" cy="97.5" r="3.8"/>
+  <circle class="fill" cx="446.4" cy="97.5" r="3.8"/>
+
+</svg>

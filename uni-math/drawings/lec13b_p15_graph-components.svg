@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="340" viewBox="0 0 860 340">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <line class="ink-thin" x1="67.9" y1="70.3" x2="132.1" y2="154.7"/>
+  <line class="ink-thin" x1="231.0" y1="69.4" x2="149.0" y2="155.6"/>
+  <line class="ink-thin" x1="238.8" y1="72.9" x2="231.2" y2="152.1"/>
+  <line class="ink-thin" x1="153.0" y1="165.0" x2="217.0" y2="165.0"/>
+  <line class="ink-thin" x1="141.2" y1="177.9" x2="148.8" y2="262.1"/>
+  <line class="ink-thin" x1="238.7" y1="174.6" x2="321.3" y2="265.4"/>
+  <line class="ink-thin" x1="140.6" y1="69.0" x2="49.4" y2="156.0"/>
+  <line class="ink-thin" x1="161.2" y1="66.6" x2="318.8" y2="158.4"/>
+  <line class="ink-thin" x1="42.3" y1="177.8" x2="57.7" y2="262.2"/>
+  <line class="ink-thin" x1="51.5" y1="171.0" x2="238.5" y2="269.0"/>
+  <line class="ink-thin" x1="73.0" y1="275.0" x2="237.0" y2="275.0"/>
+  <line class="ink-thin" x1="322.4" y1="175.5" x2="257.6" y2="264.5"/>
+  <line class="ink-thin" x1="330.0" y1="152.0" x2="330.0" y2="73.0"/>
+  <circle class="ink" cx="60" cy="60" r="13"/>
+  <text class="txt" x="60" y="65" font-size="15" text-anchor="middle">1</text>
+  <circle class="ink" cx="150" cy="60" r="13"/>
+  <text class="txt" x="150" y="65" font-size="15" text-anchor="middle">2</text>
+  <circle class="ink" cx="240" cy="60" r="13"/>
+  <text class="txt" x="240" y="65" font-size="15" text-anchor="middle">3</text>
+  <circle class="ink" cx="330" cy="60" r="13"/>
+  <text class="txt" x="330" y="65" font-size="15" text-anchor="middle">4</text>
+  <circle class="ink" cx="40" cy="165" r="13"/>
+  <text class="txt" x="40" y="170" font-size="15" text-anchor="middle">5</text>
+  <circle class="ink" cx="140" cy="165" r="13"/>
+  <text class="txt" x="140" y="170" font-size="15" text-anchor="middle">6</text>
+  <circle class="ink" cx="230" cy="165" r="13"/>
+  <text class="txt" x="230" y="170" font-size="15" text-anchor="middle">7</text>
+  <circle class="ink" cx="330" cy="165" r="13"/>
+  <text class="txt" x="330" y="170" font-size="15" text-anchor="middle">8</text>
+  <circle class="ink" cx="60" cy="275" r="13"/>
+  <text class="txt" x="60" y="280" font-size="15" text-anchor="middle">9</text>
+  <circle class="ink" cx="150" cy="275" r="13"/>
+  <text class="txt" x="150" y="280" font-size="15" text-anchor="middle">10</text>
+  <circle class="ink" cx="250" cy="275" r="13"/>
+  <text class="txt" x="250" y="280" font-size="15" text-anchor="middle">11</text>
+  <circle class="ink" cx="330" cy="275" r="13"/>
+  <text class="txt" x="330" y="280" font-size="15" text-anchor="middle">12</text>
+  <text class="txt" x="120" y="320" font-size="18" text-anchor="middle">G &#8212; not connected</text>
+  <line class="ink-thin" x1="438.1" y1="80.2" x2="481.9" y2="134.8"/>
+  <line class="ink-thin" x1="551.4" y1="74.8" x2="498.6" y2="135.2"/>
+  <line class="ink-thin" x1="560.0" y1="78.0" x2="560.0" y2="122.0"/>
+  <line class="ink-thin" x1="502.9" y1="143.2" x2="547.1" y2="136.8"/>
+  <line class="ink-thin" x1="486.1" y1="157.4" x2="468.9" y2="212.6"/>
+  <line class="ink-thin" x1="560.0" y1="148.0" x2="560.0" y2="202.0"/>
+  <circle class="ink" cx="430" cy="70" r="13"/>
+  <text class="txt" x="430" y="75" font-size="15" text-anchor="middle">1</text>
+  <circle class="ink" cx="560" cy="65" r="13"/>
+  <text class="txt" x="560" y="70" font-size="15" text-anchor="middle">3</text>
+  <circle class="ink" cx="490" cy="145" r="13"/>
+  <text class="txt" x="490" y="150" font-size="15" text-anchor="middle">6</text>
+  <circle class="ink" cx="560" cy="135" r="13"/>
+  <text class="txt" x="560" y="140" font-size="15" text-anchor="middle">7</text>
+  <circle class="ink" cx="465" cy="225" r="13"/>
+  <text class="txt" x="465" y="230" font-size="15" text-anchor="middle">10</text>
+  <circle class="ink" cx="560" cy="215" r="13"/>
+  <text class="txt" x="560" y="220" font-size="15" text-anchor="middle">12</text>
+  <text class="txt" x="497" y="320" font-size="18" text-anchor="middle">G<tspan font-size="12" dy="4">1</tspan> &#8212; connected</text>
+  <line class="ink-thin" x1="683.0" y1="75.9" x2="652.0" y2="124.1"/>
+  <line class="ink-thin" x1="700.0" y1="73.3" x2="765.0" y2="126.7"/>
+  <line class="ink-thin" x1="645.7" y1="148.0" x2="649.3" y2="212.0"/>
+  <line class="ink-thin" x1="654.7" y1="143.7" x2="735.3" y2="216.3"/>
+  <line class="ink-thin" x1="663.0" y1="225.0" x2="732.0" y2="225.0"/>
+  <line class="ink-thin" x1="770.9" y1="147.3" x2="749.1" y2="212.7"/>
+  <line class="ink-thin" x1="779.1" y1="122.7" x2="795.9" y2="72.3"/>
+  <circle class="ink" cx="690" cy="65" r="13"/>
+  <text class="txt" x="690" y="70" font-size="15" text-anchor="middle">2</text>
+  <circle class="ink" cx="800" cy="60" r="13"/>
+  <text class="txt" x="800" y="65" font-size="15" text-anchor="middle">4</text>
+  <circle class="ink" cx="645" cy="135" r="13"/>
+  <text class="txt" x="645" y="140" font-size="15" text-anchor="middle">5</text>
+  <circle class="ink" cx="775" cy="135" r="13"/>
+  <text class="txt" x="775" y="140" font-size="15" text-anchor="middle">8</text>
+  <circle class="ink" cx="650" cy="225" r="13"/>
+  <text class="txt" x="650" y="230" font-size="15" text-anchor="middle">9</text>
+  <circle class="ink" cx="745" cy="225" r="13"/>
+  <text class="txt" x="745" y="230" font-size="15" text-anchor="middle">11</text>
+  <text class="txt" x="730" y="320" font-size="18" text-anchor="middle">G<tspan font-size="12" dy="4">2</tspan> &#8212; connected</text>
+</svg>

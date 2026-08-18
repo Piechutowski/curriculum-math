@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="170" viewBox="0 0 660 170">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- labels above the two segments -->
+  <text class="txt" x="165" y="42" font-size="22" text-anchor="middle">L</text>
+  <text class="txt" x="175" y="48" font-size="15" text-anchor="middle">1</text>
+  <text class="txt" x="430" y="42" font-size="22" text-anchor="middle">L</text>
+  <text class="txt" x="440" y="48" font-size="15" text-anchor="middle">2</text>
+
+  <!-- the list: a long box split into two segments -->
+  <rect class="ink" x="40" y="58" width="520" height="30"/>
+  <line class="ink" x1="290" y1="58" x2="290" y2="88"/>
+
+  <text class="txt" x="580" y="80" font-size="22">list L</text>
+
+  <!-- under-brace for L1 (k elements) -->
+  <path class="ink-thin" d="M 40 96 Q 40 106 50 106 L 155 106 Q 165 106 165 116 Q 165 106 175 106 L 280 106 Q 290 106 290 96"/>
+  <text class="txt" x="165" y="140" font-size="19" text-anchor="middle">k elements</text>
+
+  <!-- under-brace for L2 (n - k elements) -->
+  <path class="ink-thin" d="M 296 96 Q 296 106 306 106 L 418 106 Q 428 106 428 116 Q 428 106 438 106 L 550 106 Q 560 106 560 96"/>
+  <text class="txt" x="428" y="140" font-size="19" text-anchor="middle">n − k elements</text>
+</svg>

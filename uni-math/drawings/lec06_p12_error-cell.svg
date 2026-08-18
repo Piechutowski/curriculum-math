@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="210" viewBox="0 0 260 210">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+  <path d="M 70 88 H 190 C 150 92 110 105 70 123 Z" fill="url(#hatch)"/>
+  <path class="ink-thin" d="M 30 170 H 230 M 230 170 l -9 -4.5 M 230 170 l -9 4.5"/>
+  <rect class="ink" x="70" y="88" width="120" height="82"/>
+  <path class="ink" d="M 55 130 C 105 107 150 96 205 82"/>
+  <text class="txt" x="70" y="192" font-size="14" text-anchor="middle">i/n</text>
+  <text class="txt" x="190" y="192" font-size="14" text-anchor="middle">(i+1)/n</text>
+  <text class="txt" x="95" y="60" font-size="17">E<tspan dy="6" font-size="12">n</tspan><tspan dy="-14" font-size="12">i</tspan></text>
+  <path class="ink-thin" d="M 118 62 Q 130 80 134 96 M 134 96 l -1 -10 M 134 96 l 8 -6"/>
+</svg>

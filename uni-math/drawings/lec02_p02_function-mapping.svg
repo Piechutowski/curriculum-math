@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="250" viewBox="0 0 470 250">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .dotted { stroke-dasharray:2 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path class="fill" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <ellipse class="ink" cx="110" cy="135" rx="78" ry="88"/>
+  <ellipse class="ink" cx="365" cy="135" rx="62" ry="88"/>
+  <text class="txt" x="102" y="30" font-size="20">X</text>
+  <text class="txt" x="360" y="30" font-size="20">Y</text>
+  <circle class="fill" cx="128" cy="80" r="3.2"/>
+  <text class="txt" x="98" y="85" font-size="15">x<tspan dy="4" font-size="11">1</tspan></text>
+  <circle class="fill" cx="125" cy="118" r="3.2"/>
+  <text class="txt" x="95" y="123" font-size="15">x<tspan dy="4" font-size="11">2</tspan></text>
+  <circle class="fill" cx="112" cy="153" r="3.2"/>
+  <text class="txt" x="82" y="158" font-size="15">x<tspan dy="4" font-size="11">3</tspan></text>
+  <circle class="fill" cx="105" cy="188" r="3.2"/>
+  <text class="txt" x="75" y="193" font-size="15">x<tspan dy="4" font-size="11">4</tspan></text>
+  <circle class="fill" cx="368" cy="70" r="3.2"/>
+  <text class="txt" x="376" y="62" font-size="15">y<tspan dy="4" font-size="11">1</tspan></text>
+  <circle class="fill" cx="395" cy="112" r="3.2"/>
+  <text class="txt" x="403" y="117" font-size="15">y<tspan dy="4" font-size="11">2</tspan></text>
+  <circle class="fill" cx="388" cy="192" r="3.2"/>
+  <text class="txt" x="396" y="197" font-size="15">y<tspan dy="4" font-size="11">3</tspan></text>
+  <circle class="fill" cx="348" cy="162" r="3.2"/>
+  <text class="txt" x="356" y="172" font-size="15">y<tspan dy="4" font-size="11">4</tspan></text>
+  <circle class="fill" cx="352" cy="112" r="3.2"/>
+  <text class="txt" x="340" y="97" font-size="15">y<tspan dy="4" font-size="11">5</tspan></text>
+  <path class="ink-thin" d="M 136 79 L 356 71" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 133 120 L 337 158" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 120 152 L 341 116" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 113 190 L 383 117" marker-end="url(#ah)"/>
+</svg>

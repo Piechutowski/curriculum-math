@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="125" viewBox="0 0 560 125">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <circle class="ink" cx="40" cy="60" r="13"/>
+  <circle class="fill" cx="72" cy="60" r="13"/>
+  <circle class="fill" cx="104" cy="60" r="13"/>
+  <circle class="ink" cx="136" cy="60" r="13"/>
+  <circle class="ink" cx="168" cy="60" r="13"/>
+  <path class="fill" d="M 168 47 A 13 13 0 0 1 168 73 Z"/>
+  <circle class="ink" cx="200" cy="60" r="13"/>
+  <circle class="ink" cx="232" cy="60" r="13"/>
+  <circle class="fill" cx="264" cy="60" r="13"/>
+  <circle class="ink" cx="296" cy="60" r="13"/>
+  <path class="fill" d="M 296 47 A 13 13 0 0 1 296 73 Z"/>
+  <circle class="ink" cx="328" cy="60" r="13"/>
+  <path class="fill" d="M 328 47 A 13 13 0 0 1 328 73 Z"/>
+  <circle class="fill" cx="420" cy="30" r="9"/>
+  <text class="txt" x="438" y="36" font-size="15">— black</text>
+  <circle class="ink" cx="420" cy="62" r="9"/>
+  <text class="txt" x="438" y="68" font-size="15">— white</text>
+  <circle class="ink" cx="420" cy="94" r="9"/>
+  <path class="fill" d="M 420 85 A 9 9 0 0 1 420 103 Z"/>
+  <text class="txt" x="438" y="100" font-size="15">— yellow</text>
+</svg>

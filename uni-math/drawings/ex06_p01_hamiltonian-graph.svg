@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="270" viewBox="0 0 430 270">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- edges: v4v3, v4v5, v4v2, v5v3, v5v2, v5v1, v1v2, v1v3 -->
+  <path class="ink" d="M 110 62 L 255 50"/>
+  <path class="ink" d="M 110 62 L 60 135"/>
+  <path class="ink" d="M 110 62 L 320 120"/>
+  <path class="ink" d="M 60 135 L 255 50"/>
+  <path class="ink" d="M 60 135 L 320 120"/>
+  <path class="ink" d="M 60 135 L 170 210"/>
+  <path class="ink" d="M 170 210 L 320 120"/>
+  <path class="ink" d="M 170 210 L 255 50"/>
+
+  <!-- vertices -->
+  <circle class="fill" cx="110" cy="62" r="5"/>
+  <circle class="fill" cx="255" cy="50" r="5"/>
+  <circle class="fill" cx="60" cy="135" r="5"/>
+  <circle class="fill" cx="320" cy="120" r="5"/>
+  <circle class="fill" cx="170" cy="210" r="5"/>
+
+  <!-- labels -->
+  <text class="txt" x="88" y="45" font-size="19">v<tspan dy="5" font-size="14">4</tspan></text>
+  <text class="txt" x="266" y="38" font-size="19">v<tspan dy="5" font-size="14">3</tspan></text>
+  <text class="txt" x="22" y="142" font-size="19">v<tspan dy="5" font-size="14">5</tspan></text>
+  <text class="txt" x="336" y="126" font-size="19">v<tspan dy="5" font-size="14">2</tspan></text>
+  <text class="txt" x="183" y="234" font-size="19">v<tspan dy="5" font-size="14">1</tspan></text>
+  <text class="txt" x="385" y="130" font-size="26">G</text>
+</svg>

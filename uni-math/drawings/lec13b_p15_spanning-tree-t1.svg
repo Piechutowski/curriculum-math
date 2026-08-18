@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="230" viewBox="0 0 380 230">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <line class="ink-thin" x1="68.0" y1="60.2" x2="107.0" y2="109.8"/>
+  <line class="ink-thin" x1="125.2" y1="111.9" x2="199.8" y2="53.1"/>
+  <line class="ink-thin" x1="128.0" y1="119.4" x2="202.0" y2="115.6"/>
+  <line class="ink-thin" x1="119.8" y1="132.1" x2="140.2" y2="182.9"/>
+  <line class="ink-thin" x1="224.2" y1="124.2" x2="275.8" y2="175.8"/>
+  <circle class="ink" cx="60" cy="50" r="13"/>
+  <text class="txt" x="60" y="55" font-size="15" text-anchor="middle">1</text>
+  <circle class="ink" cx="210" cy="45" r="13"/>
+  <text class="txt" x="210" y="50" font-size="15" text-anchor="middle">3</text>
+  <circle class="ink" cx="115" cy="120" r="13"/>
+  <text class="txt" x="115" y="125" font-size="15" text-anchor="middle">6</text>
+  <circle class="ink" cx="215" cy="115" r="13"/>
+  <text class="txt" x="215" y="120" font-size="15" text-anchor="middle">7</text>
+  <circle class="ink" cx="145" cy="195" r="13"/>
+  <text class="txt" x="145" y="200" font-size="15" text-anchor="middle">10</text>
+  <circle class="ink" cx="285" cy="185" r="13"/>
+  <text class="txt" x="285" y="190" font-size="15" text-anchor="middle">12</text>
+  <text class="txt" x="320" y="125" font-size="21">T<tspan font-size="12" dy="4">1</tspan></text>
+</svg>

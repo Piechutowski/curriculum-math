@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="185" viewBox="0 0 620 185">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- list of length 2n split into two halves -->
+  <rect class="ink" x="40" y="50" width="440" height="46"/>
+  <line class="ink" x1="260" y1="50" x2="260" y2="96"/>
+
+  <text class="txt" x="150" y="40" font-size="21" text-anchor="middle">L<tspan font-size="15" dy="5">1</tspan></text>
+  <text class="txt" x="370" y="40" font-size="21" text-anchor="middle">L<tspan font-size="15" dy="5">2</tspan></text>
+
+  <text class="txt" x="150" y="80" font-size="19" text-anchor="middle">T(n)</text>
+  <text class="txt" x="370" y="80" font-size="19" text-anchor="middle">T(n)</text>
+
+  <!-- arrows from the caption up to each T(n) -->
+  <path class="ink-thin" d="M 150 142 V 106 M 150 106 l -4.5 9 M 150 106 l 4.5 9"/>
+  <path class="ink-thin" d="M 370 142 V 106 M 370 106 l -4.5 9 M 370 106 l 4.5 9"/>
+  <text class="txt" x="260" y="168" font-size="15" text-anchor="middle">time needed to sort a sublist of length n</text>
+
+  <!-- side annotation -->
+  <text class="txt" x="505" y="66" font-size="18">ñ = 2n</text>
+  <text class="txt" x="505" y="92" font-size="18">T(2n)</text>
+</svg>

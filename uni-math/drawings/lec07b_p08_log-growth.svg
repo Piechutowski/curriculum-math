@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="140" viewBox="0 0 200 140">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- axes -->
+  <path class="ink-thin" d="M 70 122 V 14 M 70 14 l -4.5 9 M 70 14 l 4.5 9"/>
+  <path class="ink-thin" d="M 32 75 H 190 M 190 75 l -9 -4.5 M 190 75 l -9 4.5"/>
+
+  <!-- slowly growing (logarithmic) curve -->
+  <path class="ink" d="M 55 119 L 60 106 L 66 94.4 L 73 83.6 L 80 75 L 90 65 L 100 56.8 L 115 46.7 L 130 38.5 L 150 29.5 L 168 22.7 L 185 17.7"/>
+</svg>

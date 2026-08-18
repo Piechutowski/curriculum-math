@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="190" viewBox="0 0 520 190">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink-thin" d="M 50 150 C 75 125 100 100 130 95 C 160 91 190 112 215 115"/>
+  <path class="ink-thin dashed" d="M 215 115 C 260 120 290 70 320 75 C 340 78 355 83 370 85"/>
+  <path class="ink-thin" d="M 370 85 C 400 88 440 75 470 65"/>
+  <circle class="ink" cx="50" cy="150" r="4"/>
+  <circle class="ink" cx="130" cy="95" r="4"/>
+  <circle class="ink" cx="215" cy="115" r="4"/>
+  <circle class="ink" cx="370" cy="85" r="4"/>
+  <circle class="ink" cx="470" cy="65" r="4"/>
+  <text class="txt" x="38" y="174" font-size="16">P<tspan dy="5" font-size="12">1</tspan></text>
+  <text class="txt" x="116" y="122" font-size="16">P<tspan dy="5" font-size="12">2</tspan></text>
+  <text class="txt" x="203" y="142" font-size="16">P<tspan dy="5" font-size="12">3</tspan></text>
+  <text class="txt" x="342" y="112" font-size="16">P<tspan dy="5" font-size="12">n&#8722;1</tspan></text>
+  <text class="txt" x="462" y="92" font-size="16">P<tspan dy="5" font-size="12">n</tspan></text>
+  <text class="txt" x="280" y="45" font-size="22">&#947;</text>
+</svg>

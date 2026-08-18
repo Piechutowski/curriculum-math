@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="250" viewBox="0 0 430 250">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+  <path class="ink-thin" d="M 20 205 H 400 M 400 205 l -9 -4.5 M 400 205 l -9 4.5"/>
+  <path class="ink-thin" d="M 50 235 V 30 M 50 30 l -4.5 9 M 50 30 l 4.5 9"/>
+
+  <rect class="ink" style="fill:url(#hatch)" x="50" y="190" width="35" height="15"/>
+  <rect class="ink" style="fill:url(#hatch)" x="85" y="172" width="35" height="33"/>
+  <rect class="ink" style="fill:url(#hatch)" x="120" y="148" width="35" height="57"/>
+  <rect class="ink" style="fill:url(#hatch)" x="295" y="45" width="35" height="160"/>
+
+  <path class="ink" d="M 50 205 C 70 200 78 195 85 190 C 100 181 110 177 120 172 C 135 164 145 156 155 148 C 200 125 272 92 330 45 C 340 37 348 30 352 26"/>
+  <text class="txt" x="250" y="28" font-size="16">f(x) = x<tspan dy="-6" font-size="12">2</tspan></text>
+
+  <text class="txt" x="85" y="224" font-size="13" text-anchor="middle">1/n</text>
+  <text class="txt" x="120" y="224" font-size="13" text-anchor="middle">2/n</text>
+  <text class="txt" x="155" y="224" font-size="13" text-anchor="middle">3/n</text>
+  <text class="txt" x="230" y="222" font-size="14" text-anchor="middle">&#8230;</text>
+  <text class="txt" x="330" y="224" font-size="13" text-anchor="middle">n/n</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="155" viewBox="0 0 640 155">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- group labels -->
+  <text class="txt" x="80" y="26" font-size="19">G</text>
+  <text class="txt" x="94" y="32" font-size="12">1</text>
+  <text class="txt" x="215" y="26" font-size="19">G</text>
+  <text class="txt" x="229" y="32" font-size="12">2</text>
+  <text class="txt" x="424" y="26" font-size="19">G</text>
+  <text class="txt" x="438" y="32" font-size="12">k</text>
+
+  <!-- G1: 4 cells -->
+  <rect class="ink" x="36" y="46" width="104" height="36"/>
+  <path class="ink-thin" d="M 62 46 V 82 M 88 46 V 82 M 114 46 V 82"/>
+  <path class="ink" d="M 36 44 V 84 M 140 44 V 84" stroke-width="3.6"/>
+
+  <!-- G2: 5 cells -->
+  <rect class="ink" x="158" y="46" width="130" height="36"/>
+  <path class="ink-thin" d="M 184 46 V 82 M 210 46 V 82 M 236 46 V 82 M 262 46 V 82"/>
+  <path class="ink" d="M 158 44 V 84 M 288 44 V 84" stroke-width="3.6"/>
+
+  <text class="txt" x="316" y="70" font-size="20">· · ·</text>
+
+  <!-- Gk: 4 cells -->
+  <rect class="ink" x="380" y="46" width="104" height="36"/>
+  <path class="ink-thin" d="M 406 46 V 82 M 432 46 V 82 M 458 46 V 82"/>
+  <path class="ink" d="M 380 44 V 84 M 484 44 V 84" stroke-width="3.6"/>
+
+  <!-- under-braces -->
+  <path class="ink-thin" d="M 36 92 C 38 99 44 101 50 101 L 79 101 C 84 101 87 104 88 109 C 89 104 92 101 97 101 L 126 101 C 132 101 138 99 140 92"/>
+  <path class="ink-thin" d="M 158 92 C 160 99 166 101 172 101 L 214 101 C 219 101 222 104 223 109 C 224 104 227 101 232 101 L 274 101 C 280 101 286 99 288 92"/>
+  <path class="ink-thin" d="M 380 92 C 382 99 388 101 394 101 L 423 101 C 428 101 431 104 432 109 C 433 104 436 101 441 101 L 470 101 C 476 101 482 99 484 92"/>
+
+  <!-- labels under braces -->
+  <text class="txt" x="52" y="136" font-size="18">n</text>
+  <text class="txt" x="63" y="142" font-size="12">1</text>
+  <text class="txt" x="72" y="136" font-size="18">= |G</text>
+  <text class="txt" x="105" y="142" font-size="12">1</text>
+  <text class="txt" x="112" y="136" font-size="18">|</text>
+
+  <text class="txt" x="187" y="136" font-size="18">n</text>
+  <text class="txt" x="198" y="142" font-size="12">2</text>
+  <text class="txt" x="207" y="136" font-size="18">= |G</text>
+  <text class="txt" x="240" y="142" font-size="12">2</text>
+  <text class="txt" x="247" y="136" font-size="18">|</text>
+
+  <text class="txt" x="396" y="136" font-size="18">n</text>
+  <text class="txt" x="407" y="142" font-size="12">k</text>
+  <text class="txt" x="417" y="136" font-size="18">= |G</text>
+  <text class="txt" x="450" y="142" font-size="12">k</text>
+  <text class="txt" x="459" y="136" font-size="18">|</text>
+</svg>

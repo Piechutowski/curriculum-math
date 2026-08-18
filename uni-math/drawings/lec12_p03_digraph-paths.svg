@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="320" viewBox="0 0 470 320">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <circle class="ink" cx="70" cy="75" r="14"/>
+  <text class="txt" x="70" y="80.5" font-size="16" text-anchor="middle">v</text>
+  <circle class="ink" cx="230" cy="75" r="14"/>
+  <text class="txt" x="230" y="80.5" font-size="16" text-anchor="middle">w</text>
+  <circle class="ink" cx="400" cy="75" r="14"/>
+  <text class="txt" x="400" y="80.5" font-size="16" text-anchor="middle">x</text>
+  <circle class="ink" cx="70" cy="250" r="14"/>
+  <text class="txt" x="70" y="255.5" font-size="16" text-anchor="middle">y</text>
+  <circle class="ink" cx="230" cy="250" r="14"/>
+  <text class="txt" x="230" y="255.5" font-size="16" text-anchor="middle">z</text>
+  <path class="ink" d="M 85.2 70.1 Q 150.0 49.0 214.8 70.1"/>
+  <path class="ink" d="M 214.8 70.1 l -9.9 1.6"/>
+  <path class="ink" d="M 214.8 70.1 l -7.1 -7.1"/>
+  <text class="txt" x="148" y="44" font-size="17" text-anchor="middle">ã</text>
+  <path class="ink" d="M 85.2 79.9 Q 150.0 101.0 214.8 79.9"/>
+  <path class="ink" d="M 214.8 79.9 l -7.1 7.1"/>
+  <path class="ink" d="M 214.8 79.9 l -9.9 -1.6"/>
+  <text class="txt" x="148" y="120" font-size="17" text-anchor="middle">b̃</text>
+  <path class="ink" d="M 246.0 75.0 L 384.0 75.0"/>
+  <path class="ink" d="M 384.0 75.0 l -8.9 4.5"/>
+  <path class="ink" d="M 384.0 75.0 l -8.9 -4.5"/>
+  <text class="txt" x="315" y="60" font-size="17" text-anchor="middle">d̃</text>
+  <path class="ink" d="M 70.0 234.0 L 70.0 91.0"/>
+  <path class="ink" d="M 70.0 91.0 l 4.5 8.9"/>
+  <path class="ink" d="M 70.0 91.0 l -4.5 8.9"/>
+  <text class="txt" x="48" y="168" font-size="17" text-anchor="middle">ẽ</text>
+  <path class="ink" d="M 86.0 250.0 L 214.0 250.0"/>
+  <path class="ink" d="M 214.0 250.0 l -8.9 4.5"/>
+  <path class="ink" d="M 214.0 250.0 l -8.9 -4.5"/>
+  <text class="txt" x="148" y="238" font-size="17" text-anchor="middle">f̃</text>
+  <path class="ink" d="M 230.0 91.0 L 230.0 234.0"/>
+  <path class="ink" d="M 230.0 234.0 l -4.5 -8.9"/>
+  <path class="ink" d="M 230.0 234.0 l 4.5 -8.9"/>
+  <text class="txt" x="248" y="168" font-size="17" text-anchor="middle">c̃</text>
+  <circle class="ink" cx="257.0" cy="250.0" r="16"/>
+  <path class="ink" d="M 250.2 264.5 l 10.0 -0.3"/>
+  <path class="ink" d="M 250.2 264.5 l 6.2 7.9"/>
+  <text class="txt" x="292" y="290" font-size="17" text-anchor="middle">g̃</text>
+</svg>

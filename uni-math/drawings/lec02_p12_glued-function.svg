@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="220" viewBox="0 0 520 220">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .dotted { stroke-dasharray:2 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path class="fill" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <path class="ink-thin" d="M 20 140 H 500" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 170 205 V 30" marker-end="url(#ah)"/>
+  <path class="ink" d="M 40 188 C 100 188 130 60 205 47 C 255 38 300 70 338 96"/>
+  <circle class="fill" cx="345" cy="100" r="3.6"/>
+  <path class="ink" d="M 345 100 C 375 132 405 132 432 108 C 456 88 476 96 495 102"/>
+  <path class="ink-thin" d="M 342 135 V 145"/>
+  <text class="txt" x="336" y="166" font-size="16">a</text>
+  <text class="txt" x="68" y="78" font-size="15">f<tspan dy="4" font-size="11">2</tspan>(x)</text>
+  <text class="txt" x="438" y="62" font-size="15">f<tspan dy="4" font-size="11">1</tspan>(x)</text>
+</svg>

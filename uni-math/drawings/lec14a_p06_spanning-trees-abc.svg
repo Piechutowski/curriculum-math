@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="530" height="200" viewBox="0 0 530 200">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- a) edges a-b, a-d, a-c -->
+  <g transform="translate(0,0)">
+    <path class="ink" d="M 35 40 L 145 40 M 35 40 L 35 145 M 35 40 L 145 145"/>
+    <circle class="fill" cx="35" cy="40" r="5"/><circle class="fill" cx="145" cy="40" r="5"/><circle class="fill" cx="35" cy="145" r="5"/><circle class="fill" cx="145" cy="145" r="5"/>
+    <text class="txt" x="20" y="34" font-size="16">a</text>
+    <text class="txt" x="155" y="34" font-size="16">b</text>
+    <text class="txt" x="20" y="166" font-size="16">d</text>
+    <text class="txt" x="155" y="166" font-size="16">c</text>
+    <text class="txt" x="80" y="192" font-size="18">a)</text>
+  </g>
+
+  <!-- b) edges a-d, a-c, b-c -->
+  <g transform="translate(180,0)">
+    <path class="ink" d="M 35 40 L 35 145 M 35 40 L 145 145 M 145 40 L 145 145"/>
+    <circle class="fill" cx="35" cy="40" r="5"/><circle class="fill" cx="145" cy="40" r="5"/><circle class="fill" cx="35" cy="145" r="5"/><circle class="fill" cx="145" cy="145" r="5"/>
+    <text class="txt" x="20" y="34" font-size="16">a</text>
+    <text class="txt" x="155" y="34" font-size="16">b</text>
+    <text class="txt" x="20" y="166" font-size="16">d</text>
+    <text class="txt" x="155" y="166" font-size="16">c</text>
+    <text class="txt" x="80" y="192" font-size="18">b)</text>
+  </g>
+
+  <!-- c) edges a-b, a-d, b-c -->
+  <g transform="translate(360,0)">
+    <path class="ink" d="M 35 40 L 145 40 M 35 40 L 35 145 M 145 40 L 145 145"/>
+    <circle class="fill" cx="35" cy="40" r="5"/><circle class="fill" cx="145" cy="40" r="5"/><circle class="fill" cx="35" cy="145" r="5"/><circle class="fill" cx="145" cy="145" r="5"/>
+    <text class="txt" x="20" y="34" font-size="16">a</text>
+    <text class="txt" x="155" y="34" font-size="16">b</text>
+    <text class="txt" x="20" y="166" font-size="16">d</text>
+    <text class="txt" x="155" y="166" font-size="16">c</text>
+    <text class="txt" x="80" y="192" font-size="18">c)</text>
+  </g>
+</svg>

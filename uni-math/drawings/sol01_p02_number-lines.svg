@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="240" viewBox="0 0 520 240">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <text class="txt" x="24" y="66" font-size="22">A</text>
+  <path class="ink-thin" d="M 60 70 H 490 M 490 70 l -10 -5 M 490 70 l -10 5"/>
+  <circle class="fill" cx="170" cy="70" r="6"/>
+  <circle class="ink" cx="235" cy="70" r="6"/>
+  <path class="ink" d="M 242 70 H 387" stroke-width="4"/>
+  <circle class="fill" cx="387" cy="70" r="6"/>
+  <text class="txt" x="158" y="102" font-size="20">−1</text>
+  <text class="txt" x="218" y="102" font-size="20">−1/2</text>
+  <text class="txt" x="374" y="102" font-size="20">2/3</text>
+
+  <text class="txt" x="24" y="176" font-size="22">B</text>
+  <path class="ink-thin" d="M 60 180 H 490 M 490 180 l -10 -5 M 490 180 l -10 5"/>
+  <circle class="fill" cx="300" cy="180" r="6"/>
+  <path class="ink" d="M 300 180 H 424" stroke-width="4"/>
+  <circle class="ink" cx="430" cy="180" r="6"/>
+  <text class="txt" x="294" y="212" font-size="20">0</text>
+  <text class="txt" x="425" y="212" font-size="20">1</text>
+</svg>

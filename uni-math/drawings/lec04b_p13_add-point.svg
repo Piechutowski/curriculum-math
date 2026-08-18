@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="280" viewBox="0 0 380 280">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <circle class="ink" cx="150" cy="150" r="88"/>
+  <line class="ink-thin" x1="150.0" y1="62.0" x2="73.8" y2="194.0"/>
+  <line class="ink-thin" x1="150.0" y1="62.0" x2="226.2" y2="194.0"/>
+  <line class="ink-thin" x1="73.8" y1="194.0" x2="226.2" y2="194.0"/>
+  <circle class="fill" cx="150.0" cy="62.0" r="4"/>
+  <circle class="fill" cx="73.8" cy="194.0" r="4"/>
+  <circle class="fill" cx="226.2" cy="194.0" r="4"/>
+  <circle class="fill" cx="150.0" cy="238.0" r="4"/>
+  <line class="ink" x1="150.0" y1="238.0" x2="150.0" y2="62.0"/>
+  <text class="txt" x="146.0" y="266.0" font-size="20">a</text>
+  <path class="ink-thin" d="M 268.0 66.0 L 164.0 96.0 M 164.0 96.0 L 170.9 90.2 M 164.0 96.0 L 172.9 97.2"/>
+  <text class="txt" x="252.0" y="52.0" font-size="17">chord</text>
+  <path class="ink-thin" d="M 262.0 232.0 L 158.0 208.0 M 158.0 208.0 L 166.8 206.3 M 158.0 208.0 L 165.2 213.4"/>
+  <text class="txt" x="250.0" y="254.0" font-size="17">segment</text>
+
+</svg>

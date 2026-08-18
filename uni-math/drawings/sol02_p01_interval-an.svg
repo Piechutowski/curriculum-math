@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="95" viewBox="0 0 480 95">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .seg { stroke:#d8d8d8; fill:none; stroke-width:5; stroke-linecap:round; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin, .seg { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <path class="ink-thin" d="M 40 40 H 425 M 425 40 l -9 -4.5 M 425 40 l -9 4.5"/>
+  <line class="seg" x1="120" y1="40" x2="196" y2="40"/>
+  <circle class="fill" cx="120" cy="40" r="5"/>
+  <circle class="ink" cx="205" cy="40" r="6"/>
+  <text class="txt" x="114" y="72" font-size="18">0</text>
+  <text class="txt" x="192" y="72" font-size="16">2/n</text>
+  <text class="txt" x="442" y="47" font-size="20">A<tspan font-size="14" dy="4">n</tspan></text>
+</svg>

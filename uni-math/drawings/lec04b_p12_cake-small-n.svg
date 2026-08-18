@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="665" height="220" viewBox="0 0 665 220">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <circle class="ink" cx="85" cy="118" r="52"/>
+  <circle class="fill" cx="85.0" cy="66.0" r="3.6"/>
+  <text class="txt" x="85.0" y="34.0" font-size="19" text-anchor="middle">N = 1</text>
+  <text class="txt" x="85.0" y="206.0" font-size="18" text-anchor="middle">S<tspan dy="5" font-size="13">1</tspan> = 1 = 2<tspan dy="-8" font-size="13">0</tspan></text>
+  <circle class="ink" cx="250" cy="118" r="52"/>
+  <line class="ink-thin" x1="205.0" y1="92.0" x2="295.0" y2="144.0"/>
+  <circle class="fill" cx="205.0" cy="92.0" r="3.6"/>
+  <circle class="fill" cx="295.0" cy="144.0" r="3.6"/>
+  <text class="txt" x="250.0" y="34.0" font-size="19" text-anchor="middle">N = 2</text>
+  <text class="txt" x="250.0" y="206.0" font-size="18" text-anchor="middle">S<tspan dy="5" font-size="13">2</tspan> = 2 = 2<tspan dy="-8" font-size="13">1</tspan></text>
+  <circle class="ink" cx="415" cy="118" r="52"/>
+  <line class="ink-thin" x1="415.0" y1="66.0" x2="370.0" y2="144.0"/>
+  <line class="ink-thin" x1="415.0" y1="66.0" x2="460.0" y2="144.0"/>
+  <line class="ink-thin" x1="370.0" y1="144.0" x2="460.0" y2="144.0"/>
+  <circle class="fill" cx="415.0" cy="66.0" r="3.6"/>
+  <circle class="fill" cx="370.0" cy="144.0" r="3.6"/>
+  <circle class="fill" cx="460.0" cy="144.0" r="3.6"/>
+  <text class="txt" x="415.0" y="34.0" font-size="19" text-anchor="middle">N = 3</text>
+  <text class="txt" x="415.0" y="206.0" font-size="18" text-anchor="middle">S<tspan dy="5" font-size="13">3</tspan> = 4 = 2<tspan dy="-8" font-size="13">2</tspan></text>
+  <circle class="ink" cx="580" cy="118" r="52"/>
+  <line class="ink-thin" x1="580.0" y1="66.0" x2="632.0" y2="118.0"/>
+  <line class="ink-thin" x1="580.0" y1="66.0" x2="580.0" y2="170.0"/>
+  <line class="ink-thin" x1="580.0" y1="66.0" x2="528.0" y2="118.0"/>
+  <line class="ink-thin" x1="632.0" y1="118.0" x2="580.0" y2="170.0"/>
+  <line class="ink-thin" x1="632.0" y1="118.0" x2="528.0" y2="118.0"/>
+  <line class="ink-thin" x1="580.0" y1="170.0" x2="528.0" y2="118.0"/>
+  <circle class="fill" cx="580.0" cy="66.0" r="3.6"/>
+  <circle class="fill" cx="632.0" cy="118.0" r="3.6"/>
+  <circle class="fill" cx="580.0" cy="170.0" r="3.6"/>
+  <circle class="fill" cx="528.0" cy="118.0" r="3.6"/>
+  <text class="txt" x="580.0" y="34.0" font-size="19" text-anchor="middle">N = 4</text>
+  <text class="txt" x="580.0" y="206.0" font-size="18" text-anchor="middle">S<tspan dy="5" font-size="13">4</tspan> = 8 = 2<tspan dy="-8" font-size="13">3</tspan></text>
+
+</svg>

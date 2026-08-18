@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220" viewBox="0 0 320 220">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink-thin" d="M 30 185 H 300 M 300 185 l -9 -4.5 M 300 185 l -9 4.5"/>
+  <path class="ink-thin" d="M 50 200 V 25 M 50 25 l -4.5 9 M 50 25 l 4.5 9"/>
+  <line class="ink-thin" x1="120" y1="180" x2="120" y2="190"/>
+  <line class="ink-thin dashed" x1="120" y1="180" x2="120" y2="60"/>
+  <text class="txt" x="120" y="208" font-size="15" text-anchor="middle">n&#8320;</text>
+  <text class="txt" x="292" y="208" font-size="15" text-anchor="middle">n</text>
+  <path class="ink" d="M 60 160 Q 140 130 200 85 T 290 35"/>
+  <path class="ink" d="M 60 150 Q 150 145 220 115 T 292 78"/>
+  <path class="ink-thin" d="M 205 38 Q 216 52 228 66 M 228 66 l -1.5 -9.5 M 228 66 l -9 -3.5"/>
+  <text class="txt" x="160" y="35" font-size="16">c&#183;g(n)</text>
+  <path class="ink-thin" d="M 280 122 Q 272 113 264 104 M 264 104 l 2.5 9.5 M 264 104 l 9.5 3"/>
+  <text class="txt" x="256" y="142" font-size="16">|f(n)|</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <circle class="ink" cx="70" cy="75" r="14"/>
+  <text class="txt" x="70" y="80.5" font-size="16" text-anchor="middle">x<tspan font-size="11" dy="4">1</tspan></text>
+  <circle class="ink" cx="230" cy="75" r="14"/>
+  <text class="txt" x="230" y="80.5" font-size="16" text-anchor="middle">x<tspan font-size="11" dy="4">2</tspan></text>
+  <path class="ink" d="M 85.2 70.1 Q 150.0 49.0 214.8 70.1"/>
+  <text class="txt" x="150" y="32" font-size="17" text-anchor="middle">e</text>
+  <path class="ink" d="M 85.2 79.9 Q 150.0 101.0 214.8 79.9"/>
+  <text class="txt" x="150" y="130" font-size="17" text-anchor="middle">f</text>
+</svg>

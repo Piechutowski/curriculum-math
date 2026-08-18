@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="195" viewBox="0 0 240 195">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink-thin" d="M 15 115 H 215 M 215 115 l -9 -4.5 M 215 115 l -9 4.5"/>
+  <path class="ink-thin" d="M 75 180 V 15 M 75 15 l -4.5 9 M 75 15 l 4.5 9"/>
+  <path class="ink" d="M 35 155 L 175 15"/>
+  <path class="ink" d="M 82 178 C 86 145 100 124 120 115 C 152 101 195 93 228 88"/>
+  <text class="txt" x="180" y="26" font-size="16">y = x</text>
+  <text class="txt" x="150" y="80" font-size="16">y = lg x</text>
+</svg>

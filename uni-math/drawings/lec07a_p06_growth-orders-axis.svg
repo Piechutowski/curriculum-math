@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="125" viewBox="0 0 720 125">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink" d="M 15 55 H 700 M 700 55 l -11 -5.5 M 700 55 l -11 5.5"/>
+  <circle class="fill" cx="50" cy="55" r="4.5"/>
+  <circle class="fill" cx="120" cy="55" r="4.5"/>
+  <circle class="fill" cx="190" cy="55" r="4.5"/>
+  <circle class="fill" cx="245" cy="55" r="4.5"/>
+  <circle class="fill" cx="305" cy="55" r="4.5"/>
+  <circle class="fill" cx="365" cy="55" r="4.5"/>
+  <circle class="fill" cx="470" cy="55" r="4.5"/>
+  <circle class="fill" cx="530" cy="55" r="4.5"/>
+  <circle class="fill" cx="585" cy="55" r="4.5"/>
+  <circle class="fill" cx="640" cy="55" r="4.5"/>
+  <text class="txt" x="50" y="36" font-size="15" text-anchor="middle">O(1)</text>
+  <text class="txt" x="120" y="36" font-size="15" text-anchor="middle">O(lg&#8322;n)</text>
+  <text class="txt" x="190" y="36" font-size="15" text-anchor="middle">&#8730;n</text>
+  <text class="txt" x="245" y="36" font-size="15" text-anchor="middle">n</text>
+  <text class="txt" x="305" y="36" font-size="15" text-anchor="middle">n&#178;</text>
+  <text class="txt" x="365" y="36" font-size="15" text-anchor="middle">n&#179;</text>
+  <text class="txt" x="470" y="36" font-size="15" text-anchor="middle">n&#7504;</text>
+  <text class="txt" x="530" y="36" font-size="15" text-anchor="middle">a&#8319;</text>
+  <text class="txt" x="585" y="36" font-size="15" text-anchor="middle">n!</text>
+  <text class="txt" x="640" y="36" font-size="15" text-anchor="middle">n&#8319;</text>
+  <path class="ink-thin" d="M 275 95 V 62 M 275 62 l -4.5 9 M 275 62 l 4.5 9"/>
+  <text class="txt" x="275" y="114" font-size="15" text-anchor="middle">n lg&#8322;n</text>
+</svg>

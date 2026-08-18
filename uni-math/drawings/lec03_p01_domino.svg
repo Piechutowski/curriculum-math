@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="210" viewBox="0 0 660 210">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- standing domino 1 (back) -->
+  <g transform="translate(30,60)">
+    <rect class="ink" x="0" y="0" width="30" height="62"/>
+    <path class="ink" d="M 0 0 L 11 -9 L 41 -9 L 30 0 M 41 -9 L 41 53 L 30 62"/>
+    <path class="ink-thin" d="M 0 31 H 30"/>
+    <circle class="fill" cx="9" cy="12" r="2.4"/>
+    <circle class="fill" cx="21" cy="20" r="2.4"/>
+    <circle class="fill" cx="15" cy="46" r="2.4"/>
+  </g>
+
+  <!-- standing domino 2 (front, slightly lower) -->
+  <g transform="translate(82,78)">
+    <rect class="ink" x="0" y="0" width="30" height="62"/>
+    <path class="ink" d="M 0 0 L 11 -9 L 41 -9 L 30 0 M 41 -9 L 41 53 L 30 62"/>
+    <path class="ink-thin" d="M 0 31 H 30"/>
+    <circle class="fill" cx="9" cy="10" r="2.4"/>
+    <circle class="fill" cx="15" cy="17" r="2.4"/>
+    <circle class="fill" cx="21" cy="24" r="2.4"/>
+    <circle class="fill" cx="10" cy="42" r="2.4"/>
+    <circle class="fill" cx="20" cy="52" r="2.4"/>
+  </g>
+
+  <!-- trailing dots and infinity -->
+  <circle class="fill" cx="140" cy="70" r="2.6"/>
+  <circle class="fill" cx="152" cy="66" r="2.6"/>
+  <circle class="fill" cx="164" cy="62" r="2.6"/>
+  <text class="txt" x="176" y="62" font-size="30" font-style="normal">&#8734;</text>
+
+  <!-- long arrow with question mark -->
+  <path class="ink" d="M 232 118 H 320 M 320 118 l -11 -5.5 M 320 118 l -11 5.5"/>
+  <text class="txt" x="332" y="106" font-size="26" font-style="normal">?</text>
+  <circle class="fill" cx="338" cy="120" r="2.4"/>
+
+  <!-- fallen dominoes: flat bricks in a cascade -->
+  <g transform="translate(362,96)">
+    <path class="ink" d="M 0 14 L 46 8 L 60 18 L 14 24 Z"/>
+    <path class="ink" d="M 14 24 L 60 18 L 60 28 L 14 34 Z"/>
+    <circle class="fill" cx="24" cy="17" r="2.2"/>
+    <circle class="fill" cx="40" cy="15" r="2.2"/>
+  </g>
+  <g transform="translate(420,108)">
+    <path class="ink" d="M 0 14 L 46 8 L 60 18 L 14 24 Z"/>
+    <path class="ink" d="M 14 24 L 60 18 L 60 28 L 14 34 Z"/>
+    <circle class="fill" cx="30" cy="16" r="2.2"/>
+  </g>
+  <g transform="translate(478,122)">
+    <path class="ink" d="M 0 14 L 46 8 L 60 18 L 14 24 Z"/>
+    <path class="ink" d="M 14 24 L 60 18 L 60 28 L 14 34 Z"/>
+    <circle class="fill" cx="22" cy="18" r="2.2"/>
+    <circle class="fill" cx="38" cy="15" r="2.2"/>
+  </g>
+  <circle class="fill" cx="552" cy="152" r="2.6"/>
+  <circle class="fill" cx="564" cy="156" r="2.6"/>
+  <g transform="translate(578,140)">
+    <path class="ink" d="M 0 14 L 46 8 L 60 18 L 14 24 Z"/>
+    <path class="ink" d="M 14 24 L 60 18 L 60 28 L 14 34 Z"/>
+    <circle class="fill" cx="30" cy="16" r="2.2"/>
+  </g>
+
+  <!-- label -->
+  <text class="txt" x="430" y="185" font-size="26">domino</text>
+</svg>

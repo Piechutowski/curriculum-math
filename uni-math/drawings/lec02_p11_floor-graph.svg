@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="320" viewBox="0 0 430 320">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .dotted { stroke-dasharray:2 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path class="fill" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <path class="ink-thin" d="M 30 160 H 405" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 200 300 V 25" marker-end="url(#ah)"/>
+  <path class="ink-thin dotted" d="M 80 280 L 350 10"/>
+  <text class="txt" x="352" y="16" font-size="13">y = x</text>
+  <path class="ink-thin dotted" d="M 125 280 L 395 10"/>
+  <text class="txt" x="368" y="48" font-size="13">y = x &#8722; 1</text>
+  <circle class="fill" cx="65" cy="295" r="3.2"/>
+  <path class="ink" d="M 68 295 H 106"/>
+  <circle class="ink" cx="110" cy="295" r="3.6"/>
+  <circle class="fill" cx="110" cy="250" r="3.2"/>
+  <path class="ink" d="M 113 250 H 151"/>
+  <circle class="ink" cx="155" cy="250" r="3.6"/>
+  <circle class="fill" cx="155" cy="205" r="3.2"/>
+  <path class="ink" d="M 158 205 H 196"/>
+  <circle class="ink" cx="200" cy="205" r="3.6"/>
+  <circle class="fill" cx="200" cy="160" r="3.2"/>
+  <path class="ink" d="M 203 160 H 241"/>
+  <circle class="ink" cx="245" cy="160" r="3.6"/>
+  <circle class="fill" cx="245" cy="115" r="3.2"/>
+  <path class="ink" d="M 248 115 H 286"/>
+  <circle class="ink" cx="290" cy="115" r="3.6"/>
+  <circle class="fill" cx="290" cy="70" r="3.2"/>
+  <path class="ink" d="M 293 70 H 331"/>
+  <circle class="ink" cx="335" cy="70" r="3.6"/>
+  <text class="txt" x="184" y="74" font-size="13" text-anchor="end">2</text>
+  <text class="txt" x="184" y="119" font-size="13" text-anchor="end">1</text>
+  <text class="txt" x="212" y="216" font-size="13">&#8722;1</text>
+  <text class="txt" x="212" y="261" font-size="13">&#8722;2</text>
+</svg>

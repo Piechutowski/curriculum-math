@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="230" viewBox="0 0 410 230">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- T_v drawn differently: root v; children s, x, w, u; x -> z, y -->
+  <path class="ink" d="M 200 30 L 65 120 M 200 30 L 150 105 M 200 30 L 255 105 M 200 30 L 330 105"/>
+  <path class="ink" d="M 150 105 L 115 180 M 150 105 L 185 180"/>
+  <circle class="fill" cx="200" cy="30" r="5"/>
+  <circle class="fill" cx="65" cy="120" r="5"/>
+  <circle class="fill" cx="150" cy="105" r="5"/>
+  <circle class="fill" cx="255" cy="105" r="5"/>
+  <circle class="fill" cx="330" cy="105" r="5"/>
+  <circle class="fill" cx="115" cy="180" r="5"/>
+  <circle class="fill" cx="185" cy="180" r="5"/>
+  <text class="txt" x="210" y="24" font-size="19">v</text>
+  <text class="txt" x="46" y="128" font-size="19">s</text>
+  <text class="txt" x="126" y="102" font-size="19">x</text>
+  <text class="txt" x="247" y="128" font-size="19">w</text>
+  <text class="txt" x="342" y="110" font-size="19">u</text>
+  <text class="txt" x="100" y="202" font-size="19">z</text>
+  <text class="txt" x="180" y="202" font-size="19">y</text>
+  <text class="txt" x="365" y="60" font-size="17">b)</text>
+  <text class="txt" x="290" y="190" font-size="21">T<tspan dy="5" font-size="15">v</tspan></text>
+</svg>

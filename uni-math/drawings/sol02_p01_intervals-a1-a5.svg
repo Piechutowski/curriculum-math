@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .seg { stroke:#d8d8d8; fill:none; stroke-width:5; stroke-linecap:round; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin, .seg { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- A1 = [0, 2) -->
+  <g>
+    <path class="ink-thin" d="M 90 45 H 565 M 565 45 l -9 -4.5 M 565 45 l -9 4.5"/>
+    <line class="seg" x1="140" y1="45" x2="471" y2="45"/>
+    <circle class="fill" cx="140" cy="45" r="5"/>
+    <circle class="ink" cx="480" cy="45" r="6"/>
+    <text class="txt" x="134" y="28" font-size="18">0</text>
+    <text class="txt" x="474" y="24" font-size="18">2</text>
+    <text class="txt" x="585" y="52" font-size="20">A<tspan font-size="14" dy="4">1</tspan></text>
+  </g>
+
+  <!-- A2 = [0, 1) -->
+  <g>
+    <path class="ink-thin" d="M 90 100 H 565 M 565 100 l -9 -4.5 M 565 100 l -9 4.5"/>
+    <line class="seg" x1="140" y1="100" x2="301" y2="100"/>
+    <circle class="fill" cx="140" cy="100" r="5"/>
+    <circle class="ink" cx="310" cy="100" r="6"/>
+    <text class="txt" x="304" y="82" font-size="18">1</text>
+    <text class="txt" x="585" y="107" font-size="20">A<tspan font-size="14" dy="4">2</tspan></text>
+  </g>
+
+  <!-- A3 = [0, 2/3) -->
+  <g>
+    <path class="ink-thin" d="M 90 155 H 565 M 565 155 l -9 -4.5 M 565 155 l -9 4.5"/>
+    <line class="seg" x1="140" y1="155" x2="244" y2="155"/>
+    <circle class="fill" cx="140" cy="155" r="5"/>
+    <circle class="ink" cx="253" cy="155" r="6"/>
+    <text class="txt" x="252" y="182" font-size="16">2/3</text>
+    <text class="txt" x="585" y="162" font-size="20">A<tspan font-size="14" dy="4">3</tspan></text>
+  </g>
+
+  <!-- A4 = [0, 1/2) -->
+  <g>
+    <path class="ink-thin" d="M 90 210 H 565 M 565 210 l -9 -4.5 M 565 210 l -9 4.5"/>
+    <line class="seg" x1="140" y1="210" x2="216" y2="210"/>
+    <circle class="fill" cx="140" cy="210" r="5"/>
+    <circle class="ink" cx="225" cy="210" r="6"/>
+    <text class="txt" x="214" y="192" font-size="16">1/2</text>
+    <text class="txt" x="585" y="217" font-size="20">A<tspan font-size="14" dy="4">4</tspan></text>
+  </g>
+
+  <!-- A5 = [0, 2/5) -->
+  <g>
+    <path class="ink-thin" d="M 90 265 H 565 M 565 265 l -9 -4.5 M 565 265 l -9 4.5"/>
+    <line class="seg" x1="140" y1="265" x2="199" y2="265"/>
+    <circle class="fill" cx="140" cy="265" r="5"/>
+    <circle class="ink" cx="208" cy="265" r="6"/>
+    <text class="txt" x="206" y="292" font-size="16">2/5</text>
+    <text class="txt" x="585" y="272" font-size="20">A<tspan font-size="14" dy="4">5</tspan></text>
+  </g>
+</svg>

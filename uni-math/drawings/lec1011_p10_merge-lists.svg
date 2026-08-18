@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="115" viewBox="0 0 680 115">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- sorted list L1(1) -->
+  <text class="txt" x="175" y="32" font-size="20" text-anchor="middle">L<tspan font-size="14" dy="5">1</tspan><tspan font-size="14" dy="-14">(1)</tspan></text>
+  <rect class="ink" x="40" y="55" width="270" height="38"/>
+  <line class="ink-thin" x1="85" y1="55" x2="85" y2="93"/>
+  <line class="ink-thin" x1="130" y1="55" x2="130" y2="93"/>
+  <line class="ink-thin" x1="265" y1="55" x2="265" y2="93"/>
+  <text class="txt" x="62" y="80" font-size="18" text-anchor="middle">e<tspan font-size="13" dy="4">1</tspan></text>
+  <text class="txt" x="107" y="80" font-size="18" text-anchor="middle">e<tspan font-size="13" dy="4">2</tspan></text>
+  <text class="txt" x="197" y="78" font-size="18" text-anchor="middle">&#8943;</text>
+  <text class="txt" x="287" y="80" font-size="18" text-anchor="middle">e<tspan font-size="13" dy="4">n</tspan></text>
+
+  <!-- sorted list L2(1) -->
+  <text class="txt" x="505" y="32" font-size="20" text-anchor="middle">L<tspan font-size="14" dy="5">2</tspan><tspan font-size="14" dy="-14">(1)</tspan></text>
+  <rect class="ink" x="370" y="55" width="270" height="38"/>
+  <line class="ink-thin" x1="415" y1="55" x2="415" y2="93"/>
+  <line class="ink-thin" x1="460" y1="55" x2="460" y2="93"/>
+  <line class="ink-thin" x1="595" y1="55" x2="595" y2="93"/>
+  <text class="txt" x="392" y="80" font-size="18" text-anchor="middle">f<tspan font-size="13" dy="4">1</tspan></text>
+  <text class="txt" x="437" y="80" font-size="18" text-anchor="middle">f<tspan font-size="13" dy="4">2</tspan></text>
+  <text class="txt" x="527" y="78" font-size="18" text-anchor="middle">&#8943;</text>
+  <text class="txt" x="617" y="80" font-size="18" text-anchor="middle">f<tspan font-size="13" dy="4">n</tspan></text>
+</svg>

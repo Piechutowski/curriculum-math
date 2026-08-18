@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="300" viewBox="0 0 440 300">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .dotted { stroke-dasharray:2 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- axes -->
+  <path class="ink" d="M 30 220 H 400 M 400 220 l -11 -5.5 M 400 220 l -11 5.5"/>
+  <path class="ink" d="M 60 250 V 25 M 60 25 l -5.5 11 M 60 25 l 5.5 11"/>
+  <text class="txt" x="36" y="38" font-size="22">m</text>
+  <text class="txt" x="408" y="212" font-size="22">n</text>
+
+  <!-- lattice dots: columns x = 60,115,170,225,280,335 ; rows y = 220,175,130,85,45 -->
+  <g>
+    <circle class="fill" cx="60"  cy="175" r="4"/><circle class="fill" cx="60"  cy="130" r="4"/><circle class="fill" cx="60"  cy="85" r="4"/><circle class="fill" cx="60"  cy="45" r="4"/>
+    <circle class="fill" cx="115" cy="220" r="4"/><circle class="fill" cx="115" cy="175" r="4"/><circle class="fill" cx="115" cy="130" r="4"/><circle class="fill" cx="115" cy="85" r="4"/><circle class="fill" cx="115" cy="45" r="4"/>
+    <circle class="fill" cx="170" cy="220" r="4"/><circle class="fill" cx="170" cy="175" r="4"/><circle class="fill" cx="170" cy="130" r="4"/><circle class="fill" cx="170" cy="85" r="4"/><circle class="fill" cx="170" cy="45" r="4"/>
+    <circle class="fill" cx="225" cy="175" r="4"/><circle class="fill" cx="225" cy="130" r="4"/><circle class="fill" cx="225" cy="85" r="4"/><circle class="fill" cx="225" cy="45" r="4"/>
+    <circle class="fill" cx="280" cy="220" r="4"/><circle class="fill" cx="280" cy="175" r="4"/><circle class="fill" cx="280" cy="130" r="4"/><circle class="fill" cx="280" cy="85" r="4"/><circle class="fill" cx="280" cy="45" r="4"/>
+    <circle class="fill" cx="335" cy="220" r="4"/><circle class="fill" cx="335" cy="175" r="4"/><circle class="fill" cx="335" cy="130" r="4"/><circle class="fill" cx="335" cy="85" r="4"/><circle class="fill" cx="335" cy="45" r="4"/>
+  </g>
+
+  <!-- frozen column at n0: flanking lines + dotted line through the dots -->
+  <path class="ink-thin" d="M 207 205 V 32"/>
+  <path class="ink-thin" d="M 243 205 V 32"/>
+  <path class="ink-thin dotted" d="M 225 210 V 40" stroke-width="2.6"/>
+  <circle class="fill" cx="225" cy="220" r="6"/>
+
+  <!-- arrow up to n0 and label -->
+  <path class="ink-thin" d="M 225 258 V 234 M 225 234 l -4.5 9 M 225 234 l 4.5 9"/>
+  <text class="txt" x="214" y="284" font-size="22">n&#8320;</text>
+</svg>

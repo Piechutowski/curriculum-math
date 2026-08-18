@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="300" viewBox="0 0 330 300">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <!-- chain edges (each child is a LEFT child) -->
+  <path class="ink-thin" d="M 148 54 L 110 110 M 110 110 L 72 175 M 72 175 L 34 240"/>
+  <!-- root: dot + ring -->
+  <circle class="fill" cx="155" cy="45" r="5"/>
+  <circle class="ink" cx="155" cy="45" r="11"/>
+  <!-- chain nodes -->
+  <circle class="fill" cx="110" cy="110" r="5"/>
+  <circle class="fill" cx="72" cy="175" r="5"/>
+  <circle class="fill" cx="34" cy="240" r="5"/>
+  <!-- label -->
+  <path class="ink-thin" d="M 205 28 Q 185 30 169 40 M 169 40 l 4 -8.5 M 169 40 l 9.5 -1"/>
+  <text class="txt" x="211" y="30" font-size="16">root of T<tspan dy="4" font-size="11">b</tspan></text>
+  <text class="txt" x="200" y="180" font-size="22">T<tspan dy="5" font-size="15">b</tspan></text>
+</svg>

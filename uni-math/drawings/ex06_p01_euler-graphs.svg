@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="210" viewBox="0 0 840 210">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- (i) G1 -->
+  <text class="txt" x="14" y="70" font-size="20">(i)</text>
+  <path class="ink" d="M 90 55 L 85 150"/>
+  <path class="ink" d="M 85 150 L 175 50"/>
+  <path class="ink" d="M 85 150 L 170 145"/>
+  <path class="ink" d="M 175 50 L 258 45"/>
+  <path class="ink" d="M 258 45 L 170 145"/>
+  <circle class="fill" cx="90" cy="55" r="5"/>
+  <circle class="fill" cx="175" cy="50" r="5"/>
+  <circle class="fill" cx="258" cy="45" r="5"/>
+  <circle class="fill" cx="85" cy="150" r="5"/>
+  <circle class="fill" cx="170" cy="145" r="5"/>
+  <text class="txt" x="215" y="180" font-size="21">G<tspan dy="6" font-size="15">1</tspan></text>
+
+  <!-- (ii) G2 -->
+  <text class="txt" x="300" y="45" font-size="20">(ii)</text>
+  <path class="ink" d="M 365 60 L 465 58"/>
+  <path class="ink" d="M 365 60 Q 415 6 465 58"/>
+  <path class="ink" d="M 365 60 L 358 158"/>
+  <path class="ink" d="M 358 158 L 458 152"/>
+  <path class="ink" d="M 458 152 L 465 58"/>
+  <path class="ink" d="M 365 60 L 458 152"/>
+  <path class="ink" d="M 358 158 L 465 58"/>
+  <path class="ink" d="M 465 58 L 545 58"/>
+  <circle class="fill" cx="365" cy="60" r="5"/>
+  <circle class="fill" cx="465" cy="58" r="5"/>
+  <circle class="fill" cx="358" cy="158" r="5"/>
+  <circle class="fill" cx="458" cy="152" r="5"/>
+  <circle class="fill" cx="412" cy="108" r="5"/>
+  <circle class="fill" cx="545" cy="58" r="5"/>
+  <text class="txt" x="490" y="175" font-size="21">G<tspan dy="6" font-size="15">2</tspan></text>
+
+  <!-- (iii) G3 -->
+  <text class="txt" x="590" y="45" font-size="20">(iii)</text>
+  <path class="ink" d="M 655 62 L 750 68"/>
+  <path class="ink" d="M 655 62 L 640 155"/>
+  <path class="ink" d="M 640 155 L 750 68"/>
+  <path class="ink" d="M 750 68 C 758 28 815 32 811 70 C 808 100 762 102 750 68"/>
+  <circle class="fill" cx="655" cy="62" r="5"/>
+  <circle class="fill" cx="640" cy="155" r="5"/>
+  <circle class="fill" cx="750" cy="68" r="5"/>
+  <text class="txt" x="768" y="165" font-size="21">G<tspan dy="6" font-size="15">3</tspan></text>
+</svg>

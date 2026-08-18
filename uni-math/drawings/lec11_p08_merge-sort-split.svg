@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="110" viewBox="0 0 380 110">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <rect class="ink" x="50" y="42" width="280" height="44"/>
+  <line class="ink" x1="190" y1="42" x2="190" y2="86"/>
+
+  <text class="txt" x="112" y="32" font-size="19" text-anchor="middle">L<tspan font-size="14" dy="5">1</tspan></text>
+  <text class="txt" x="262" y="32" font-size="19" text-anchor="middle">L<tspan font-size="14" dy="5">2</tspan></text>
+
+  <text class="txt" x="120" y="72" font-size="20" text-anchor="middle">T(n)</text>
+  <text class="txt" x="260" y="72" font-size="20" text-anchor="middle">T(n)</text>
+</svg>

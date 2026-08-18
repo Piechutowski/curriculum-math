@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="250" viewBox="0 0 700 250">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <text class="txt" x="18" y="60" font-size="18">a)</text>
+  <line class="ink" x1="47.8" y1="145.8" x2="92.2" y2="79.2"/>
+  <path class="ink" d="M 99.9 73.8 Q 150 62 195.8 92.2"/>
+  <path class="ink" d="M 195.4 96.9 Q 131 123 92.8 180.8"/>
+  <path class="ink" d="M 197.2 99.2 Q 159 157 94.6 183.1"/>
+  <circle class="fill" cx="45.0" cy="150.0" r="5"/>
+  <circle class="fill" cx="95.0" cy="75.0" r="5"/>
+  <circle class="fill" cx="200.0" cy="95.0" r="5"/>
+  <circle class="fill" cx="90.0" cy="185.0" r="5"/>
+  <text class="txt" x="255" y="60" font-size="18">b)</text>
+  <path class="ink" d="M 297.6 95.6 A 22 22 0 1 0 297.6 104.4"/>
+  <circle class="fill" cx="300.0" cy="100.0" r="5"/>
+  <path class="ink" d="M 356.6 124.7 Q 370 165 405.8 187.4"/>
+  <circle class="fill" cx="355.0" cy="120.0" r="5"/>
+  <circle class="fill" cx="410.0" cy="190.0" r="5"/>
+  <text class="txt" x="455" y="60" font-size="18">c)</text>
+  <path class="ink" d="M 497.6 79.4 Q 468 133 486.5 190.2"/>
+  <path class="ink" d="M 501.5 79.8 Q 520 137 490.4 190.6"/>
+  <path class="ink" d="M 483.0 194.5 A 17 17 0 1 0 489.9 199.6"/>
+  <circle class="fill" cx="500.0" cy="75.0" r="5"/>
+  <circle class="fill" cx="488.0" cy="195.0" r="5"/>
+  <text class="txt" x="508" y="232" font-size="17">G₁</text>
+  <line class="ink" x1="602.8" y1="94.1" x2="652.2" y2="165.9"/>
+  <line class="ink" x1="650.0" y1="170.0" x2="565.0" y2="170.0"/>
+  <line class="ink" x1="562.2" y1="165.5" x2="597.8" y2="94.5"/>
+  <circle class="fill" cx="600.0" cy="90.0" r="5"/>
+  <circle class="fill" cx="655.0" cy="170.0" r="5"/>
+  <circle class="fill" cx="560.0" cy="170.0" r="5"/>
+  <text class="txt" x="598" y="200" font-size="17">G₂</text>
+
+</svg>

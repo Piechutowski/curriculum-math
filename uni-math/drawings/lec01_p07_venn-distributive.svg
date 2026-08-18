@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="310" viewBox="0 0 660 310">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+    <clipPath id="c7a"><circle cx="110" cy="115" r="72"/></clipPath>
+  </defs>
+
+  <g transform="translate(10,0)">
+    <g clip-path="url(#c7a)"><circle cx="190" cy="115" r="72" fill="url(#hatch)"/></g>
+    <g clip-path="url(#c7a)"><circle cx="150" cy="185" r="72" fill="url(#hatch)"/></g>
+    <circle class="ink" cx="110" cy="115" r="72"/>
+    <circle class="ink" cx="190" cy="115" r="72"/>
+    <circle class="ink" cx="150" cy="185" r="72"/>
+    <text class="txt" x="30" y="55" font-size="24">A</text>
+    <text class="txt" x="255" y="55" font-size="24">B</text>
+    <text class="txt" x="215" y="245" font-size="24">C</text>
+    <text class="txt" x="150" y="290" font-size="19" text-anchor="middle">A ∩ (B ∪ C)</text>
+  </g>
+  <g transform="translate(340,0)">
+    <g clip-path="url(#c7a)"><circle cx="190" cy="115" r="72" fill="url(#hatch)"/></g>
+    <g clip-path="url(#c7a)"><circle cx="150" cy="185" r="72" fill="url(#hatch)"/></g>
+    <circle class="ink" cx="110" cy="115" r="72"/>
+    <circle class="ink" cx="190" cy="115" r="72"/>
+    <circle class="ink" cx="150" cy="185" r="72"/>
+    <text class="txt" x="30" y="55" font-size="24">A</text>
+    <text class="txt" x="255" y="55" font-size="24">B</text>
+    <text class="txt" x="215" y="245" font-size="24">C</text>
+    <text class="txt" x="150" y="290" font-size="19" text-anchor="middle">(A ∩ B) ∪ (A ∩ C)</text>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="280" viewBox="0 0 460 280">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- a: x -> y -->
+  <line class="ink" x1="92.5" y1="166.3" x2="207.5" y2="223.7"/>
+  <path class="ink" d="M 207.5 223.7 L 200 214.3 M 207.5 223.7 L 195.5 223.4"/>
+  <!-- b: x -> z (curve over the top) -->
+  <path class="ink" d="M 89 149 Q 190 55 317 82"/>
+  <path class="ink" d="M 317 82 L 307.4 74.8 M 317 82 L 305.3 84.7"/>
+  <!-- d: y -> z (right curve) -->
+  <path class="ink" d="M 231 222 Q 297 177 338 103"/>
+  <path class="ink" d="M 338 103 L 328.3 110.1 M 338 103 L 337.2 115"/>
+  <!-- e: y -> z (left curve) -->
+  <path class="ink" d="M 212 217 Q 253 143 319 99"/>
+  <path class="ink" d="M 319 99 L 307.1 100.8 M 319 99 L 312.8 109.3"/>
+  <!-- c: loop at z -->
+  <path class="ink" d="M 342 82 C 390 50 400 120 342 99"/>
+  <path class="ink" d="M 342 99 L 350.5 107.5 M 342 99 L 354 97.9"/>
+
+  <!-- vertices -->
+  <circle class="ink" cx="80" cy="160" r="14"/>
+  <circle class="ink" cx="220" cy="230" r="14"/>
+  <circle class="ink" cx="330" cy="90" r="14"/>
+  <text class="txt" x="80" y="166" font-size="18" text-anchor="middle">x</text>
+  <text class="txt" x="220" y="236" font-size="18" text-anchor="middle">y</text>
+  <text class="txt" x="330" y="96" font-size="18" text-anchor="middle">z</text>
+
+  <!-- edge labels (with macrons) -->
+  <text class="txt" x="135" y="212" font-size="19">a</text>
+  <line class="ink-thin" x1="134" y1="196" x2="144" y2="196"/>
+  <text class="txt" x="182" y="52" font-size="19">b</text>
+  <line class="ink-thin" x1="181" y1="36" x2="191" y2="36"/>
+  <text class="txt" x="308" y="190" font-size="19">d</text>
+  <line class="ink-thin" x1="307" y1="174" x2="318" y2="174"/>
+  <text class="txt" x="230" y="142" font-size="19">e</text>
+  <line class="ink-thin" x1="229" y1="126" x2="239" y2="126"/>
+  <text class="txt" x="400" y="92" font-size="19">c</text>
+  <line class="ink-thin" x1="399" y1="76" x2="409" y2="76"/>
+</svg>

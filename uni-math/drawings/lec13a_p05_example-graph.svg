@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="430" viewBox="0 0 470 430">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <line class="ink" x1="209.9" y1="225.1" x2="275.1" y2="159.9"/>
+  <path class="ink" d="M 298.8 147.4 Q 348 138 388.6 166.9"/>
+  <path class="ink" d="M 213.6 238.4 Q 320 265 390.7 185.5"/>
+  <line class="ink" x1="212.4" y1="241.4" x2="352.6" y2="313.6"/>
+  <line class="ink" x1="203.8" y1="248.5" x2="231.2" y2="346.5"/>
+  <path class="ink" d="M 356.5 331.1 Q 300 405 246.5 368.0"/>
+  <line class="ink" x1="196.6" y1="221.4" x2="168.4" y2="108.6"/>
+  <path class="ink" d="M 151.0 96.2 Q 105 100 71.1 126.4"/>
+  <path class="ink" d="M 186.2 232.4 Q 95 215 65.6 147.8"/>
+  <circle class="ink" cx="200.0" cy="235.0" r="14"/>
+  <text class="txt" x="200.0" y="240.5" font-size="15" text-anchor="middle">a</text>
+  <circle class="ink" cx="285.0" cy="150.0" r="14"/>
+  <text class="txt" x="285.0" y="155.5" font-size="15" text-anchor="middle">b</text>
+  <circle class="ink" cx="400.0" cy="175.0" r="14"/>
+  <text class="txt" x="400.0" y="180.5" font-size="15" text-anchor="middle">c</text>
+  <circle class="ink" cx="365.0" cy="320.0" r="14"/>
+  <text class="txt" x="365.0" y="325.5" font-size="15" text-anchor="middle">d</text>
+  <circle class="ink" cx="235.0" cy="360.0" r="14"/>
+  <text class="txt" x="235.0" y="365.5" font-size="15" text-anchor="middle">e</text>
+  <circle class="ink" cx="165.0" cy="95.0" r="14"/>
+  <text class="txt" x="165.0" y="100.5" font-size="15" text-anchor="middle">f</text>
+  <circle class="ink" cx="60.0" cy="135.0" r="14"/>
+  <text class="txt" x="60.0" y="140.5" font-size="15" text-anchor="middle">g</text>
+  <text class="txt" x="225" y="415" font-size="20">G</text>
+
+</svg>

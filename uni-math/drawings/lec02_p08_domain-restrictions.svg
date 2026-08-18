@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="190" viewBox="0 0 680 190">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .dotted { stroke-dasharray:2 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path class="fill" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <path class="ink-thin" d="M 15 90 H 155" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 80 165 V 20" marker-end="url(#ah)"/>
+  <path class="ink" d="M 92 28 C 95 65 105 78 150 82"/>
+  <path class="ink" d="M 68 158 C 65 118 45 100 18 98"/>
+  <text class="txt" x="62" y="184" font-size="14">1/x</text>
+  <path class="ink-thin" d="M 185 130 H 325" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 250 165 V 35" marker-end="url(#ah)"/>
+  <path class="ink" d="M 250 130 Q 268 72 322 52"/>
+  <text class="txt" x="238" y="184" font-size="14">&#8730;x</text>
+  <path class="ink-thin" d="M 355 90 H 495" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 420 165 V 20" marker-end="url(#ah)"/>
+  <path class="ink" d="M 427 160 C 429 115 442 88 492 60"/>
+  <text class="txt" x="408" y="184" font-size="14">ln x</text>
+  <path class="ink-thin" d="M 525 90 H 660" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 590 165 V 20" marker-end="url(#ah)"/>
+  <path class="ink-thin dashed" d="M 556 20 V 160"/>
+  <path class="ink-thin dashed" d="M 624 20 V 160"/>
+  <path class="ink" d="M 562 155 C 578 120 602 60 618 25"/>
+  <path class="ink-thin" d="M 530 155 C 542 135 548 90 553 45"/>
+  <path class="ink-thin" d="M 627 140 C 632 100 640 45 655 28"/>
+  <text class="txt" x="572" y="184" font-size="14">tan x</text>
+</svg>

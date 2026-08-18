@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="110" viewBox="0 0 380 110">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <rect class="ink" x="30" y="48" width="240" height="38"/>
+  <line class="ink" x1="150" y1="48" x2="150" y2="86"/>
+
+  <text class="txt" x="66" y="32" font-size="20">L<tspan font-size="14" dy="5">1</tspan><tspan dy="-5">(n)</tspan></text>
+  <text class="txt" x="186" y="32" font-size="20">L<tspan font-size="14" dy="5">2</tspan><tspan dy="-5">(n)</tspan></text>
+  <text class="txt" x="290" y="75" font-size="20">L(2n)</text>
+</svg>

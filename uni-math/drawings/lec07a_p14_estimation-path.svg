@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="160" viewBox="0 0 560 160">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink" d="M 20 60 H 540 M 540 60 l -10 -5 M 540 60 l -10 5"/>
+  <circle class="fill" cx="120" cy="60" r="7"/>
+  <circle class="fill" cx="300" cy="60" r="5"/>
+  <circle class="fill" cx="460" cy="60" r="5"/>
+  <path class="ink-thin" d="M 285 40 H 145 M 145 40 l 9 -4.5 M 145 40 l 9 4.5"/>
+  <path class="ink-thin" d="M 445 40 H 315 M 315 40 l 9 -4.5 M 315 40 l 9 4.5"/>
+  <text class="txt" x="212" y="28" font-size="16" text-anchor="middle">?</text>
+  <text class="txt" x="380" y="28" font-size="16" text-anchor="middle">?</text>
+  <text class="txt" x="88" y="34" font-size="14" text-anchor="middle">sharp</text>
+  <text class="txt" x="120" y="88" font-size="17" text-anchor="middle">d&#8345;</text>
+  <text class="txt" x="300" y="88" font-size="17" text-anchor="middle">c&#8345;</text>
+  <text class="txt" x="330" y="88" font-size="15">b)</text>
+  <text class="txt" x="460" y="88" font-size="17" text-anchor="middle">b&#8345;</text>
+  <text class="txt" x="490" y="88" font-size="15">a)</text>
+  <text class="txt" x="120" y="110" font-size="15" text-anchor="middle">&#8805; a&#8345;</text>
+  <text class="txt" x="300" y="110" font-size="15" text-anchor="middle">&#8805; a&#8345;</text>
+  <text class="txt" x="460" y="110" font-size="15" text-anchor="middle">&#8805; a&#8345;</text>
+  <text class="txt" x="120" y="134" font-size="15" text-anchor="middle">a&#8345; = &#920;(d&#8345;)</text>
+  <text class="txt" x="300" y="134" font-size="15" text-anchor="middle">a&#8345; = O(c&#8345;)</text>
+  <text class="txt" x="460" y="134" font-size="15" text-anchor="middle">a&#8345; = O(b&#8345;)</text>
+</svg>

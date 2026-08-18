@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="105" viewBox="0 0 210 105">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+  <path style="fill:url(#hatch)" d="M 44.0 80.0 L 47.6 76.1 L 51.2 72.7 L 54.8 69.6 L 58.4 66.8 L 62.0 64.3 L 65.6 62.0 L 69.2 59.9 L 72.8 57.9 L 76.4 56.1 L 80.0 54.3 L 83.6 52.7 L 87.2 51.2 L 90.8 49.7 L 94.4 48.3 L 98.0 47.0 L 101.6 45.7 L 105.2 44.5 L 108.8 43.4 L 112.4 42.3 L 116.0 41.2 L 119.6 40.2 L 123.2 39.2 L 126.8 38.2 L 130.4 37.3 L 134.0 36.4 L 137.6 35.5 L 141.2 34.7 L 144.8 33.8 L 148.4 33.0 L 152.0 32.3 L 155.6 31.5 L 159.2 30.8 L 162.8 30.1 L 162.8 80 Z"/>
+  <path class="ink-thin" d="M 10 80 H 195 M 195 80 l -8 -4 M 195 80 l -8 4"/>
+  <path class="ink" d="M 44.0 80.0 L 47.6 76.1 L 51.2 72.7 L 54.8 69.6 L 58.4 66.8 L 62.0 64.3 L 65.6 62.0 L 69.2 59.9 L 72.8 57.9 L 76.4 56.1 L 80.0 54.3 L 83.6 52.7 L 87.2 51.2 L 90.8 49.7 L 94.4 48.3 L 98.0 47.0 L 101.6 45.7 L 105.2 44.5 L 108.8 43.4 L 112.4 42.3 L 116.0 41.2 L 119.6 40.2 L 123.2 39.2 L 126.8 38.2 L 130.4 37.3 L 134.0 36.4 L 137.6 35.5 L 141.2 34.7 L 144.8 33.8 L 148.4 33.0 L 152.0 32.3 L 155.6 31.5 L 159.2 30.8 L 162.8 30.1"/>
+  <line class="ink-thin" x1="162.8" y1="30.1" x2="162.8" y2="80"/>
+  <text class="txt" x="72" y="24" font-size="13">y = ln x</text>
+  <text class="txt" x="44" y="97" font-size="13" text-anchor="middle">1</text>
+  <text class="txt" x="163" y="97" font-size="13" text-anchor="middle">n+1</text>
+</svg>

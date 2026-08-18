@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="280" viewBox="0 0 660 280">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <text class="txt" x="20" y="50" font-size="20">b)</text>
+  <path class="ink-thin" d="M 70 90 Q 160 -32 250 90"/>
+  <line class="ink-thin" x1="71.4" y1="94.8" x2="103.6" y2="205.2"/>
+  <line class="ink-thin" x1="73.9" y1="93.2" x2="211.1" y2="206.8"/>
+  <line class="ink-thin" x1="246.1" y1="93.2" x2="108.9" y2="206.8"/>
+  <line class="ink-thin" x1="248.6" y1="94.8" x2="216.4" y2="205.2"/>
+  <line class="ink-thin" x1="110.0" y1="210.0" x2="210.0" y2="210.0"/>
+  <line class="ink-thin" x1="106.7" y1="205.3" x2="155.6" y2="70.2"/>
+  <line class="ink-thin" x1="213.3" y1="205.3" x2="164.4" y2="70.2"/>
+  <circle class="fill" cx="70" cy="90" r="5"/>
+  <circle class="fill" cx="250" cy="90" r="5"/>
+  <circle class="fill" cx="105" cy="210" r="5"/>
+  <circle class="fill" cx="215" cy="210" r="5"/>
+  <circle class="ink" cx="160" cy="58" r="13"/>
+  <text class="txt" x="160" y="63" font-size="15" text-anchor="middle">x</text>
+  <text class="txt" x="285" y="45" font-size="21">G<tspan font-size="12" dy="4">1</tspan></text>
+  <line class="ink-thin" x1="433.0" y1="80.0" x2="547.0" y2="80.0"/>
+  <line class="ink-thin" x1="420.0" y1="93.0" x2="420.0" y2="197.0"/>
+  <line class="ink-thin" x1="433.0" y1="210.0" x2="547.0" y2="210.0"/>
+  <line class="ink-thin" x1="560.0" y1="93.0" x2="560.0" y2="197.0"/>
+  <line class="ink-thin" x1="429.4" y1="89.0" x2="478.6" y2="136.0"/>
+  <line class="ink-thin" x1="497.6" y1="153.7" x2="550.4" y2="201.3"/>
+  <path class="ink-thin" d="M 552 68 C 460 -30, 315 75, 408 201"/>
+  <circle class="ink" cx="420" cy="80" r="13"/>
+  <text class="txt" x="420" y="85" font-size="15" text-anchor="middle">v</text>
+  <circle class="ink" cx="560" cy="80" r="13"/>
+  <text class="txt" x="560" y="85" font-size="15" text-anchor="middle">w</text>
+  <circle class="ink" cx="420" cy="210" r="13"/>
+  <text class="txt" x="420" y="215" font-size="15" text-anchor="middle">y</text>
+  <circle class="ink" cx="560" cy="210" r="13"/>
+  <text class="txt" x="560" y="215" font-size="15" text-anchor="middle">z</text>
+  <circle class="ink" cx="488" cy="145" r="13"/>
+  <text class="txt" x="488" y="150" font-size="15" text-anchor="middle">x</text>
+  <text class="txt" x="600" y="45" font-size="21">G<tspan font-size="12" dy="4">2</tspan></text>
+</svg>

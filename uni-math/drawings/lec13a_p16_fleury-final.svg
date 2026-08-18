@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="230" viewBox="0 0 750 230">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <line class="ink dashed" x1="74.7" y1="105.8" x2="115.8" y2="59.9"/>
+  <line class="ink dashed" x1="128.0" y1="59.2" x2="180.3" y2="106.5"/>
+  <line class="ink dashed" x1="75.0" y1="118.4" x2="121.7" y2="165.1"/>
+  <line class="ink dashed" x1="133.9" y1="165.1" x2="180.6" y2="118.4"/>
+  <path class="ink dashed" d="M 193.9 107.5 Q 237.54 78.2 281.8 107.5"/>
+  <path class="ink dashed" d="M 193.9 117.1 Q 237.54 146.4 281.8 117.1"/>
+  <line class="ink dashed" x1="289.0" y1="121.0" x2="289.0" y2="171.8"/>
+  <path class="ink" d="M 296.0 117.4 A 16.12 16.12 0 1 0 296.0 107.2"/>
+  <circle class="ink dashed" cx="121.6" cy="53.4" r="8.68"/>
+  <circle class="ink dashed" cx="68.9" cy="112.3" r="8.68"/>
+  <circle class="ink dashed" cx="127.8" cy="171.2" r="8.68"/>
+  <circle class="ink dashed" cx="186.7" cy="112.3" r="8.68"/>
+  <circle class="ink" cx="289.0" cy="112.3" r="8.68"/>
+  <circle class="ink dashed" cx="289.0" cy="180.5" r="8.68"/>
+  <line class="ink dashed" x1="454.7" y1="105.8" x2="495.8" y2="59.9"/>
+  <line class="ink dashed" x1="508.0" y1="59.2" x2="560.3" y2="106.5"/>
+  <line class="ink dashed" x1="455.0" y1="118.4" x2="501.7" y2="165.1"/>
+  <line class="ink dashed" x1="513.9" y1="165.1" x2="560.6" y2="118.4"/>
+  <path class="ink dashed" d="M 573.9 107.5 Q 617.54 78.2 661.8 107.5"/>
+  <path class="ink dashed" d="M 573.9 117.1 Q 617.54 146.4 661.8 117.1"/>
+  <line class="ink dashed" x1="669.0" y1="121.0" x2="669.0" y2="171.8"/>
+  <path class="ink dashed" d="M 676.0 117.4 A 16.12 16.12 0 1 0 676.0 107.2"/>
+  <circle class="ink dashed" cx="501.6" cy="53.4" r="8.68"/>
+  <circle class="ink dashed" cx="448.9" cy="112.3" r="8.68"/>
+  <circle class="ink dashed" cx="507.8" cy="171.2" r="8.68"/>
+  <circle class="ink dashed" cx="566.7" cy="112.3" r="8.68"/>
+  <circle class="ink dashed" cx="669.0" cy="112.3" r="8.68"/>
+  <circle class="ink dashed" cx="669.0" cy="180.5" r="8.68"/>
+
+</svg>

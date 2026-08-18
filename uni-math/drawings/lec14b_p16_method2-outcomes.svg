@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- (i): the pan with Z sinks -->
+  <text class="txt" x="18" y="45" font-size="17">(i)</text>
+  <circle class="fill" cx="290" cy="30" r="4"/>
+  <path class="ink-thin" d="M 290 30 L 160 110 M 290 30 L 400 68"/>
+  <rect class="ink" x="118" y="110" width="84" height="38"/>
+  <path class="ink-thin" d="M 160 110 V 148"/>
+  <text class="txt" x="181" y="136" font-size="16" text-anchor="middle">Z</text>
+  <rect class="ink" x="358" y="68" width="84" height="38"/>
+  <path class="ink-thin" d="M 400 68 V 106"/>
+  <text class="txt" x="421" y="94" font-size="16" text-anchor="middle">D</text>
+  <path class="ink-thin" d="M 118 190 L 136 155 M 136 155 l -8.5 5 M 136 155 l -0.5 10"/>
+  <text class="txt" x="40" y="215" font-size="14">this one is heavier</text>
+  <!-- eye -->
+  <path class="ink-thin" d="M 510 70 Q 532 56 554 70 Q 532 84 510 70"/>
+  <circle class="fill" cx="532" cy="70" r="4"/>
+  <text class="txt" x="532" y="105" font-size="13" text-anchor="middle">eye</text>
+
+  <!-- (ii): the pan with D sinks -->
+  <text class="txt" x="18" y="235" font-size="17">(ii)</text>
+  <circle class="fill" cx="290" cy="225" r="4"/>
+  <path class="ink-thin" d="M 290 225 L 175 260 M 290 225 L 415 305"/>
+  <rect class="ink" x="133" y="260" width="84" height="38"/>
+  <path class="ink-thin" d="M 175 260 V 298"/>
+  <text class="txt" x="196" y="286" font-size="16" text-anchor="middle">Z</text>
+  <rect class="ink" x="373" y="305" width="84" height="38"/>
+  <path class="ink-thin" d="M 415 305 V 343"/>
+  <text class="txt" x="436" y="331" font-size="16" text-anchor="middle">D</text>
+  <path class="ink-thin" d="M 360 385 L 386 350 M 386 350 l -9 4 M 386 350 l -1.5 10"/>
+  <text class="txt" x="180" y="395" font-size="14">this one is heavier</text>
+  <!-- eye -->
+  <path class="ink-thin" d="M 510 265 Q 532 251 554 265 Q 532 279 510 265"/>
+  <circle class="fill" cx="532" cy="265" r="4"/>
+  <text class="txt" x="532" y="300" font-size="13" text-anchor="middle">eye</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="300" viewBox="0 0 440 300">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- edge b : x to z, over the top -->
+  <path class="ink" d="M 105 120 Q 190 50 275 120"/>
+  <!-- edge a : x down to y, bulging left -->
+  <path class="ink" d="M 105 120 Q 86 215 190 245"/>
+  <!-- edge d : z down to y, bulging right, with the sketch's small arrow flick past y -->
+  <path class="ink" d="M 275 120 Q 292 212 190 245 L 154 259"/>
+  <path class="ink-thin" d="M 154 259 l 11 -3 M 154 259 l 7 -9"/>
+  <!-- edge e : y up to z (inner stroke), arrowhead midway as in the sketch -->
+  <path class="ink" d="M 190 245 L 270 128"/>
+  <path class="ink-thin" d="M 243 168 l -9 6 M 243 168 l -2 11"/>
+  <!-- edge c : loop at z -->
+  <path class="ink" d="M 275 120 C 298 52 392 42 400 100 C 406 140 316 162 275 120"/>
+
+  <!-- vertices -->
+  <circle class="fill" cx="105" cy="120" r="4.5"/>
+  <circle class="fill" cx="275" cy="120" r="4.5"/>
+  <circle class="fill" cx="190" cy="245" r="4.5"/>
+
+  <!-- vertex labels -->
+  <text class="txt" x="82" y="106" font-size="21">x</text>
+  <text class="txt" x="288" y="150" font-size="21">z</text>
+  <text class="txt" x="204" y="270" font-size="21">y</text>
+
+  <!-- edge labels (bars drawn as overlines) -->
+  <text class="txt" x="62" y="230" font-size="20">a</text>
+  <path class="ink-thin" d="M 60 214 h 13"/>
+  <text class="txt" x="182" y="42" font-size="20">b</text>
+  <path class="ink-thin" d="M 181 26 h 13"/>
+  <text class="txt" x="414" y="98" font-size="20">c</text>
+  <path class="ink-thin" d="M 412 82 h 12"/>
+  <text class="txt" x="296" y="205" font-size="20">d</text>
+  <path class="ink-thin" d="M 295 189 h 13"/>
+  <text class="txt" x="198" y="180" font-size="20">e</text>
+  <path class="ink-thin" d="M 197 164 h 12"/>
+</svg>

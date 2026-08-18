@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="236" viewBox="0 0 560 236">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <text class="txt" x="16.0" y="66.0" font-size="18">a)</text>
+  <rect class="ink-thin" x="50" y="36" width="64" height="48"/>
+  <circle class="fill" cx="70.5" cy="62.4" r="4.6"/>
+  <circle class="fill" cx="93.5" cy="62.4" r="4.6"/>
+  <rect class="ink-thin" x="124" y="36" width="64" height="48"/>
+  <circle class="fill" cx="156.0" cy="62.4" r="4.6"/>
+  <rect class="ink-thin" x="198" y="36" width="64" height="48"/>
+  <circle class="fill" cx="218.5" cy="62.4" r="4.6"/>
+  <circle class="fill" cx="241.5" cy="62.4" r="4.6"/>
+  <text class="txt" x="292.0" y="66.0" font-size="24">≅</text>
+  <text class="txt" x="330.0" y="66.0" font-size="21">0</text>
+  <text class="txt" x="356.0" y="66.0" font-size="21">0</text>
+  <text class="txt" x="382.0" y="66.0" font-size="21">1</text>
+  <text class="txt" x="408.0" y="66.0" font-size="21">0</text>
+  <text class="txt" x="434.0" y="66.0" font-size="21">1</text>
+  <text class="txt" x="460.0" y="66.0" font-size="21">0</text>
+  <text class="txt" x="486.0" y="66.0" font-size="21">0</text>
+  <text class="txt" x="333.0" y="92.0" font-size="14">e<tspan dy="5" font-size="10">1</tspan></text>
+  <text class="txt" x="359.0" y="92.0" font-size="14">e<tspan dy="5" font-size="10">2</tspan></text>
+  <text class="txt" x="385.0" y="92.0" font-size="14">e<tspan dy="5" font-size="10">3</tspan></text>
+  <text class="txt" x="411.0" y="92.0" font-size="14">e<tspan dy="5" font-size="10">4</tspan></text>
+  <text class="txt" x="437.0" y="92.0" font-size="14">e<tspan dy="5" font-size="10">5</tspan></text>
+  <text class="txt" x="463.0" y="92.0" font-size="14">e<tspan dy="5" font-size="10">6</tspan></text>
+  <text class="txt" x="489.0" y="92.0" font-size="14">e<tspan dy="5" font-size="10">7</tspan></text>
+  <text class="txt" x="16.0" y="186.0" font-size="18">b)</text>
+  <rect class="ink-thin" x="50" y="156" width="64" height="48"/>
+  <circle class="fill" cx="69.2" cy="172.8" r="4.6"/>
+  <circle class="fill" cx="94.8" cy="172.8" r="4.6"/>
+  <circle class="fill" cx="69.2" cy="190.6" r="4.6"/>
+  <circle class="fill" cx="94.8" cy="190.6" r="4.6"/>
+  <rect class="ink-thin" x="124" y="156" width="64" height="48"/>
+  <rect class="ink-thin" x="198" y="156" width="64" height="48"/>
+  <circle class="fill" cx="230.0" cy="182.4" r="4.6"/>
+  <text class="txt" x="292.0" y="186.0" font-size="24">≅</text>
+  <text class="txt" x="330.0" y="186.0" font-size="21">0</text>
+  <text class="txt" x="356.0" y="186.0" font-size="21">0</text>
+  <text class="txt" x="382.0" y="186.0" font-size="21">0</text>
+  <text class="txt" x="408.0" y="186.0" font-size="21">0</text>
+  <text class="txt" x="434.0" y="186.0" font-size="21">1</text>
+  <text class="txt" x="460.0" y="186.0" font-size="21">1</text>
+  <text class="txt" x="486.0" y="186.0" font-size="21">0</text>
+  <text class="txt" x="333.0" y="212.0" font-size="14">e<tspan dy="5" font-size="10">1</tspan></text>
+  <text class="txt" x="359.0" y="212.0" font-size="14">e<tspan dy="5" font-size="10">2</tspan></text>
+  <text class="txt" x="385.0" y="212.0" font-size="14">e<tspan dy="5" font-size="10">3</tspan></text>
+  <text class="txt" x="411.0" y="212.0" font-size="14">e<tspan dy="5" font-size="10">4</tspan></text>
+  <text class="txt" x="437.0" y="212.0" font-size="14">e<tspan dy="5" font-size="10">5</tspan></text>
+  <text class="txt" x="463.0" y="212.0" font-size="14">e<tspan dy="5" font-size="10">6</tspan></text>
+  <text class="txt" x="489.0" y="212.0" font-size="14">e<tspan dy="5" font-size="10">7</tspan></text>
+
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="340" viewBox="0 0 680 340">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <circle class="fill" cx="155" cy="95" r="4.6"/>
+  <circle class="fill" cx="235" cy="95" r="4.6"/>
+  <circle class="fill" cx="288" cy="133" r="4.6"/>
+  <circle class="fill" cx="290" cy="198" r="4.6"/>
+  <circle class="fill" cx="196" cy="242" r="4.6"/>
+  <circle class="fill" cx="100" cy="198" r="4.6"/>
+  <circle class="fill" cx="102" cy="133" r="4.6"/>
+  <circle class="fill" cx="122" cy="28" r="4.6"/>
+  <circle class="fill" cx="262" cy="28" r="4.6"/>
+  <path class="ink" d="M 161.5 93.7 Q 195.0 87.0 228.5 93.7"/>
+  <path class="ink" d="M 240.4 98.8 L 282.6 129.2"/>
+  <path class="ink" d="M 290.8 139.0 Q 303.0 165.1 292.4 191.9"/>
+  <path class="ink" d="M 284.0 138.3 Q 263.0 166.3 285.7 193.0"/>
+  <path class="ink" d="M 284.7 201.9 Q 247.2 229.1 202.4 240.4"/>
+  <path class="ink" d="M 189.6 240.4 Q 143.8 229.1 105.4 201.8"/>
+  <path class="ink" d="M 97.6 191.9 Q 87.0 165.1 99.2 139.0"/>
+  <path class="ink" d="M 95.0 193.7 Q 61.0 164.3 96.8 137.0"/>
+  <path class="ink" d="M 106.3 128.0 Q 123.8 107.5 148.9 97.5"/>
+  <path class="ink" d="M 152.1 89.1 L 124.9 33.9"/>
+  <path class="ink" d="M 237.5 88.9 L 259.5 34.1"/>
+  <circle class="ink" cx="194.6" cy="258.5" r="15"/>
+  <text class="txt" x="160" y="320" font-size="20" text-anchor="middle">G</text>
+  <text class="txt" x="174" y="326" font-size="13">1</text>
+  <text class="txt" x="330" y="180" font-size="30" text-anchor="middle">≅</text>
+  <circle class="fill" cx="460" cy="50" r="4.6"/>
+  <circle class="fill" cx="585" cy="58" r="4.6"/>
+  <circle class="fill" cx="626" cy="148" r="4.6"/>
+  <circle class="fill" cx="550" cy="232" r="4.6"/>
+  <circle class="fill" cx="462" cy="234" r="4.6"/>
+  <circle class="fill" cx="392" cy="195" r="4.6"/>
+  <circle class="fill" cx="382" cy="108" r="4.6"/>
+  <circle class="fill" cx="508" cy="148" r="4.6"/>
+  <circle class="fill" cx="598" cy="286" r="4.6"/>
+  <path class="ink" d="M 466.6 49.4 Q 523.1 44.0 578.6 56.5"/>
+  <path class="ink" d="M 590.5 61.7 Q 632.8 90.6 626.8 141.4"/>
+  <path class="ink" d="M 584.2 64.6 Q 578.2 115.4 620.5 144.3"/>
+  <path class="ink" d="M 622.9 153.8 Q 598.4 199.4 555.5 228.3"/>
+  <path class="ink" d="M 543.4 232.1 L 468.6 233.9"/>
+  <path class="ink" d="M 455.6 232.3 Q 422.1 223.2 396.8 199.5"/>
+  <path class="ink" d="M 389.4 188.9 Q 374.1 153.0 380.9 114.5"/>
+  <path class="ink" d="M 393.1 188.5 Q 399.9 150.0 384.6 114.1"/>
+  <path class="ink" d="M 386.2 102.9 Q 413.8 69.4 453.9 52.6"/>
+  <circle class="ink" cx="457.3" cy="65.4" r="14"/>
+  <path class="ink" d="M 462.4 227.4 Q 465.6 180.6 502.8 152.0"/>
+  <path class="ink" d="M 556.1 234.5 Q 587.5 247.0 596.3 279.6"/>
+  <text class="txt" x="520" y="320" font-size="20" text-anchor="middle">H</text>
+  <text class="txt" x="535" y="326" font-size="13">1</text>
+</svg>

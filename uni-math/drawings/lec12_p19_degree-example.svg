@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="340" viewBox="0 0 400 340">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <circle class="fill" cx="200" cy="70" r="4.6"/>
+  <circle class="fill" cx="325" cy="78" r="4.6"/>
+  <circle class="fill" cx="366" cy="168" r="4.6"/>
+  <circle class="fill" cx="290" cy="252" r="4.6"/>
+  <circle class="fill" cx="202" cy="254" r="4.6"/>
+  <circle class="fill" cx="132" cy="215" r="4.6"/>
+  <circle class="fill" cx="122" cy="128" r="4.6"/>
+  <circle class="fill" cx="248" cy="168" r="4.6"/>
+  <circle class="fill" cx="338" cy="306" r="4.6"/>
+  <path class="ink" d="M 206.6 69.4 Q 263.1 64.0 318.6 76.5"/>
+  <path class="ink" d="M 330.5 81.7 Q 372.8 110.6 366.8 161.4"/>
+  <path class="ink" d="M 324.2 84.6 Q 318.2 135.4 360.5 164.3"/>
+  <path class="ink" d="M 362.9 173.8 Q 338.4 219.4 295.5 248.3"/>
+  <path class="ink" d="M 283.4 252.1 L 208.6 253.9"/>
+  <path class="ink" d="M 195.6 252.3 Q 162.1 243.2 136.8 219.5"/>
+  <path class="ink" d="M 129.4 208.9 Q 114.1 173.0 120.9 134.5"/>
+  <path class="ink" d="M 133.1 208.5 Q 139.9 170.0 124.6 134.1"/>
+  <path class="ink" d="M 126.2 122.9 Q 153.8 89.4 193.9 72.6"/>
+  <circle class="ink" cx="197.3" cy="85.4" r="14"/>
+  <path class="ink" d="M 202.4 247.4 Q 205.6 200.6 242.8 172.0"/>
+  <path class="ink" d="M 296.1 254.5 Q 327.5 267.0 336.3 299.6"/>
+  <text class="txt" x="180" y="30" font-size="16" text-anchor="middle">4!</text>
+  <path class="ink-thin" d="M 182 36 q 3 14 8 20 M 190 56 l -1 -8 M 190 56 l -7 -3"/>
+</svg>

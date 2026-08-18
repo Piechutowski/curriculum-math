@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="70" viewBox="0 0 320 70">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <rect class="ink" x="15" y="18" width="290" height="36"/>
+  <line class="ink-thin" x1="57" y1="18" x2="57" y2="54"/>
+  <line class="ink-thin" x1="99" y1="18" x2="99" y2="54"/>
+  <line class="ink-thin" x1="141" y1="18" x2="141" y2="54"/>
+  <line class="ink-thin" x1="263" y1="18" x2="263" y2="54"/>
+
+  <text class="txt" x="36" y="43" font-size="18" text-anchor="middle">a<tspan font-size="13" dy="4">1</tspan></text>
+  <text class="txt" x="78" y="43" font-size="18" text-anchor="middle">a<tspan font-size="13" dy="4">2</tspan></text>
+  <text class="txt" x="120" y="43" font-size="18" text-anchor="middle">a<tspan font-size="13" dy="4">3</tspan></text>
+  <text class="txt" x="202" y="41" font-size="18" text-anchor="middle">&#8230;</text>
+  <text class="txt" x="284" y="43" font-size="18" text-anchor="middle">a<tspan font-size="13" dy="4">n</tspan></text>
+</svg>

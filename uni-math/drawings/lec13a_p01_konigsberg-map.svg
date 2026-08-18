@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="410" viewBox="0 0 660 410">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <path class="ink" d="M 20 118 Q 90 106 160 116 Q 230 124 300 114 Q 370 106 440 114 Q 510 122 580 112 Q 610 108 645 114"/>
+  <path class="ink" d="M 20 256 Q 90 264 160 256 Q 230 248 300 258 Q 370 266 440 258 Q 510 250 580 260 Q 610 264 645 258"/>
+  <rect x="25" y="32" width="615" height="70" fill="url(#dots)"/>
+  <rect x="25" y="270" width="615" height="72" fill="url(#dots)"/>
+  <ellipse class="ink" cx="220" cy="185" rx="92" ry="46" style="fill:url(#dots)"/>
+  <ellipse class="ink" cx="470" cy="185" rx="82" ry="42" style="fill:url(#dots)"/>
+  <text class="txt" x="70" y="165" font-size="22">~</text>
+  <text class="txt" x="115" y="225" font-size="22">~</text>
+  <text class="txt" x="330" y="150" font-size="22">~</text>
+  <text class="txt" x="560" y="155" font-size="22">~</text>
+  <text class="txt" x="600" y="225" font-size="22">~</text>
+  <text class="txt" x="45" y="200" font-size="22">~</text>
+  <text class="txt" x="620" y="190" font-size="22">~</text>
+  <line class="ink" x1="180.0" y1="110.0" x2="180.0" y2="146.0"/>
+  <line class="ink" x1="192.0" y1="110.0" x2="192.0" y2="146.0"/>
+  <line class="ink" x1="250.0" y1="110.0" x2="250.0" y2="146.0"/>
+  <line class="ink" x1="262.0" y1="110.0" x2="262.0" y2="146.0"/>
+  <line class="ink" x1="474.0" y1="108.0" x2="474.0" y2="148.0"/>
+  <line class="ink" x1="486.0" y1="108.0" x2="486.0" y2="148.0"/>
+  <line class="ink" x1="180.0" y1="224.0" x2="180.0" y2="260.0"/>
+  <line class="ink" x1="192.0" y1="224.0" x2="192.0" y2="260.0"/>
+  <line class="ink" x1="250.0" y1="224.0" x2="250.0" y2="260.0"/>
+  <line class="ink" x1="262.0" y1="224.0" x2="262.0" y2="260.0"/>
+  <line class="ink" x1="474.0" y1="222.0" x2="474.0" y2="260.0"/>
+  <line class="ink" x1="486.0" y1="222.0" x2="486.0" y2="260.0"/>
+  <line class="ink" x1="312.0" y1="191.0" x2="388.0" y2="191.0"/>
+  <line class="ink" x1="312.0" y1="179.0" x2="388.0" y2="179.0"/>
+  <text class="txt" x="60" y="62" font-size="21">land</text>
+  <text class="txt" x="520" y="62" font-size="21">TOWN</text>
+  <text class="txt" x="300" y="318" font-size="21">TOWN</text>
+  <text class="txt" x="185" y="190" font-size="17">island</text>
+  <text class="txt" x="430" y="190" font-size="17">island</text>
+  <text class="txt" x="322" y="232" font-size="15">river</text>
+  <text class="txt" x="614" y="178" font-size="18">(∗)</text>
+  <text class="txt" x="40" y="388" font-size="17">~  river</text>
+  <circle class="fill" cx="150.0" cy="378.0" r="1.9"/>
+  <circle class="fill" cx="160.0" cy="386.0" r="1.9"/>
+  <circle class="fill" cx="150.0" cy="394.0" r="1.9"/>
+  <circle class="fill" cx="160.0" cy="370.0" r="1.9"/>
+  <circle class="fill" cx="170.0" cy="378.0" r="1.9"/>
+  <text class="txt" x="185" y="388" font-size="17">land</text>
+  <ellipse class="ink" cx="285" cy="382" rx="22" ry="11"/>
+  <text class="txt" x="318" y="388" font-size="17">island</text>
+  <line class="ink" x1="410" y1="377" x2="452" y2="377"/>
+  <line class="ink" x1="410" y1="387" x2="452" y2="387"/>
+  <text class="txt" x="465" y="388" font-size="17">bridges</text>
+
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="268" viewBox="0 0 620 268">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <path class="ink" d="M 46 40 Q 22 130 46 220"/>
+  <path class="ink" d="M 234 40 Q 258 130 234 220"/>
+  <rect class="ink-thin" x="62" y="118" width="156" height="22"/>
+  <line class="ink-thin" x1="88" y1="118" x2="88" y2="140"/>
+  <line class="ink-thin" x1="114" y1="118" x2="114" y2="140"/>
+  <line class="ink-thin" x1="140" y1="118" x2="140" y2="140"/>
+  <line class="ink-thin" x1="166" y1="118" x2="166" y2="140"/>
+  <line class="ink-thin" x1="192" y1="118" x2="192" y2="140"/>
+  <path class="ink-thin" d="M 62 152 Q 140 172 218 152"/>
+  <text class="txt" x="140.0" y="190.0" font-size="17" text-anchor="middle">i-th row</text>
+  <text class="txt" x="140.0" y="214.0" font-size="19" text-anchor="middle">A</text>
+  <path class="ink" d="M 316 40 Q 292 130 316 220"/>
+  <path class="ink" d="M 504 40 Q 528 130 504 220"/>
+  <rect class="ink-thin" x="399" y="52" width="22" height="156"/>
+  <line class="ink-thin" x1="399" y1="78" x2="421" y2="78"/>
+  <line class="ink-thin" x1="399" y1="104" x2="421" y2="104"/>
+  <line class="ink-thin" x1="399" y1="130" x2="421" y2="130"/>
+  <line class="ink-thin" x1="399" y1="156" x2="421" y2="156"/>
+  <line class="ink-thin" x1="399" y1="182" x2="421" y2="182"/>
+  <path class="ink-thin" d="M 468.0 246.0 L 424.0 214.0 M 424.0 214.0 L 432.8 215.9 M 424.0 214.0 L 428.5 221.8"/>
+  <text class="txt" x="474.0" y="252.0" font-size="17">j-th column of B</text>
+
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="310" viewBox="0 0 460 310">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- edges -->
+  <line class="ink" x1="120" y1="226" x2="120" y2="84"/>              <!-- c: x-w -->
+  <line class="ink" x1="134" y1="70" x2="326" y2="70"/>               <!-- h: w-z -->
+  <line class="ink" x1="131" y1="79" x2="329" y2="231"/>              <!-- d: w-y -->
+  <path class="ink" d="M 334 83 Q 310 155 334 227"/>                  <!-- f: z-y -->
+  <path class="ink" d="M 346 83 Q 378 155 346 227"/>                  <!-- g: z-y -->
+  <line class="ink" x1="134" y1="240" x2="326" y2="240"/>             <!-- a: x-y -->
+  <path class="ink" d="M 128 252 Q 230 296 332 252"/>                 <!-- b: x-y -->
+
+  <!-- vertices -->
+  <circle class="ink" cx="120" cy="70" r="14"/>
+  <circle class="ink" cx="340" cy="70" r="14"/>
+  <circle class="ink" cx="120" cy="240" r="14"/>
+  <circle class="ink" cx="340" cy="240" r="14"/>
+  <text class="txt" x="120" y="76" font-size="18" text-anchor="middle">w</text>
+  <text class="txt" x="340" y="76" font-size="18" text-anchor="middle">z</text>
+  <text class="txt" x="120" y="246" font-size="18" text-anchor="middle">x</text>
+  <text class="txt" x="340" y="246" font-size="18" text-anchor="middle">y</text>
+
+  <!-- edge labels (with macrons) -->
+  <text class="txt" x="96" y="162" font-size="19">c</text>
+  <line class="ink-thin" x1="95" y1="146" x2="106" y2="146"/>
+  <text class="txt" x="222" y="58" font-size="19">h</text>
+  <line class="ink-thin" x1="221" y1="42" x2="232" y2="42"/>
+  <text class="txt" x="248" y="146" font-size="19">d</text>
+  <line class="ink-thin" x1="247" y1="130" x2="258" y2="130"/>
+  <text class="txt" x="291" y="162" font-size="19">f</text>
+  <line class="ink-thin" x1="290" y1="146" x2="300" y2="146"/>
+  <text class="txt" x="392" y="162" font-size="19">g</text>
+  <line class="ink-thin" x1="391" y1="146" x2="402" y2="146"/>
+  <text class="txt" x="222" y="230" font-size="19">a</text>
+  <line class="ink-thin" x1="221" y1="214" x2="231" y2="214"/>
+  <text class="txt" x="222" y="294" font-size="19">b</text>
+  <line class="ink-thin" x1="221" y1="278" x2="231" y2="278"/>
+</svg>

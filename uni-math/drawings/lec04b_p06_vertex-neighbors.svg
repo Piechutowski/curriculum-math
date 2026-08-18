@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="250" viewBox="0 0 320 250">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <line class="ink-thin" x1="200.0" y1="150.0" x2="228.0" y2="72.0"/>
+  <line class="ink-thin" x1="200.0" y1="150.0" x2="208.0" y2="216.0"/>
+  <line class="ink-thin" x1="200.0" y1="150.0" x2="58.0" y2="62.0"/>
+  <circle class="fill" cx="200.0" cy="150.0" r="4"/>
+  <circle class="fill" cx="228.0" cy="72.0" r="4"/>
+  <circle class="fill" cx="208.0" cy="216.0" r="4"/>
+  <circle class="fill" cx="58.0" cy="62.0" r="4"/>
+  <text class="txt" x="32.0" y="52.0" font-size="20">w<tspan dy="5" font-size="13">j</tspan></text>
+  <text class="txt" x="238.0" y="68.0" font-size="20">w<tspan dy="5" font-size="13">i−1</tspan></text>
+  <text class="txt" x="214.0" y="158.0" font-size="20">w<tspan dy="5" font-size="13">i</tspan></text>
+  <text class="txt" x="218.0" y="224.0" font-size="20">w<tspan dy="5" font-size="13">i+1</tspan></text>
+  <text class="txt" x="112.0" y="92.0" font-size="16">YES</text>
+  <text class="txt" x="232.0" y="116.0" font-size="16">NO</text>
+  <text class="txt" x="166.0" y="196.0" font-size="16">NO</text>
+
+</svg>

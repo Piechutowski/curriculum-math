@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="85" viewBox="0 0 430 85">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink" d="M 20 35 H 405 M 405 35 l -10 -5 M 405 35 l -10 5"/>
+  <line class="ink-thin" x1="85" y1="27" x2="85" y2="43"/>
+  <circle class="fill" cx="160" cy="35" r="3"/>
+  <circle class="fill" cx="255" cy="35" r="5"/>
+  <circle class="fill" cx="335" cy="35" r="5"/>
+  <text class="txt" x="85" y="68" font-size="18" text-anchor="middle">a&#8345;</text>
+  <text class="txt" x="160" y="68" font-size="18" text-anchor="middle">c&#8345;</text>
+  <text class="txt" x="255" y="68" font-size="18" text-anchor="middle">b&#8345;</text>
+  <text class="txt" x="335" y="68" font-size="18" text-anchor="middle">d&#8345;</text>
+</svg>

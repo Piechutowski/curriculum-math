@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="190" viewBox="0 0 600 190">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    .dotted { stroke-dasharray:2 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path class="fill" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+  <path class="ink-thin" d="M 25 140 H 170" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 95 165 V 30" marker-end="url(#ah)"/>
+  <path class="ink" d="M 50 45 Q 95 235 140 45"/>
+  <text class="txt" x="95" y="182" font-size="13" text-anchor="middle">not an injection</text>
+  <path class="ink-thin" d="M 225 140 H 370" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 295 165 V 30" marker-end="url(#ah)"/>
+  <path class="ink" d="M 295 140 Q 330 138 352 48"/>
+  <text class="txt" x="300" y="182" font-size="13" text-anchor="middle">an injection</text>
+  <path class="ink-thin" d="M 425 140 H 580" marker-end="url(#ah)"/>
+  <path class="ink-thin" d="M 460 165 V 30" marker-end="url(#ah)"/>
+  <path class="ink" d="M 460 140 Q 480 75 570 50"/>
+  <text class="txt" x="505" y="182" font-size="14" text-anchor="middle">&#8730;x</text>
+</svg>

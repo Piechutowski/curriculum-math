@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="195" viewBox="0 0 560 195">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- left: undirected tree, root u marked -->
+  <path class="ink" d="M 150 25 L 150 88 M 150 88 L 80 88 M 80 88 L 45 155 M 80 88 L 118 155"/>
+  <circle class="fill" cx="150" cy="25" r="5"/>
+  <circle class="fill" cx="150" cy="88" r="5"/>
+  <circle class="fill" cx="80" cy="88" r="5"/>
+  <circle class="fill" cx="45" cy="155" r="5"/>
+  <circle class="fill" cx="118" cy="155" r="5"/>
+  <text class="txt" x="158" y="22" font-size="19">x</text>
+  <text class="txt" x="152" y="108" font-size="19">u</text>
+  <text class="txt" x="64" y="82" font-size="19">y</text>
+  <text class="txt" x="32" y="176" font-size="19">z</text>
+  <text class="txt" x="114" y="178" font-size="19">v</text>
+  <text class="txt" x="188" y="130" font-size="15">distinguished root</text>
+  <path class="ink-thin" d="M 190 122 L 162 100 M 162 100 l 10 1 M 162 100 l 2 10"/>
+
+  <!-- right: same tree directed, rooted at u -->
+  <path class="ink" d="M 430 25 L 374 84 M 374 84 l 9.3 -3.7 M 374 84 l 3.1 -9.5"/>
+  <path class="ink" d="M 430 25 L 467 84 M 467 84 l -1 -10 M 467 84 l -8 -5.5"/>
+  <path class="ink" d="M 470 90 L 443 149 M 443 149 l 7.6 -6.5 M 443 149 l 0 -10"/>
+  <path class="ink" d="M 470 90 L 504 148 M 504 148 l -1 -10 M 504 148 l -8.2 -5.7"/>
+  <circle class="fill" cx="430" cy="25" r="5"/>
+  <circle class="fill" cx="370" cy="90" r="5"/>
+  <circle class="fill" cx="470" cy="90" r="5"/>
+  <circle class="fill" cx="440" cy="155" r="5"/>
+  <circle class="fill" cx="508" cy="155" r="5"/>
+  <text class="txt" x="440" y="22" font-size="19">u</text>
+  <text class="txt" x="350" y="88" font-size="19">x</text>
+  <text class="txt" x="480" y="86" font-size="19">y</text>
+  <text class="txt" x="426" y="176" font-size="19">z</text>
+  <text class="txt" x="506" y="177" font-size="19">v</text>
+</svg>

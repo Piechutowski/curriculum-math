@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="330" viewBox="0 0 840 330">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- voltage source -->
+  <circle class="ink" cx="45" cy="185" r="20"/>
+  <text class="txt" x="45" y="191" font-size="16" text-anchor="middle">V</text>
+  <text class="txt" x="72" y="172" font-size="17">+</text>
+  <text class="txt" x="72" y="208" font-size="17">−</text>
+  <path class="ink-thin" d="M 45 165 V 80 H 110"/>
+  <path class="ink-thin" d="M 45 205 V 290 H 322 M 352 290 H 570 M 600 290 H 800"/>
+
+  <!-- top rail: series 3-ohm resistors -->
+  <path class="ink" d="M 110 80 h 13.5 l 4 -9 l 9 18 l 9 -18 l 9 18 l 9 -18 l 9 18 l 4 -9 h 13.5"/>
+  <path class="ink" d="M 190 80 h 13.5 l 4 -9 l 9 18 l 9 -18 l 9 18 l 9 -18 l 9 18 l 4 -9 h 13.5"/>
+  <path class="ink-thin" d="M 270 80 H 322 M 352 80 H 370"/>
+  <path class="ink" d="M 370 80 h 16 l 4 -9 l 9 18 l 9 -18 l 9 18 l 9 -18 l 9 18 l 4 -9 h 16"/>
+  <path class="ink" d="M 455 80 h 16 l 4 -9 l 9 18 l 9 -18 l 9 18 l 9 -18 l 9 18 l 4 -9 h 16"/>
+  <path class="ink-thin" d="M 540 80 H 570 M 600 80 H 640"/>
+  <path class="ink" d="M 640 80 h 13.5 l 4 -9 l 9 18 l 9 -18 l 9 18 l 9 -18 l 9 18 l 4 -9 h 13.5"/>
+  <path class="ink" d="M 720 80 h 13.5 l 4 -9 l 9 18 l 9 -18 l 9 18 l 9 -18 l 9 18 l 4 -9 h 13.5"/>
+  <text class="txt" x="335" y="86" font-size="18">…</text>
+  <text class="txt" x="582" y="86" font-size="18">…</text>
+  <text class="txt" x="335" y="296" font-size="18">…</text>
+  <text class="txt" x="582" y="296" font-size="18">…</text>
+
+  <!-- shunt 1-ohm resistors -->
+  <path class="ink" d="M 190 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+  <path class="ink" d="M 270 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+  <path class="ink" d="M 370 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+  <path class="ink" d="M 455 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+  <path class="ink" d="M 540 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+  <path class="ink" d="M 640 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+  <path class="ink" d="M 720 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+  <path class="ink" d="M 800 80 v 60 l -9 4 l 18 9 l -18 9 l 18 9 l -18 9 l 18 9 l -9 4 V 290"/>
+
+  <!-- resistor value labels -->
+  <text class="txt" x="150" y="64" font-size="14" text-anchor="middle">3</text>
+  <text class="txt" x="230" y="64" font-size="14" text-anchor="middle">3</text>
+  <text class="txt" x="412" y="64" font-size="14" text-anchor="middle">3</text>
+  <text class="txt" x="497" y="64" font-size="14" text-anchor="middle">3</text>
+  <text class="txt" x="680" y="64" font-size="14" text-anchor="middle">3</text>
+  <text class="txt" x="760" y="64" font-size="14" text-anchor="middle">3</text>
+  <text class="txt" x="172" y="172" font-size="14" text-anchor="end">1</text>
+  <text class="txt" x="252" y="172" font-size="14" text-anchor="end">1</text>
+  <text class="txt" x="352" y="172" font-size="14" text-anchor="end">1</text>
+  <text class="txt" x="437" y="172" font-size="14" text-anchor="end">1</text>
+  <text class="txt" x="522" y="172" font-size="14" text-anchor="end">1</text>
+  <text class="txt" x="622" y="172" font-size="14" text-anchor="end">1</text>
+  <text class="txt" x="702" y="172" font-size="14" text-anchor="end">1</text>
+  <text class="txt" x="782" y="172" font-size="14" text-anchor="end">1</text>
+
+  <!-- node labels -->
+  <text class="txt" x="110" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">K</tspan></text>
+  <text class="txt" x="190" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">K−1</tspan></text>
+  <text class="txt" x="270" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">K−2</tspan></text>
+  <text class="txt" x="370" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">n+2</tspan></text>
+  <text class="txt" x="455" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">n+1</tspan></text>
+  <text class="txt" x="540" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">n</tspan></text>
+  <text class="txt" x="640" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">2</tspan></text>
+  <text class="txt" x="720" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">1</tspan></text>
+  <text class="txt" x="800" y="48" font-size="16" text-anchor="middle">v<tspan dy="4" font-size="11">0</tspan></text>
+
+  <!-- node dots -->
+  <circle class="fill" cx="110" cy="80" r="3.5"/>
+  <circle class="fill" cx="190" cy="80" r="3.5"/>
+  <circle class="fill" cx="270" cy="80" r="3.5"/>
+  <circle class="fill" cx="370" cy="80" r="3.5"/>
+  <circle class="fill" cx="455" cy="80" r="3.5"/>
+  <circle class="fill" cx="540" cy="80" r="3.5"/>
+  <circle class="fill" cx="640" cy="80" r="3.5"/>
+  <circle class="fill" cx="720" cy="80" r="3.5"/>
+  <circle class="fill" cx="800" cy="80" r="3.5"/>
+  <circle class="fill" cx="190" cy="290" r="3.5"/>
+  <circle class="fill" cx="270" cy="290" r="3.5"/>
+  <circle class="fill" cx="370" cy="290" r="3.5"/>
+  <circle class="fill" cx="455" cy="290" r="3.5"/>
+  <circle class="fill" cx="540" cy="290" r="3.5"/>
+  <circle class="fill" cx="640" cy="290" r="3.5"/>
+  <circle class="fill" cx="720" cy="290" r="3.5"/>
+  <circle class="fill" cx="800" cy="290" r="3.5"/>
+
+  <!-- currents -->
+  <circle class="ink-thin" cx="412" cy="118" r="13"/>
+  <text class="txt" x="412" y="124" font-size="15" text-anchor="middle">I</text>
+  <path class="ink-thin" d="M 430 118 h 22 M 452 118 l -8 -4 M 452 118 l -8 4"/>
+  <circle class="ink-thin" cx="500" cy="118" r="13"/>
+  <text class="txt" x="498" y="124" font-size="14" text-anchor="middle">I<tspan dy="3" font-size="10">2</tspan></text>
+  <path class="ink-thin" d="M 518 118 h 22 M 540 118 l -8 -4 M 540 118 l -8 4"/>
+  <path class="ink-thin" d="M 478 202 V 238 M 478 238 l -4 -8 M 478 238 l 4 -8"/>
+  <text class="txt" x="490" y="224" font-size="14">I<tspan dy="3" font-size="10">1</tspan></text>
+</svg>

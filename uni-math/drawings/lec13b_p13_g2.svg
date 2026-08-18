@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="260" viewBox="0 0 330 260">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <line class="ink-thin" x1="103.0" y1="75.0" x2="217.0" y2="75.0"/>
+  <line class="ink-thin" x1="90.0" y1="88.0" x2="90.0" y2="192.0"/>
+  <line class="ink-thin" x1="103.0" y1="205.0" x2="217.0" y2="205.0"/>
+  <line class="ink-thin" x1="230.0" y1="88.0" x2="230.0" y2="192.0"/>
+  <line class="ink-thin" x1="99.4" y1="84.0" x2="148.6" y2="131.0"/>
+  <line class="ink-thin" x1="167.6" y1="148.7" x2="220.4" y2="196.3"/>
+  <path class="ink-thin" d="M 222 63 C 130 -30, -15 70, 78 196"/>
+  <circle class="ink" cx="90" cy="75" r="13"/>
+  <text class="txt" x="90" y="80" font-size="15" text-anchor="middle">v</text>
+  <circle class="ink" cx="230" cy="75" r="13"/>
+  <text class="txt" x="230" y="80" font-size="15" text-anchor="middle">w</text>
+  <circle class="ink" cx="90" cy="205" r="13"/>
+  <text class="txt" x="90" y="210" font-size="15" text-anchor="middle">y</text>
+  <circle class="ink" cx="230" cy="205" r="13"/>
+  <text class="txt" x="230" y="210" font-size="15" text-anchor="middle">z</text>
+  <circle class="ink" cx="158" cy="140" r="13"/>
+  <text class="txt" x="158" y="145" font-size="15" text-anchor="middle">x</text>
+  <text class="txt" x="280" y="45" font-size="21">G<tspan font-size="12" dy="4">2</tspan></text>
+</svg>

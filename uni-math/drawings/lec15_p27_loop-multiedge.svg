@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="185" viewBox="0 0 480 185">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <circle class="fill" cx="110" cy="112" r="5"/>
+  <ellipse class="ink" cx="110" cy="80" rx="30" ry="26"/>
+  <path class="ink-thin" d="M 118 152 Q 114 138 111 124 M 111 124 l -1.5 9.5 M 111 124 l 7.5 6"/>
+  <text class="txt" x="98" y="172" font-size="16" text-anchor="middle">vertex</text>
+  <text class="txt" x="110" y="30" font-size="16" text-anchor="middle">a loop</text>
+  <circle class="fill" cx="290" cy="95" r="5"/>
+  <circle class="fill" cx="430" cy="88" r="5"/>
+  <path class="ink" d="M 290 95 Q 360 62 430 88"/>
+  <path class="ink" d="M 290 95 Q 360 122 430 88"/>
+  <path class="ink-thin" d="M 305 152 Q 298 132 292 108 M 292 108 l -1 9.5 M 292 108 l 7.5 6"/>
+  <path class="ink-thin" d="M 415 152 Q 422 132 428 101 M 428 101 l -6.5 7 M 428 101 l 2 9.5"/>
+  <text class="txt" x="365" y="172" font-size="16" text-anchor="middle">vertices</text>
+  <text class="txt" x="360" y="34" font-size="16" text-anchor="middle">a multiple edge</text>
+</svg>

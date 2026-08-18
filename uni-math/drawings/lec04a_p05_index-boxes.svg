@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="80" viewBox="0 0 340 80">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- row of index cells 1 2 3 ... k -->
+  <rect class="ink" x="20" y="25" width="180" height="30"/>
+  <path class="ink-thin" d="M 50 25 V 55 M 80 25 V 55 M 110 25 V 55 M 140 25 V 55 M 170 25 V 55"/>
+  <text class="txt" x="31" y="46" font-size="17">1</text>
+  <text class="txt" x="60" y="46" font-size="17">2</text>
+  <text class="txt" x="90" y="46" font-size="17">3</text>
+  <text class="txt" x="118" y="44" font-size="17">· ·</text>
+  <text class="txt" x="148" y="44" font-size="17">· ·</text>
+  <text class="txt" x="179" y="46" font-size="17">k</text>
+
+  <!-- arrow f to X -->
+  <path class="ink-thin" d="M 212 40 H 292 M 292 40 l -9 -4.5 M 292 40 l -9 4.5"/>
+  <text class="txt" x="246" y="30" font-size="19">f</text>
+  <text class="txt" x="304" y="48" font-size="24">X</text>
+</svg>

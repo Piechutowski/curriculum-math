@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="290" viewBox="0 0 660 290">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- ============ a) even case, 2n = 6 ============ -->
+  <text class="txt" x="40" y="30" font-size="17">a)  n<tspan dy="4" font-size="12">0</tspan><tspan dy="-4"> = 2n   (2n = 6)</tspan></text>
+  <circle class="ink-thin" cx="150" cy="150" r="78" stroke-dasharray="1.5 7"/>
+  <circle class="fill" cx="150" cy="72" r="3.4"/>
+  <circle class="fill" cx="217.5" cy="111" r="3.4"/>
+  <circle class="fill" cx="217.5" cy="189" r="3.4"/>
+  <circle class="fill" cx="150" cy="228" r="3.4"/>
+  <circle class="fill" cx="82.5" cy="189" r="3.4"/>
+  <circle class="fill" cx="82.5" cy="111" r="3.4"/>
+  <text class="txt" x="150" y="57" font-size="16" text-anchor="middle">1</text>
+  <text class="txt" x="234.9" y="106" font-size="16" text-anchor="middle">2</text>
+  <text class="txt" x="234.9" y="204" font-size="16" text-anchor="middle">3</text>
+  <text class="txt" x="150" y="253" font-size="16" text-anchor="middle">4</text>
+  <text class="txt" x="65.1" y="204" font-size="16" text-anchor="middle">5</text>
+  <text class="txt" x="65.1" y="106" font-size="16" text-anchor="middle">6</text>
+  <!-- X over the eliminated even numbers -->
+  <path class="ink-thin" d="M 225.9 92 l 18 18 M 243.9 92 l -18 18"/>
+  <path class="ink-thin" d="M 141 234 l 18 18 M 159 234 l -18 18"/>
+  <path class="ink-thin" d="M 56.1 92 l 18 18 M 74.1 92 l -18 18"/>
+  <!-- new indices for survivors -->
+  <text class="txt" x="150" y="102" font-size="14" text-anchor="middle">1</text>
+  <path class="ink-thin" d="M 144.5 88 q 2.5 -3.5 5 -1 q 2.5 2.5 5.5 -1" stroke-width="1.2"/>
+  <text class="txt" x="192" y="182" font-size="14" text-anchor="middle">2</text>
+  <path class="ink-thin" d="M 186.5 168 q 2.5 -3.5 5 -1 q 2.5 2.5 5.5 -1" stroke-width="1.2"/>
+  <text class="txt" x="108" y="182" font-size="14" text-anchor="middle">3</text>
+  <path class="ink-thin" d="M 102.5 168 q 2.5 -3.5 5 -1 q 2.5 2.5 5.5 -1" stroke-width="1.2"/>
+
+  <!-- ============ b) odd case, 2n+1 = 7 ============ -->
+  <text class="txt" x="370" y="30" font-size="17">b)  n<tspan dy="4" font-size="12">0</tspan><tspan dy="-4"> = 2n+1   (2n+1 = 7)</tspan></text>
+  <circle class="ink-thin" cx="480" cy="150" r="78" stroke-dasharray="1.5 7"/>
+  <circle class="fill" cx="480" cy="72" r="3.4"/>
+  <circle class="fill" cx="541.0" cy="101.4" r="3.4"/>
+  <circle class="fill" cx="556.1" cy="167.3" r="3.4"/>
+  <circle class="fill" cx="513.9" cy="220.3" r="3.4"/>
+  <circle class="fill" cx="446.1" cy="220.3" r="3.4"/>
+  <circle class="fill" cx="403.9" cy="167.3" r="3.4"/>
+  <circle class="fill" cx="419.0" cy="101.4" r="3.4"/>
+  <text class="txt" x="480" y="57" font-size="16" text-anchor="middle">1</text>
+  <text class="txt" x="556.6" y="94" font-size="16" text-anchor="middle">2</text>
+  <text class="txt" x="575.5" y="177" font-size="16" text-anchor="middle">3</text>
+  <text class="txt" x="522.5" y="243" font-size="16" text-anchor="middle">4</text>
+  <text class="txt" x="437.5" y="243" font-size="16" text-anchor="middle">5</text>
+  <text class="txt" x="384.5" y="177" font-size="16" text-anchor="middle">6</text>
+  <text class="txt" x="403.4" y="94" font-size="16" text-anchor="middle">7</text>
+  <!-- X over 2, 4, 6 and also 1 -->
+  <path class="ink-thin" d="M 471 43 l 18 18 M 489 43 l -18 18"/>
+  <path class="ink-thin" d="M 547.6 80 l 18 18 M 565.6 80 l -18 18"/>
+  <path class="ink-thin" d="M 513.5 229 l 18 18 M 531.5 229 l -18 18"/>
+  <path class="ink-thin" d="M 375.5 163 l 18 18 M 393.5 163 l -18 18"/>
+  <!-- new indices for survivors 3, 5, 7 -->
+  <text class="txt" x="533" y="165" font-size="14" text-anchor="middle">1</text>
+  <path class="ink-thin" d="M 527.5 151 q 2.5 -3.5 5 -1 q 2.5 2.5 5.5 -1" stroke-width="1.2"/>
+  <text class="txt" x="461" y="200" font-size="14" text-anchor="middle">2</text>
+  <path class="ink-thin" d="M 455.5 186 q 2.5 -3.5 5 -1 q 2.5 2.5 5.5 -1" stroke-width="1.2"/>
+  <text class="txt" x="443" y="117" font-size="14" text-anchor="middle">3</text>
+  <path class="ink-thin" d="M 437.5 103 q 2.5 -3.5 5 -1 q 2.5 2.5 5.5 -1" stroke-width="1.2"/>
+</svg>

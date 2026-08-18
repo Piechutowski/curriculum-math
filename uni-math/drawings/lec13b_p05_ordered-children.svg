@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="235" viewBox="0 0 560 235">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <line class="ink" x1="245.8" y1="75.2" x2="107.7" y2="156.6"/>
+  <line class="ink" x1="260.5" y1="78.6" x2="199.1" y2="152.9"/>
+  <line class="ink" x1="278.3" y1="80.0" x2="273.3" y2="151.0"/>
+  <line class="ink" x1="313.0" y1="75.5" x2="442.9" y2="156.3"/>
+  <ellipse class="ink" cx="280" cy="55" rx="58" ry="25"/>
+  <text class="txt" x="280" y="61" font-size="18" text-anchor="middle">Parent</text>
+  <ellipse class="ink" cx="85" cy="170" rx="32" ry="19"/>
+  <text class="txt" x="85" y="175" font-size="16" text-anchor="middle">ch1</text>
+  <ellipse class="ink" cx="185" cy="170" rx="32" ry="19"/>
+  <text class="txt" x="185" y="175" font-size="16" text-anchor="middle">ch2</text>
+  <ellipse class="ink" cx="272" cy="170" rx="32" ry="19"/>
+  <text class="txt" x="272" y="175" font-size="16" text-anchor="middle">ch3</text>
+  <ellipse class="ink" cx="465" cy="170" rx="32" ry="19"/>
+  <text class="txt" x="465" y="175" font-size="16" text-anchor="middle">chn</text>
+  <text class="txt" x="368" y="176" font-size="18" text-anchor="middle">. . .</text>
+  <text class="txt" x="137" y="214" font-size="18" text-anchor="middle">&#8804;</text>
+  <text class="txt" x="230" y="214" font-size="18" text-anchor="middle">&#8804;</text>
+  <text class="txt" x="415" y="214" font-size="18" text-anchor="middle">&#8804;</text>
+</svg>

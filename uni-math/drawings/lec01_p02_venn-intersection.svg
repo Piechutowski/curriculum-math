@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="240" viewBox="0 0 420 240">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+    <clipPath id="clipA"><ellipse cx="145" cy="130" rx="105" ry="72"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clipA)"><ellipse cx="280" cy="130" rx="105" ry="72" fill="url(#hatch)"/></g>
+  <ellipse class="ink" cx="145" cy="130" rx="105" ry="72"/>
+  <ellipse class="ink" cx="280" cy="130" rx="105" ry="72"/>
+  <text class="txt" x="90" y="140" font-size="28">A</text>
+  <text class="txt" x="320" y="140" font-size="28">B</text>
+  <path class="ink-thin" d="M 245 50 Q 228 68 218 90 M 218 90 l 2.5 -10 M 218 90 l 9.5 -4.5"/>
+  <text class="txt" x="232" y="40" font-size="18">A ∩ B</text>
+
+</svg>

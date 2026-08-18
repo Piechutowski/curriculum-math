@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632" height="366" viewBox="0 0 632 366">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:6 5; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <g transform="translate(10,6)">
+    <text class="txt" x="2" y="20" font-size="17">1.</text>
+    <path class="ink-thin" d="M 17 96 H 71"/>
+    <path class="ink-thin" d="M 44 96 V 48"/>
+    <rect class="ink-thin" x="20" y="87" width="48" height="9" rx="2"/>
+    <rect class="ink-thin" x="27" y="78" width="34" height="9" rx="2"/>
+    <rect class="ink-thin" x="34" y="69" width="20" height="9" rx="2"/>
+    <path class="ink-thin" d="M 77 96 H 131"/>
+    <path class="ink-thin" d="M 104 96 V 48"/>
+    <path class="ink-thin" d="M 137 96 H 191"/>
+    <path class="ink-thin" d="M 164 96 V 48"/>
+    <path class="ink-thin dashed" d="M 44 59 Q 104 47 164 84"/>
+    <path class="ink-thin" d="M 164 84 l -3 -9 M 164 84 l 8 -5"/>
+  </g>
+  <g transform="translate(214,6)">
+    <text class="txt" x="2" y="20" font-size="17">2.</text>
+    <path class="ink-thin" d="M 17 96 H 71"/>
+    <path class="ink-thin" d="M 44 96 V 48"/>
+    <rect class="ink-thin" x="20" y="87" width="48" height="9" rx="2"/>
+    <rect class="ink-thin" x="27" y="78" width="34" height="9" rx="2"/>
+    <path class="ink-thin" d="M 77 96 H 131"/>
+    <path class="ink-thin" d="M 104 96 V 48"/>
+    <path class="ink-thin" d="M 137 96 H 191"/>
+    <path class="ink-thin" d="M 164 96 V 48"/>
+    <rect class="ink-thin" x="154" y="87" width="20" height="9" rx="2"/>
+    <path class="ink-thin dashed" d="M 44 68 Q 74 56 104 84"/>
+    <path class="ink-thin" d="M 104 84 l -3 -9 M 104 84 l 8 -5"/>
+  </g>
+  <g transform="translate(418,6)">
+    <text class="txt" x="2" y="20" font-size="17">3.</text>
+    <path class="ink-thin" d="M 17 96 H 71"/>
+    <path class="ink-thin" d="M 44 96 V 48"/>
+    <rect class="ink-thin" x="20" y="87" width="48" height="9" rx="2"/>
+    <path class="ink-thin" d="M 77 96 H 131"/>
+    <path class="ink-thin" d="M 104 96 V 48"/>
+    <rect class="ink-thin" x="87" y="87" width="34" height="9" rx="2"/>
+    <path class="ink-thin" d="M 137 96 H 191"/>
+    <path class="ink-thin" d="M 164 96 V 48"/>
+    <rect class="ink-thin" x="154" y="87" width="20" height="9" rx="2"/>
+    <path class="ink-thin dashed" d="M 164 77 Q 134 65 104 75"/>
+    <path class="ink-thin" d="M 104 75 l -3 -9 M 104 75 l 8 -5"/>
+  </g>
+  <g transform="translate(10,124)">
+    <text class="txt" x="2" y="20" font-size="17">4.</text>
+    <path class="ink-thin" d="M 17 96 H 71"/>
+    <path class="ink-thin" d="M 44 96 V 48"/>
+    <rect class="ink-thin" x="20" y="87" width="48" height="9" rx="2"/>
+    <path class="ink-thin" d="M 77 96 H 131"/>
+    <path class="ink-thin" d="M 104 96 V 48"/>
+    <rect class="ink-thin" x="87" y="87" width="34" height="9" rx="2"/>
+    <rect class="ink-thin" x="94" y="78" width="20" height="9" rx="2"/>
+    <path class="ink-thin" d="M 137 96 H 191"/>
+    <path class="ink-thin" d="M 164 96 V 48"/>
+    <path class="ink-thin dashed" d="M 44 77 Q 104 65 164 84"/>
+    <path class="ink-thin" d="M 164 84 l -3 -9 M 164 84 l 8 -5"/>
+  </g>
+  <g transform="translate(214,124)">
+    <text class="txt" x="2" y="20" font-size="17">5.</text>
+    <path class="ink-thin" d="M 17 96 H 71"/>
+    <path class="ink-thin" d="M 44 96 V 48"/>
+    <path class="ink-thin" d="M 77 96 H 131"/>
+    <path class="ink-thin" d="M 104 96 V 48"/>
+    <rect class="ink-thin" x="87" y="87" width="34" height="9" rx="2"/>
+    <rect class="ink-thin" x="94" y="78" width="20" height="9" rx="2"/>
+    <path class="ink-thin" d="M 137 96 H 191"/>
+    <path class="ink-thin" d="M 164 96 V 48"/>
+    <rect class="ink-thin" x="140" y="87" width="48" height="9" rx="2"/>
+    <path class="ink-thin dashed" d="M 104 68 Q 74 56 44 84"/>
+    <path class="ink-thin" d="M 44 84 l -3 -9 M 44 84 l 8 -5"/>
+  </g>
+  <g transform="translate(418,124)">
+    <text class="txt" x="2" y="20" font-size="17">6.</text>
+    <path class="ink-thin" d="M 17 96 H 71"/>
+    <path class="ink-thin" d="M 44 96 V 48"/>
+    <rect class="ink-thin" x="34" y="87" width="20" height="9" rx="2"/>
+    <path class="ink-thin" d="M 77 96 H 131"/>
+    <path class="ink-thin" d="M 104 96 V 48"/>
+    <rect class="ink-thin" x="87" y="87" width="34" height="9" rx="2"/>
+    <path class="ink-thin" d="M 137 96 H 191"/>
+    <path class="ink-thin" d="M 164 96 V 48"/>
+    <rect class="ink-thin" x="140" y="87" width="48" height="9" rx="2"/>
+    <path class="ink-thin dashed" d="M 104 77 Q 134 65 164 75"/>
+    <path class="ink-thin" d="M 164 75 l -3 -9 M 164 75 l 8 -5"/>
+  </g>
+  <g transform="translate(10,242)">
+    <text class="txt" x="2" y="20" font-size="17">7.</text>
+    <path class="ink-thin" d="M 17 96 H 71"/>
+    <path class="ink-thin" d="M 44 96 V 48"/>
+    <rect class="ink-thin" x="34" y="87" width="20" height="9" rx="2"/>
+    <path class="ink-thin" d="M 77 96 H 131"/>
+    <path class="ink-thin" d="M 104 96 V 48"/>
+    <path class="ink-thin" d="M 137 96 H 191"/>
+    <path class="ink-thin" d="M 164 96 V 48"/>
+    <rect class="ink-thin" x="140" y="87" width="48" height="9" rx="2"/>
+    <rect class="ink-thin" x="147" y="78" width="34" height="9" rx="2"/>
+    <path class="ink-thin dashed" d="M 44 77 Q 104 56 164 66"/>
+    <path class="ink-thin" d="M 164 66 l -3 -9 M 164 66 l 8 -5"/>
+  </g>
+  <g transform="translate(418,242)">
+    <text class="txt" x="40" y="66" font-size="20">so  a₃ = 7</text>
+  </g>
+</svg>

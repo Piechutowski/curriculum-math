@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="510" viewBox="0 0 680 510">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+    .rm { font-style:normal; }
+  </style>
+
+  <!-- outer frame -->
+  <rect class="ink" x="14" y="12" width="652" height="486" rx="3"/>
+  <!-- column divider -->
+  <line class="ink-thin" x1="216" y1="12" x2="216" y2="498"/>
+  <!-- header separator (double rule like the sketch) -->
+  <line class="ink-thin" x1="14" y1="58" x2="666" y2="58"/>
+  <line class="ink-thin" x1="14" y1="62" x2="666" y2="62"/>
+  <!-- row separators -->
+  <line class="ink-thin" x1="14" y1="105" x2="666" y2="105"/>
+  <line class="ink-thin" x1="14" y1="148" x2="666" y2="148"/>
+  <line class="ink-thin" x1="14" y1="191" x2="666" y2="191"/>
+  <line class="ink-thin" x1="14" y1="234" x2="666" y2="234"/>
+  <line class="ink-thin" x1="14" y1="277" x2="666" y2="277"/>
+  <line class="ink-thin" x1="14" y1="320" x2="666" y2="320"/>
+  <line class="ink-thin" x1="14" y1="363" x2="666" y2="363"/>
+  <line class="ink-thin" x1="14" y1="406" x2="666" y2="406"/>
+  <line class="ink-thin" x1="14" y1="449" x2="666" y2="449"/>
+
+  <!-- header -->
+  <text class="txt" x="30" y="42" font-size="18">f(n)</text>
+  <text class="txt" x="234" y="34" font-size="16">prediction of b<tspan font-size="11" dy="4">n</tspan><tspan dy="-4"> </tspan></text>
+  <text class="txt" x="234" y="53" font-size="16">(special solution)</text>
+
+  <!-- row 1: c -> A constant -->
+  <text class="txt" x="30" y="90" font-size="17">c</text>
+  <text class="txt rm" x="192" y="90" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="90" font-size="17">A   <tspan font-size="14">(constant)</tspan></text>
+
+  <!-- row 2: n -> A1 n + A0 -->
+  <text class="txt" x="30" y="133" font-size="17">n</text>
+  <text class="txt rm" x="192" y="133" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="133" font-size="17">A<tspan font-size="12" dy="5">1</tspan><tspan dy="-5">n + A</tspan><tspan font-size="12" dy="5">0</tspan></text>
+
+  <!-- row 3: n^2 -> A2 n^2 + A1 n + A0 -->
+  <text class="txt" x="30" y="176" font-size="17">n<tspan font-size="12" dy="-6">2</tspan></text>
+  <text class="txt rm" x="192" y="176" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="176" font-size="17">A<tspan font-size="12" dy="5">2</tspan><tspan dy="-5">n</tspan><tspan font-size="12" dy="-6">2</tspan><tspan dy="6"> + A</tspan><tspan font-size="12" dy="5">1</tspan><tspan dy="-5">n + A</tspan><tspan font-size="12" dy="5">0</tspan></text>
+
+  <!-- row 4: n^t, t in Z+ -->
+  <text class="txt" x="30" y="219" font-size="17">n<tspan font-size="12" dy="-6">t</tspan><tspan dy="6">,  t &#8712; &#8484;</tspan><tspan font-size="12" dy="5">+</tspan></text>
+  <text class="txt rm" x="192" y="219" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="219" font-size="17">A<tspan font-size="12" dy="5">t</tspan><tspan dy="-5">n</tspan><tspan font-size="12" dy="-6">t</tspan><tspan dy="6"> + A</tspan><tspan font-size="12" dy="5">t&#8722;1</tspan><tspan dy="-5">n</tspan><tspan font-size="12" dy="-6">t&#8722;1</tspan><tspan dy="6"> + &#8230; + A</tspan><tspan font-size="12" dy="5">1</tspan><tspan dy="-5">n + A</tspan><tspan font-size="12" dy="5">0</tspan></text>
+
+  <!-- row 5: r^n, r in R -->
+  <text class="txt" x="30" y="262" font-size="17">r<tspan font-size="12" dy="-6">n</tspan><tspan dy="6">,  r &#8712; &#8477;</tspan></text>
+  <text class="txt rm" x="192" y="262" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="262" font-size="17">A r<tspan font-size="12" dy="-6">n</tspan></text>
+
+  <!-- row 6: sin(alpha n) -->
+  <text class="txt" x="30" y="305" font-size="17">sin(&#945;n)</text>
+  <text class="txt rm" x="192" y="305" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="305" font-size="17">A sin(n&#945;) + B cos(n&#945;)</text>
+
+  <!-- row 7: cos(alpha n) -->
+  <text class="txt" x="30" y="348" font-size="17">cos(&#945;n)</text>
+  <text class="txt rm" x="192" y="348" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="348" font-size="17">A sin(n&#945;) + B cos(n&#945;)</text>
+
+  <!-- row 8: n^t r^n -->
+  <text class="txt" x="30" y="391" font-size="17">n<tspan font-size="12" dy="-6">t</tspan><tspan dy="6"> r</tspan><tspan font-size="12" dy="-6">n</tspan></text>
+  <text class="txt rm" x="192" y="391" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="391" font-size="17">r<tspan font-size="12" dy="-6">n</tspan><tspan dy="6">(A</tspan><tspan font-size="12" dy="5">t</tspan><tspan dy="-5">n</tspan><tspan font-size="12" dy="-6">t</tspan><tspan dy="6"> + &#8230; + A</tspan><tspan font-size="12" dy="5">1</tspan><tspan dy="-5">n + A</tspan><tspan font-size="12" dy="5">0</tspan><tspan dy="-5">)</tspan></text>
+
+  <!-- row 9: r^n sin(alpha n) -->
+  <text class="txt" x="30" y="434" font-size="17">r<tspan font-size="12" dy="-6">n</tspan><tspan dy="6"> sin(&#945;n)</tspan></text>
+  <text class="txt rm" x="192" y="434" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="434" font-size="17">A r<tspan font-size="12" dy="-6">n</tspan><tspan dy="6"> sin(n&#945;) + B r</tspan><tspan font-size="12" dy="-6">n</tspan><tspan dy="6"> cos(n&#945;)</tspan></text>
+
+  <!-- row 10: r^n cos(alpha n) -->
+  <text class="txt" x="30" y="477" font-size="17">r<tspan font-size="12" dy="-6">n</tspan><tspan dy="6"> cos(&#945;n)</tspan></text>
+  <text class="txt rm" x="192" y="477" font-size="16">&#8658;</text>
+  <text class="txt" x="234" y="477" font-size="17">A r<tspan font-size="12" dy="-6">n</tspan><tspan dy="6"> sin(n&#945;) + B r</tspan><tspan font-size="12" dy="-6">n</tspan><tspan dy="6"> cos(n&#945;)</tspan></text>
+</svg>

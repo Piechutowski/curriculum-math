@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="330" viewBox="0 0 680 330">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- tilted balance: the left triple is heavier -->
+  <circle class="fill" cx="200" cy="35" r="4"/>
+  <path class="ink-thin" d="M 200 35 L 80 120 M 200 35 L 320 70"/>
+  <rect class="ink" x="23" y="120" width="114" height="40"/>
+  <path class="ink-thin" d="M 61 120 V 160 M 99 120 V 160"/>
+  <rect class="ink" x="263" y="70" width="114" height="40"/>
+  <path class="ink-thin" d="M 301 70 V 110 M 339 70 V 110"/>
+  <path class="ink-thin" d="M 95 205 L 85 168 M 85 168 l -1 10 M 85 168 l 8 5.5"/>
+  <text class="txt" x="30" y="228" font-size="15">we choose this triple</text>
+
+  <!-- the leftover pair (known genuine) -->
+  <rect class="ink" x="505" y="50" width="36" height="32"/>
+  <rect class="ink" x="560" y="50" width="36" height="32"/>
+  <text class="txt" x="551" y="20" font-size="13" text-anchor="middle">the leftover pair</text>
+  <text class="txt" x="551" y="38" font-size="13" text-anchor="middle">(same weight as the rest)</text>
+
+  <!-- splitting the chosen triple -->
+  <path class="ink-thin" d="M 12 250 Q 34 236 56 250 Q 34 264 12 250"/>
+  <circle class="fill" cx="34" cy="250" r="4"/>
+  <text class="txt" x="34" y="288" font-size="13" text-anchor="middle">eye</text>
+
+  <rect class="ink" x="100" y="230" width="40" height="36"/>
+  <rect class="ink" x="144" y="230" width="40" height="36"/>
+  <text class="txt" x="164" y="255" font-size="16" text-anchor="middle">Z</text>
+
+  <rect class="ink" x="235" y="230" width="40" height="36"/>
+
+  <rect class="ink" x="310" y="230" width="40" height="36"/>
+  <rect class="ink" x="354" y="230" width="40" height="36"/>
+  <text class="txt" x="374" y="255" font-size="16" text-anchor="middle">D</text>
+
+  <!-- arrows from the leftover pair -->
+  <path class="ink-thin" d="M 515 85 C 430 200 280 226 172 226 M 172 226 l 9.5 -3 M 172 226 l 9 4"/>
+  <path class="ink-thin" d="M 566 85 C 540 190 460 224 382 226 M 382 226 l 9.5 -3.5 M 382 226 l 9 4"/>
+
+  <text class="txt" x="142" y="300" font-size="13" text-anchor="middle">we swap one in (Z)</text>
+  <text class="txt" x="255" y="300" font-size="13" text-anchor="middle">set aside</text>
+  <text class="txt" x="352" y="300" font-size="13" text-anchor="middle">we add one (D)</text>
+</svg>

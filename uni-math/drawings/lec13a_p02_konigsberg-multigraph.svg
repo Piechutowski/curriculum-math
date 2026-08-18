@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="395" viewBox="0 0 580 395">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <path class="ink" d="M 172.8 194.7 Q 216 113 304.5 72.5"/>
+  <path class="ink" d="M 175.5 197.5 Q 264 157 307.2 75.3"/>
+  <line class="ink" x1="314.4" y1="74.1" x2="445.6" y2="195.9"/>
+  <line class="ink" x1="176.0" y1="200.0" x2="444.0" y2="200.0"/>
+  <path class="ink" d="M 175.4 202.6 Q 260 243 307.0 324.8"/>
+  <path class="ink" d="M 173.0 205.2 Q 220 287 304.6 327.4"/>
+  <line class="ink" x1="445.6" y1="204.1" x2="314.4" y2="325.9"/>
+  <circle class="fill" cx="310.0" cy="70.0" r="6"/>
+  <circle class="fill" cx="170.0" cy="200.0" r="6"/>
+  <circle class="fill" cx="450.0" cy="200.0" r="6"/>
+  <circle class="fill" cx="310.0" cy="330.0" r="6"/>
+  <text class="txt" x="345" y="40" font-size="18">upper bank</text>
+  <path class="ink-thin" d="M 352.0 48.0 L 320.0 64.0 M 320.0 64.0 L 325.6 57.0 M 320.0 64.0 L 329.0 63.8"/>
+  <text class="txt" x="490" y="205" font-size="18">island 1</text>
+  <path class="ink-thin" d="M 485.0 200.0 L 462.0 200.0 M 462.0 200.0 L 470.2 196.2 M 462.0 200.0 L 470.2 203.8"/>
+  <text class="txt" x="30" y="152" font-size="18">island 2</text>
+  <path class="ink-thin" d="M 80.0 162.0 L 158.0 193.0 M 158.0 193.0 L 149.0 193.5 M 158.0 193.0 L 151.8 186.5"/>
+  <text class="txt" x="340" y="372" font-size="18">lower bank</text>
+  <path class="ink-thin" d="M 348.0 360.0 L 322.0 338.0 M 322.0 338.0 L 330.7 340.4 M 322.0 338.0 L 325.8 346.2"/>
+  <text class="txt" x="85" y="88" font-size="17">bridges</text>
+  <path class="ink-thin" d="M 140.0 92.0 L 220.0 118.0 M 220.0 118.0 L 211.1 119.1 M 220.0 118.0 L 213.4 111.9"/>
+  <path class="ink-thin" d="M 140.0 96.0 L 243.0 143.0 M 243.0 143.0 L 234.0 143.1 M 243.0 143.0 L 237.2 136.2"/>
+  <text class="txt" x="430" y="105" font-size="17">bridge</text>
+  <path class="ink-thin" d="M 438.0 112.0 L 388.0 132.0 M 388.0 132.0 L 394.2 125.4 M 388.0 132.0 L 397.0 132.5"/>
+  <text class="txt" x="330" y="185" font-size="15">bridge</text>
+  <text class="txt" x="90" y="315" font-size="17">bridges</text>
+  <path class="ink-thin" d="M 148.0 310.0 L 238.0 262.0 M 238.0 262.0 L 232.6 269.2 M 238.0 262.0 L 229.0 262.5"/>
+  <path class="ink-thin" d="M 148.0 314.0 L 224.0 280.0 M 224.0 280.0 L 218.1 286.8 M 224.0 280.0 L 215.0 279.9"/>
+  <text class="txt" x="430" y="290" font-size="17">bridge</text>
+  <path class="ink-thin" d="M 436.0 280.0 L 390.0 262.0 M 390.0 262.0 L 399.0 261.4 M 390.0 262.0 L 396.2 268.5"/>
+
+</svg>

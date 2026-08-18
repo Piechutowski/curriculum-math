@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="295" viewBox="0 0 360 295">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- outer hexagon -->
+  <path class="ink" d="M 80 145 L 130 58 L 230 58 L 280 145 L 230 232 L 130 232 Z"/>
+  <!-- spokes -->
+  <path class="ink" d="M 180 145 L 130 58 M 180 145 L 230 58 M 180 145 L 280 145 M 180 145 L 230 232 M 180 145 L 130 232 M 180 145 L 80 145"/>
+
+  <circle class="fill" cx="180" cy="145" r="5.5"/>
+  <circle class="fill" cx="130" cy="58" r="5.5"/>
+  <circle class="fill" cx="230" cy="58" r="5.5"/>
+  <circle class="fill" cx="280" cy="145" r="5.5"/>
+  <circle class="fill" cx="230" cy="232" r="5.5"/>
+  <circle class="fill" cx="130" cy="232" r="5.5"/>
+  <circle class="fill" cx="80" cy="145" r="5.5"/>
+
+  <!-- outer edge labels -->
+  <text class="txt" x="82" y="94" font-size="17">e<tspan dy="4" font-size="12">1</tspan></text>
+  <text class="txt" x="172" y="44" font-size="17">e<tspan dy="4" font-size="12">6</tspan></text>
+  <text class="txt" x="260" y="94" font-size="17">e<tspan dy="4" font-size="12">11</tspan></text>
+  <text class="txt" x="256" y="210" font-size="17">e<tspan dy="4" font-size="12">12</tspan></text>
+  <text class="txt" x="172" y="264" font-size="17">e<tspan dy="4" font-size="12">7</tspan></text>
+  <text class="txt" x="80" y="210" font-size="17">e<tspan dy="4" font-size="12">2</tspan></text>
+  <!-- spoke labels -->
+  <text class="txt" x="133" y="102" font-size="17">e<tspan dy="4" font-size="12">4</tspan></text>
+  <text class="txt" x="212" y="102" font-size="17">e<tspan dy="4" font-size="12">8</tspan></text>
+  <text class="txt" x="114" y="138" font-size="17">e<tspan dy="4" font-size="12">3</tspan></text>
+  <text class="txt" x="228" y="138" font-size="17">e<tspan dy="4" font-size="12">10</tspan></text>
+  <text class="txt" x="126" y="198" font-size="17">e<tspan dy="4" font-size="12">5</tspan></text>
+  <text class="txt" x="216" y="194" font-size="17">e<tspan dy="4" font-size="12">9</tspan></text>
+</svg>

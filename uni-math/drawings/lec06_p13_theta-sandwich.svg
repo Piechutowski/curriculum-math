@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="230" viewBox="0 0 350 230">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <path class="ink-thin" d="M 20 190 H 295 M 295 190 l -9 -4.5 M 295 190 l -9 4.5"/>
+  <path class="ink-thin" d="M 50 215 V 30 M 50 30 l -4.5 9 M 50 30 l 4.5 9"/>
+  <text class="txt" x="298" y="208" font-size="16">n</text>
+  <path class="ink" d="M 50 190 C 110 165 180 100 255 38"/>
+  <path class="ink" d="M 50 190 C 100 178 140 158 175 132 C 210 106 235 88 258 68"/>
+  <path class="ink" d="M 50 190 C 120 178 200 145 268 105"/>
+  <text class="txt" x="260" y="34" font-size="16">c<tspan dy="5" font-size="12">1</tspan><tspan dy="-5" font-size="16">g(n)</tspan></text>
+  <text class="txt" x="264" y="64" font-size="16">f(n)</text>
+  <text class="txt" x="274" y="104" font-size="16">c<tspan dy="5" font-size="12">2</tspan><tspan dy="-5" font-size="16">g(n)</tspan></text>
+</svg>

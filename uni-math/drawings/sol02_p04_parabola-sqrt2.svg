@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- x-axis -->
+  <path class="ink-thin" d="M 12 90 H 208 M 208 90 l -9 -4.5 M 208 90 l -9 4.5"/>
+  <!-- y-axis -->
+  <path class="ink-thin" d="M 110 152 V 14 M 110 14 l -4.5 9 M 110 14 l 4.5 9"/>
+  <!-- parabola x^2 - 2, roots at ±√2 -->
+  <path class="ink" d="M 20 23 Q 110 237 200 23"/>
+  <!-- root markers -->
+  <circle class="fill" cx="166" cy="90" r="4"/>
+  <text class="txt" x="18" y="112" font-size="17">−√2</text>
+  <text class="txt" x="170" y="112" font-size="17">√2</text>
+</svg>

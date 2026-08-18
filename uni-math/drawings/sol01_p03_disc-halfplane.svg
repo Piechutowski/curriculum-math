@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="230" viewBox="0 0 640 230">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+
+  <!-- panel: the disc A -->
+  <g>
+    <text class="txt" x="30" y="60" font-size="22">A</text>
+    <path class="ink-thin" d="M 40 125 H 270 M 270 125 l -10 -5 M 270 125 l -10 5"/>
+    <path class="ink-thin" d="M 150 210 V 40 M 150 40 l -5 10 M 150 40 l 5 10"/>
+    <circle class="ink" cx="150" cy="125" r="58" style="fill:url(#hatch)"/>
+    <path class="ink-thin" d="M 150 125 L 191 84"/>
+    <text class="txt" x="198" y="80" font-size="18">R = 1</text>
+    <text class="txt" x="256" y="150" font-size="18">x</text>
+    <text class="txt" x="128" y="52" font-size="18">y</text>
+  </g>
+
+  <!-- panel: the half-plane B -->
+  <g transform="translate(340,0)">
+    <text class="txt" x="30" y="60" font-size="22">B</text>
+    <rect x="150" y="48" width="112" height="154" fill="url(#hatch)"/>
+    <path class="ink-thin" d="M 40 125 H 270 M 270 125 l -10 -5 M 270 125 l -10 5"/>
+    <path class="ink" d="M 150 205 V 45" stroke-width="4"/>
+    <text class="txt" x="256" y="150" font-size="18">x</text>
+    <text class="txt" x="128" y="42" font-size="18">y</text>
+  </g>
+</svg>

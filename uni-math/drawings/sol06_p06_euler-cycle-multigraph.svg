@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- the multigraph: two pairs of parallel edges sharing the middle vertex -->
+  <path class="ink" d="M 60 100 Q 110 55 160 100"/>
+  <path class="ink" d="M 60 100 Q 110 145 160 100"/>
+  <path class="ink" d="M 160 100 Q 210 55 260 100"/>
+  <path class="ink" d="M 160 100 Q 210 145 260 100"/>
+  <circle class="fill" cx="60" cy="100" r="5"/>
+  <circle class="fill" cx="160" cy="100" r="5"/>
+  <circle class="fill" cx="260" cy="100" r="5"/>
+  <text class="txt" x="52" y="140" font-size="16" text-anchor="middle">deg 2</text>
+  <text class="txt" x="160" y="168" font-size="16" text-anchor="middle">deg 4</text>
+  <text class="txt" x="268" y="140" font-size="16" text-anchor="middle">deg 2</text>
+
+  <!-- the dotted doodle: the Euler cycle, edges numbered 1..4 -->
+  <path class="ink-thin dashed" d="M 340 100 Q 390 55 440 100"/>
+  <path class="ink-thin dashed" d="M 340 100 Q 390 145 440 100"/>
+  <path class="ink-thin dashed" d="M 440 100 Q 490 55 540 100"/>
+  <path class="ink-thin dashed" d="M 440 100 Q 490 145 540 100"/>
+  <circle class="ink-thin" cx="340" cy="100" r="4.5"/>
+  <circle class="ink-thin" cx="440" cy="100" r="4.5"/>
+  <circle class="ink-thin" cx="540" cy="100" r="4.5"/>
+  <text class="txt" x="385" y="58" font-size="18">1</text>
+  <text class="txt" x="485" y="58" font-size="18">2</text>
+  <text class="txt" x="485" y="160" font-size="18">3</text>
+  <text class="txt" x="385" y="160" font-size="18">4</text>
+</svg>

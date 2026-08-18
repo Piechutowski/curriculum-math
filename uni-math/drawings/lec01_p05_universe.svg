@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="260" viewBox="0 0 480 260">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+    <mask id="mU">
+      <rect x="120" y="35" width="290" height="160" fill="white"/>
+      <ellipse cx="270" cy="105" rx="55" ry="38" fill="black"/>
+    </mask>
+  </defs>
+
+  <rect class="ink" x="120" y="35" width="290" height="160"/>
+  <g mask="url(#mU)"><rect x="120" y="35" width="290" height="160" fill="url(#dots)"/></g>
+  <ellipse class="ink" cx="270" cy="105" rx="55" ry="38"/>
+  <text class="txt" x="268" y="113" font-size="26" text-anchor="middle">A</text>
+  <text class="txt" x="40" y="120" font-size="28">U</text>
+  <path class="ink-thin" d="M 68 112 H 108 M 108 112 l -9 -4.5 M 108 112 l -9 4.5"/>
+  <path class="ink-thin" d="M 205 238 Q 200 210 196 185 M 196 185 l -1 10.5 M 196 185 l 8 7"/>
+  <text class="txt" x="215" y="250" font-size="22">U ∖ A</text>
+
+</svg>

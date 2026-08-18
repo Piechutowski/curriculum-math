@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="215" viewBox="0 0 620 215">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- incoming high-energy neutron -->
+  <circle class="ink" cx="55" cy="105" r="21"/>
+  <text class="txt" x="52" y="111" font-size="17" text-anchor="middle">N<tspan font-size="12" dy="4">H</tspan></text>
+  <path class="ink-thin" d="M 82 105 H 172 M 172 105 l -9 -4.5 M 172 105 l -9 4.5"/>
+  <text class="txt" x="112" y="138" font-size="18">t<tspan font-size="13" dy="5">n</tspan></text>
+
+  <!-- kernel of radioactive material -->
+  <rect class="ink" x="180" y="55" width="180" height="100"/>
+  <text class="txt" x="270" y="86" font-size="16" text-anchor="middle">kernel of atoms&#8217;</text>
+  <text class="txt" x="270" y="108" font-size="16" text-anchor="middle">radioactive</text>
+  <text class="txt" x="270" y="130" font-size="16" text-anchor="middle">material</text>
+
+  <!-- outgoing arrows -->
+  <path class="ink-thin" d="M 365 80 L 452 46 M 452 46 l -10 -0.7 M 452 46 l -6.9 7.2"/>
+  <path class="ink-thin" d="M 365 130 L 452 164 M 452 164 l -10 0.7 M 452 164 l -6.9 -7.2"/>
+  <text class="txt" x="400" y="200" font-size="18">t<tspan font-size="13" dy="5">n+1</tspan></text>
+
+  <!-- products: 2 high-energy neutrons -->
+  <circle class="ink" cx="488" cy="40" r="21"/>
+  <text class="txt" x="485" y="46" font-size="17" text-anchor="middle">N<tspan font-size="12" dy="4">H</tspan></text>
+  <circle class="ink" cx="531" cy="40" r="21"/>
+  <text class="txt" x="528" y="46" font-size="17" text-anchor="middle">N<tspan font-size="12" dy="4">H</tspan></text>
+
+  <!-- product: 1 low-energy neutron -->
+  <circle class="ink" cx="492" cy="168" r="21"/>
+  <text class="txt" x="489" y="174" font-size="17" text-anchor="middle">N<tspan font-size="12" dy="4">L</tspan></text>
+</svg>

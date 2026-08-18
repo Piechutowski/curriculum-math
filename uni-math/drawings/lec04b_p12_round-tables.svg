@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="330" viewBox="0 0 660 330">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <rect class="ink-thin" x="75" y="24" width="30" height="28"/>
+  <text class="txt" x="90.0" y="44.0" font-size="17" text-anchor="middle">1</text>
+  <rect class="ink-thin" x="105" y="24" width="30" height="28"/>
+  <text class="txt" x="120.0" y="44.0" font-size="17" text-anchor="middle">2</text>
+  <rect class="ink-thin" x="135" y="24" width="30" height="28"/>
+  <text class="txt" x="150.0" y="44.0" font-size="17" text-anchor="middle">3</text>
+  <rect class="ink-thin" x="285" y="24" width="30" height="28"/>
+  <text class="txt" x="300.0" y="44.0" font-size="17" text-anchor="middle">3</text>
+  <rect class="ink-thin" x="315" y="24" width="30" height="28"/>
+  <text class="txt" x="330.0" y="44.0" font-size="17" text-anchor="middle">1</text>
+  <rect class="ink-thin" x="345" y="24" width="30" height="28"/>
+  <text class="txt" x="360.0" y="44.0" font-size="17" text-anchor="middle">2</text>
+  <rect class="ink-thin" x="495" y="24" width="30" height="28"/>
+  <text class="txt" x="510.0" y="44.0" font-size="17" text-anchor="middle">2</text>
+  <rect class="ink-thin" x="525" y="24" width="30" height="28"/>
+  <text class="txt" x="540.0" y="44.0" font-size="17" text-anchor="middle">3</text>
+  <rect class="ink-thin" x="555" y="24" width="30" height="28"/>
+  <text class="txt" x="570.0" y="44.0" font-size="17" text-anchor="middle">1</text>
+  <text class="txt" x="330.0" y="86.0" font-size="17" text-anchor="middle">different permutations (a row of chairs)</text>
+  <path class="ink-thin dashed" d="M 120.0 96.0 L 120.0 152.0 M 120.0 152.0 L 116.3 143.8 M 120.0 152.0 L 123.7 143.8"/>
+  <path class="ink-thin dashed" d="M 330.0 96.0 L 330.0 152.0 M 330.0 152.0 L 326.3 143.8 M 330.0 152.0 L 333.7 143.8"/>
+  <path class="ink-thin dashed" d="M 540.0 96.0 L 540.0 152.0 M 540.0 152.0 L 536.3 143.8 M 540.0 152.0 L 543.7 143.8"/>
+  <text class="txt" x="330.0" y="178.0" font-size="17" text-anchor="middle">round table</text>
+  <circle class="ink" cx="120" cy="252" r="34"/>
+  <rect class="ink-thin" x="111" y="189" width="19" height="19" transform="rotate(-8 120 198)"/>
+  <text class="txt" x="120.5" y="204.0" font-size="14" text-anchor="middle">2</text>
+  <rect class="ink-thin" x="55" y="267" width="19" height="19" transform="rotate(-8 64 276)"/>
+  <text class="txt" x="64.5" y="282.0" font-size="14" text-anchor="middle">1</text>
+  <rect class="ink-thin" x="155" y="267" width="19" height="19" transform="rotate(-8 164 276)"/>
+  <text class="txt" x="164.5" y="282.0" font-size="14" text-anchor="middle">3</text>
+  <circle class="ink" cx="330" cy="252" r="34"/>
+  <rect class="ink-thin" x="321" y="189" width="19" height="19" transform="rotate(-8 330 198)"/>
+  <text class="txt" x="330.5" y="204.0" font-size="14" text-anchor="middle">1</text>
+  <rect class="ink-thin" x="265" y="267" width="19" height="19" transform="rotate(-8 274 276)"/>
+  <text class="txt" x="274.5" y="282.0" font-size="14" text-anchor="middle">3</text>
+  <rect class="ink-thin" x="365" y="267" width="19" height="19" transform="rotate(-8 374 276)"/>
+  <text class="txt" x="374.5" y="282.0" font-size="14" text-anchor="middle">2</text>
+  <circle class="ink" cx="540" cy="252" r="34"/>
+  <rect class="ink-thin" x="531" y="189" width="19" height="19" transform="rotate(-8 540 198)"/>
+  <text class="txt" x="540.5" y="204.0" font-size="14" text-anchor="middle">3</text>
+  <rect class="ink-thin" x="475" y="267" width="19" height="19" transform="rotate(-8 484 276)"/>
+  <text class="txt" x="484.5" y="282.0" font-size="14" text-anchor="middle">2</text>
+  <rect class="ink-thin" x="575" y="267" width="19" height="19" transform="rotate(-8 584 276)"/>
+  <text class="txt" x="584.5" y="282.0" font-size="14" text-anchor="middle">1</text>
+
+</svg>

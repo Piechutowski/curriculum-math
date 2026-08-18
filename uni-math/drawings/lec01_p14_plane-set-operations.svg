@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="640" viewBox="0 0 700 640">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+    <clipPath id="c14"><circle cx="95" cy="70" r="34"/></clipPath>
+    <mask id="m14"><rect x="-100" y="-100" width="900" height="900" fill="white"/><circle cx="95" cy="70" r="34" fill="black"/></mask>
+  </defs>
+
+  <g transform="translate(20,10)">
+    <text class="txt" x="0" y="75" font-size="21">A</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <circle class="ink" cx="95" cy="70" r="34" style="fill:url(#dots)"/>
+    </g>
+  </g>
+  <g transform="translate(370,10)">
+    <text class="txt" x="0" y="75" font-size="21">B</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <rect x="95" y="12" width="92" height="118" fill="url(#dots)"/><path class="ink dashed" d="M 95 135 V 10"/>
+    </g>
+  </g>
+  <g transform="translate(20,165)">
+    <text class="txt" x="0" y="75" font-size="21">A ∪ B</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <rect x="95" y="12" width="92" height="118" fill="url(#dots)"/><circle cx="95" cy="70" r="34" fill="url(#dots)"/><path class="ink" d="M 95 36 a 34 34 0 1 0 0 68"/><path class="ink dashed" d="M 95 10 V 36 M 95 104 V 135"/>
+    </g>
+  </g>
+  <g transform="translate(370,165)">
+    <text class="txt" x="0" y="75" font-size="21">A ∩ B</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <g clip-path="url(#c14)"><rect x="95" y="12" width="92" height="118" fill="url(#dots)"/></g><path class="ink" d="M 95 36 a 34 34 0 1 1 0 68"/><path class="ink dashed" d="M 95 36 V 104"/>
+    </g>
+  </g>
+  <g transform="translate(20,320)">
+    <text class="txt" x="0" y="75" font-size="21">A ∖ B</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <g clip-path="url(#c14)"><rect x="0" y="12" width="95" height="118" fill="url(#dots)"/></g><path class="ink" d="M 95 36 a 34 34 0 1 0 0 68"/><path class="ink" d="M 95 36 V 104"/>
+    </g>
+  </g>
+  <g transform="translate(370,320)">
+    <text class="txt" x="0" y="75" font-size="21">B ∖ A</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <g mask="url(#m14)"><rect x="95" y="12" width="92" height="118" fill="url(#dots)"/></g><path class="ink dashed" d="M 95 10 V 135"/><path class="ink dashed" d="M 95 36 a 34 34 0 1 1 0 68"/>
+    </g>
+  </g>
+  <g transform="translate(20,475)">
+    <text class="txt" x="0" y="75" font-size="21">A′</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <g mask="url(#m14)"><rect x="0" y="12" width="190" height="118" fill="url(#dots)"/></g><path class="ink dashed" d="M 95 36 a 34 34 0 1 1 0 68 a 34 34 0 1 1 0 -68"/>
+    </g>
+  </g>
+  <g transform="translate(370,475)">
+    <text class="txt" x="0" y="75" font-size="21">B′</text>
+    <g transform="translate(75,0)">
+      <path class="ink-thin" d="M 0 70 H 190 M 190 70 l -9 -4.5 M 190 70 l -9 4.5"/>
+      <path class="ink-thin" d="M 95 135 V 8 M 95 8 l -4.5 9 M 95 8 l 4.5 9"/>
+      <rect x="0" y="12" width="95" height="118" fill="url(#dots)"/><path class="ink" d="M 95 135 V 10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

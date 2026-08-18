@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="290" viewBox="0 0 430 290">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <circle class="ink" cx="120" cy="70" r="14"/>
+  <text class="txt" x="120" y="75.5" font-size="16" text-anchor="middle">y</text>
+  <circle class="ink" cx="310" cy="70" r="14"/>
+  <text class="txt" x="310" y="75.5" font-size="16" text-anchor="middle">w</text>
+  <circle class="ink" cx="80" cy="240" r="14"/>
+  <text class="txt" x="80" y="245.5" font-size="16" text-anchor="middle">x</text>
+  <circle class="ink" cx="330" cy="240" r="14"/>
+  <text class="txt" x="330" y="245.5" font-size="16" text-anchor="middle">z</text>
+  <path class="ink" d="M 116.3 85.6 L 83.7 224.4"/>
+  <text class="txt" x="78" y="155" font-size="17" text-anchor="middle">ã</text>
+  <path class="ink" d="M 136.0 70.0 L 294.0 70.0"/>
+  <text class="txt" x="215" y="55" font-size="17" text-anchor="middle">b̃</text>
+  <path class="ink" d="M 135.3 74.8 Q 215.0 100.0 294.7 74.8"/>
+  <text class="txt" x="243" y="112" font-size="17" text-anchor="middle">c̃</text>
+  <path class="ink" d="M 132.4 80.1 L 317.6 229.9"/>
+  <text class="txt" x="242" y="196" font-size="17" text-anchor="middle">d̃</text>
+  <path class="ink" d="M 311.9 85.9 L 328.1 224.1"/>
+  <text class="txt" x="340" y="155" font-size="17" text-anchor="middle">ẽ</text>
+  <circle class="ink" cx="325.5" cy="47.9" r="16"/>
+  <text class="txt" x="372" y="30" font-size="17" text-anchor="middle">f̃</text>
+</svg>

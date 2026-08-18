@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="580" height="250" viewBox="0 0 580 250">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- row (*): boxes with identical balls -->
+  <text class="txt" x="14" y="68" font-size="20">(∗)</text>
+  <rect class="ink" x="64" y="34" width="66" height="54"/>
+  <circle class="fill" cx="86" cy="58" r="6"/>
+  <circle class="fill" cx="108" cy="66" r="6"/>
+  <rect class="ink" x="150" y="34" width="52" height="54"/>
+  <circle class="fill" cx="176" cy="62" r="6"/>
+  <text class="txt" x="218" y="68" font-size="20">· · ·</text>
+  <rect class="ink" x="282" y="34" width="68" height="54"/>
+  <circle class="fill" cx="300" cy="52" r="6"/>
+  <circle class="fill" cx="322" cy="54" r="6"/>
+  <circle class="fill" cx="302" cy="74" r="6"/>
+  <circle class="fill" cx="324" cy="76" r="6"/>
+
+  <!-- correspondence arrows (double-headed) -->
+  <path class="ink-thin" d="M 97 98 V 136 M 97 98 l -4.5 9 M 97 98 l 4.5 9 M 97 136 l -4.5 -9 M 97 136 l 4.5 -9"/>
+  <path class="ink-thin" d="M 176 98 V 136 M 176 98 l -4.5 9 M 176 98 l 4.5 9 M 176 136 l -4.5 -9 M 176 136 l 4.5 -9"/>
+  <path class="ink-thin" d="M 316 98 V 136 M 316 98 l -4.5 9 M 316 98 l 4.5 9 M 316 136 l -4.5 -9 M 316 136 l 4.5 -9"/>
+
+  <!-- row (**): the 0/1 sequence -->
+  <text class="txt" x="8" y="168" font-size="20">(∗∗)</text>
+  <text class="txt" x="78" y="168" font-size="22">0</text>
+  <text class="txt" x="98" y="168" font-size="22">0</text>
+  <text class="txt" x="120" y="168" font-size="22" font-weight="bold">1</text>
+  <text class="txt" x="142" y="168" font-size="22">0</text>
+  <text class="txt" x="164" y="168" font-size="22" font-weight="bold">1</text>
+  <text class="txt" x="192" y="166" font-size="20">· · ·</text>
+  <text class="txt" x="244" y="168" font-size="22" font-weight="bold">1</text>
+  <text class="txt" x="266" y="168" font-size="22">0</text>
+  <text class="txt" x="286" y="168" font-size="22">0</text>
+  <text class="txt" x="306" y="168" font-size="22">0</text>
+  <text class="txt" x="326" y="168" font-size="22">0</text>
+
+  <!-- tildes over the groups of zeros -->
+  <path class="ink-thin" d="M 76 144 q 9 -8 18 0 q 9 8 18 0"/>
+  <path class="ink-thin" d="M 140 144 q 8 -8 16 0"/>
+  <path class="ink-thin" d="M 264 144 q 9 -8 18 0 q 9 8 18 0 q 9 -8 18 0 q 9 8 18 0" transform="translate(0,0) scale(1,1)"/>
+
+  <!-- arrows pointing at the 1s -->
+  <path class="ink-thin" d="M 126 212 V 176 M 126 176 l -4.5 9 M 126 176 l 4.5 9"/>
+  <path class="ink-thin" d="M 170 212 V 176 M 170 176 l -4.5 9 M 170 176 l 4.5 9"/>
+  <path class="ink-thin" d="M 250 212 V 176 M 250 176 l -4.5 9 M 250 176 l 4.5 9"/>
+  <text class="txt" x="100" y="238" font-size="16">the 1s mark the boundaries between the boxes</text>
+</svg>

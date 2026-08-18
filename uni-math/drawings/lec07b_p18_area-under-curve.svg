@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="110" viewBox="0 0 220 110">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+
+  <!-- hatched region under f between 1 and n+1 -->
+  <path style="fill:url(#hatch)" d="M 30 85 L 30 20 L 34.7 33 L 39.4 41.7 L 48.8 52.5 L 58.2 59 L 67.6 63.3 L 86.5 68.8 L 105.3 72 L 133.5 75 L 161.7 76.9 L 190 78.2 L 190 85 Z"/>
+
+  <!-- curve f(x) = 1/x -->
+  <path class="ink" d="M 30 20 L 34.7 33 L 39.4 41.7 L 48.8 52.5 L 58.2 59 L 67.6 63.3 L 86.5 68.8 L 105.3 72 L 133.5 75 L 161.7 76.9 L 190 78.2"/>
+  <!-- vertical edges and base -->
+  <path class="ink-thin" d="M 30 20 V 85 M 190 78.2 V 85 M 30 85 H 190"/>
+
+  <text class="txt" x="52" y="17" font-size="15">f(x)</text>
+  <text class="txt" x="26" y="102" font-size="15">1</text>
+  <text class="txt" x="172" y="102" font-size="15">n+1</text>
+</svg>

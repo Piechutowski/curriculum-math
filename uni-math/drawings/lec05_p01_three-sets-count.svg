@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="300" viewBox="0 0 460 300">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <circle class="ink" cx="150" cy="110" r="75"/>
+  <circle class="ink" cx="165" cy="195" r="75"/>
+  <circle class="ink" cx="270" cy="150" r="80"/>
+
+  <text class="txt" x="60" y="50" font-size="24">A</text>
+  <text class="txt" x="90" y="278" font-size="24">B</text>
+  <text class="txt" x="348" y="82" font-size="24">C</text>
+
+  <!-- A only (3) -->
+  <circle class="fill" cx="110" cy="70" r="3.4"/>
+  <circle class="fill" cx="150" cy="60" r="3.4"/>
+  <circle class="fill" cx="95" cy="115" r="3.4"/>
+  <!-- B only (2) -->
+  <circle class="fill" cx="135" cy="240" r="3.4"/>
+  <circle class="fill" cx="180" cy="250" r="3.4"/>
+  <!-- A ∩ B only (1) -->
+  <circle class="fill" cx="145" cy="150" r="3.4"/>
+  <!-- A ∩ B ∩ C (1) -->
+  <circle class="fill" cx="205" cy="150" r="3.4"/>
+  <!-- B ∩ C only (2) -->
+  <circle class="fill" cx="225" cy="210" r="3.4"/>
+  <circle class="fill" cx="235" cy="185" r="3.4"/>
+  <!-- C only (2) -->
+  <circle class="fill" cx="300" cy="120" r="3.4"/>
+  <circle class="fill" cx="330" cy="165" r="3.4"/>
+</svg>

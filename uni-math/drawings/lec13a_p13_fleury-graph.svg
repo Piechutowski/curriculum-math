@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="610" height="330" viewBox="0 0 610 330">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <line class="ink" x1="104.3" y1="154.6" x2="170.7" y2="80.4"/>
+  <line class="ink" x1="190.4" y1="79.4" x2="274.6" y2="155.6"/>
+  <line class="ink" x1="104.9" y1="174.9" x2="180.1" y2="250.1"/>
+  <line class="ink" x1="199.9" y1="250.1" x2="275.1" y2="174.9"/>
+  <path class="ink" d="M 296.6 157.2 Q 367.0 110.0 438.3 157.3"/>
+  <path class="ink" d="M 296.6 172.8 Q 367.0 220.0 438.3 172.7"/>
+  <line class="ink" x1="450.0" y1="179.0" x2="450.0" y2="261.0"/>
+  <path class="ink" d="M 461.3 173.2 A 26.0 26.0 0 1 0 461.3 156.8"/>
+  <circle class="ink" cx="180.0" cy="70.0" r="14.0"/>
+  <text class="txt" x="180.0" y="75.5" font-size="15" text-anchor="middle">r</text>
+  <circle class="ink" cx="95.0" cy="165.0" r="14.0"/>
+  <text class="txt" x="95.0" y="170.5" font-size="15" text-anchor="middle">s</text>
+  <circle class="ink" cx="190.0" cy="260.0" r="14.0"/>
+  <text class="txt" x="190.0" y="265.5" font-size="15" text-anchor="middle">t</text>
+  <circle class="ink" cx="285.0" cy="165.0" r="14.0"/>
+  <text class="txt" x="285.0" y="170.5" font-size="15" text-anchor="middle">x</text>
+  <circle class="ink" cx="450.0" cy="165.0" r="14.0"/>
+  <text class="txt" x="450.0" y="170.5" font-size="15" text-anchor="middle">y</text>
+  <circle class="ink" cx="450.0" cy="275.0" r="14.0"/>
+  <text class="txt" x="450.0" y="280.5" font-size="15" text-anchor="middle">z</text>
+  <text class="txt" x="110.0" y="105.0" font-size="16">b</text>
+  <text class="txt" x="245.0" y="105.0" font-size="16">a</text>
+  <text class="txt" x="112.0" y="228.0" font-size="16">c</text>
+  <text class="txt" x="248.0" y="228.0" font-size="16">d</text>
+  <text class="txt" x="360.0" y="118.0" font-size="16">f</text>
+  <text class="txt" x="360.0" y="236.0" font-size="16">h</text>
+  <text class="txt" x="466.0" y="228.0" font-size="16">i</text>
+  <text class="txt" x="526.0" y="170.0" font-size="16">g</text>
+  <text class="txt" x="560" y="66" font-size="18">(a)</text>
+
+</svg>

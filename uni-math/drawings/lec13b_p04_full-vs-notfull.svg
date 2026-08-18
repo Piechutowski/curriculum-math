@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="245" viewBox="0 0 520 245">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <line class="ink" x1="107.2" y1="49.2" x2="72.8" y2="100.8"/>
+  <line class="ink" x1="112.8" y1="49.2" x2="147.2" y2="100.8"/>
+  <line class="ink" x1="68.1" y1="109.6" x2="46.9" y2="160.4"/>
+  <line class="ink" x1="71.9" y1="109.6" x2="93.1" y2="160.4"/>
+  <circle class="fill" cx="110" cy="45" r="5"/>
+  <circle class="fill" cx="70" cy="105" r="5"/>
+  <circle class="fill" cx="150" cy="105" r="5"/>
+  <circle class="fill" cx="45" cy="165" r="5"/>
+  <circle class="fill" cx="95" cy="165" r="5"/>
+  <text class="txt" x="110" y="225" font-size="19" text-anchor="middle">not full</text>
+  <line class="ink" x1="386.8" y1="48.8" x2="343.2" y2="101.2"/>
+  <line class="ink" x1="393.2" y1="48.8" x2="436.8" y2="101.2"/>
+  <line class="ink" x1="338.1" y1="109.6" x2="316.9" y2="160.4"/>
+  <line class="ink" x1="341.9" y1="109.6" x2="363.1" y2="160.4"/>
+  <line class="ink" x1="438.1" y1="109.6" x2="416.9" y2="160.4"/>
+  <line class="ink" x1="441.9" y1="109.6" x2="463.1" y2="160.4"/>
+  <circle class="fill" cx="390" cy="45" r="5"/>
+  <circle class="fill" cx="340" cy="105" r="5"/>
+  <circle class="fill" cx="440" cy="105" r="5"/>
+  <circle class="fill" cx="315" cy="165" r="5"/>
+  <circle class="fill" cx="365" cy="165" r="5"/>
+  <circle class="fill" cx="415" cy="165" r="5"/>
+  <circle class="fill" cx="465" cy="165" r="5"/>
+  <text class="txt" x="390" y="225" font-size="19" text-anchor="middle">full</text>
+</svg>

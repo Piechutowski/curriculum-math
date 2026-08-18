@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="260" viewBox="0 0 470 260">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- left blob X -->
+  <path class="ink" d="M 88 62 C 108 42 150 44 158 72 C 182 78 180 108 162 118 C 178 144 168 178 138 182 C 116 200 78 192 72 164 C 48 156 44 122 64 108 C 54 84 66 66 88 62 Z"/>
+  <!-- points x1, x2 -->
+  <circle class="ink-thin" cx="118" cy="98" r="3.5"/>
+  <text class="txt" x="98" y="120" font-size="18">x</text>
+  <text class="txt" x="108" y="126" font-size="12">1</text>
+  <circle class="ink-thin" cx="112" cy="152" r="3.5"/>
+  <text class="txt" x="90" y="172" font-size="18">x</text>
+  <text class="txt" x="100" y="178" font-size="12">2</text>
+  <!-- underlined X label -->
+  <text class="txt" x="108" y="230" font-size="26">X</text>
+  <path class="ink-thin" d="M 104 236 H 132"/>
+
+  <!-- right blob Y -->
+  <path class="ink" d="M 356 58 C 380 44 408 54 412 80 C 430 92 428 122 412 132 C 422 158 404 182 378 176 C 360 192 330 182 328 158 C 310 146 312 116 328 106 C 322 80 336 62 356 58 Z"/>
+  <!-- points y1, y2 close together -->
+  <circle class="ink-thin" cx="374" cy="108" r="3.5"/>
+  <circle class="ink-thin" cx="382" cy="134" r="3.5"/>
+  <text class="txt" x="386" y="112" font-size="18">y</text>
+  <text class="txt" x="396" y="118" font-size="12">1</text>
+  <text class="txt" x="392" y="140" font-size="18">y</text>
+  <text class="txt" x="402" y="146" font-size="12">2</text>
+  <!-- underlined Y label -->
+  <text class="txt" x="362" y="230" font-size="26">Y</text>
+  <path class="ink-thin" d="M 358 236 H 384"/>
+
+  <!-- arrow x1 -> y1, labelled f(x1) -->
+  <path class="ink-thin" d="M 126 96 Q 245 62 368 106 M 368 106 l -10.5 -1 M 368 106 l -5.5 -9"/>
+  <text class="txt" x="222" y="60" font-size="18">f(x</text>
+  <text class="txt" x="248" y="66" font-size="12">1</text>
+  <text class="txt" x="254" y="60" font-size="18">)</text>
+
+  <!-- arrow x2 -> y2 -->
+  <path class="ink-thin" d="M 120 150 Q 250 176 374 136 M 374 136 l -10.5 2.5 M 374 136 l -7.5 -7.5"/>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="185" viewBox="0 0 540 185">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- set S -->
+  <ellipse class="ink" cx="150" cy="95" rx="115" ry="58"/>
+  <circle class="fill" cx="60" cy="100" r="3"/>
+  <circle class="fill" cx="95" cy="80" r="3"/>
+  <circle class="fill" cx="125" cy="107" r="3"/>
+  <circle class="fill" cx="155" cy="84" r="3"/>
+  <circle class="fill" cx="185" cy="107" r="3"/>
+  <circle class="fill" cx="210" cy="83" r="3"/>
+  <circle class="fill" cx="235" cy="105" r="3"/>
+  <text class="txt" x="52" y="117" font-size="14">s<tspan dy="3" font-size="10">1</tspan></text>
+  <text class="txt" x="87" y="97" font-size="14">s<tspan dy="3" font-size="10">2</tspan></text>
+  <text class="txt" x="117" y="124" font-size="14">s<tspan dy="3" font-size="10">3</tspan></text>
+  <text class="txt" x="147" y="101" font-size="14">s<tspan dy="3" font-size="10">4</tspan></text>
+  <text class="txt" x="177" y="124" font-size="14">s<tspan dy="3" font-size="10">5</tspan></text>
+  <text class="txt" x="202" y="100" font-size="14">s<tspan dy="3" font-size="10">6</tspan></text>
+  <text class="txt" x="227" y="122" font-size="14">s<tspan dy="3" font-size="10">7</tspan></text>
+  <text class="txt" x="150" y="175" font-size="20" text-anchor="middle">S</text>
+
+  <!-- f arrow -->
+  <path class="ink-thin" d="M 275 70 Q 310 55 345 78 M 345 78 l -11 -2.5 M 345 78 l -4 -10.5"/>
+  <text class="txt" x="312" y="45" font-size="19">f</text>
+
+  <!-- set T -->
+  <ellipse class="ink" cx="435" cy="95" rx="62" ry="42"/>
+  <circle class="fill" cx="410" cy="88" r="3"/>
+  <circle class="fill" cx="458" cy="102" r="3"/>
+  <text class="txt" x="402" y="105" font-size="14">t<tspan dy="3" font-size="10">1</tspan></text>
+  <text class="txt" x="450" y="119" font-size="14">t<tspan dy="3" font-size="10">2</tspan></text>
+  <text class="txt" x="435" y="162" font-size="20" text-anchor="middle">T</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="350" viewBox="0 0 430 350">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <line class="ink-thin" x1="199.2" y1="46.0" x2="306.9" y2="83.1"/>
+  <line class="ink-thin" x1="199.2" y1="46.0" x2="343.7" y2="193.1"/>
+  <line class="ink-thin" x1="199.2" y1="46.0" x2="276.0" y2="289.8"/>
+  <line class="ink-thin" x1="199.2" y1="46.0" x2="158.0" y2="291.8"/>
+  <line class="ink-thin" x1="199.2" y1="46.0" x2="87.8" y2="202.0"/>
+  <line class="ink-thin" x1="199.2" y1="46.0" x2="108.5" y2="100.4"/>
+  <line class="ink-thin" x1="306.9" y1="83.1" x2="343.7" y2="193.1"/>
+  <line class="ink-thin" x1="306.9" y1="83.1" x2="276.0" y2="289.8"/>
+  <line class="ink-thin" x1="306.9" y1="83.1" x2="158.0" y2="291.8"/>
+  <line class="ink-thin" x1="306.9" y1="83.1" x2="87.8" y2="202.0"/>
+  <line class="ink-thin" x1="306.9" y1="83.1" x2="108.5" y2="100.4"/>
+  <line class="ink-thin" x1="343.7" y1="193.1" x2="276.0" y2="289.8"/>
+  <line class="ink-thin" x1="343.7" y1="193.1" x2="158.0" y2="291.8"/>
+  <line class="ink-thin" x1="343.7" y1="193.1" x2="87.8" y2="202.0"/>
+  <line class="ink-thin" x1="343.7" y1="193.1" x2="108.5" y2="100.4"/>
+  <line class="ink-thin" x1="276.0" y1="289.8" x2="158.0" y2="291.8"/>
+  <line class="ink-thin" x1="276.0" y1="289.8" x2="87.8" y2="202.0"/>
+  <line class="ink-thin" x1="276.0" y1="289.8" x2="108.5" y2="100.4"/>
+  <line class="ink-thin" x1="158.0" y1="291.8" x2="87.8" y2="202.0"/>
+  <line class="ink-thin" x1="158.0" y1="291.8" x2="108.5" y2="100.4"/>
+  <line class="ink-thin" x1="87.8" y1="202.0" x2="108.5" y2="100.4"/>
+  <circle class="fill" cx="199.2" cy="46.0" r="4.5"/>
+  <circle class="fill" cx="306.9" cy="83.1" r="4.5"/>
+  <circle class="fill" cx="343.7" cy="193.1" r="4.5"/>
+  <circle class="fill" cx="276.0" cy="289.8" r="4.5"/>
+  <circle class="fill" cx="158.0" cy="291.8" r="4.5"/>
+  <circle class="fill" cx="87.8" cy="202.0" r="4.5"/>
+  <circle class="fill" cx="108.5" cy="100.4" r="4.5"/>
+  <text class="txt" x="45.8" y="208.0" font-size="21">w<tspan dy="5" font-size="13">i</tspan></text>
+  <text class="txt" x="62.5" y="92.4" font-size="21">w<tspan dy="5" font-size="13">i+1</tspan></text>
+  <text class="txt" x="128.0" y="321.8" font-size="21">w<tspan dy="5" font-size="13">i+2</tspan></text>
+  <text class="txt" x="355.7" y="199.1" font-size="21">w<tspan dy="5" font-size="13">j</tspan></text>
+
+</svg>

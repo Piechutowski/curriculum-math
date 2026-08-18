@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="310" viewBox="0 0 680 310">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <text class="txt" x="194.0" y="30.0" font-size="15" text-anchor="middle">10000</text>
+  <text class="txt" x="282.0" y="30.0" font-size="15" text-anchor="middle">1000</text>
+  <text class="txt" x="370.0" y="30.0" font-size="15" text-anchor="middle">100</text>
+  <text class="txt" x="458.0" y="30.0" font-size="15" text-anchor="middle">10</text>
+  <text class="txt" x="546.0" y="30.0" font-size="15" text-anchor="middle">1</text>
+  <text class="txt" x="602.0" y="30.0" font-size="15">places</text>
+  <text class="txt" x="20.0" y="66.0" font-size="18">a)</text>
+  <rect class="ink-thin" x="150" y="42" width="88" height="64"/>
+  <rect class="ink-thin" x="238" y="42" width="88" height="64"/>
+  <rect class="ink-thin" x="326" y="42" width="88" height="64"/>
+  <circle class="fill" cx="370.0" cy="75.3" r="5"/>
+  <rect class="ink-thin" x="414" y="42" width="88" height="64"/>
+  <circle class="fill" cx="440.4" cy="64.4" r="5"/>
+  <circle class="fill" cx="475.6" cy="64.4" r="5"/>
+  <circle class="fill" cx="440.4" cy="86.8" r="5"/>
+  <circle class="fill" cx="475.6" cy="86.8" r="5"/>
+  <rect class="ink-thin" x="502" y="42" width="88" height="64"/>
+  <circle class="fill" cx="531.0" cy="75.3" r="5"/>
+  <circle class="fill" cx="561.0" cy="75.3" r="5"/>
+  <text class="txt" x="370.0" y="134.0" font-size="17" text-anchor="middle">0 0 1 4 2  —  the number 142</text>
+  <text class="txt" x="20.0" y="226.0" font-size="18">b)</text>
+  <rect class="ink-thin" x="150" y="202" width="88" height="64"/>
+  <circle class="fill" cx="176.4" cy="224.4" r="5"/>
+  <circle class="fill" cx="211.6" cy="224.4" r="5"/>
+  <circle class="fill" cx="194.0" cy="246.8" r="5"/>
+  <rect class="ink-thin" x="238" y="202" width="88" height="64"/>
+  <rect class="ink-thin" x="326" y="202" width="88" height="64"/>
+  <circle class="fill" cx="370.0" cy="235.3" r="5"/>
+  <rect class="ink-thin" x="414" y="202" width="88" height="64"/>
+  <circle class="fill" cx="443.0" cy="235.3" r="5"/>
+  <circle class="fill" cx="473.0" cy="235.3" r="5"/>
+  <rect class="ink-thin" x="502" y="202" width="88" height="64"/>
+  <circle class="fill" cx="546.0" cy="235.3" r="5"/>
+  <text class="txt" x="194.0" y="190.0" font-size="15" text-anchor="middle">10000</text>
+  <text class="txt" x="282.0" y="190.0" font-size="15" text-anchor="middle">1000</text>
+  <text class="txt" x="370.0" y="190.0" font-size="15" text-anchor="middle">100</text>
+  <text class="txt" x="458.0" y="190.0" font-size="15" text-anchor="middle">10</text>
+  <text class="txt" x="546.0" y="190.0" font-size="15" text-anchor="middle">1</text>
+  <text class="txt" x="370.0" y="294.0" font-size="17" text-anchor="middle">3 0 1 2 1  —  the number 30121</text>
+
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="92" viewBox="0 0 460 92">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle class="fill" cx="4" cy="4" r="1.7"/>
+      <circle class="fill" cx="12" cy="12" r="1.7"/>
+    </pattern>
+  </defs>
+
+  <rect class="ink" x="20" y="15" width="400" height="40"/>
+  <line class="ink-thin" x1="70" y1="15" x2="70" y2="55"/>
+  <line class="ink-thin" x1="120" y1="15" x2="120" y2="55"/>
+  <line class="ink-thin" x1="170" y1="15" x2="170" y2="55"/>
+  <line class="ink-thin" x1="220" y1="15" x2="220" y2="55"/>
+  <line class="ink-thin" x1="270" y1="15" x2="270" y2="55"/>
+  <line class="ink-thin" x1="320" y1="15" x2="320" y2="55"/>
+  <line class="ink-thin" x1="370" y1="15" x2="370" y2="55"/>
+  <text class="txt" x="45" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">1</tspan></text>
+  <text class="txt" x="95" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">2</tspan></text>
+  <text class="txt" x="145" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">3</tspan></text>
+  <text class="txt" x="195" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">4</tspan></text>
+  <text class="txt" x="245" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">5</tspan></text>
+  <text class="txt" x="295" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">6</tspan></text>
+  <text class="txt" x="345" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">7</tspan></text>
+  <text class="txt" x="395" y="78" font-size="15" text-anchor="middle">c<tspan font-size="11" dy="3">8</tspan></text>
+</svg>

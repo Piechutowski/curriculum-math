@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="305" viewBox="0 0 640 305">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <line class="ink-thin" x1="160.5" y1="72.6" x2="225.1" y2="119.5"/>
+  <line class="ink-thin" x1="231.6" y1="139.6" x2="206.9" y2="215.4"/>
+  <line class="ink-thin" x1="189.9" y1="227.8" x2="110.1" y2="227.8"/>
+  <line class="ink-thin" x1="93.1" y1="215.4" x2="68.4" y2="139.6"/>
+  <line class="ink-thin" x1="74.9" y1="119.5" x2="139.5" y2="72.6"/>
+  <circle class="ink" cx="150" cy="65" r="13"/>
+  <text class="txt" x="150" y="70" font-size="15" text-anchor="middle">v</text>
+  <circle class="ink" cx="236" cy="127" r="13"/>
+  <text class="txt" x="236" y="132" font-size="15" text-anchor="middle">z</text>
+  <circle class="ink" cx="203" cy="228" r="13"/>
+  <text class="txt" x="203" y="233" font-size="15" text-anchor="middle">y</text>
+  <circle class="ink" cx="97" cy="228" r="13"/>
+  <text class="txt" x="97" y="233" font-size="15" text-anchor="middle">x</text>
+  <circle class="ink" cx="64" cy="127" r="13"/>
+  <text class="txt" x="64" y="132" font-size="15" text-anchor="middle">w</text>
+  <text class="txt" x="150" y="290" font-size="19" text-anchor="middle">a)</text>
+  <line class="ink" x1="272.0" y1="150.0" x2="348.0" y2="150.0"/>
+  <line class="ink-thin" x1="348.0" y1="150.0" x2="339.8" y2="153.8"/>
+  <line class="ink-thin" x1="348.0" y1="150.0" x2="339.8" y2="146.2"/>
+  <text class="txt" x="310" y="178" font-size="16" text-anchor="middle">we add</text>
+  <text class="txt" x="310" y="197" font-size="16" text-anchor="middle">edges</text>
+  <line class="ink-thin" x1="485.5" y1="72.6" x2="550.1" y2="119.5"/>
+  <line class="ink-thin" x1="556.6" y1="139.6" x2="531.9" y2="215.4"/>
+  <line class="ink-thin" x1="514.9" y1="227.8" x2="435.1" y2="227.8"/>
+  <line class="ink-thin" x1="418.1" y1="215.4" x2="393.4" y2="139.6"/>
+  <line class="ink-thin" x1="399.9" y1="119.5" x2="464.5" y2="72.6"/>
+  <line class="ink-thin dashed" x1="479.0" y1="77.4" x2="523.9" y2="215.4"/>
+  <line class="ink-thin dashed" x1="471.0" y1="77.4" x2="426.1" y2="215.4"/>
+  <line class="ink-thin dashed" x1="550.1" y1="134.8" x2="432.6" y2="220.2"/>
+  <line class="ink-thin dashed" x1="547.6" y1="127.2" x2="402.4" y2="127.2"/>
+  <line class="ink-thin dashed" x1="517.4" y1="220.2" x2="399.9" y2="134.8"/>
+  <circle class="ink" cx="475" cy="65" r="13"/>
+  <text class="txt" x="475" y="70" font-size="15" text-anchor="middle">v</text>
+  <circle class="ink" cx="561" cy="127" r="13"/>
+  <text class="txt" x="561" y="132" font-size="15" text-anchor="middle">z</text>
+  <circle class="ink" cx="528" cy="228" r="13"/>
+  <text class="txt" x="528" y="233" font-size="15" text-anchor="middle">y</text>
+  <circle class="ink" cx="422" cy="228" r="13"/>
+  <text class="txt" x="422" y="233" font-size="15" text-anchor="middle">x</text>
+  <circle class="ink" cx="389" cy="127" r="13"/>
+  <text class="txt" x="389" y="132" font-size="15" text-anchor="middle">w</text>
+  <text class="txt" x="475" y="290" font-size="19" text-anchor="middle">b)</text>
+</svg>

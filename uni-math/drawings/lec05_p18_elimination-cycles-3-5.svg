@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="555" height="610" viewBox="0 0 555 610">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <line class="ink-thin" x1="15" y1="20" x2="375" y2="20"/>
+  <line class="ink-thin" x1="15" y1="52" x2="375" y2="52"/>
+  <line class="ink-thin" x1="15" y1="84" x2="375" y2="84"/>
+  <line class="ink-thin" x1="15" y1="116" x2="375" y2="116"/>
+  <line class="ink-thin" x1="15" y1="148" x2="375" y2="148"/>
+  <line class="ink-thin" x1="15" y1="180" x2="87" y2="180"/>
+  <line class="ink-thin" x1="15" y1="20" x2="15" y2="180"/>
+  <line class="ink-thin" x1="51" y1="20" x2="51" y2="180"/>
+  <line class="ink-thin" x1="87" y1="20" x2="87" y2="180"/>
+  <line class="ink-thin" x1="123" y1="20" x2="123" y2="148"/>
+  <line class="ink-thin" x1="159" y1="20" x2="159" y2="148"/>
+  <line class="ink-thin" x1="195" y1="20" x2="195" y2="148"/>
+  <line class="ink-thin" x1="231" y1="20" x2="231" y2="148"/>
+  <line class="ink-thin" x1="267" y1="20" x2="267" y2="148"/>
+  <line class="ink-thin" x1="303" y1="20" x2="303" y2="148"/>
+  <line class="ink-thin" x1="339" y1="20" x2="339" y2="148"/>
+  <line class="ink-thin" x1="375" y1="20" x2="375" y2="148"/>
+  <text class="txt" x="33" y="41" font-size="15" text-anchor="middle">1</text>
+  <text class="txt" x="177" y="41" font-size="15" text-anchor="middle">5</text>
+  <text class="txt" x="321" y="41" font-size="15" text-anchor="middle">9</text>
+  <text class="txt" x="105" y="73" font-size="15" text-anchor="middle">13</text>
+  <text class="txt" x="249" y="73" font-size="15" text-anchor="middle">17</text>
+  <text class="txt" x="33" y="105" font-size="15" text-anchor="middle">21</text>
+  <text class="txt" x="177" y="105" font-size="15" text-anchor="middle">25</text>
+  <text class="txt" x="321" y="105" font-size="15" text-anchor="middle">29</text>
+  <text class="txt" x="105" y="137" font-size="15" text-anchor="middle">33</text>
+  <text class="txt" x="249" y="137" font-size="15" text-anchor="middle">37</text>
+  <text class="txt" x="33" y="169" font-size="15" text-anchor="middle">41</text>
+  <path class="ink-thin" d="M 22 26 L 44 46 M 44 26 L 22 46"/>
+  <path class="ink-thin" d="M 310 26 L 332 46 M 332 26 L 310 46"/>
+  <path class="ink-thin" d="M 238 58 L 260 78 M 260 58 L 238 78"/>
+  <path class="ink-thin" d="M 166 90 L 188 110 M 188 90 L 166 110"/>
+  <path class="ink-thin" d="M 94 122 L 116 142 M 116 122 L 94 142"/>
+  <path class="ink-thin" d="M 22 154 L 44 174 M 44 154 L 22 174"/>
+  <text class="txt" x="395" y="95" font-size="18">after the 3rd cycle</text>
+
+  <line class="ink-thin" x1="15" y1="225" x2="375" y2="225"/>
+  <line class="ink-thin" x1="15" y1="257" x2="375" y2="257"/>
+  <line class="ink-thin" x1="15" y1="289" x2="375" y2="289"/>
+  <line class="ink-thin" x1="15" y1="321" x2="375" y2="321"/>
+  <line class="ink-thin" x1="15" y1="353" x2="375" y2="353"/>
+  <line class="ink-thin" x1="15" y1="385" x2="87" y2="385"/>
+  <line class="ink-thin" x1="15" y1="225" x2="15" y2="385"/>
+  <line class="ink-thin" x1="51" y1="225" x2="51" y2="385"/>
+  <line class="ink-thin" x1="87" y1="225" x2="87" y2="385"/>
+  <line class="ink-thin" x1="123" y1="225" x2="123" y2="353"/>
+  <line class="ink-thin" x1="159" y1="225" x2="159" y2="353"/>
+  <line class="ink-thin" x1="195" y1="225" x2="195" y2="353"/>
+  <line class="ink-thin" x1="231" y1="225" x2="231" y2="353"/>
+  <line class="ink-thin" x1="267" y1="225" x2="267" y2="353"/>
+  <line class="ink-thin" x1="303" y1="225" x2="303" y2="353"/>
+  <line class="ink-thin" x1="339" y1="225" x2="339" y2="353"/>
+  <line class="ink-thin" x1="375" y1="225" x2="375" y2="353"/>
+  <text class="txt" x="177" y="246" font-size="15" text-anchor="middle">5</text>
+  <text class="txt" x="105" y="278" font-size="15" text-anchor="middle">13</text>
+  <text class="txt" x="33" y="310" font-size="15" text-anchor="middle">21</text>
+  <text class="txt" x="321" y="310" font-size="15" text-anchor="middle">29</text>
+  <text class="txt" x="249" y="342" font-size="15" text-anchor="middle">37</text>
+  <path class="ink-thin" d="M 94 263 L 116 283 M 116 263 L 94 283"/>
+  <path class="ink-thin" d="M 310 295 L 332 315 M 332 295 L 310 315"/>
+  <text class="txt" x="395" y="300" font-size="18">after the 4th cycle</text>
+
+  <line class="ink-thin" x1="15" y1="430" x2="375" y2="430"/>
+  <line class="ink-thin" x1="15" y1="462" x2="375" y2="462"/>
+  <line class="ink-thin" x1="15" y1="494" x2="375" y2="494"/>
+  <line class="ink-thin" x1="15" y1="526" x2="375" y2="526"/>
+  <line class="ink-thin" x1="15" y1="558" x2="375" y2="558"/>
+  <line class="ink-thin" x1="15" y1="590" x2="87" y2="590"/>
+  <line class="ink-thin" x1="15" y1="430" x2="15" y2="590"/>
+  <line class="ink-thin" x1="51" y1="430" x2="51" y2="590"/>
+  <line class="ink-thin" x1="87" y1="430" x2="87" y2="590"/>
+  <line class="ink-thin" x1="123" y1="430" x2="123" y2="558"/>
+  <line class="ink-thin" x1="159" y1="430" x2="159" y2="558"/>
+  <line class="ink-thin" x1="195" y1="430" x2="195" y2="558"/>
+  <line class="ink-thin" x1="231" y1="430" x2="231" y2="558"/>
+  <line class="ink-thin" x1="267" y1="430" x2="267" y2="558"/>
+  <line class="ink-thin" x1="303" y1="430" x2="303" y2="558"/>
+  <line class="ink-thin" x1="339" y1="430" x2="339" y2="558"/>
+  <line class="ink-thin" x1="375" y1="430" x2="375" y2="558"/>
+  <text class="txt" x="177" y="451" font-size="15" text-anchor="middle">5</text>
+  <text class="txt" x="33" y="515" font-size="15" text-anchor="middle">21</text>
+  <text class="txt" x="249" y="547" font-size="15" text-anchor="middle">37</text>
+  <path class="ink-thin" d="M 166 436 L 188 456 M 188 436 L 166 456"/>
+  <path class="ink-thin" d="M 238 532 L 260 552 M 260 532 L 238 552"/>
+  <circle class="ink" cx="33" cy="510" r="14"/>
+  <text class="txt" x="395" y="505" font-size="18">after the 5th cycle</text>
+</svg>

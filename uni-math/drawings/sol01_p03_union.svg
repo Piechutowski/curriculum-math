@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="340" viewBox="0 0 460 340">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+  <defs>
+    <pattern id="hatch" width="8" height="8" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line class="hl" x1="0" y1="0" x2="0" y2="8" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+
+  <!-- right half-plane (hatched viewport window) -->
+  <rect x="230" y="50" width="180" height="240" fill="url(#hatch)"/>
+  <!-- left half-disc -->
+  <path d="M 230 90 A 80 80 0 0 0 230 250 Z" fill="url(#hatch)"/>
+  <path class="ink" d="M 230 90 A 80 80 0 0 0 230 250"/>
+  <circle class="fill" cx="230" cy="90" r="5"/>
+  <circle class="fill" cx="230" cy="250" r="5"/>
+
+  <!-- axes -->
+  <path class="ink-thin" d="M 60 170 H 430 M 430 170 l -10 -5 M 430 170 l -10 5"/>
+  <path class="ink" d="M 230 320 V 32" stroke-width="4"/>
+  <path class="ink" d="M 230 32 l -5 10 M 230 32 l 5 10"/>
+  <text class="txt" x="420" y="196" font-size="18">x</text>
+  <text class="txt" x="206" y="42" font-size="18">y</text>
+
+  <text class="txt" x="46" y="70" font-size="22">A ∪ B</text>
+</svg>

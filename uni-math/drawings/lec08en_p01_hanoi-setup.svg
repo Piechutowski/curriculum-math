@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="200" viewBox="0 0 540 200">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- peg 1 with tower of 3 disks -->
+  <path class="ink" d="M 30 140 H 170"/>
+  <path class="ink" d="M 100 140 V 55"/>
+  <rect class="ink" x="48" y="124" width="104" height="16" rx="3"/>
+  <rect class="ink" x="63" y="108" width="74" height="16" rx="3"/>
+  <rect class="ink" x="78" y="92" width="44" height="16" rx="3"/>
+  <text class="txt" x="96" y="165" font-size="18">1</text>
+
+  <!-- peg 2 -->
+  <path class="ink" d="M 210 140 H 330"/>
+  <path class="ink" d="M 270 140 V 55"/>
+  <text class="txt" x="266" y="165" font-size="18">2</text>
+
+  <!-- peg 3 -->
+  <path class="ink" d="M 380 140 H 500"/>
+  <path class="ink" d="M 440 140 V 55"/>
+  <text class="txt" x="436" y="165" font-size="18">3</text>
+
+  <!-- dashed arrow: move the tower from peg 1 to peg 3 -->
+  <path class="ink-thin dashed" d="M 100 185 C 210 200 340 200 456 188"/>
+  <path class="ink-thin" d="M 460 186 V 152 M 460 152 l -4.5 9 M 460 152 l 4.5 9"/>
+
+  <text class="txt" x="180" y="40" font-size="17">n blocks (here n = 3)</text>
+</svg>

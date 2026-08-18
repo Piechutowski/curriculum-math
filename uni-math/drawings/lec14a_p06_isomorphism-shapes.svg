@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="450" height="115" viewBox="0 0 450 115">
+  <style>
+    .ink { stroke:#d8d8d8; fill:none; stroke-width:2.2; stroke-linecap:round; }
+    .ink-thin { stroke:#d8d8d8; fill:none; stroke-width:1.6; stroke-linecap:round; }
+    .txt { fill:#d8d8d8; stroke:none; font-family:Georgia,'Times New Roman',serif; font-style:italic; }
+    .fill { fill:#d8d8d8; stroke:none; }
+    .hl { stroke:#d8d8d8; }
+    .dashed { stroke-dasharray:7 6; }
+    @media (prefers-color-scheme: light) {
+      .ink, .ink-thin { stroke:#1a1a1a; }
+      .txt, .fill { fill:#1a1a1a; }
+      .hl { stroke:#1a1a1a; }
+    }
+  </style>
+
+  <!-- T-shape (star K_{1,3}) -->
+  <path class="ink" d="M 30 40 L 150 40 M 90 40 L 90 95"/>
+  <circle class="fill" cx="30" cy="40" r="5"/><circle class="fill" cx="90" cy="40" r="5"/><circle class="fill" cx="150" cy="40" r="5"/><circle class="fill" cx="90" cy="95" r="5"/>
+
+  <!-- path on 4 vertices -->
+  <path class="ink" d="M 240 40 L 420 40"/>
+  <circle class="fill" cx="240" cy="40" r="5"/><circle class="fill" cx="300" cy="40" r="5"/><circle class="fill" cx="360" cy="40" r="5"/><circle class="fill" cx="420" cy="40" r="5"/>
+</svg>
