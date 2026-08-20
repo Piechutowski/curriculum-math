@@ -1,9 +1,9 @@
 # Module 01 — Mr. Greene's College Math Course · Checklist & Map
 
 <!-- progress:01-algebra-trigonometry -->
-![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=4-42-220)
+![01 · Algebra &amp; Trigonometry — Greene progress](progress/01-algebra-trigonometry.svg?v=4-44-220)
 
-**42 / 220 lessons complete · 19%** — 4 of 26 sections finished · [completion log](LOG.md)
+**44 / 220 lessons complete · 20%** — 4 of 26 sections finished · [completion log](LOG.md)
 <!-- endprogress -->
 
 **Resource:** Mr. Greene's course (you are working through it now).
@@ -90,8 +90,8 @@ error bounds.
 - [x] 137. Solving Proportion Equations
 - [x] 140. Solving Literal Equations
 - [x] 143. Solving Linear Inequalities in One Variable
-- [ ] 146. Solving a Three-Part Inequality in One Variable
-- [ ] 149. Solving Compound Inequalities with "and" or "or"
+- [x] 146. Solving a Three-Part Inequality in One Variable
+- [x] 149. Solving Compound Inequalities with "and" or "or"
 - [ ] 152. Solving Absolute Value Equations I
 - [ ] 155. Solving Absolute Value Inequalities I
 
