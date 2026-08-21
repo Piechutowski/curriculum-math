@@ -92,8 +92,8 @@ error bounds.
 - [x] 143. Solving Linear Inequalities in One Variable
 - [x] 146. Solving a Three-Part Inequality in One Variable
 - [x] 149. Solving Compound Inequalities with "and" or "or"
-- [ ] 152. Solving Absolute Value Equations I
-- [ ] 155. Solving Absolute Value Inequalities I
+- [x] 152. Solving Absolute Value Equations I
+- [x] 155. Solving Absolute Value Inequalities I
 
 ## Section 6: Applications of Linear Equations `[GFX]`
 Translating a described situation into equations is *modeling* — the core skill of simulation.
