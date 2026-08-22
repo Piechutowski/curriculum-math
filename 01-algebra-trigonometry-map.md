@@ -99,7 +99,7 @@ error bounds.
 Translating a described situation into equations is *modeling* — the core skill of simulation.
 The motion problems (168) are physics with the calculus removed.
 
-- [ ] 159. Translating Phrases into Algebraic Expressions and Equations
+- [x] 159. Translating Phrases into Algebraic Expressions and Equations
 - [ ] 162. Consecutive Integer Word Problems
 - [ ] 165. Age Word Problems
 - [ ] 168. Motion Word Problems
