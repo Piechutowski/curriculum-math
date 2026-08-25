@@ -113,7 +113,7 @@ Quadratics are projectile trajectories; the discriminant later decides whether a
 oscillates or settles (Calculus §10). Complex numbers become 2D rotations (§25, Linear Algebra).
 
 - [x] 184. The Imaginary Unit i
-- [ ] 187. Operations with Complex Numbers
+- [x] 187. Operations with Complex Numbers
 - [ ] 190. Simplifying Powers of i
 - [ ] 193. Solving Quadratic Equations by Factoring
 - [ ] 196. The Square Root Property
