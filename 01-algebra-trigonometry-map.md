@@ -112,7 +112,7 @@ The motion problems (168) are physics with the calculus removed.
 Quadratics are projectile trajectories; the discriminant later decides whether a damped spring
 oscillates or settles (Calculus §10). Complex numbers become 2D rotations (§25, Linear Algebra).
 
-- [ ] 184. The Imaginary Unit i
+- [x] 184. The Imaginary Unit i
 - [ ] 187. Operations with Complex Numbers
 - [ ] 190. Simplifying Powers of i
 - [ ] 193. Solving Quadratic Equations by Factoring
