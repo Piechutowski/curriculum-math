@@ -5,7 +5,7 @@
   </defs>
   <rect width="640" height="64" rx="12" fill="#0d1117" stroke="#30363d"/>
   <text x="20" y="22" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">01 · Algebra &amp; Trigonometry — Greene</text>
-  <text x="620" y="22" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">48 / 220 · 22%</text>
+  <text x="620" y="22" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">49 / 220 · 22%</text>
   <rect x="20" y="34" width="600" height="10" rx="4" fill="#21262d"/>
   <g clip-path="url(#c)">
     <rect x="20" y="34" width="19" height="10" fill="url(#g)"/>
@@ -14,7 +14,7 @@
     <rect x="93" y="34" width="17" height="10" fill="url(#g)"/>
     <rect x="110" y="34" width="35" height="10" fill="url(#g)"/>
     <rect x="145" y="34" width="2" height="10" fill="url(#g)"/>
-    <rect x="167" y="34" width="2" height="10" fill="url(#g)"/>
+    <rect x="167" y="34" width="5" height="10" fill="url(#g)"/>
   </g>
   <rect x="38" y="34" width="2" height="10" fill="#0d1117"/>
   <rect x="76" y="34" width="2" height="10" fill="#0d1117"/>
