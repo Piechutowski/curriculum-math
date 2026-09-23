@@ -1,0 +1,410 @@
+# espanso match file: math symbols for the whole curriculum (modules 01 to 08).
+#
+# Install: symlink or copy to ~/.config/espanso/match/math.yml, then `espanso restart`.
+#
+# Trigger style: ;name; where name is the LaTeX command name wherever one exists,
+# so typing symbols here also teaches you the LaTeX you use in notes/.
+#   ;alpha;  -> α        ;forall; -> ∀        ;int;  -> ∫        ;RR;  -> ℝ
+#   ;^2;     -> ²        ;_n;     -> ₙ        ;floor; -> ⌊|⌋ (cursor lands inside)
+# The closing ; means no trigger is a prefix of another (;in; never fires inside ;int;).
+# Plain LaTeX like \alpha is left alone, so $...$ math in Obsidian keeps working.
+#
+# Accents (;vec; ;hat; ;bar; ;dot; ;ddot; ;tilde;) are combining characters:
+# type the letter first, then the trigger. x;bar; -> x̄, v;vec; -> v⃗.
+#
+# Forgot a name? Alt+Space opens espanso's search bar; type "sub", "arrow", "join", ...
+
+matches:
+  # ---------------------------------------------------------------- Greek, lowercase
+  - { trigger: ";alpha;", replace: "α" }
+  - { trigger: ";beta;", replace: "β" }
+  - { trigger: ";gamma;", replace: "γ" }
+  - { trigger: ";delta;", replace: "δ" }
+  - { triggers: [";epsilon;", ";eps;"], replace: "ε" }
+  - { trigger: ";varepsilon;", replace: "ϵ" } # lunate form; note LaTeX swaps these two glyphs
+  - { trigger: ";zeta;", replace: "ζ" }
+  - { trigger: ";eta;", replace: "η" }
+  - { trigger: ";theta;", replace: "θ" }
+  - { trigger: ";vartheta;", replace: "ϑ" }
+  - { trigger: ";iota;", replace: "ι" }
+  - { trigger: ";kappa;", replace: "κ" }
+  - { triggers: [";lambda;", ";lam;"], replace: "λ" }
+  - { trigger: ";mu;", replace: "μ" }
+  - { trigger: ";nu;", replace: "ν" }
+  - { trigger: ";xi;", replace: "ξ" }
+  - { trigger: ";omicron;", replace: "ο" }
+  - { trigger: ";pi;", replace: "π" }
+  - { trigger: ";varpi;", replace: "ϖ" }
+  - { trigger: ";rho;", replace: "ρ" }
+  - { trigger: ";varrho;", replace: "ϱ" }
+  - { trigger: ";sigma;", replace: "σ" }
+  - { trigger: ";varsigma;", replace: "ς" }
+  - { trigger: ";tau;", replace: "τ" }
+  - { trigger: ";upsilon;", replace: "υ" }
+  - { trigger: ";phi;", replace: "φ" }
+  - { trigger: ";varphi;", replace: "ϕ" } # straight form; LaTeX swaps these two glyphs too
+  - { trigger: ";chi;", replace: "χ" }
+  - { trigger: ";psi;", replace: "ψ" }
+  - { trigger: ";omega;", replace: "ω" }
+
+  # ---------------------------------------------------------------- Greek, uppercase
+  - { trigger: ";Gamma;", replace: "Γ" }
+  - { trigger: ";Delta;", replace: "Δ" }
+  - { trigger: ";Theta;", replace: "Θ" }
+  - { trigger: ";Lambda;", replace: "Λ" }
+  - { trigger: ";Xi;", replace: "Ξ" }
+  - { trigger: ";Pi;", replace: "Π" }
+  - { trigger: ";Sigma;", replace: "Σ" }
+  - { trigger: ";Upsilon;", replace: "Υ" }
+  - { trigger: ";Phi;", replace: "Φ" }
+  - { trigger: ";Psi;", replace: "Ψ" }
+  - { trigger: ";Omega;", replace: "Ω" }
+
+  # ---------------------------------------------------------------- Arithmetic and algebra (01)
+  - { trigger: ";pm;", replace: "±" }
+  - { trigger: ";mp;", replace: "∓" }
+  - { trigger: ";minus;", replace: "−" } # true minus sign, not the hyphen
+  - { triggers: [";times;", ";cross;"], replace: "×" }
+  - { trigger: ";div;", replace: "÷" } # also relational division (DB)
+  - { trigger: ";cdot;", replace: "⋅" }
+  - { trigger: ";ast;", replace: "∗" }
+  - { trigger: ";star;", replace: "⋆" }
+  - { trigger: ";bullet;", replace: "•" }
+  - { trigger: ";sqrt;", replace: "√" }
+  - { trigger: ";cbrt;", replace: "∛" }
+  - { trigger: ";fourthrt;", replace: "∜" }
+  - { trigger: ";deg;", replace: "°" }
+  - { triggers: [";infty;", ";inf;"], replace: "∞" }
+  - { trigger: ";propto;", replace: "∝" }
+  - { trigger: ";half;", replace: "½" }
+  - { trigger: ";third;", replace: "⅓" }
+  - { trigger: ";quarter;", replace: "¼" }
+  - { trigger: ";abs;", replace: "|$|$|" }
+
+  # ---------------------------------------------------------------- Relations
+  - { triggers: [";neq;", ";ne;"], replace: "≠" }
+  - { triggers: [";leq;", ";le;"], replace: "≤" }
+  - { triggers: [";geq;", ";ge;"], replace: "≥" }
+  - { trigger: ";ll;", replace: "≪" }
+  - { trigger: ";gg;", replace: "≫" }
+  - { trigger: ";approx;", replace: "≈" }
+  - { trigger: ";sim;", replace: "∼" } # also "is distributed as" (06)
+  - { trigger: ";simeq;", replace: "≃" }
+  - { trigger: ";cong;", replace: "≅" }
+  - { trigger: ";equiv;", replace: "≡" } # congruence mod n (02, CRY)
+  - { trigger: ";nequiv;", replace: "≢" }
+  - { triggers: [";coloneqq;", ";defeq;"], replace: "≔" }
+  - { triggers: [";triangleq;", ";defn;"], replace: "≜" }
+  - { trigger: ";doteq;", replace: "≐" }
+  - { trigger: ";asymp;", replace: "≍" }
+  - { trigger: ";prec;", replace: "≺" }
+  - { trigger: ";succ;", replace: "≻" }
+  - { trigger: ";preceq;", replace: "⪯" } # partial orders (02)
+  - { trigger: ";succeq;", replace: "⪰" }
+  - { triggers: [";mid;", ";divides;", ";given;"], replace: "∣" } # a ∣ b, and P(A ∣ B)
+  - { trigger: ";nmid;", replace: "∤" }
+  - { trigger: ";parallel;", replace: "∥" }
+  - { trigger: ";nparallel;", replace: "∦" }
+  - { trigger: ";perp;", replace: "⊥" }
+  - { trigger: ";indep;", replace: "⫫" } # independence (06)
+
+  # ---------------------------------------------------------------- Geometry and trigonometry (01)
+  - { trigger: ";angle;", replace: "∠" }
+  - { trigger: ";measuredangle;", replace: "∡" }
+  - { trigger: ";triangle;", replace: "△" } # also symmetric difference A △ B (02)
+  - { trigger: ";square;", replace: "□" }
+  - { trigger: ";euler;", replace: "eⁱᶿ = cos θ + i sin θ" }
+  - { trigger: ";cis;", replace: "r(cos θ + i sin θ)" }
+
+  # ---------------------------------------------------------------- Logic (02, 03, 08)
+  - { triggers: [";neg;", ";lnot;"], replace: "¬" }
+  - { triggers: [";land;", ";wedge;"], replace: "∧" }
+  - { triggers: [";lor;", ";vee;"], replace: "∨" }
+  - { triggers: [";oplus;", ";xor;"], replace: "⊕" } # XOR, direct sum (05), CRY everywhere
+  - { trigger: ";ominus;", replace: "⊖" }
+  - { trigger: ";otimes;", replace: "⊗" }
+  - { trigger: ";odot;", replace: "⊙" }
+  - { trigger: ";nand;", replace: "⊼" }
+  - { trigger: ";nor;", replace: "⊽" }
+  - { trigger: ";forall;", replace: "∀" }
+  - { trigger: ";exists;", replace: "∃" }
+  - { trigger: ";nexists;", replace: "∄" }
+  - { trigger: ";top;", replace: "⊤" }
+  - { trigger: ";bot;", replace: "⊥" }
+  - { trigger: ";vdash;", replace: "⊢" }
+  - { trigger: ";nvdash;", replace: "⊬" }
+  - { trigger: ";dashv;", replace: "⊣" }
+  - { triggers: [";models;", ";vDash;"], replace: "⊨" }
+  - { trigger: ";Vdash;", replace: "⊩" }
+  - { trigger: ";therefore;", replace: "∴" }
+  - { trigger: ";because;", replace: "∵" }
+  - { trigger: ";qed;", replace: "∎" }
+  - { trigger: ";section;", replace: "§" }
+
+  # ---------------------------------------------------------------- Arrows
+  - { triggers: [";to;", ";rightarrow;"], replace: "→" }
+  - { triggers: [";gets;", ";leftarrow;"], replace: "←" } # also assignment in relational algebra
+  - { trigger: ";leftrightarrow;", replace: "↔" }
+  - { triggers: [";implies;", ";Rightarrow;"], replace: "⇒" }
+  - { triggers: [";impliedby;", ";Leftarrow;"], replace: "⇐" }
+  - { triggers: [";iff;", ";Leftrightarrow;"], replace: "⇔" }
+  - { trigger: ";mapsto;", replace: "↦" }
+  - { trigger: ";longmapsto;", replace: "⟼" }
+  - { trigger: ";longrightarrow;", replace: "⟶" } # small-step reduction (08)
+  - { trigger: ";longleftrightarrow;", replace: "⟷" }
+  - { trigger: ";Longrightarrow;", replace: "⟹" }
+  - { trigger: ";hookrightarrow;", replace: "↪" } # injection
+  - { triggers: [";twoheadrightarrow;", ";steps;"], replace: "↠" } # surjection, multi-step reduction
+  - { triggers: [";leadsto;", ";rightsquigarrow;"], replace: "↝" }
+  - { trigger: ";uparrow;", replace: "↑" }
+  - { trigger: ";downarrow;", replace: "↓" }
+  - { trigger: ";Uparrow;", replace: "⇑" }
+  - { trigger: ";Downarrow;", replace: "⇓" } # big-step evaluation (08)
+  - { trigger: ";nearrow;", replace: "↗" }
+  - { trigger: ";searrow;", replace: "↘" }
+  - { trigger: ";rightleftharpoons;", replace: "⇌" }
+
+  # ---------------------------------------------------------------- Sets (02, 03)
+  - { trigger: ";in;", replace: "∈" }
+  - { trigger: ";notin;", replace: "∉" }
+  - { trigger: ";ni;", replace: "∋" }
+  - { trigger: ";subset;", replace: "⊂" }
+  - { trigger: ";subseteq;", replace: "⊆" }
+  - { trigger: ";subsetneq;", replace: "⊊" }
+  - { trigger: ";nsubseteq;", replace: "⊈" }
+  - { trigger: ";supset;", replace: "⊃" }
+  - { trigger: ";supseteq;", replace: "⊇" }
+  - { trigger: ";supsetneq;", replace: "⊋" }
+  - { trigger: ";cup;", replace: "∪" }
+  - { trigger: ";cap;", replace: "∩" }
+  - { trigger: ";bigcup;", replace: "⋃" }
+  - { trigger: ";bigcap;", replace: "⋂" }
+  - { trigger: ";uplus;", replace: "⊎" } # disjoint union, sum types (08)
+  - { trigger: ";setminus;", replace: "∖" }
+  - { triggers: [";emptyset;", ";varnothing;"], replace: "∅" }
+  - { trigger: ";complement;", replace: "∁" }
+  - { trigger: ";powerset;", replace: "𝒫" }
+  - { trigger: ";aleph;", replace: "ℵ" }
+  - { trigger: ";aleph0;", replace: "ℵ₀" }
+
+  # ---------------------------------------------------------------- Order theory and semantics (08)
+  - { trigger: ";sqsubseteq;", replace: "⊑" }
+  - { trigger: ";sqsupseteq;", replace: "⊒" }
+  - { trigger: ";sqsubset;", replace: "⊏" }
+  - { trigger: ";sqcup;", replace: "⊔" }
+  - { trigger: ";sqcap;", replace: "⊓" }
+  - { triggers: [";multimap;", ";lolli;"], replace: "⊸" }
+  - { trigger: ";parr;", replace: "⅋" } # linear logic "par"
+
+  # ---------------------------------------------------------------- Brackets (pairs put the cursor inside)
+  - { trigger: ";floor;", replace: "⌊$|$⌋" }
+  - { trigger: ";ceil;", replace: "⌈$|$⌉" }
+  - { trigger: ";lfloor;", replace: "⌊" }
+  - { trigger: ";rfloor;", replace: "⌋" }
+  - { trigger: ";lceil;", replace: "⌈" }
+  - { trigger: ";rceil;", replace: "⌉" }
+  - { trigger: ";langle;", replace: "⟨" }
+  - { trigger: ";rangle;", replace: "⟩" }
+  - { triggers: [";ip;", ";angles;"], replace: "⟨$|$⟩" } # inner product, tuples
+  - { trigger: ";llbracket;", replace: "⟦" }
+  - { trigger: ";rrbracket;", replace: "⟧" }
+  - { triggers: [";sem;", ";denote;"], replace: "⟦$|$⟧" } # denotational semantics (08)
+  - { trigger: ";Vert;", replace: "‖" }
+  - { trigger: ";norm;", replace: "‖$|$‖" }
+
+  # ---------------------------------------------------------------- Dots
+  - { trigger: ";ldots;", replace: "…" }
+  - { trigger: ";cdots;", replace: "⋯" }
+  - { trigger: ";vdots;", replace: "⋮" }
+  - { trigger: ";ddots;", replace: "⋱" }
+
+  # ---------------------------------------------------------------- Calculus (04, 07)
+  - { trigger: ";int;", replace: "∫" }
+  - { trigger: ";iint;", replace: "∬" }
+  - { trigger: ";iiint;", replace: "∭" }
+  - { trigger: ";oint;", replace: "∮" }
+  - { trigger: ";partial;", replace: "∂" }
+  - { trigger: ";nabla;", replace: "∇" }
+  - { trigger: ";sum;", replace: "∑" }
+  - { trigger: ";prod;", replace: "∏" }
+  - { trigger: ";coprod;", replace: "∐" }
+  - { trigger: ";prime;", replace: "′" }
+  - { trigger: ";dprime;", replace: "″" }
+  - { trigger: ";tprime;", replace: "‴" }
+  - { trigger: ";ell;", replace: "ℓ" }
+  - { trigger: ";Re;", replace: "ℜ" }
+  - { trigger: ";Im;", replace: "ℑ" }
+  - { triggers: [";bigO;", ";calO;"], replace: "𝒪" } # asymptotics (02, 03), error terms (07)
+
+  # ---------------------------------------------------------------- Linear algebra (05)
+  - { trigger: ";inv;", replace: "⁻¹" }
+  - { trigger: ";transpose;", replace: "ᵀ" }
+  - { trigger: ";dagger;", replace: "†" }
+
+  # ---------------------------------------------------------------- Accents (combining: letter first, then trigger)
+  - { trigger: ";vec;", replace: "⃗" }
+  - { trigger: ";hat;", replace: "̂" }
+  - { trigger: ";bar;", replace: "̄" } # sample mean x̄ (06)
+  - { trigger: ";overline;", replace: "̅" }
+  - { trigger: ";dot;", replace: "̇" } # time derivative ẋ (04, GFX)
+  - { trigger: ";ddot;", replace: "̈" }
+  - { trigger: ";tilde;", replace: "̃" }
+
+  # ---------------------------------------------------------------- Relational algebra (DB)
+  - { triggers: [";bowtie;", ";join;"], replace: "⋈" }
+  - { trigger: ";ljoin;", replace: "⟕" } # left outer join
+  - { trigger: ";rjoin;", replace: "⟖" } # right outer join
+  - { trigger: ";fjoin;", replace: "⟗" } # full outer join
+  - { triggers: [";ltimes;", ";semijoin;"], replace: "⋉" }
+  - { trigger: ";rtimes;", replace: "⋊" }
+  - { trigger: ";antijoin;", replace: "▷" }
+
+  # ---------------------------------------------------------------- Common number systems and spaces
+  - { trigger: ";NN;", replace: "ℕ" }
+  - { trigger: ";ZZ;", replace: "ℤ" }
+  - { trigger: ";QQ;", replace: "ℚ" }
+  - { trigger: ";RR;", replace: "ℝ" }
+  - { trigger: ";CC;", replace: "ℂ" }
+  - { trigger: ";FF;", replace: "𝔽" } # finite fields (CRY)
+  - { trigger: ";PP;", replace: "ℙ" } # probability (06)
+  - { trigger: ";EE;", replace: "𝔼" } # expectation (06)
+  - { trigger: ";Zn;", replace: "ℤₙ" }
+  - { trigger: ";Zp;", replace: "ℤₚ" }
+  - { trigger: ";Znstar;", replace: "ℤₙ*" }
+  - { trigger: ";Rn;", replace: "ℝⁿ" }
+  - { trigger: ";R2;", replace: "ℝ²" }
+  - { trigger: ";R3;", replace: "ℝ³" }
+  - { trigger: ";one;", replace: "𝟙" } # indicator function (06)
+
+  # ---------------------------------------------------------------- Blackboard bold, full alphabet: ;bbA; .. ;bbZ;
+  - { trigger: ";bbA;", replace: "𝔸" }
+  - { trigger: ";bbB;", replace: "𝔹" }
+  - { trigger: ";bbC;", replace: "ℂ" }
+  - { trigger: ";bbD;", replace: "𝔻" }
+  - { trigger: ";bbE;", replace: "𝔼" }
+  - { trigger: ";bbF;", replace: "𝔽" }
+  - { trigger: ";bbG;", replace: "𝔾" }
+  - { trigger: ";bbH;", replace: "ℍ" }
+  - { trigger: ";bbI;", replace: "𝕀" }
+  - { trigger: ";bbJ;", replace: "𝕁" }
+  - { trigger: ";bbK;", replace: "𝕂" }
+  - { trigger: ";bbL;", replace: "𝕃" }
+  - { trigger: ";bbM;", replace: "𝕄" }
+  - { trigger: ";bbN;", replace: "ℕ" }
+  - { trigger: ";bbO;", replace: "𝕆" }
+  - { trigger: ";bbP;", replace: "ℙ" }
+  - { trigger: ";bbQ;", replace: "ℚ" }
+  - { trigger: ";bbR;", replace: "ℝ" }
+  - { trigger: ";bbS;", replace: "𝕊" }
+  - { trigger: ";bbT;", replace: "𝕋" }
+  - { trigger: ";bbU;", replace: "𝕌" }
+  - { trigger: ";bbV;", replace: "𝕍" }
+  - { trigger: ";bbW;", replace: "𝕎" }
+  - { trigger: ";bbX;", replace: "𝕏" }
+  - { trigger: ";bbY;", replace: "𝕐" }
+  - { trigger: ";bbZ;", replace: "ℤ" }
+
+  # ---------------------------------------------------------------- Calligraphic, full alphabet: ;calA; .. ;calZ;
+  - { trigger: ";calA;", replace: "𝒜" }
+  - { trigger: ";calB;", replace: "ℬ" }
+  - { trigger: ";calC;", replace: "𝒞" }
+  - { trigger: ";calD;", replace: "𝒟" }
+  - { trigger: ";calE;", replace: "ℰ" }
+  - { trigger: ";calF;", replace: "ℱ" }
+  - { trigger: ";calG;", replace: "𝒢" }
+  - { trigger: ";calH;", replace: "ℋ" }
+  - { trigger: ";calI;", replace: "ℐ" }
+  - { trigger: ";calJ;", replace: "𝒥" }
+  - { trigger: ";calK;", replace: "𝒦" }
+  - { trigger: ";calL;", replace: "ℒ" } # languages (08)
+  - { trigger: ";calM;", replace: "ℳ" }
+  - { trigger: ";calN;", replace: "𝒩" } # normal distribution (06)
+  - { trigger: ";calP;", replace: "𝒫" }
+  - { trigger: ";calQ;", replace: "𝒬" }
+  - { trigger: ";calR;", replace: "ℛ" }
+  - { trigger: ";calS;", replace: "𝒮" }
+  - { trigger: ";calT;", replace: "𝒯" }
+  - { trigger: ";calU;", replace: "𝒰" }
+  - { trigger: ";calV;", replace: "𝒱" }
+  - { trigger: ";calW;", replace: "𝒲" }
+  - { trigger: ";calX;", replace: "𝒳" }
+  - { trigger: ";calY;", replace: "𝒴" }
+  - { trigger: ";calZ;", replace: "𝒵" }
+
+  # ---------------------------------------------------------------- Superscripts: ;^2; ;^n; ;^T; ;^-; ...
+  - { trigger: ";^0;", replace: "⁰" }
+  - { trigger: ";^1;", replace: "¹" }
+  - { trigger: ";^2;", replace: "²" }
+  - { trigger: ";^3;", replace: "³" }
+  - { trigger: ";^4;", replace: "⁴" }
+  - { trigger: ";^5;", replace: "⁵" }
+  - { trigger: ";^6;", replace: "⁶" }
+  - { trigger: ";^7;", replace: "⁷" }
+  - { trigger: ";^8;", replace: "⁸" }
+  - { trigger: ";^9;", replace: "⁹" }
+  - { trigger: ";^+;", replace: "⁺" }
+  - { trigger: ";^-;", replace: "⁻" }
+  - { trigger: ";^=;", replace: "⁼" }
+  - { trigger: ";^(;", replace: "⁽" }
+  - { trigger: ";^);", replace: "⁾" }
+  - { trigger: ";^a;", replace: "ᵃ" }
+  - { trigger: ";^b;", replace: "ᵇ" }
+  - { trigger: ";^c;", replace: "ᶜ" }
+  - { trigger: ";^d;", replace: "ᵈ" }
+  - { trigger: ";^e;", replace: "ᵉ" }
+  - { trigger: ";^f;", replace: "ᶠ" }
+  - { trigger: ";^g;", replace: "ᵍ" }
+  - { trigger: ";^h;", replace: "ʰ" }
+  - { trigger: ";^i;", replace: "ⁱ" }
+  - { trigger: ";^j;", replace: "ʲ" }
+  - { trigger: ";^k;", replace: "ᵏ" }
+  - { trigger: ";^l;", replace: "ˡ" }
+  - { trigger: ";^m;", replace: "ᵐ" }
+  - { trigger: ";^n;", replace: "ⁿ" }
+  - { trigger: ";^o;", replace: "ᵒ" }
+  - { trigger: ";^p;", replace: "ᵖ" }
+  - { trigger: ";^r;", replace: "ʳ" }
+  - { trigger: ";^s;", replace: "ˢ" }
+  - { trigger: ";^t;", replace: "ᵗ" }
+  - { trigger: ";^u;", replace: "ᵘ" }
+  - { trigger: ";^v;", replace: "ᵛ" }
+  - { trigger: ";^w;", replace: "ʷ" }
+  - { trigger: ";^x;", replace: "ˣ" }
+  - { trigger: ";^y;", replace: "ʸ" }
+  - { trigger: ";^z;", replace: "ᶻ" }
+  - { trigger: ";^T;", replace: "ᵀ" }
+  - { trigger: ";^theta;", replace: "ᶿ" }
+
+  # ---------------------------------------------------------------- Subscripts: ;_0; ;_n; ;_i; ...
+  - { trigger: ";_0;", replace: "₀" }
+  - { trigger: ";_1;", replace: "₁" }
+  - { trigger: ";_2;", replace: "₂" }
+  - { trigger: ";_3;", replace: "₃" }
+  - { trigger: ";_4;", replace: "₄" }
+  - { trigger: ";_5;", replace: "₅" }
+  - { trigger: ";_6;", replace: "₆" }
+  - { trigger: ";_7;", replace: "₇" }
+  - { trigger: ";_8;", replace: "₈" }
+  - { trigger: ";_9;", replace: "₉" }
+  - { trigger: ";_+;", replace: "₊" }
+  - { trigger: ";_-;", replace: "₋" }
+  - { trigger: ";_=;", replace: "₌" }
+  - { trigger: ";_(;", replace: "₍" }
+  - { trigger: ";_);", replace: "₎" }
+  - { trigger: ";_a;", replace: "ₐ" }
+  - { trigger: ";_e;", replace: "ₑ" }
+  - { trigger: ";_h;", replace: "ₕ" }
+  - { trigger: ";_i;", replace: "ᵢ" }
+  - { trigger: ";_j;", replace: "ⱼ" }
+  - { trigger: ";_k;", replace: "ₖ" }
+  - { trigger: ";_l;", replace: "ₗ" }
+  - { trigger: ";_m;", replace: "ₘ" }
+  - { trigger: ";_n;", replace: "ₙ" }
+  - { trigger: ";_o;", replace: "ₒ" }
+  - { trigger: ";_p;", replace: "ₚ" }
+  - { trigger: ";_r;", replace: "ᵣ" }
+  - { trigger: ";_s;", replace: "ₛ" }
+  - { trigger: ";_t;", replace: "ₜ" }
+  - { trigger: ";_u;", replace: "ᵤ" }
+  - { trigger: ";_v;", replace: "ᵥ" }
+  - { trigger: ";_x;", replace: "ₓ" }

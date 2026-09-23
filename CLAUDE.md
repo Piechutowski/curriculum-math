@@ -32,6 +32,7 @@ checkbox is ticked only when all three are done.
 | `progress/*.svg` | Progress-bar cards (one per module + `overall.svg`) | **Generated — never by hand** |
 | `progress/progress.csv` | Raw counts per module | **Generated — never by hand** |
 | `tools/progress/main.go` | The Go tool that generates all of the above | Hand |
+| `tools/espanso/math.yml` | espanso match file for typing math symbols (`;alpha;` → α); not a module, never register in the tool | Hand |
 | `.github/workflows/progress.yml` | GitHub Action that runs the tool on every markdown push | Hand |
 
 ## How progress tracking works
