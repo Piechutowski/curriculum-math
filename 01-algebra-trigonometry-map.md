@@ -114,11 +114,11 @@ oscillates or settles (Calculus §10). Complex numbers become 2D rotations (§25
 
 - [x] 184. The Imaginary Unit i
 - [x] 187. Operations with Complex Numbers
-- [ ] 190. Simplifying Powers of i
-- [ ] 193. Solving Quadratic Equations by Factoring
-- [ ] 196. The Square Root Property
-- [ ] 199. Completing the Square
-- [ ] 202. The Quadratic Formula
+- [x] 190. Simplifying Powers of i
+- [x] 193. Solving Quadratic Equations by Factoring
+- [x] 196. The Square Root Property
+- [x] 199. Completing the Square
+- [x] 202. The Quadratic Formula
 - [ ] 205. Quadratic in Form
 - [ ] 208. Applications of Quadratic Equations
 - [ ] 211. Solving Quadratic Inequalities
