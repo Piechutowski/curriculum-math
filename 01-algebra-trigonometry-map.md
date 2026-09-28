@@ -121,7 +121,7 @@ oscillates or settles (Calculus §10). Complex numbers become 2D rotations (§25
 - [x] 202. The Quadratic Formula
 - [x] 205. Quadratic in Form
 - [x] 208. Applications of Quadratic Equations
-- [x] 211. Solving Quadratic Inequalities
+- [ ] 211. Solving Quadratic Inequalities
 
 ## Section 8: Radical and Rational Equations
 Manipulation fluency; the equation-solving muscle the rest of the course assumes.
