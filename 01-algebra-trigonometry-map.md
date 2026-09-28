@@ -119,9 +119,9 @@ oscillates or settles (Calculus §10). Complex numbers become 2D rotations (§25
 - [x] 196. The Square Root Property
 - [x] 199. Completing the Square
 - [x] 202. The Quadratic Formula
-- [ ] 205. Quadratic in Form
-- [ ] 208. Applications of Quadratic Equations
-- [ ] 211. Solving Quadratic Inequalities
+- [x] 205. Quadratic in Form
+- [x] 208. Applications of Quadratic Equations
+- [x] 211. Solving Quadratic Inequalities
 
 ## Section 8: Radical and Rational Equations
 Manipulation fluency; the equation-solving muscle the rest of the course assumes.
