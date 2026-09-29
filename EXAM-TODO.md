@@ -12,10 +12,10 @@ crossing each one off. Tick freely.
 
 ### Week Aug 17–23
 
-- [ ] Greene 146 — Solving a Three-Part Inequality in One Variable
-- [ ] Greene 149 — Solving Compound Inequalities with "and" or "or"
-- [ ] Greene 152 — Solving Absolute Value Equations I
-- [ ] Greene 155 — Solving Absolute Value Inequalities I
+- [x] Greene 146 — Solving a Three-Part Inequality in One Variable
+- [x] Greene 149 — Solving Compound Inequalities with "and" or "or"
+- [x] Greene 152 — Solving Absolute Value Equations I
+- [x] Greene 155 — Solving Absolute Value Inequalities I
 - [ ] Greene 431 — Introduction to Sequences
 - [ ] Greene 433 — Introduction to Series
 - [ ] Greene 435 — Arithmetic Sequences and Series
@@ -69,14 +69,14 @@ crossing each one off. Tick freely.
 
 ### Week Sep 14–20
 
-- [ ] Greene 184 — The Imaginary Unit i
-- [ ] Greene 187 — Operations with Complex Numbers
-- [ ] Greene 190 — Simplifying Powers of i
-- [ ] Greene 193 — Solving Quadratic Equations by Factoring
-- [ ] Greene 196 — The Square Root Property
-- [ ] Greene 199 — Completing the Square
-- [ ] Greene 202 — The Quadratic Formula
-- [ ] Greene 205 — Quadratic in Form
+- [x] Greene 184 — The Imaginary Unit i
+- [x] Greene 187 — Operations with Complex Numbers
+- [x] Greene 190 — Simplifying Powers of i
+- [x] Greene 193 — Solving Quadratic Equations by Factoring
+- [x] Greene 196 — The Square Root Property
+- [x] Greene 199 — Completing the Square
+- [x] Greene 202 — The Quadratic Formula
+- [x] Greene 205 — Quadratic in Form
 
 ### Week Sep 21–27
 
