@@ -264,10 +264,10 @@ Ellipses, parabolas, hyperbolas: trajectories and collision shapes.
 Recurrences are algorithm analysis; geometric series are retransmission expectations and
 amortized costs. Grows into Calculus §11.
 
-- [ ] 431. Introduction to Sequences
-- [ ] 433. Introduction to Series
-- [ ] 435. Arithmetic Sequences and Series
-- [ ] 437. Geometric Sequences and Series
+- [x] 431. Introduction to Sequences
+- [x] 433. Introduction to Series
+- [x] 435. Arithmetic Sequences and Series
+- [x] 437. Geometric Sequences and Series
 
 ## Section 16: Binomial Theorem, Counting, Probability, Sets `[DB]` `[CRY]` `[NET]`
 Sets are the raw material of the relational model; counting is the substrate of probability.
