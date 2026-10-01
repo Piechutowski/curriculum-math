@@ -16,10 +16,10 @@ crossing each one off. Tick freely.
 - [x] Greene 149 — Solving Compound Inequalities with "and" or "or"
 - [x] Greene 152 — Solving Absolute Value Equations I
 - [x] Greene 155 — Solving Absolute Value Inequalities I
-- [ ] Greene 431 — Introduction to Sequences
-- [ ] Greene 433 — Introduction to Series
-- [ ] Greene 435 — Arithmetic Sequences and Series
-- [ ] Greene 437 — Geometric Sequences and Series
+- [x] Greene 431 — Introduction to Sequences
+- [x] Greene 433 — Introduction to Series
+- [x] Greene 435 — Arithmetic Sequences and Series
+- [x] Greene 437 — Geometric Sequences and Series
 - [ ] Rosen 1.1 — Propositional Logic
 - [ ] Rosen 1.2 — Applications of Propositional Logic
 - [ ] Rosen 1.3 — Propositional Equivalences
