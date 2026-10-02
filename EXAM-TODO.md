@@ -26,41 +26,41 @@ crossing each one off. Tick freely.
 
 ### Week Aug 24–30
 
-- [ ] Greene 266 — Relations and Functions
-- [ ] Greene 268 — Domain and Range
-- [ ] Greene 270 — Vertical Line Test
-- [ ] Greene 272 — Function Notation
-- [ ] Greene 297 — Operations on Functions
-- [ ] Greene 301 — Composition of Functions
-- [ ] Greene 334 — One-to-One Functions and the Horizontal Line Test
-- [ ] Greene 336 — One-to-One Functions: Algebraic Method
-- [ ] Greene 338 — How to Find the Inverse of a One-to-One Function
-- [ ] Greene 340 — Determining if Two Functions are Inverses Using Composition
-- [ ] Greene 445 — Sets Part 1
-- [ ] Greene 447 — Sets Part 2
+- [ ] Greene 266 — Relations and Functions (S. 10)
+- [ ] Greene 268 — Domain and Range (S. 10)
+- [ ] Greene 270 — Vertical Line Test (S. 10)
+- [ ] Greene 272 — Function Notation (S. 10)
+- [ ] Greene 297 — Operations on Functions (S. 10)
+- [ ] Greene 301 — Composition of Functions (S. 10)
+- [ ] Greene 334 — One-to-One Functions and the Horizontal Line Test (S. 12)
+- [ ] Greene 336 — One-to-One Functions: Algebraic Method (S. 12)
+- [ ] Greene 338 — How to Find the Inverse of a One-to-One Function (S. 12)
+- [ ] Greene 340 — Determining if Two Functions are Inverses Using Composition (S. 12)
+- [ ] Greene 445 — Sets Part 1 (S. 16)
+- [ ] Greene 447 — Sets Part 2 (S. 16)
 - [ ] Rosen 1.4 — Predicates and Quantifiers
 - [ ] Rosen 1.5 — Nested Quantifiers
 - [ ] Rosen 1.6 — Rules of Inference
 
 ### Week Aug 31 – Sep 6
 
-- [ ] Greene 344 — Graphing Exponential Functions
-- [ ] Greene 346 — Solving Exponential Equations with Like Bases
-- [ ] Greene 352 — Introduction to Logarithms
-- [ ] Greene 354 — Properties of Logarithms
-- [ ] Greene 356 — Special Properties of Logarithms
-- [ ] Greene 358 — Change of Base Formula
-- [ ] Greene 360 — Solving Exponential Equations Using Logarithms
-- [ ] Greene 362 — Solving Logarithmic Equations
-- [ ] Greene 364 — Solving Exponential and Logarithmic Inequalities
+- [ ] Greene 344 — Graphing Exponential Functions (S. 12)
+- [ ] Greene 346 — Solving Exponential Equations with Like Bases (S. 12)
+- [ ] Greene 352 — Introduction to Logarithms (S. 12)
+- [ ] Greene 354 — Properties of Logarithms (S. 12)
+- [ ] Greene 356 — Special Properties of Logarithms (S. 12)
+- [ ] Greene 358 — Change of Base Formula (S. 12)
+- [ ] Greene 360 — Solving Exponential Equations Using Logarithms (S. 12)
+- [ ] Greene 362 — Solving Logarithmic Equations (S. 12)
+- [ ] Greene 364 — Solving Exponential and Logarithmic Inequalities (S. 12)
 - [ ] Rosen 1.7 — Introduction to Proofs *(the deep week — work many exercises)*
 - [ ] Rosen 1.8 — Proof Methods and Strategy *(likewise)*
 
 ### Week Sep 7–13
 
-- [ ] Greene 439 — The Binomial Theorem
-- [ ] Greene 441 — Counting Theory
-- [ ] Greene 443 — The Basics of Probability
+- [ ] Greene 439 — The Binomial Theorem (S. 16)
+- [ ] Greene 441 — Counting Theory (S. 16)
+- [ ] Greene 443 — The Basics of Probability (S. 16)
 - [ ] Rosen 2.1 — Sets
 - [ ] Rosen 2.2 — Set Operations
 - [ ] Rosen 2.3 — Functions
@@ -80,32 +80,32 @@ crossing each one off. Tick freely.
 
 ### Week Sep 21–27
 
-- [ ] Greene 310 — The Remainder Theorem
-- [ ] Greene 312 — The Factor Theorem
-- [ ] Greene 314 — The Rational Zeros Theorem
-- [ ] Greene 316 — Fundamental Theorem of Algebra
-- [ ] Greene 318 — Conjugate Zeros Theorem
-- [ ] Greene 324 — Finding the Zeros of a Polynomial Function
-- [ ] Greene 369 — Solving Linear Systems in Two Variables
-- [ ] Greene 371 — Solving Linear Systems in Three Variables
+- [ ] Greene 310 — The Remainder Theorem (S. 11)
+- [ ] Greene 312 — The Factor Theorem (S. 11)
+- [ ] Greene 314 — The Rational Zeros Theorem (S. 11)
+- [ ] Greene 316 — Fundamental Theorem of Algebra (S. 11)
+- [ ] Greene 318 — Conjugate Zeros Theorem (S. 11)
+- [ ] Greene 324 — Finding the Zeros of a Polynomial Function (S. 11)
+- [ ] Greene 369 — Solving Linear Systems in Two Variables (S. 13)
+- [ ] Greene 371 — Solving Linear Systems in Three Variables (S. 13)
 
 ### Week Sep 28 – Oct 4
 
-- [ ] Greene 449 — Angles in Trigonometry
-- [ ] Greene 457 — Trigonometric Function Values of an Angle
-- [ ] Greene 464 — Trig Functions of Acute Angles
-- [ ] Greene 466 — Trig Functions of Non-Acute Angles
-- [ ] Greene 473 — Radian Measure
-- [ ] Greene 477 — The Unit Circle
-- [ ] Greene 533 — Review of Complex Numbers
-- [ ] Greene 535 — Polar Form of Complex Numbers
-- [ ] Greene 537 — Product and Quotient Theorems
-- [ ] Greene 539 — De Moivre's Theorem
+- [ ] Greene 449 — Angles in Trigonometry (S. 17)
+- [ ] Greene 457 — Trigonometric Function Values of an Angle (S. 17)
+- [ ] Greene 464 — Trig Functions of Acute Angles (S. 18)
+- [ ] Greene 466 — Trig Functions of Non-Acute Angles (S. 18)
+- [ ] Greene 473 — Radian Measure (S. 19)
+- [ ] Greene 477 — The Unit Circle (S. 19)
+- [ ] Greene 533 — Review of Complex Numbers (S. 25)
+- [ ] Greene 535 — Polar Form of Complex Numbers (S. 25)
+- [ ] Greene 537 — Product and Quotient Theorems (S. 25)
+- [ ] Greene 539 — De Moivre's Theorem (S. 25)
 
 ### Week Oct 5–9
 
-- [ ] Greene 377 — Partial Fractions, Linear Factors *(non-negotiable)*
-- [ ] Greene 379 — Partial Fractions, Quadratic Factors *(non-negotiable)*
+- [ ] Greene 377 — Partial Fractions, Linear Factors *(non-negotiable)* (S. 13)
+- [ ] Greene 379 — Partial Fractions, Quadratic Factors *(non-negotiable)* (S. 13)
 - [ ] Rosen 5.1 — Mathematical Induction
 - [ ] Rosen 5.2 — Strong Induction and Well-Ordering
 - [ ] Review week: **every Greene prerequisite done before the first class**
