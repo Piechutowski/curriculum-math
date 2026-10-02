@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="84" viewBox="0 0 640 84" role="img" aria-label="Rosen Ch. 1 · exercises: 0 of 506 exercises (0 of 13 sets complete)">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="84" viewBox="0 0 640 84" role="img" aria-label="Rosen Ch. 1 · exercises: 10 of 506 exercises (0 of 13 sets complete)">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#bc8cff"/><stop offset="1" stop-color="#8957e5"/></linearGradient>
     <clipPath id="c"><rect x="20" y="34" width="600" height="10" rx="4"/></clipPath>
   </defs>
   <rect width="640" height="84" rx="12" fill="#0d1117" stroke="#30363d"/>
   <text x="20" y="22" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3">Rosen Ch. 1 · exercises</text>
-  <text x="620" y="22" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">0 / 506 · 0%</text>
+  <text x="620" y="22" text-anchor="end" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#9198a1">10 / 506 · 2%</text>
   <g clip-path="url(#c)">
     <rect x="20" y="34" width="52" height="10" fill="#21262d"/>
+    <rect x="20" y="34" width="10" height="10" fill="url(#g)"/>
     <rect x="72" y="34" width="51" height="10" fill="#2d333b"/>
     <rect x="123" y="34" width="63" height="10" fill="#21262d"/>
     <rect x="186" y="34" width="58" height="10" fill="#2d333b"/>
