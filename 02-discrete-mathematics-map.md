@@ -5,9 +5,9 @@
 
 **0 / 91 lessons complete · 0%** — 0 of 13 chapters finished · [completion log](LOG.md)
 
-![02 · Discrete Mathematics — Rosen exercises](progress/02-discrete-mathematics-exercises.svg?v=4-0-506)
-
 **0 / 506 exercises solved · 0%**
+
+![Rosen Ch. 1 exercises](progress/02-discrete-mathematics-exercises-ch01.svg?v=4-0-506)
 <!-- endprogress -->
 
 **Resource:** the book you own.
@@ -19,8 +19,8 @@ After editing checkboxes, run `go run ./tools/progress` to refresh the bars.
 
 **Exercises:** under each section (and under each wrap-up) is a row of the book's numbered
 exercises, like `- Exercises: [ ] 1 · [ ] 2 · [ ] 3`. Change `[ ] 4` to `[x] 4` when you solve
-exercise 4. These are counted separately from lessons, on their own exercises bar, so they
-never change the lesson totals. Sections without a row (1.9, 1.10) have no exercises in the book.
+exercise 4. These are counted separately from lessons, on one exercises bar per chapter
+(each set is its own labelled segment), so they never change the lesson totals. Sections without a row (1.9, 1.10) have no exercises in the book.
 
 Do the chapters in order for the full pass; per-goal sprint paths are at the bottom.
 

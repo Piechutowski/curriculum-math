@@ -68,8 +68,11 @@ the segments are the modules. Consequences worth knowing:
 A lesson may carry indented exercise rows, e.g. `  - Exercises: [x] 1 · [ ] 2 · [ ] 3` (the
 label before the colon is free text, the first box must be numbered 1). They have no checkbox
 of their own, so they never count as lessons and are never logged. The tool counts their
-boxes separately: "N / M exercises solved", a second card `progress/<id>-exercises.svg`, and
-the `exercises_done`/`exercises_total` columns in `progress/progress.csv`. Module 02 uses them
+boxes separately: "N / M exercises solved"; one card per chapter,
+`progress/<id>-exercises-chNN.svg`, where every exercise row is its own labelled segment
+(section number for `Exercises` rows, initials like `RQ` otherwise); a module-wide
+`progress/<id>-exercises.svg` (segments = chapters, shown on the README dashboard); and the
+`exercises_done`/`exercises_total` columns in `progress/progress.csv`. Module 02 uses them
 (Rosen's numbered exercises per section, plus Review Questions, Supplementary Exercises,
 Computer Projects, Computations and Explorations, Writing Projects under each wrap-up). When
 the owner reports exercise counts for a chapter, add rows with exactly those counts.

@@ -7,7 +7,9 @@
 //     ticked, and LOG.md presents it newest-day-first (unticking a lesson removes it)
 //   - writes the raw counts to progress/progress.csv
 //   - counts numbered exercises on exercise rows (see exerciseLine) and, for
-//     modules that have them, renders a second card <id>-exercises.svg
+//     modules that have them, renders one card per chapter with a labelled
+//     segment per exercise set (<id>-exercises-chNN.svg), plus a module-wide
+//     <id>-exercises.svg whose segments are the chapters
 //
 // Run it from the repository root after ticking checkboxes:
 //
@@ -47,7 +49,24 @@ type module struct {
 	groups  []group  // one per "## " heading that contains checkboxes
 
 	exDone, exTotal int
-	exGroups        []group // one per "## " heading that contains exercise rows
+	exChapters      []*exChapter // "## " headings that contain exercise rows
+}
+
+// exChapter is one "## " heading's exercise rows; each row is one set (a
+// section's exercises, or Review Questions, Supplementary Exercises, ...) and
+// gets its own labelled segment on the chapter's card.
+type exChapter struct {
+	num   int    // from "## Ch. N", else the heading's position in the file
+	name  string // "Ch. 1"
+	sets  []exSet
+	done  int
+	total int
+}
+
+type exSet struct {
+	label string // "1.1" for a section's Exercises row, initials ("RQ") otherwise
+	done  int
+	total int
 }
 
 var modules = []*module{
@@ -78,7 +97,9 @@ var checkboxLine = regexp.MustCompile(`^\s*[-*] \[([ xX])\] (.+)$`)
 // exerciseLine is an indented bullet under a lesson listing that lesson's
 // numbered exercises, e.g. "  - Exercises: [x] 1 · [ ] 2 · [ ] 3". The bullet
 // has no checkbox of its own, so checkboxLine never counts it as a lesson.
-var exerciseLine = regexp.MustCompile(`^\s+[-*] [A-Za-z][A-Za-z ]*: \[[ xX]\] 1\b`)
+var exerciseLine = regexp.MustCompile(`^\s+[-*] ([A-Za-z][A-Za-z ]*): \[[ xX]\] 1\b`)
+
+var chapterHeading = regexp.MustCompile(`^## Ch\. (\d+)`)
 
 var exerciseBox = regexp.MustCompile(`\[([ xX])\] \d+`)
 
@@ -94,27 +115,39 @@ func main() {
 		if err != nil {
 			fatal("reading %s: %v", m.file, err)
 		}
-		var exGroups []group // parallel to m.groups until filtered below
+		var ch *exChapter // exercise rows of the current "## " heading
+		var lesson string // content of the last lesson line, for set labels
+		headings := 0
 		for _, line := range strings.Split(string(src), "\n") {
 			if strings.HasPrefix(line, "## ") {
 				m.groups = append(m.groups, group{})
-				exGroups = append(exGroups, group{})
+				headings++
+				ch = &exChapter{num: headings, name: fmt.Sprintf("Part %d", headings)}
+				if hit := chapterHeading.FindStringSubmatch(line); hit != nil {
+					fmt.Sscan(hit[1], &ch.num)
+					ch.name = "Ch. " + hit[1]
+				}
 				continue
 			}
-			if exerciseLine.MatchString(line) {
-				if len(exGroups) == 0 {
-					m.groups = append(m.groups, group{})
-					exGroups = append(exGroups, group{})
+			if hit := exerciseLine.FindStringSubmatch(line); hit != nil {
+				if ch == nil {
+					ch = &exChapter{num: 0, name: "Intro"}
 				}
-				eg := &exGroups[len(exGroups)-1]
+				if len(ch.sets) == 0 {
+					m.exChapters = append(m.exChapters, ch)
+				}
+				set := exSet{label: setLabel(hit[1], lesson)}
 				for _, box := range exerciseBox.FindAllStringSubmatch(line, -1) {
-					m.exTotal++
-					eg.total++
+					set.total++
 					if box[1] != " " {
-						m.exDone++
-						eg.done++
+						set.done++
 					}
 				}
+				ch.sets = append(ch.sets, set)
+				ch.done += set.done
+				ch.total += set.total
+				m.exDone += set.done
+				m.exTotal += set.total
 				continue
 			}
 			hit := checkboxLine.FindStringSubmatch(line)
@@ -123,8 +156,8 @@ func main() {
 			}
 			if len(m.groups) == 0 { // checkbox before any heading
 				m.groups = append(m.groups, group{})
-				exGroups = append(exGroups, group{})
 			}
+			lesson = label(hit[2])
 			g := &m.groups[len(m.groups)-1]
 			m.total++
 			g.total++
@@ -142,11 +175,6 @@ func main() {
 			}
 		}
 		m.groups = kept
-		for _, g := range exGroups {
-			if g.total > 0 {
-				m.exGroups = append(m.exGroups, g)
-			}
-		}
 	}
 
 	var done, total int
@@ -164,7 +192,12 @@ func main() {
 	for _, m := range modules {
 		writeFile(filepath.Join("progress", m.id+".svg"), card(m.title, m.done, m.total, m.c1, m.c2, m.groups, m.unit))
 		if m.exTotal > 0 {
-			writeFile(filepath.Join("progress", m.id+"-exercises.svg"), card(m.title+" · exercises", m.exDone, m.exTotal, m.c1, m.c2, m.exGroups, m.unit))
+			chapters := make([]group, len(m.exChapters))
+			for i, c := range m.exChapters {
+				chapters[i] = group{done: c.done, total: c.total}
+				writeFile(filepath.Join("progress", exCardName(m, c)), setCard(m.short+" "+c.name+" · exercises", c, m.c1, m.c2))
+			}
+			writeFile(filepath.Join("progress", m.id+"-exercises.svg"), card(m.title+" · exercises", m.exDone, m.exTotal, m.c1, m.c2, chapters, m.unit))
 		}
 	}
 	// The overall bar's segments are the modules themselves.
@@ -191,6 +224,113 @@ func main() {
 	if added > 0 || removed > 0 {
 		fmt.Printf("log: %d completion(s) added, %d removed\n", added, removed)
 	}
+}
+
+// setLabel names an exercise set on its chapter card: a section's plain
+// "Exercises" row takes the section number from its lesson line ("1.1 ..."),
+// any other row is abbreviated to its initials ("Review Questions" -> "RQ").
+func setLabel(row, lesson string) string {
+	if row == "Exercises" {
+		if f := strings.Fields(lesson); len(f) > 0 {
+			return f[0]
+		}
+	}
+	var b strings.Builder
+	for _, w := range strings.Fields(row) {
+		if w == "and" || w == "of" {
+			continue
+		}
+		b.WriteByte(w[0])
+	}
+	return strings.ToUpper(b.String())
+}
+
+func exCardName(m *module, c *exChapter) string {
+	return fmt.Sprintf("%s-exercises-ch%02d.svg", m.id, c.num)
+}
+
+// setCard renders a chapter's exercise card. Unlike card, segment widths are
+// not strictly proportional: every set gets a minimum width so even a
+// six-exercise set stays visible and labelled, and the rest of the bar is
+// shared out by size. Each segment fills by its own set's progress, and its
+// label sits under it. The header still states the exact count.
+func setCard(title string, c *exChapter, c1, c2 string) string {
+	const (
+		w, h    = 640, 84
+		pad     = 20
+		barY    = 34
+		barH    = 10
+		notchW  = 2
+		minSeg  = 26
+		bgColor = "#0d1117"
+		font    = `-apple-system,'Segoe UI',Helvetica,Arial,sans-serif`
+	)
+	barW := w - 2*pad
+	n := len(c.sets)
+	minW := minSeg
+	if n*minW > barW {
+		minW = barW / n
+	}
+	spare := barW - n*minW
+
+	setsDone := 0
+	for _, s := range c.sets {
+		if s.done == s.total {
+			setsDone++
+		}
+	}
+
+	var b strings.Builder
+	fmt.Fprintf(&b, `<svg xmlns="http://www.w3.org/2000/svg" width="%d" height="%d" viewBox="0 0 %d %d" role="img" aria-label="%s: %d of %d exercises (%d of %d sets complete)">`+"\n",
+		w, h, w, h, esc(title), c.done, c.total, setsDone, n)
+	fmt.Fprintf(&b, `  <defs>`+"\n")
+	fmt.Fprintf(&b, `    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="%s"/><stop offset="1" stop-color="%s"/></linearGradient>`+"\n", c1, c2)
+	fmt.Fprintf(&b, `    <clipPath id="c"><rect x="%d" y="%d" width="%d" height="%d" rx="4"/></clipPath>`+"\n", pad, barY, barW, barH)
+	fmt.Fprintf(&b, `  </defs>`+"\n")
+	fmt.Fprintf(&b, `  <rect width="%d" height="%d" rx="12" fill="%s" stroke="#30363d"/>`+"\n", w, h, bgColor)
+	fmt.Fprintf(&b, `  <text x="%d" y="22" font-family="%s" font-size="13" font-weight="600" fill="#e6edf3">%s</text>`+"\n", pad, font, esc(title))
+	fmt.Fprintf(&b, `  <text x="%d" y="22" text-anchor="end" font-family="%s" font-size="12" fill="#9198a1">%d / %d · %d%%</text>`+"\n", w-pad, font, c.done, c.total, pct(c.done, c.total))
+
+	// Segment bounds: minW each, plus a share of the spare width by set size.
+	xs := make([]int, n+1)
+	cum := 0
+	for i, st := range c.sets {
+		xs[i] = pad + i*minW + spare*cum/c.total
+		cum += st.total
+	}
+	xs[n] = pad + barW
+
+	fmt.Fprintf(&b, `  <g clip-path="url(#c)">`+"\n")
+	for i, st := range c.sets {
+		x0, x1 := xs[i], xs[i+1]
+		track := "#21262d" // alternate shades so neighbouring sets read apart
+		if i%2 == 1 {
+			track = "#2d333b"
+		}
+		fmt.Fprintf(&b, `    <rect x="%d" y="%d" width="%d" height="%d" fill="%s"/>`+"\n", x0, barY, x1-x0, barH, track)
+		if st.done > 0 {
+			segW := (x1 - x0) * st.done / st.total
+			if segW < 2 {
+				segW = 2
+			}
+			fmt.Fprintf(&b, `    <rect x="%d" y="%d" width="%d" height="%d" fill="url(#g)"/>`+"\n", x0, barY, segW, barH)
+		}
+	}
+	fmt.Fprintf(&b, `  </g>`+"\n")
+	for i, st := range c.sets {
+		x0, x1 := xs[i], xs[i+1]
+		if i > 0 {
+			fmt.Fprintf(&b, `  <rect x="%d" y="%d" width="%d" height="%d" fill="%s"/>`+"\n", x0-notchW/2, barY, notchW, barH, bgColor)
+		}
+		color := "#7d8590"
+		if st.done == st.total {
+			color = c1
+		}
+		fmt.Fprintf(&b, `  <text x="%d" y="%d" text-anchor="middle" font-family="%s" font-size="9.5" fill="%s">%s</text>`+"\n", (x0+x1)/2, barY+barH+13, font, color, esc(st.label))
+	}
+	fmt.Fprintf(&b, `  <text x="%d" y="76" font-family="%s" font-size="10.5" fill="#7d8590">%d of %d sets complete</text>`+"\n", pad, font, setsDone, n)
+	b.WriteString("</svg>\n")
+	return b.String()
 }
 
 // label extracts a compact lesson name from a checkbox line's content: the bold
@@ -424,9 +564,10 @@ func moduleBlock(m *module) string {
 		esc(m.title), m.id, cardVersion, m.done, m.total,
 		m.done, m.total, pct(m.done, m.total), groupsDone, len(m.groups), m.unit)
 	if m.exTotal > 0 {
-		s += fmt.Sprintf("\n\n![%s exercises](progress/%s-exercises.svg?v=%d-%d-%d)\n\n**%d / %d exercises solved · %d%%**",
-			esc(m.title), m.id, cardVersion, m.exDone, m.exTotal,
-			m.exDone, m.exTotal, pct(m.exDone, m.exTotal))
+		s += fmt.Sprintf("\n\n**%d / %d exercises solved · %d%%**\n", m.exDone, m.exTotal, pct(m.exDone, m.exTotal))
+		for _, c := range m.exChapters {
+			s += fmt.Sprintf("\n![%s %s exercises](progress/%s?v=%d-%d-%d)", esc(m.short), c.name, exCardName(m, c), cardVersion, c.done, c.total)
+		}
 	}
 	return s
 }
