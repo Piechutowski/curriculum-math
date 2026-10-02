@@ -32,6 +32,7 @@ The tool re-counts every checklist, redraws the SVG progress bars below, refresh
 
 [![01 · Algebra &amp; Trigonometry — Greene](progress/01-algebra-trigonometry.svg?v=4-61-220)](01-algebra-trigonometry-map.md)
 [![02 · Discrete Mathematics — Rosen](progress/02-discrete-mathematics.svg?v=4-0-91)](02-discrete-mathematics-map.md)
+[![02 · Discrete Mathematics — Rosen exercises](progress/02-discrete-mathematics-exercises.svg?v=4-0-506)](02-discrete-mathematics-map.md)
 [![03 · Discrete Math — Lecture Course](progress/03-discrete-math-lectures.svg?v=4-0-27)](03-discrete-math-lectures.md)
 [![04 · Calculus — Thomas](progress/04-calculus.svg?v=4-0-89)](04-calculus.md)
 [![05 · Linear Algebra — Kumaresan](progress/05-linear-algebra.svg?v=4-0-52)](05-linear-algebra.md)

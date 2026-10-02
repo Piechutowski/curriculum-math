@@ -6,6 +6,8 @@
 //   - maintains a completion log: progress/log.csv records when each lesson was first
 //     ticked, and LOG.md presents it newest-day-first (unticking a lesson removes it)
 //   - writes the raw counts to progress/progress.csv
+//   - counts numbered exercises on exercise rows (see exerciseLine) and, for
+//     modules that have them, renders a second card <id>-exercises.svg
 //
 // Run it from the repository root after ticking checkboxes:
 //
@@ -43,6 +45,9 @@ type module struct {
 	total   int
 	checked []string // labels of ticked lessons, in file order
 	groups  []group  // one per "## " heading that contains checkboxes
+
+	exDone, exTotal int
+	exGroups        []group // one per "## " heading that contains exercise rows
 }
 
 var modules = []*module{
@@ -70,6 +75,13 @@ type logEntry struct {
 
 var checkboxLine = regexp.MustCompile(`^\s*[-*] \[([ xX])\] (.+)$`)
 
+// exerciseLine is an indented bullet under a lesson listing that lesson's
+// numbered exercises, e.g. "  - Exercises: [x] 1 · [ ] 2 · [ ] 3". The bullet
+// has no checkbox of its own, so checkboxLine never counts it as a lesson.
+var exerciseLine = regexp.MustCompile(`^\s+[-*] [A-Za-z][A-Za-z ]*: \[[ xX]\] 1\b`)
+
+var exerciseBox = regexp.MustCompile(`\[([ xX])\] \d+`)
+
 func main() {
 	if _, err := os.Stat("README.md"); err != nil {
 		fatal("run this from the repository root (README.md not found)")
@@ -82,9 +94,27 @@ func main() {
 		if err != nil {
 			fatal("reading %s: %v", m.file, err)
 		}
+		var exGroups []group // parallel to m.groups until filtered below
 		for _, line := range strings.Split(string(src), "\n") {
 			if strings.HasPrefix(line, "## ") {
 				m.groups = append(m.groups, group{})
+				exGroups = append(exGroups, group{})
+				continue
+			}
+			if exerciseLine.MatchString(line) {
+				if len(exGroups) == 0 {
+					m.groups = append(m.groups, group{})
+					exGroups = append(exGroups, group{})
+				}
+				eg := &exGroups[len(exGroups)-1]
+				for _, box := range exerciseBox.FindAllStringSubmatch(line, -1) {
+					m.exTotal++
+					eg.total++
+					if box[1] != " " {
+						m.exDone++
+						eg.done++
+					}
+				}
 				continue
 			}
 			hit := checkboxLine.FindStringSubmatch(line)
@@ -93,6 +123,7 @@ func main() {
 			}
 			if len(m.groups) == 0 { // checkbox before any heading
 				m.groups = append(m.groups, group{})
+				exGroups = append(exGroups, group{})
 			}
 			g := &m.groups[len(m.groups)-1]
 			m.total++
@@ -111,6 +142,11 @@ func main() {
 			}
 		}
 		m.groups = kept
+		for _, g := range exGroups {
+			if g.total > 0 {
+				m.exGroups = append(m.exGroups, g)
+			}
+		}
 	}
 
 	var done, total int
@@ -127,6 +163,9 @@ func main() {
 
 	for _, m := range modules {
 		writeFile(filepath.Join("progress", m.id+".svg"), card(m.title, m.done, m.total, m.c1, m.c2, m.groups, m.unit))
+		if m.exTotal > 0 {
+			writeFile(filepath.Join("progress", m.id+"-exercises.svg"), card(m.title+" · exercises", m.exDone, m.exTotal, m.c1, m.c2, m.exGroups, m.unit))
+		}
 	}
 	// The overall bar's segments are the modules themselves.
 	overallGroups := make([]group, len(modules))
@@ -144,6 +183,9 @@ func main() {
 	fmt.Printf("%-40s %9s %6s\n", "module", "done", "")
 	for _, m := range modules {
 		fmt.Printf("%-40s %4d /%4d %5d%%\n", m.title, m.done, m.total, pct(m.done, m.total))
+		if m.exTotal > 0 {
+			fmt.Printf("%-40s %4d /%4d %5d%%\n", "  exercises", m.exDone, m.exTotal, pct(m.exDone, m.exTotal))
+		}
 	}
 	fmt.Printf("%-40s %4d /%4d %5d%%\n", "overall", done, total, pct(done, total))
 	if added > 0 || removed > 0 {
@@ -378,9 +420,15 @@ func moduleBlock(m *module) string {
 			groupsDone++
 		}
 	}
-	return fmt.Sprintf("![%s progress](progress/%s.svg?v=%d-%d-%d)\n\n**%d / %d lessons complete · %d%%** — %d of %d %s finished · [completion log](LOG.md)",
+	s := fmt.Sprintf("![%s progress](progress/%s.svg?v=%d-%d-%d)\n\n**%d / %d lessons complete · %d%%** — %d of %d %s finished · [completion log](LOG.md)",
 		esc(m.title), m.id, cardVersion, m.done, m.total,
 		m.done, m.total, pct(m.done, m.total), groupsDone, len(m.groups), m.unit)
+	if m.exTotal > 0 {
+		s += fmt.Sprintf("\n\n![%s exercises](progress/%s-exercises.svg?v=%d-%d-%d)\n\n**%d / %d exercises solved · %d%%**",
+			esc(m.title), m.id, cardVersion, m.exDone, m.exTotal,
+			m.exDone, m.exTotal, pct(m.exDone, m.exTotal))
+	}
+	return s
 }
 
 func readmeBlock(done, total int) string {
@@ -388,6 +436,9 @@ func readmeBlock(done, total int) string {
 	fmt.Fprintf(&b, "![Overall progress](progress/overall.svg?v=%d-%d-%d)\n\n", cardVersion, done, total)
 	for _, m := range modules {
 		fmt.Fprintf(&b, "[![%s](progress/%s.svg?v=%d-%d-%d)](%s)\n", esc(m.title), m.id, cardVersion, m.done, m.total, m.file)
+		if m.exTotal > 0 {
+			fmt.Fprintf(&b, "[![%s exercises](progress/%s-exercises.svg?v=%d-%d-%d)](%s)\n", esc(m.title), m.id, cardVersion, m.exDone, m.exTotal, m.file)
+		}
 	}
 	fmt.Fprintf(&b, "\n**Total: %d / %d lessons complete · %d%%** — [completion log](LOG.md) · raw numbers in [progress/progress.csv](progress/progress.csv)", done, total, pct(done, total))
 	return b.String()
@@ -395,11 +446,14 @@ func readmeBlock(done, total int) string {
 
 func countsCSV(done, total int) string {
 	var b strings.Builder
-	b.WriteString("module,title,done,total,percent\n")
+	b.WriteString("module,title,done,total,percent,exercises_done,exercises_total\n")
+	var exDone, exTotal int
 	for _, m := range modules {
-		fmt.Fprintf(&b, "%s,%q,%d,%d,%d\n", m.id, m.title, m.done, m.total, pct(m.done, m.total))
+		fmt.Fprintf(&b, "%s,%q,%d,%d,%d,%d,%d\n", m.id, m.title, m.done, m.total, pct(m.done, m.total), m.exDone, m.exTotal)
+		exDone += m.exDone
+		exTotal += m.exTotal
 	}
-	fmt.Fprintf(&b, "overall,\"All modules\",%d,%d,%d\n", done, total, pct(done, total))
+	fmt.Fprintf(&b, "overall,\"All modules\",%d,%d,%d,%d,%d\n", done, total, pct(done, total), exDone, exTotal)
 	return b.String()
 }
 

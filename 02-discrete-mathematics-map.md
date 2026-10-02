@@ -4,6 +4,10 @@
 ![02 · Discrete Mathematics — Rosen progress](progress/02-discrete-mathematics.svg?v=4-0-91)
 
 **0 / 91 lessons complete · 0%** — 0 of 13 chapters finished · [completion log](LOG.md)
+
+![02 · Discrete Mathematics — Rosen exercises](progress/02-discrete-mathematics-exercises.svg?v=4-0-506)
+
+**0 / 506 exercises solved · 0%**
 <!-- endprogress -->
 
 **Resource:** the book you own.
@@ -12,6 +16,11 @@ read, study notes written, and the section's exercise set worked. Each chapter a
 **wrap-up** box: Review Questions + a slice of Supplementary Exercises + **one Computer
 Project** (they are the bridge to your programming goals; no other book you own has them).
 After editing checkboxes, run `go run ./tools/progress` to refresh the bars.
+
+**Exercises:** under each section (and under each wrap-up) is a row of the book's numbered
+exercises, like `- Exercises: [ ] 1 · [ ] 2 · [ ] 3`. Change `[ ] 4` to `[x] 4` when you solve
+exercise 4. These are counted separately from lessons, on their own exercises bar, so they
+never change the lesson totals. Sections without a row (1.9, 1.10) have no exercises in the book.
 
 Do the chapters in order for the full pass; per-goal sprint paths are at the bottom.
 
@@ -33,16 +42,29 @@ optimization and circuit minimization; program correctness (1.10) is reasoning a
 Work 1.7–1.8 slowly — proof skill makes the rest of the book readable.
 
 - [ ] 1.1 Propositional Logic
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44 · [ ] 45 · [ ] 46 · [ ] 47 · [ ] 48 · [ ] 49 · [ ] 50 · [ ] 51 · [ ] 52
 - [ ] 1.2 Applications of Propositional Logic
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44 · [ ] 45 · [ ] 46 · [ ] 47
 - [ ] 1.3 Propositional Equivalences
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44 · [ ] 45 · [ ] 46 · [ ] 47 · [ ] 48 · [ ] 49 · [ ] 50 · [ ] 51 · [ ] 52 · [ ] 53 · [ ] 54 · [ ] 55 · [ ] 56 · [ ] 57 · [ ] 58 · [ ] 59 · [ ] 60 · [ ] 61 · [ ] 62 · [ ] 63 · [ ] 64 · [ ] 65 · [ ] 66 · [ ] 67 · [ ] 68 · [ ] 69 · [ ] 70 · [ ] 71 · [ ] 72
 - [ ] 1.4 Predicates and Quantifiers
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44 · [ ] 45 · [ ] 46 · [ ] 47 · [ ] 48 · [ ] 49 · [ ] 50 · [ ] 51 · [ ] 52 · [ ] 53 · [ ] 54 · [ ] 55 · [ ] 56 · [ ] 57 · [ ] 58 · [ ] 59 · [ ] 60 · [ ] 61 · [ ] 62
 - [ ] 1.5 Nested Quantifiers
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44 · [ ] 45 · [ ] 46 · [ ] 47 · [ ] 48 · [ ] 49 · [ ] 50
 - [ ] 1.6 Rules of Inference
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37
 - [ ] 1.7 Introduction to Proofs
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44
 - [ ] 1.8 Proof Methods and Strategy
+  - Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44 · [ ] 45 · [ ] 46 · [ ] 47 · [ ] 48
 - [ ] 1.9 Normal Forms
 - [ ] 1.10 Program Correctness
 - [ ] Ch. 1 wrap-up: Review Questions · Supplementary Exercises · one Computer Project
+  - Review Questions: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19
+  - Supplementary Exercises: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17 · [ ] 18 · [ ] 19 · [ ] 20 · [ ] 21 · [ ] 22 · [ ] 23 · [ ] 24 · [ ] 25 · [ ] 26 · [ ] 27 · [ ] 28 · [ ] 29 · [ ] 30 · [ ] 31 · [ ] 32 · [ ] 33 · [ ] 34 · [ ] 35 · [ ] 36 · [ ] 37 · [ ] 38 · [ ] 39 · [ ] 40 · [ ] 41 · [ ] 42 · [ ] 43 · [ ] 44 · [ ] 45 · [ ] 46
+  - Computer Projects: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6
+  - Computations and Explorations: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6
+  - Writing Projects: [ ] 1 · [ ] 2 · [ ] 3 · [ ] 4 · [ ] 5 · [ ] 6 · [ ] 7 · [ ] 8 · [ ] 9 · [ ] 10 · [ ] 11 · [ ] 12 · [ ] 13 · [ ] 14 · [ ] 15 · [ ] 16 · [ ] 17
 
 ## Ch. 2 — Basic Structures: Sets, Functions, Sequences, Sums, Matrices `[DB]` `[CMP]`
 Sets (2.1–2.2) are the raw material of the relational model — a table is a set of tuples.
