@@ -148,15 +148,15 @@ transformations (289–303) — first taste of the transform thinking 2D graphic
 **the difference quotient (299)** — this IS the derivative, one limit short; composition (301)
 `[CMP]`.
 
-- [ ] 247. The Rectangular Coordinate System
-- [ ] 249. Distance between Two Points (Distance Formula)
-- [ ] 251. Determining Whether Three Points are the Vertices of a Right Triangle
-- [ ] 253. Determining Whether Three Points are Collinear
-- [ ] 255. The Midpoint Formula
-- [ ] 257. Plotting Complex Numbers
-- [ ] 259. Absolute Value of a Complex Number
-- [ ] 261. Distance and Midpoint Formulas in the Complex Plane
-- [ ] 263. Graphing Circles
+- [x] 247. The Rectangular Coordinate System
+- [x] 249. Distance between Two Points (Distance Formula)
+- [x] 251. Determining Whether Three Points are the Vertices of a Right Triangle
+- [x] 253. Determining Whether Three Points are Collinear
+- [x] 255. The Midpoint Formula
+- [x] 257. Plotting Complex Numbers
+- [x] 259. Absolute Value of a Complex Number
+- [x] 261. Distance and Midpoint Formulas in the Complex Plane
+- [x] 263. Graphing Circles
 - [ ] 266. Relations and Functions
 - [ ] 268. Domain and Range
 - [ ] 270. Vertical Line Test
