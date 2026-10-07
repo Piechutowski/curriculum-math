@@ -5,9 +5,9 @@
 
 **0 / 91 lessons complete · 0%** — 0 of 13 chapters finished · [completion log](LOG.md)
 
-**10 / 506 exercises solved · 2%**
+**13 / 506 exercises solved · 3%**
 
-![Rosen Ch. 1 exercises](progress/02-discrete-mathematics-exercises-ch01.svg?v=4-10-506)
+![Rosen Ch. 1 exercises](progress/02-discrete-mathematics-exercises-ch01.svg?v=4-13-506)
 <!-- endprogress -->
 
 **Resource:** the book you own.
