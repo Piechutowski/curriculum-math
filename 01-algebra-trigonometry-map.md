@@ -138,7 +138,7 @@ Manipulation fluency; the equation-solving muscle the rest of the course assumes
 Absolute value = distance on the line — the exact idea calculus uses to define limits and
 numerics uses to measure error.
 
-- [ ] 237. Absolute Value Equations II
+- [x] 237. Absolute Value Equations II
 - [ ] 240. Absolute Value Equations III
 - [ ] 243. Absolute Value Inequalities II
 
@@ -157,13 +157,13 @@ transformations (289–303) — first taste of the transform thinking 2D graphic
 - [x] 259. Absolute Value of a Complex Number
 - [x] 261. Distance and Midpoint Formulas in the Complex Plane
 - [x] 263. Graphing Circles
-- [ ] 266. Relations and Functions
+- [x] 266. Relations and Functions
 - [ ] 268. Domain and Range
-- [ ] 270. Vertical Line Test
-- [ ] 272. Function Notation
-- [ ] 274. Graphing Linear Functions
-- [ ] 276. Finding the Slope of a Line
-- [ ] 278. Equations of Lines
+- [x] 270. Vertical Line Test
+- [x] 272. Function Notation
+- [x] 274. Graphing Linear Functions
+- [x] 276. Finding the Slope of a Line
+- [x] 278. Equations of Lines
 - [ ] 280. Parallel and Perpendicular Lines
 - [ ] 283. Graphs of Basic Functions
 - [ ] 285. Piecewise Functions
